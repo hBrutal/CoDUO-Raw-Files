@@ -1,0 +1,35 @@
+Emitter
+{
+	name				M_tail
+
+	flags				useModel deathFx
+
+	spawnFlags			absoluteAccel
+
+	life				1500 2000
+
+	angleDelta			-5 -2 -5 5 2 5
+
+	velocity			-500 -100 -100 500 100 -300
+
+	gravity				-600 -400
+
+	density				75
+
+	size
+	{
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/v_ge_air_stuka(d)(p)_tail
+	]
+
+	deathfx
+	[
+		fx/explosions/artillery/flak_single_400_ns
+	]
+}

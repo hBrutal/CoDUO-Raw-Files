@@ -1,0 +1,200 @@
+Particle
+{
+	name				smoke_linger
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				2 3
+
+	life				500 1500
+
+	delay				25
+
+	cullrange			32000
+
+	origin				0 -25 -25 25 25 25
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -25 -25 200 25 25
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.4627 0.4392 0.4039
+		end				0.1412 0.1608 0.2078
+		parm			5 10
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.2 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_shockwave
+
+	flags				useAlpha
+
+	count				1 2
+
+	life				100 150
+
+	cullrange			1000
+
+	origin				0 -15 -15 15 15 15
+
+	radius				30
+
+	rotation			-5 5
+
+	rotationDelta		-15 15
+
+	velocity			0 -875 -875 30 875 875
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5294 0.5412 0.4902
+		end				0.3922 0.4 0.3569
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				150 250
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Decal
+{
+	name				Decal_scortchmark
+
+	life				2e+004 3e+004
+
+	cullrange			2000
+
+	rotation			0 360
+
+	size
+	{
+		start			36 48
+	}
+
+	shaders
+	[
+		impact/scorch_gen_a
+		impact/scorch_gen_a
+	]
+}
+
+Particle
+{
+	name				smoke_shockwave_initial
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	life				500 1000
+
+	delay				25 45
+
+	cullrange			2000
+
+	radius				36 72
+
+	height				1 15
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			0 -10 -10 10 10 10
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5294 0.5412 0.4902
+		end				0.3922 0.4 0.3569
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+	]
+}
+
+FxRunner
+{
+	name				_call_globals
+
+	cullrange			32000
+
+	playfx
+	[
+		fx/weapon/explosions/_global_grenade
+	]
+}

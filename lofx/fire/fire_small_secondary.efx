@@ -1,0 +1,122 @@
+Particle
+{
+	name				fire_flames
+
+	flags				setShaderTime
+
+	spawnFlags			orgOnCylinder evenDistribution rgbComponentInterpolation
+
+	count 32 32
+
+	life				750 1000
+
+	delay				0 3e+004
+
+	cullrange			4000
+
+	radius				0 15
+
+	height				0 10
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			35 -5 -5 45 5 5
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.6745 0.4471 0.2745
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			35 50
+		end				10 15
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}
+
+Particle
+{
+	name				fire_flames2
+
+	flags				setShaderTime
+
+	spawnFlags			orgOnCylinder evenDistribution rgbComponentInterpolation
+
+	count 32 32
+
+	life				1000
+
+	delay				0 3e+004
+
+	cullrange			4000
+
+
+	radius				5 10
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			5 -5 -5 15 5 5
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.6745 0.4471 0.2745
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			20 25
+		end				35 45
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}

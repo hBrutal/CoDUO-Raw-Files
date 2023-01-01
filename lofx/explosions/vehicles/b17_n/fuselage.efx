@@ -1,0 +1,36 @@
+Emitter
+{
+	name				M_fuselage_hold
+
+	flags				useModel emitFx
+
+	life				5000
+
+	angleDelta			-5 -2 -15 5 2 15
+
+	velocity			800 -100 -100 1000 100 100
+
+	gravity				-600 -400
+
+	density				200
+
+	models
+	[
+		xmodel/v_us_air_b-17_fuselage(d)
+	]
+
+	emitfx
+	[
+		fx/fire/fire_trail_100
+	]
+}
+
+FxRunner
+{
+	name				_FX_callexp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_650
+	]
+}

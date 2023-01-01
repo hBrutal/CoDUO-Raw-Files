@@ -1,0 +1,200 @@
+Particle
+{
+	name				fire_front_blast
+
+	life				150 250
+
+	cullrange			32000
+
+	origin				0 0 0 48 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 -50 -50 1200 50 50
+
+	rgb
+	{
+		end				0.651 0.2118 0
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			5 15
+		end				55 125
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				smoke_front_fractal
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				250 500
+
+	cullrange			4000
+
+	origin				0 0 0 36 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -75 -75 800 75 75
+
+	gravity				0 100
+
+	rgb
+	{
+		start			0.7412 0.7765 0.749
+		end				0.1961 0.1922 0.2
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			15
+		end				75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+Particle
+{
+	name				fire_right
+
+	life				150 250
+
+	cullrange			32000
+
+	origin				0 0 0 0 15 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-25 -25 100 25 25 500
+
+	rgb
+	{
+		end				0.651 0.2118 0
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			5 15
+		end				55 75
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				fire_left
+
+	life				150 250
+
+	cullrange			32000
+
+	origin				0 0 0 0 -15 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-25 -25 -100 25 25 -500
+
+	rgb
+	{
+		end				0.9843 0.4235 0.1569
+		parm			20 80
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			5 15
+		end				55 75
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Light
+{
+	life				100 250
+
+	origin				50 0 0
+
+	rgb
+	{
+		start			1 0.8039 0.5098
+		end				0.3255 0.007843 0.007843
+	}
+
+	size
+	{
+		start			2000 2500
+		end				500 750
+		flags			linear
+	}
+}

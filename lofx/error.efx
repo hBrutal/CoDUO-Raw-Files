@@ -1,0 +1,26 @@
+Particle
+{
+	life				2000
+
+	rgb
+	{
+		end				0.949 0.5451 0
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+	}
+
+	size
+	{
+		start			100
+		end				125
+	}
+
+	shaders
+	[
+		misc/fx_error
+	]
+}

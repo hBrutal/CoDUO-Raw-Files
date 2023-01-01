@@ -1,0 +1,55 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           OBJECTIVE1
+LANG_ENGLISH        "Get to the Square"
+
+REFERENCE           OBJECTIVE2
+LANG_ENGLISH        "Meet with Sgt.  Antonov"
+
+REFERENCE           OBJECTIVE3
+LANG_ENGLISH        "Cover Sgt. Antonov"
+
+REFERENCE           OBJECTIVE4
+LANG_ENGLISH        "Help Engineers Cross Battle Field"
+
+REFERENCE           OBJECTIVE5
+LANG_ENGLISH        "Regroup with Sgt. Antonov"
+
+REFERENCE           OBJECTIVE6
+LANG_ENGLISH        "Use the Flak gun to shoot down enemy He111s (%s Remaining)"
+
+REFERENCE           OBJECTIVE7
+LANG_ENGLISH        "Head to the Trainyard"
+
+REFERENCE           OBJECTIVE8
+LANG_ENGLISH        "Destroy all inbound Tanks (%s Remaining)"
+
+REFERENCE           OBJECTIVE9
+LANG_ENGLISH        "Defend the Trainstation"
+
+REFERENCE           REINFORCEMENTS
+LANG_ENGLISH        "Reinforcements arriving in: %s"
+
+REFERENCE           MISSIONFAIL_ANTONOV
+LANG_ENGLISH        "You failed to cover Sgt. Antonov."
+
+REFERENCE           MISSIONFAIL_ENGINEER
+LANG_ENGLISH        "You failed to escort the Engineers."
+
+
+ENDMARKER
+
+

@@ -1,0 +1,115 @@
+Particle
+{
+	name				mist_dark
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				0 1
+
+	life				1500
+
+	cullrange			1500
+
+	origin				15 0 -20 30 0 -30
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-15 -5 -2 -25 5 2
+
+	rgb
+	{
+		start			0.3961 0.4078 0.5137
+		end				0.3255 0.3608 0.4902
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			250 365
+		end				390 425
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				mist_light
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				0 1
+
+	life				1500
+
+	cullrange			2000
+
+	origin				15 0 -30 30 0 -20
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-15 -5 -5 -35 5 5
+
+	rgb
+	{
+		start			0.3569 0.3725 0.4667
+		end				0.5804 0.5765 0.4039
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.35 0.85
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			250 365
+		end				390 425
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

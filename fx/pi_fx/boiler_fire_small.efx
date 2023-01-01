@@ -1,0 +1,188 @@
+Particle
+{
+	name				fire_flames
+
+	flags				setShaderTime
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				7 10
+
+	life				500 600
+
+	delay				70 150
+
+	cullrange			800
+
+	origin				0 -7 0 8 11 0
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-8 8
+
+	rotationDelta		-1 1
+
+	velocity			10 0 0 20 0 0
+
+	acceleration		2 0 0 6 0 0
+
+	rgb
+	{
+		start			0.9294 0.9765 0.9961 0.9529 0.9412 1
+		end				0.4392 0.2431 0.1137 0.2667 0.1451 0.06667
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			9 11
+		end				15
+		flags			linear
+	}
+
+	length
+	{
+		start			1 4
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_b
+		fire/flame_lick_c
+		fire/flame_lick_d
+		fire/flame_lick_e
+		fire/flame_lick_f
+	]
+}
+
+Particle
+{
+	name				smoke_underlit
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				3 4
+
+	life				750 1000
+
+	delay				130 300
+
+	cullrange			750
+
+	origin				9 -14 -7 15 14 7
+
+	radius				60 50
+
+	rotation			170 190
+
+	rotationDelta		-1 1
+
+	velocity			13 -1 -1 26 1 1
+
+	acceleration		2 0 0 5 0 0
+
+	rgb
+	{
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 0.85
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			11 15
+		end				20 27
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_fire_a
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_c
+	]
+}
+
+Particle
+{
+	name				fire_flames2
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				3 5
+
+	life				500 600
+
+	delay				200 400
+
+	cullrange			800
+
+	origin				0 -9 0 13 11 0
+
+	radius				60 50
+
+	rotation			-8 8
+
+	rotationDelta		-1 1
+
+	velocity			10 0 0 20 0 0
+
+	rgb
+	{
+		start			0.9294 0.9765 0.9961 0.9529 0.9412 1
+		end				0.4392 0.2431 0.1137 0.2667 0.1451 0.06667
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			12 14
+		end				18
+		flags			linear
+	}
+
+	length
+	{
+		start			1 4
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_b
+		fire/flame_lick_c
+		fire/flame_lick_d
+		fire/flame_lick_e
+		fire/flame_lick_f
+	]
+}

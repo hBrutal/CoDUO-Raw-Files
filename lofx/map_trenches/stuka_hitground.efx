@@ -1,0 +1,573 @@
+Particle
+{
+	name				impact
+
+	flags				usePhysics impactKills impactFx
+
+	life				1e+004
+
+	cullrange			8000
+
+	velocity			0 0 -400
+
+	impactfx
+	[
+		/fx/explosions/impacts/generic_a
+	]
+}
+
+Particle
+{
+	name				fire_stationary
+
+	spawnFlags			evenDistribution
+
+	count				31
+
+	life				1000 1250
+
+	delay				1550 2.5e+004
+
+	cullrange			4000
+
+	origin				-25 -25 -25 25 25 0
+
+	rotation			5 -5
+
+	rotationDelta		2 -2
+
+	velocity			3 3 50 -3 -3 125
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				125 155
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}
+
+Particle
+{
+	name				smoke_fire
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				15
+
+	life				3000 4000
+
+	delay				1550 3e+004
+
+	cullrange			4000
+
+	origin				-50 -50 40 50 50 60
+
+	rotation			-15 15
+
+	rotationDelta		-2 2
+
+	velocity			-15 -15 75 15 15 100
+
+	gravity				0 15
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				175 250
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				fire_exp_core
+
+	life				200 300
+
+	delay				1250 1300
+
+	cullrange			32000
+
+	origin				-250 -250 0 250 250 0
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -85 -85 85 85 85
+
+	alpha
+	{
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				550 850
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+	]
+}
+
+Particle
+{
+	name				smoke_shock_out
+
+	flags				useAlpha
+
+	count				2
+
+	life				500 600
+
+	delay				1250 1300
+
+	cullrange			32000
+
+	origin				-200 -200 0 200 -200 150
+
+	radius				1 300
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-125 -125 0 125 125 150
+
+	gravity				0 100
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				200 450
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_blk_a
+		smoke/smk_p_out_blk_a
+		smoke/smk_p_out_blk_a
+	]
+}
+
+Particle
+{
+	name				fire_shock_out
+
+	life				300 500
+
+	delay				1250 1275
+
+	cullrange			32000
+
+	origin				-200 -100 0 200 100 150
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			-325 -325 0 325 325 150
+
+	gravity				0 100
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				350 400
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Tail
+{
+	name				dirt_sprayback
+
+	flags				useAlpha
+
+	count				2 3
+
+	life				500 750
+
+	delay				0 1500
+
+	cullrange			2000
+
+	velocity			-1500 -800 100 -800 800 1200
+
+	gravity				-800 -500
+
+	rgb
+	{
+		start			0.4745 0.4392 0.4
+		end				0.5529 0.5059 0.3882
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				300 400
+		flags			linear
+	}
+
+	length
+	{
+		start			200
+		end				800 900
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_dirt_a
+		debree/debree_t_dirt_a
+		debree/debree_t_dirt_a
+	]
+}
+
+Particle
+{
+	name				dirt_filler
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				4000 6000
+
+	delay				100 1600
+
+	cullrange			2000
+
+	origin				-25 -25 -15 25 25 50
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			-25 -25 0 25 25 25
+
+	rgb
+	{
+		start			0.3843 0.349 0.2667
+		end				0.5529 0.5059 0.3882
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				dirt_spray_foward
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				500 2000
+
+	delay				0 1600
+
+	cullrange			2000
+
+	origin				-25 -25 -25 100 25 25
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			1100 -400 200 1200 400 300
+
+	acceleration		-25 -25 -25 25 25 25
+
+	rgb
+	{
+		start			0.4745 0.4392 0.4
+		end				0.3843 0.349 0.2667
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				700 800
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fire_filler
+
+	flags				relative
+
+	spawnFlags			evenDistribution
+
+	count				3
+
+	life				500 700
+
+	delay				50 1500
+
+	cullrange			2000
+
+	origin				-25 -25 -15 25 25 50
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			0 -100 25 0 100 100
+
+	gravity				0 25
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			75 125
+		end				200 600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				fire_fillertrail
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				500 750
+
+	delay				50 1500
+
+	cullrange			2000
+
+	origin				-25 -25 -15 25 25 50
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			0 -100 25 0 100 100
+
+	gravity				0 25
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Line
+{
+	name				dirt_side
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				3
+
+	life				500 2000
+
+	delay				0 1200
+
+	cullrange			2000
+
+	origin2				300 300 25 -100 -300 250
+
+	rgb
+	{
+		start			0.5569 0.5098 0.4
+		end				0.3843 0.349 0.2667
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				75 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_l_wht_a
+		smoke/smk_l_wht_a
+		smoke/smk_l_wht_a
+	]
+}
+
+FxRunner
+{
+	name				_call_FX_Pak88_explosion
+
+	playfx
+	[
+		/fx/explosions/artillery/pak88_sideorient
+	]
+}

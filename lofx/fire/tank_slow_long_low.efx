@@ -1,0 +1,112 @@
+Particle
+{
+	name				smoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			orgOnSphere evenDistribution rgbComponentInterpolation affectedByWind
+
+	count				0 1
+
+	life				3500 4500
+
+	delay				100
+
+	cullrange			8000
+
+	origin				-2 0 0 15 0 0
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			6 -1 -1 13 1 1
+
+	acceleration		13 -6 -6 23 6 6
+
+	rgb
+	{
+		end				0 0 0
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			36 52
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_underlit
+
+	flags				setShaderTime
+
+	spawnFlags			orgOnSphere rgbComponentInterpolation affectedByWind
+
+	count				0 1
+
+	life				1500 2500
+
+	cullrange			10000
+
+	origin				-2 0 0 15 0 0
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-165 -195
+
+	rotationDelta		-2 2
+
+	velocity			50 -5 -5 100 5 5
+
+	acceleration		0 -6 -6 12 6 6
+
+	rgb
+	{
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_c
+	]
+}

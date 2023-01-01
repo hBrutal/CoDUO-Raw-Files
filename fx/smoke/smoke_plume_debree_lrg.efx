@@ -1,0 +1,184 @@
+Particle
+{
+	name				fog
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel absoluteAccel
+
+	count				0 1
+
+	life				1e+004 1.2e+004
+
+	cullrange			3500
+
+	origin				-200 -200 0 200 200 25
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-2 -2 25 2 2 100
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7529
+		end				0.6118 0.6549 0.6784
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.4
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				150 250
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fog_fractal
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				1e+004 1.2e+004
+
+	cullrange			2000
+
+	origin				-25 -25 25 25 25 50
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-2 -2 25 2 2 75
+
+	acceleration		0 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.6118 0.6549 0.6784
+		end				0.7529 0.7529 0.7529
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.6
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				50 150
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				embers
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel absoluteAccel
+
+	count				0 1
+
+	life				3000 4000
+
+	cullrange			400
+
+	origin				-100 -100 0 100 100 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-2 -2 150 2 2 250
+
+	acceleration		2 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.7529 0.4196 0.1961
+		end				0.9412 0.4039 0.007843
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.35 0.5
+	}
+
+	size
+	{
+		start			0.25 1
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/glow_red_a
+		misc/glow_red_b
+	]
+}

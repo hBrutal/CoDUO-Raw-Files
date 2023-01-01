@@ -1,0 +1,480 @@
+
+Particle
+{
+	name				p16
+
+	flags				relative
+
+	life				6e+009
+
+	origin				2300 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.1133
+		end				0
+	}
+
+	size
+	{
+		start			480
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p17
+
+	flags				relative
+
+	life				6e+009
+
+	origin				2540 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.1066
+		end				0
+	}
+
+	size
+	{
+		start			500
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p18
+
+	flags				relative
+
+	life				6e+009
+
+	origin				2790 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0999
+		end				0
+	}
+
+	size
+	{
+		start			520
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p19
+
+	flags				relative
+
+	life				6e+009
+
+	origin				3050 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0933
+		end				0
+	}
+
+	size
+	{
+		start			540
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p20
+
+	flags				relative
+
+	life				6e+009
+
+	origin				3320 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0866
+		end				0
+	}
+
+	size
+	{
+		start			560
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p21
+
+	flags				relative
+
+	life				6e+009
+
+	origin				3600 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0799
+		end				0
+	}
+
+	size
+	{
+		start			580
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p22
+
+	flags				relative
+
+	life				6e+009
+
+	origin				3900 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0733
+		end				0
+	}
+
+	size
+	{
+		start			600
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p23
+
+	flags				relative
+
+	life				6e+009
+
+	origin				4220 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0666
+		end				0
+	}
+
+	size
+	{
+		start			620
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p24
+
+	flags				relative
+
+	life				6e+009
+
+	origin				4560 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0599
+		end				0
+	}
+
+	size
+	{
+		start			640
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p25
+
+	flags				relative
+
+	life				6e+009
+
+	origin				4920 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0533
+		end				0
+	}
+
+	size
+	{
+		start			660
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p26
+
+	flags				relative
+
+	life				6e+009
+
+	origin				5300 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0466
+		end				0
+	}
+
+	size
+	{
+		start			680
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p27
+
+	flags				relative
+
+	life				6e+009
+
+	origin				5700 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.0399
+		end				0
+	}
+
+	size
+	{
+		start			700
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p28
+
+	flags				relative
+
+	life				6e+009
+
+	origin				6120 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.03
+		end				0
+	}
+
+	size
+	{
+		start			720
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p29
+
+	flags				relative
+
+	life				6e+009
+
+	origin				6560 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.025
+		end				0
+	}
+
+	size
+	{
+		start			740
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p30
+
+	flags				relative
+
+	life				6e+009
+
+	origin				7020 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.015
+		end				0
+	}
+
+	size
+	{
+		start			760
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}

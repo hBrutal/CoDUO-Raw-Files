@@ -1,0 +1,30 @@
+Emitter
+{
+	name				M_canopy
+
+	flags				useModel
+
+	spawnFlags			absoluteAccel
+
+	life				500 1000
+
+	angleDelta			-2 -2 -15 2 2 15
+
+	velocity			800 -100 500 1200 100 900
+
+	gravity				-600 -400
+
+	density				75
+
+	size
+	{
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/v_ge_air_stuka(d)(p)_canopy
+	]
+}

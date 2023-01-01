@@ -1,0 +1,28 @@
+Emitter
+{
+	name				lamp
+
+	flags				useModel usePhysics impactKills impactFx
+
+	life				1e+004
+
+	origin				33 104 -172
+
+	angle				90 0 0
+
+	angleDelta			-5 -2 -2 -10 2 2
+
+	velocity			200 -50 -100 300 -100 100
+
+	gravity				-600
+
+	models
+	[
+		xmodel/light_lantern_on
+	]
+
+	impactfx
+	[
+		fx/map_foy/nests/lamp_explode
+	]
+}

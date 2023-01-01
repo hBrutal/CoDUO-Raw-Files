@@ -1,0 +1,465 @@
+Particle
+{
+	name				smoke_linger_mist
+
+	flags				useAlpha
+
+	count 5 7
+
+	life 1000.000000 2000.000000
+
+	delay 12 12
+
+	origin				-15 -25 -25 75 25 25
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			-25 -110 -110 175 110 110
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.3569 0.3569 0.3765
+	}
+
+	alpha
+	{
+		end				0
+		parm			50
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				300 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_mist_a
+		smoke/smoke_mist_b
+		smoke/smoke_mist_c
+	]
+}
+
+Particle
+{
+	name				smoke_plume_puff
+
+	flags				useAlpha
+
+	count 10 15
+
+	life 750.000000 1000.000000
+
+	delay 300 450
+
+	origin				350 -30 -30 550 30 30
+
+	rotationDelta		-15 15
+
+	velocity			0 -200 -200 175 200 200
+
+	acceleration		0 -25 -25 -50 25 25
+
+	gravity				0 -100
+
+	alpha
+	{
+		end				0
+		parm			25
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			50 100
+		end				300 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_blk_a
+	]
+}
+
+Decal
+{
+	name				scortch_mark
+
+	life 30000.000000 30000.000000
+
+	delay 25 37
+
+	rotation			0 360
+
+	alpha
+	{
+		start			0.5 1
+	}
+
+	size
+	{
+		start			144 244
+	}
+
+	shaders
+	[
+		impact/scorch_dirt_a
+		impact/scorch_dirt_b
+		impact/scorch_dirt_c
+	]
+}
+
+Particle
+{
+	name				fire_exp_core
+
+	count 1 2
+
+	life 62.500000 150.000000
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -85 -85 85 -85 -85
+
+	alpha
+	{
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				250 350
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_b
+		fire/exp_gen_c
+	]
+}
+
+Particle
+{
+	name				smoke_plumer_shaft
+
+	flags				useAlpha
+
+	count 5 7
+
+	life 1000.000000 1000.000000
+
+	delay 25 37
+
+	origin				-15 -25 -25 125 25 25
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			0 -40 -40 700 40 40
+
+	gravity				0 25
+
+	alpha
+	{
+		end				0
+		parm			0 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_puff_blk_a
+		smoke/smoke_puff_blk_b
+		smoke/smoke_puff_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_plume
+
+	count 7 7
+
+	life 200.000000 675.000000
+
+	delay 25 175
+
+	origin				-35 -15 -15 55 15 15
+
+	rotation			-5 5
+
+	rotationDelta		-10 10
+
+	velocity			0 -75 -75 625 75 75
+
+	gravity				0 100
+
+	alpha
+	{
+		end				0
+		parm			25 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			50 75
+		end				100 300
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_puff_flit_a
+		smoke/smoke_puff_flit_b
+		smoke/smoke_puff_flit_c
+	]
+}
+
+Particle
+{
+	name				smoke_plume_suckin
+
+	flags				useAlpha
+
+	count 7 10
+
+	life 75.000000 125.000000
+
+	delay 50 50
+
+	origin				-50 -200 -200 50 200 200
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			0 -40 -40 300 40 40
+
+	gravity				0 100
+
+	rgb
+	{
+		start			0.5529 0.5569 0.5098
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			25 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			100 350
+		end				50 125
+		parm			50
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_mist_a
+		smoke/smoke_mist_b
+		smoke/smoke_mist_c
+		smoke/smoke_puff_a
+		smoke/smoke_puff_b
+		smoke/smoke_puff_c
+	]
+}
+
+Particle
+{
+	name				smoke_shock_out
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 7 10
+
+	life 250.000000 250.000000
+
+	delay 12 25
+
+	origin				-50 -50 -50 0 50 50
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			0 -625 -625 50 625 625
+
+	gravity				0 100
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			25 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			25 100
+		end				250 350
+		parm			50
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_puff_blk_a
+		smoke/smoke_puff_blk_b
+		smoke/smoke_puff_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_shock_out
+
+	spawnFlags			evenDistribution
+
+	count 7 10
+
+	life 250.000000 250.000000
+
+	delay 25 37
+
+	origin				-50 -50 -50 0 50 50
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -425 -425 75 425 425
+
+	gravity				0 100
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			25
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			25 50
+		end				150 250
+		parm			50
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_fire_a
+	]
+}
+
+Particle
+{
+	name				fire_plume_puff
+
+	count 5 7
+
+	life 500.000000 750.000000
+
+	delay 300 600
+
+	origin				350 -30 -30 450 30 30
+
+	rotationDelta		-15 15
+
+	velocity			0 -150 -150 145 150 150
+
+	acceleration		0 -25 -25 -50 25 25
+
+	gravity				0 -100
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			25
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			50 100
+		end				200 300
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_fire_a
+	]
+}

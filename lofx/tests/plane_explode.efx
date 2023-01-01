@@ -1,0 +1,98 @@
+Emitter
+{
+	name				L_Wing
+
+	flags				useModel
+
+	life 5000.000000 5000.000000
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	gravity				-200 -500
+
+	models
+	[
+		xmodel/test_plane_lwing
+	]
+}
+
+Emitter
+{
+	name				R_Wing
+
+	flags				useModel
+
+	life 5000.000000 5000.000000
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			0 90 90 90 90 90
+
+	gravity				-200 -500
+
+	models
+	[
+		xmodel/test_plane_rwing
+	]
+}
+
+Emitter
+{
+	name				cockpit
+
+	flags				useModel usePhysics
+
+	life 5000.000000 5000.000000
+
+	bounce				0.2 0.5
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			0 -90 -90 90 90 90
+
+	gravity				-200 -500
+
+	models
+	[
+		xmodel/test_plane_cockpit
+	]
+}
+
+Emitter
+{
+	name				tail
+
+	flags				useModel usePhysics
+
+	life 5000.000000 5000.000000
+
+	bounce				0.2 0.5
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			0 -50 -50 90 50 50
+
+	gravity				-200 -500
+
+	size
+	{
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/test_plane_tail
+	]
+}
+
+FxRunner
+{
+	count 2 4
+
+	origin				-36 -36 -36 36 36 36
+
+	playfx
+	[
+		/fx/weapon/explosions/grenade_generic
+	]
+}

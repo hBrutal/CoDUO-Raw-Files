@@ -1,0 +1,76 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           TURRET_HINT
+LANG_ENGLISH        "Press [%s] to get into the dorsal turret"
+
+REFERENCE           USE_TG_TURRET
+LANG_ENGLISH        "Press [%s] to activate the tailgun turret"
+
+REFERENCE           USE_BAY_CRANK
+LANG_ENGLISH        "Press [%s] to activate the bomb bay door manual crank"
+
+REFERENCE           OBJECTIVE1
+LANG_ENGLISH        "Get to the Dorsal Turret, behind the Cockpit"
+
+REFERENCE           OBJECTIVE2
+LANG_ENGLISH        "Man the Tail Gunner position"
+
+REFERENCE           OBJECTIVE3_E1
+LANG_ENGLISH        "Turn off the fuel to the No. 1 Engine"
+
+REFERENCE           OBJECTIVE3_E2
+LANG_ENGLISH        "Turn off the fuel to the No. 2 Engine"
+
+REFERENCE           OBJECTIVE4
+LANG_ENGLISH        "Man the Tail Gun"
+
+REFERENCE           OBJECTIVE5
+LANG_ENGLISH        "Get back to the Dorsal position"
+
+REFERENCE           OBJECTIVE6
+LANG_ENGLISH        "Return to the Tail Gun"
+
+REFERENCE           OBJECTIVE7
+LANG_ENGLISH        "Use the manual crank to open the Bomb Bay"
+
+REFERENCE           OBJECTIVE8
+LANG_ENGLISH        "Extinguish the fire in the Aft Compartment"
+
+REFERENCE           OBJECTIVE9_E3
+LANG_ENGLISH        "Turn off the fuel to the No. 3 Engine"
+
+REFERENCE           OBJECTIVE9_E4
+LANG_ENGLISH        "Turn off the fuel to the No. 4 Engine"
+
+REFERENCE           ABOUT_TO_DIE
+LANG_ENGLISH        "Hurry! Find the fuel shut off before the engine explodes!"
+
+REFERENCE           YOU_DIED
+LANG_ENGLISH        "Your bomber has taken too much damage!"
+
+REFERENCE           OBJECTIVE0
+LANG_ENGLISH        "Defend the Bomber"
+
+REFERENCE           GET_OUT_OF_TURRET
+LANG_ENGLISH        "Press [%s] to exit the dorsal turret"
+
+REFERENCE           YOUR_HEAD_ASPLODE
+LANG_ENGLISH        "You were killed when your bomber was shot down!"
+
+
+ENDMARKER
+
+

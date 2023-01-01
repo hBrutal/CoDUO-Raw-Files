@@ -1,0 +1,9 @@
+FxRunner
+{
+	origin				0 0 500
+
+	playfx
+	[
+		/fx/map_trenches/mortar_mz_nest
+	]
+}

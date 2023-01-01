@@ -1,0 +1,36 @@
+OrientedParticle
+{
+	name				back_foam
+
+	life				5000 7000
+
+	delay				0 300
+
+	origin				0 50 0 0 75 0
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -5 0 0 5 0
+
+	alpha
+	{
+		start			0.15 0.25
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				400 500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}

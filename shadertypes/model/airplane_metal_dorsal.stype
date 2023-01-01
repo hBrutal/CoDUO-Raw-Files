@@ -1,0 +1,26 @@
+{
+	surfaceparm metal
+//	surfaceparm nonsolid
+//	surfaceparm trans
+	sort outerBlend
+//	nomipmaps
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		blendfunc blend
+//		alphaFunc GT0
+//		alphaFunc GE128
+//		alphaGen const .25
+		depthWrite
+	}
+	{
+		map textures/sfx/environmap_bomber2.dds
+		tcgen environment
+		blendFunc add
+		tcmod scroll 0 -.75
+		rgbgen lightingdiffuse
+		blendFunc blend
+//		alphaFunc GT0
+	}
+}
+

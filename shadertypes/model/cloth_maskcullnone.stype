@@ -1,0 +1,9 @@
+{
+	surfaceparm cloth
+	cull none
+	{
+		map $texturename
+		blendfunc blend
+		rgbGen lightingDiffuse
+	}
+}

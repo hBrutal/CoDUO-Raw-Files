@@ -1,0 +1,148 @@
+Tail
+{
+	name				rain_fine
+
+	flags				usePhysics impactKills
+
+	spawnFlags			absoluteVel absoluteAccel affectedByWind
+
+	count 0 0
+
+	life				500
+
+	delay				0 50
+
+	origin				-300 -100 500 -140 100 600
+
+	radius				0 250
+
+	wind				50 60
+
+	velocity			-50 -50 -1750 50 50 -2500
+
+	alpha
+	{
+		start			0.2 0.3
+	}
+
+	size
+	{
+		start			5 10
+		end				10 15
+	}
+
+	length
+	{
+		start			50 75
+		end				40 85
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_drop_a
+		water/rain_drop_a
+	]
+}
+
+Tail
+{
+	name				rain_sheet
+
+	flags				usePhysics impactKills
+
+	spawnFlags			absoluteVel affectedByWind
+
+	count 1 2
+
+	life				500 1000
+
+	delay				0 50
+
+	origin				-500 -300 500 150 300 600
+
+	radius				200 300
+
+	wind				50 60
+
+	velocity			-10 -10 -1600 10 10 -800
+
+	alpha
+	{
+		start			0.25 0.7
+		end				0
+		parm			75
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			250
+		end				250
+	}
+
+	length
+	{
+		start			500
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_sheet_a
+		water/rain_sheet_b
+	]
+}
+
+Tail
+{
+	name				rain_fine_spawnimpact
+
+	flags				usePhysics impactKills impactFx
+
+	spawnFlags			absoluteVel absoluteAccel affectedByWind
+
+	count 0 0
+
+	life				500
+
+	delay				0 50
+
+	origin				-250 -200 500 0 200 600
+
+	radius				0 250
+
+	wind				50 60
+
+	velocity			-50 -50 -1750 50 50 -2500
+
+	alpha
+	{
+		start			0.2 0.3
+	}
+
+	size
+	{
+		start			5 10
+		end				10 15
+	}
+
+	length
+	{
+		start			50 75
+		end				40 85
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_drop_a
+		water/rain_drop_a
+	]
+
+	impactfx
+	[
+		/fx/atmosphere/rain_hit_generic
+	]
+}

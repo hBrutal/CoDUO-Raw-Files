@@ -1,0 +1,58 @@
+Particle
+{
+	name				smoke_trail_lit
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				2000 3000
+
+	delay				0 5000
+
+	cullrange			3000
+
+	radius				72
+
+	wind				75
+
+	rotation			-5 5
+
+	rotationDelta		-1 1
+
+	velocity			35 -10 -10 50 10 10
+
+	rgb
+	{
+		start			0.6627 0.6863 0.7059
+		end				0.5098 0.5216 0.4784
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			15
+		end				65 85
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

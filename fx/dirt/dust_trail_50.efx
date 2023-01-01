@@ -1,0 +1,176 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				clampRotation setShaderTime useAlpha
+
+	spawnFlags			oppositeRotation evenDistribution rgbComponentInterpolation affectedByWind
+
+	life				3000 4500
+
+	delay				0 100
+
+	cullrange			4000
+
+	radius				60 50
+
+	wind				50
+
+	rotation			0 360
+
+	rotationDelta		10 15
+
+	rotationAccel		10
+
+	rotationClamp		2 3
+
+	velocity			-25 -25 -25 25 25 25
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		start			0.4667 0.4196 0.3686
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			45 65
+		end				100 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_lit
+
+	flags				clampRotation setShaderTime useAlpha
+
+	spawnFlags			oppositeRotation evenDistribution rgbComponentInterpolation affectedByWind
+
+	count				0 1
+
+	life				2000 3500
+
+	cullrange			2000
+
+	radius				60 50
+
+	wind				50
+
+	rotation			-10 10
+
+	rotationDelta		5
+
+	rotationAccel		5
+
+	rotationClamp		1
+
+	velocity			-25 -25 -25 25 25 25
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		start			0.4 0.4 0.4
+		end				0.4667 0.4196 0.3686
+		parm			15 25
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			45 65
+		end				100 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_a
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				gib
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				0 1
+
+	life				750 1250
+
+	delay				0 100
+
+	cullrange			1000
+
+	origin				0 -50 -50 0 50 50
+
+	radius				60 50
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-25 -25 -25 25 25 25
+
+	acceleration		-25 -25 -25 25 25 25
+
+	gravity				-100 -400
+
+	rgb
+	{
+		start			0.4667 0.4196 0.3686
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+	}
+
+	size
+	{
+		start			2 24
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_dirt_a
+		debree/debree_gib_dirt_b
+	]
+}

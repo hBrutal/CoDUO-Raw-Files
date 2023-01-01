@@ -1,0 +1,109 @@
+Particle
+{
+	name				smoke_trail_mist
+
+	flags				useAlpha
+
+	spawnFlags			affectedByWind
+
+	count				0 1
+
+	life				4000 6000
+
+	delay				0 300
+
+	cullrange			8000
+
+	radius				72
+
+	wind				75
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			25 -25 -25 200 25 25
+
+	rgb
+	{
+		start			0.7529 0.7804 0.7961
+		end				0.7412 0.7765 0.749
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_trail_lit
+
+	flags				useAlpha
+
+	spawnFlags			affectedByWind
+
+	count				1 2
+
+	life				3000 4000
+
+	delay				0 300
+
+	cullrange			32000
+
+	radius				72
+
+	wind				75
+
+	rotation			-5 5
+
+	rotationDelta		-1 1
+
+	velocity			25 -15 -15 200 15 15
+
+	rgb
+	{
+		start			0.7608 0.7961 0.7529 0.7529 0.7804 0.7961
+		end				0.6118 0.6549 0.6784
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_a
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}

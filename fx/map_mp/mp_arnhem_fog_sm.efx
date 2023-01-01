@@ -1,0 +1,65 @@
+Particle
+{
+	name				fog
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				5
+
+	life				1e+004
+
+	delay				0 5000
+
+	cullrange			12000
+
+	origin				-150 -150 -25 150 150 0
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			-5 -5 25 5 5 100
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.7529 0.7804 0.7961
+		end				0.3686 0.4 0.3922
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.15 0.5
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			200 250
+		end				300 450
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

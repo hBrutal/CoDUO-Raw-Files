@@ -1,0 +1,42 @@
+// Deaths
+death_run_forward_crumple
+crouchrun_death_drop
+crouchrun_death_crumple
+death_run_onfront
+death_run_onleft
+
+walk_run : loopsync
+{
+	// Runs in combat - pick one of these for each guy.
+	sprint1_loop
+	stand_shoot_run_forward
+	crouchrun_loop_forward_1
+	combatrun_forward_1
+	combatrun_forward_2
+
+	patrolwalk_bounce
+	soldierwalk_dazed_idle
+	c_limpA
+	patrolwalk_swagger
+	patrolwalk_tired
+	soldierwalk_dazed_twitch
+
+	standunarmed_walk_plain
+	standunarmed_walk_twitch1
+	standunarmed_walk_twitch2
+	standunarmed_walk_twitch3
+
+	soldierwalk_stiff_idle
+	soldierwalk_stiff_twitch
+
+	stand_walk_combat_loop_01
+	stand_walk_combat_loop_02
+//	stand_walk_combat_loop_03 // Not used yet.
+}
+
+// For Germans running backwards
+combatrun_back
+c_backward_run_look_behind
+ 
+crouchrun_loop_back 
+c_backward_crouch_walk_look_behind

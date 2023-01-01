@@ -1,0 +1,47 @@
+Particle
+{
+	flags				setShaderTime usePhysics impactKills impactFx
+
+	count 0 1
+
+	life				1.4e+004 1.2e+004
+
+	origin				500 500 500 -500 -500 650
+
+	radius				300 600
+
+	height				0
+
+	wind				50 100
+
+	velocity			0 0 -1250 0 0 -300
+
+	rgb
+	{
+		parm			0 12
+	}
+
+	alpha
+	{
+		start			0.1
+		end				0.1
+	}
+
+	size
+	{
+		start			128 256
+		end				256
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/etty1
+		gfx/effects/etty2
+	]
+
+	impactfx
+	[
+		/fx/atmosphere/rainhitjed
+	]
+}

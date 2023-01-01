@@ -1,0 +1,199 @@
+Particle
+{
+	name				smoke_blast
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 1 1
+
+	life				250 350
+
+	delay				0 15
+
+	cullrange			4000
+
+	origin				0 0 0 5 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			250 -50 -50 350 50 50
+
+	gravity				-400 -200
+
+	rgb
+	{
+		start			0.9412 1 1
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			5
+		end				45 75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_origin_mist
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 1
+
+	life				250 500
+
+	delay				0 150
+
+	cullrange			1000
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			0 -5 -5 15 5 5
+
+	rgb
+	{
+		start			0.8745 0.9961 1
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			5 10
+		end				20 30
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+OrientedParticle
+{
+	name				ripple
+
+	count 1 1
+
+	life				250 750
+
+	cullrange			800
+
+	origin				0 -1 -1 0 1 1
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -5 -5 0 5 5
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				24 36
+		flags			linear
+	}
+
+	shaders
+	[
+		water/water_ripple_a
+	]
+}
+
+Particle
+{
+	name				Copy of smoke_blast
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 1
+
+	life				250 350
+
+	delay				0 15
+
+	cullrange			1000
+
+	origin				0 0 0 5 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			50 -25 -25 200 25 25
+
+	rgb
+	{
+		start			0.9412 1 1
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			10 15
+		end				20 25
+		parm			0 25
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

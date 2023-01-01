@@ -1,0 +1,48 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				250 275
+
+	delay				0 300
+
+	cullrange			8000
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			185 -2 -2 200 2 2
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		end				0.7804 0.8157 0.8275
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4 5
+		end				15 18
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

@@ -1,0 +1,31 @@
+Emitter
+{
+	name				M_rwing_hold
+
+	flags				useModel
+
+	life				1e+004
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			400 400 -200 800 800 200
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_rwing(d)
+	]
+}
+
+FxRunner
+{
+	name				_FX_callexp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_650
+	]
+}

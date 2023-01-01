@@ -1,0 +1,42 @@
+Emitter
+{
+	name				M_tail_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			absoluteAccel
+
+	life				500 1500
+
+	cullrange			46000
+
+	angleDelta			-5 -1 -5 5 1 5
+
+	velocity			100 -200 -200 -100 200 200
+
+	acceleration		-2000 0 0 -1000 0 0
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_tail(d)
+	]
+
+	deathfx
+	[
+		fx/map_bomber/flak_single_1000_pushed
+	]
+}
+
+FxRunner
+{
+	name				_FX_callexp
+
+	playfx
+	[
+		fx/map_bomber/exp_650_pushed_ns
+	]
+}

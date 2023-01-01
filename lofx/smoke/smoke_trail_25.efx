@@ -1,0 +1,57 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation affectedByWind
+
+	life				1500 2250
+
+	delay				0 100
+
+	cullrange			8000
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-12 -12 -12 12 12 12
+
+	acceleration		-12 -12 -12 12 12 12
+
+	rgb
+	{
+		start			0.3059 0.2902 0.3333
+		end				0.1216 0.1098 0.08627
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			20 25
+		end				75 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

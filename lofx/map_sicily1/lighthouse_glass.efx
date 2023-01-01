@@ -1,0 +1,91 @@
+Particle
+{
+	name				dustfall
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				500 1500
+
+	cullrange			1000
+
+	origin				0 -20 -60 0 20 60
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			-50 -15 -15 50 15 15
+
+	gravity				0 -65
+
+	rgb
+	{
+		start			0.749 0.7529 0.6863
+		end				0.7529 0.7529 0.7529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			10 15
+		end				125 175
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Emitter
+{
+	name				debree_model_gib
+
+	flags				useModel usePhysics
+
+	count				3
+
+	life				1000 2000
+
+	cullrange			3000
+
+	bounce				0.25 0.5
+
+	origin				0 -45 -60 8 45 60
+
+	angle				90 0 0 90 360 0
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			-150 -15 -15 150 15 15
+
+	gravity				-600 -400
+
+	size
+	{
+		start			2.5 36
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_glass_a
+		xmodel/m_gib_glass_b
+		xmodel/m_gib_glass_c
+	]
+}

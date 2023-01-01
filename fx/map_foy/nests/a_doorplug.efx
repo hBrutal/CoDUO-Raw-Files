@@ -1,0 +1,179 @@
+Particle
+{
+	name				smoke_underlit
+
+	spawnFlags			evenDistribution
+
+	life				750 1000
+
+	cullrange			1000
+
+	origin				0 0 -25
+
+	wind				50
+
+	rotation			-175 -185
+
+	rotationDelta		-2 2
+
+	velocity			30 -5 45 60 5 25
+
+	gravity				15 25
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			20 25
+		end				45 55
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_fire_a
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_c
+	]
+}
+
+Particle
+{
+	name				smoke
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				1000 1500
+
+	cullrange			3000
+
+	origin				0 0 -25
+
+	wind				50
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			30 -5 45 60 5 25
+
+	gravity				15 25
+
+	rgb
+	{
+		end				0.3961 0.3882 0.4039
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			20 25
+		end				45 50
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_stationary
+
+	spawnFlags			evenDistribution
+
+	life				500 750
+
+	cullrange			4000
+
+	origin				15 0 -25
+
+	wind				50
+
+	rotation			5 -5
+
+	rotationDelta		2 -2
+
+	velocity			15 -5 45 74 5 25
+
+	gravity				15 25
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			10 15
+		end				35 45
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_b
+		fire/flame_lick_c
+		fire/flame_lick_d
+		fire/flame_lick_e
+		fire/flame_lick_f
+	]
+}
+
+OrientedParticle
+{
+	name				fire_ground
+
+	life				500 750
+
+	cullrange			4000
+
+	origin				10 -5 -5
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			15 20
+		end				45 55
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_ball_a
+		fire/flame_ball_b
+		fire/flame_ball_c
+	]
+}

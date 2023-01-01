@@ -1,0 +1,139 @@
+Particle
+{
+	name				mist
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				2.5e+004
+
+	cullrange			40000
+
+	origin				0 -5500 -800 1500 5500 800
+
+	wind				100
+
+	rotation			-5 5
+
+	velocity			-5 -2000 -5 5 -2000 5
+
+	rgb
+	{
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			2000 2500
+		end				25
+		parm			0.5
+	}
+
+	size2
+	{
+		start			1000 1500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_f
+		smoke/smk_p_none_org_f
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_f
+		smoke/smk_p_fray_org_f
+	]
+}
+
+Particle
+{
+	name				lit
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				2.5e+004
+
+	cullrange			40000
+
+	origin				800 -5500 -1500 1750 5500 1500
+
+	wind				100
+
+	rotation			-10 10
+
+	velocity			-5 -2000 -5 5 -2000 5
+
+	rgb
+	{
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			2000 3500
+		end				25
+		parm			0.5
+	}
+
+	size2
+	{
+		start			2000 2500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_f
+		smoke/smk_p_none_org_f
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_f
+		smoke/smk_p_fray_org_f
+	]
+}

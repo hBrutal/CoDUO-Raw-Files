@@ -1,0 +1,104 @@
+Particle
+{
+	name				2_aftersmoke
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution affectedByWind
+
+	count				6
+
+	life				4000 6000
+
+	delay				0 9000
+
+	cullrange			6000
+
+	origin				-50 -50 0 50 50 25
+
+	wind				50
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			-20 -20 125 20 20 150
+
+	gravity				0 15
+
+	rgb
+	{
+		end				0.3961 0.3882 0.4039
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				400 450
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				2_afterfire_stationary
+
+	spawnFlags			evenDistribution affectedByWind
+
+	count				10
+
+	life				750 1750
+
+	delay				0 6000
+
+	cullrange			16000
+
+	origin				-50 -50 0 50 50 25
+
+	wind				50
+
+	rotation			5 -5
+
+	rotationDelta		2 -2
+
+	velocity			-10 -10 75 10 10 150
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}

@@ -1,0 +1,38 @@
+FxRunner
+{
+	name				lamp_left
+
+	flags				relative
+
+	playfx
+	[
+		fx/vehicle/headlight_ge_truck_l
+	]
+}
+
+FxRunner
+{
+	name				lamp_right
+
+	flags				relative
+
+	playfx
+	[
+		fx/vehicle/headlight_ge_truck_r
+	]
+}
+
+Light
+{
+	flags				relative
+
+	life				6e+009
+
+	origin				350 0 55
+
+	size
+	{
+		start			600
+		end				600
+	}
+}

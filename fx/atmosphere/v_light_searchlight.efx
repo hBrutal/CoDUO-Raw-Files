@@ -1,0 +1,26 @@
+Line
+{
+	name				beam
+
+	flags				relative
+
+	life				6e+009
+
+	origin2				5000 0 0
+
+	alpha
+	{
+		start			0.5
+		end				0
+	}
+
+	size
+	{
+		start			100
+	}
+
+	shaders
+	[
+		atmosphere/v_light_line_a
+	]
+}

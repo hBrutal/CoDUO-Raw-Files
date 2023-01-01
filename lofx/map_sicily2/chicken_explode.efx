@@ -1,0 +1,216 @@
+Particle
+{
+	name				smoke_linger
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				2000 2150
+
+	delay				0 15
+
+	cullrange			2000
+
+	origin				0 0 0 5 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-50 -50 -50 50 50 0
+
+	gravity				0 -25
+
+	rgb
+	{
+		start			0.5098 0.5216 0.4784
+		end				0.3686 0.4 0.3922
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				135 165
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				feathers
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel oppositeRotation axisFromSphere evenDistribution
+
+	count				2
+
+	life				3250 4000
+
+	delay				2 15
+
+	cullrange			2000
+
+	origin				-15 -15 -15 15 15 15
+
+	radius				5 8
+
+	height				5 8
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	rotationAccel		5
+
+	rotationClamp		180
+
+	velocity			-200 -200 -200 200 200 200
+
+	velocityClamp		-15 -15 -15 15 15 15
+
+	acceleration		150 150 150
+
+	gravity				-20 -10
+
+	rgb
+	{
+		end				0.2902 0 0
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+	}
+
+	size
+	{
+		start			4 8
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		misc/feather_a
+	]
+}
+
+Particle
+{
+	name				blood_linger
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				1000 1500
+
+	delay				0 15
+
+	cullrange			2000
+
+	origin				0 -50 -50 25 50 50
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-25 -25 -25 25 25 25
+
+	rgb
+	{
+		start			0.2235 0.06667 0.06667
+		end				0.2902 0 0
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				35 65
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Emitter
+{
+	name				gib_beam
+
+	flags				useModel
+
+	count				0 1
+
+	life				2000
+
+	cullrange			2000
+
+	angle				0 0 0 360 360 360
+
+	angleDelta			-15 -15 -15 15 15 15
+
+	velocity			100 -200 -200 400 200 200
+
+	gravity				-600 -400
+
+	size
+	{
+		end				0
+		parm			97
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/v_rs_lnd_gazaaa_gib_beam
+	]
+}
+
+Sound
+{
+	name				Sound
+
+	sounds
+	[
+		chicken_crate_smash
+	]
+}

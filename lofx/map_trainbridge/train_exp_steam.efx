@@ -1,0 +1,210 @@
+Particle
+{
+	name				steam_blastup
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				6
+
+	life				3500 4500
+
+	delay				0 2000
+
+	cullrange			2000
+
+	origin				-75 -75 0 75 75 25
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-25 -25 125 25 25 250
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7529
+		parm			5 10
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				275 350
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				steam_shockwave
+
+	flags				useAlpha
+
+	count				2
+
+	life				300
+
+	cullrange			1000
+
+	origin				0 -15 -15 15 15 15
+
+	radius				30
+
+	rotation			-5 5
+
+	rotationDelta		-15 15
+
+	velocity			0 -1675 -1675 15 1675 1675
+
+	gravity				0 25
+
+	rgb
+	{
+		end				0.7529 0.7529 0.7529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				250 450
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				fire_exp
+
+	life				100 200
+
+	cullrange			1500
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			0 -5 -5 5 5 5
+
+	rgb
+	{
+		end				1 0.502 0
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+	]
+}
+
+Particle
+{
+	name				steam_long
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			absoluteVel orgOnCylinder evenDistribution
+
+	count				30
+
+	life				3000 4000
+
+	delay				25 6e+004
+
+	cullrange			8000
+
+	radius				36 72
+
+	height				1 15
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			-10 -10 25 10 10 100
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7529
+		end				0.7529 0.7804 0.7961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.5 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				200 225
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_twht_b
+		smoke/smk_p_fractal_twht_b
+		smoke/smk_p_fractal_twht_c
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}

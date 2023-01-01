@@ -1,0 +1,767 @@
+"# If the text in the first column of a row starts with a # character, the row is ignored",,
+,,"If the first column for a row is blank, then the row is ignored"
+# The first non-comment line of a sound alias file specifies the key name for all values appearing in this column.,,
+"# This means it is safe to swap entire columns around, though you should never swap partial columns.",,
+"# You can invent new keys, but the game will ignore them if it doesn't know about them.",,
+"# You can leave out keys, but the ""name"" and ""file"" keys must always be present.",,
+
+,name,name of the alias that is used to play this sound (required)
+,sequence,"used to uniquely identify alias entries when more than one sound goes to an alias, used only to catch unwanted duplicates (default = 0)"
+,file,the name of the file that contains the sound data (required)
+,vol_min,"0 is silent, 1 is full volume (default = 1)"
+,vol_max,"0 is silent, 1 is full volume (default = same as vol_min)"
+,pitch_min,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (default = 1)"
+,pitch_max,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (default = same as pitch_min)"
+,dist_min,"within this distance in inches, the sound is always full volume (default = 120)"
+,dist_max,"outside this distance in inches, the sound is not started.  If left blank or set to 0, the sound will play from any distance.  This does not affect sound volume falloff."
+,channel,"auto, menu, weapon, voice, item, body, local, music, announcer (default = auto)",,,,,,,,,,,,,,,
+,type,streamed / loaded (default = loaded),,,,,,,,,,,,,,,
+,probability,weight to use for the weighted probability of playing this sound instead of another sound (default = 1),,,,,,,,,,,,,,,
+,loop,"whether this sound is ""looping"" or ""nonlooping"" (default = ""nonlooping"")",,,,,,,,,,,,,,,
+,masterslave,"if ""master"", this is a master sound.  If a number, then this sound won't exceed this volume whenever any master sound is playing.  If blank, then neither master nor slave.",,,,,,,,,,,,,,,
+,loadspec,"space-separated list of which maps should use this alias; eg, ""burnville dawnville"".  If blank, the alias is used on all maps.",,,,,,,,,,,,,,,
+
+name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,lod_min,lod_max,channel,type,probability,loop,masterslave,loadspec,subtitle
+
+#Ambient Tracks,,,,,,,,,,,,,,,,,
+ambient_trenches_01,,ambient/amb_trenches01_rain.mp3,1.1,,,,,,,,local,streamed,,looping,,trenches test/sound_test test/sg_test,
+ambient_trenches_01_int,,ambient/amb_trenches01_rain_int.mp3,1.1,,,,,,,,local,streamed,,looping,,trenches test/sound_test test/sg_test,
+ambient_trenches_02,,ambient/amb_trenches02_rain.mp3,1.1,,,,,,,,local,streamed,,,,trenches test/sound_test test/sg_test,
+ambient_trenches_03,,ambient/amb_trenches03_rain.mp3,1.1,,,,,,,,local,streamed,,looping,,trenches test/sound_test test/sg_test,
+ambient_foy_ext,,ambient/amb_snowy_ext.mp3,1,,,,,,,,local,streamed,,looping,,foy,
+ambient_foy_int,,ambient/amb_snowy_int.mp3,0.65,,,,,,,,local,streamed,,looping,,foy,
+ambient_foy_quiet,,ambient/amb_snowy_quiet.mp3,1,,,,,,,,local,streamed,,looping,,foy 
+ambient_noville_ext,,ambient/amb_blizzard.mp3,1.35,,,,,,,,local,streamed,,looping,,noville
+ambient_noville_int,,ambient/amb_blizzard_int.mp3,1,,,,,,,,local,streamed,,looping,,noville
+#ambient_train_ride,,ambient/amb_train_ride.mp3,1.25,,,,,,,,local,streamed,,,,trenches 
+#ambient_train_stop,,ambient/amb_train_stop.mp3,1.35,,,,,,,,local,streamed,,,,trenches 
+#ambient_train_stop_short,,ambient/amb_train_stop_short.mp3,1.35,,,,,,,,local,streamed,,,,trenches 
+ambient_rain_combat_int,,ambient/amb_rain_combat_int.mp3,1.25,,,,,,,,local,streamed,,looping,,trenches 
+ambient_kharkov_ext,,ambient/amb_berlin_ext.mp3,1,,,,,,,,local,streamed,,looping,,kharkov1 kharkov2
+ambient_kharkov_int,,ambient/amb_berlin_int.mp3,0.85,,,,,,,,local,streamed,,looping,,kharkov1 kharkov2
+ambient_tankdrive_country,,ambient/amb_snowy_ext.mp3,1,,,,,,,,local,streamed,,looping,,kursk kursk2
+ambient_burnville,,ambient/amb_burnville_ext.mp3,0.75,,,,,,,,local,streamed,,looping,,kursk
+ambient_bastogne1_ext,,ambient/amb_snowy_ext.mp3,1,,,,,,,,local,streamed,,looping,,bastogne1
+ambient_bastogne2_ext,,ambient/amb_bastogne2.mp3,1.25,,,,,,,,local,streamed,,looping,,bastogne2
+ambient_bastogne2_int,,ambient/amb_snowy_int.mp3,0.65,,,,,,,,local,streamed,,looping,,bastogne2
+ambient_sicily1_ext_01,,ambient/amb_shoreline01.mp3,1.3,,,,,,,,local,streamed,,looping,,sicily1
+ambient_sicily1_ext_02,,ambient/amb_sicily_night.mp3,1.4,,,,,,,,local,streamed,,looping,,sicily1
+ambient_sicily1_int,,ambient/amb_chateau_int.wav,0.6,,,,,,,,local,streamed,,looping,,sicily1
+ambient_sicily1_underground_int,,ambient/amb_dam_int.wav,1,,,,,,,,local,streamed,,looping,,sicily1
+ambient_sicily2_ext,,ambient/amb_sicily_day.mp3,1.2,,,,,,,,local,streamed,,looping,,sicily2
+ambient_sicily2_int,,ambient/amb_chateau_int.wav,1,,,,,,,,local,streamed,,looping,,sicily2
+ambient_sicily2_village_ext,,ambient/amb_sicily_village.mp3,1.5,,,,,,,,local,streamed,,looping,,sicily2
+ambient_sicily2_village_int,,ambient/amb_chateau_int.wav,0.5,,,,,,,,local,streamed,,looping,,sicily2
+ambient_sicily2_shoreline,,ambient/amb_shoreline01.mp3,1.3,,,,,,,,local,streamed,,looping,,sicily2
+ambient_trainbridge_ext,,ambient/amb_trainbridge.mp3,1.6,,,,,,,,local,streamed,,looping,,trainbridge
+ambient_trainbridge_int,,ambient/amb_trainbridge_int.mp3,1,,,,,,,,local,streamed,,looping,,trainbridge
+
+
+#Final Cutscene,,,,,,,,,,,,,,,,
+cs_finale01,,ambient/cs_finale01.mp3,1.4,,,,,,,,local,streamed,,,,kharkov2
+cs_finale02,,ambient/cs_finale02.mp3,1.4,,,,,,,,local,streamed,,,,kharkov2
+cs_finale03,,ambient/cs_finale03.mp3,1.5,,,,,,,,local,streamed,,,,kharkov2
+cs_finale04,,ambient/cs_finale04.mp3,1.5,,,,,,,,local,streamed,,,,kharkov2
+cs_finale05,,ambient/cs_finale05.mp3,1.5,,,,,,,,local,streamed,,,,kharkov2
+cs_finale06,,ambient/cs_finale06.mp3,1.5,,,,,,,,local,streamed,,,,kharkov2
+
+#Bomber Ambient,,,,,,,,,,,,,,,,
+ambient_squadron_steady,,ambient/amb_squadron_steady.mp3,1.25,,,,,,,,local,streamed,,looping,,bomber
+ambient_damage_01,,ambient/amb_damage01.mp3,1.25,,,,,,,,local,streamed,,looping,0.7,bomber
+ambient_bomber_destroyed,,ambient/amb_damage01.mp3,1.25,,,,,,,,local,streamed,,looping,0.7,bomber
+ambient_bail_out,,weather/bomber_wind03.wav,0.7,,,,,,,,local,streamed,,looping,,bomber
+
+#50 Cal Ball turret,,,,,,,,,,,,,,,,
+weap_50_ball_fire,,weapons/50cal/50_ball_03.wav,1.1,1.25,0.98,1.02,7,7800,,,weapon,,,,,bomber
+weap_50_ai_fire,,weapons/50cal/50_ball_03.wav,1.5,1.7,0.98,1.02,7,15000,,,weapon,,,,,bomber
+ball_turret_spin,,vehicles/dorsal_spin01.wav,0.7,,,,50,300,,,,,,looping,,bomber
+ball_turret_spin_high,,vehicles/dorsal_spin01.wav,1,,,,50,300,,,,,,looping,,bomber
+ball_turret_spin_low,,vehicles/dorsal_spin01.wav,0,,,,50,300,,,,,,looping,,bomber
+ball_turret_stop,,vehicles/dorsal_end01.wav,0.6,0.7,0.8,,50,300,,,,,,,,bomber
+
+#50cal waist anim burst,,,,,,,,,,,,,,,,
+weap_50cal_waist_anim,1,weapons/50cal/50cal_burst01.wav,1.1,1.25,0.98,1.02,7,4000,,,auto,,,,,bomber
+weap_50cal_waist_anim,2,weapons/50cal/50cal_burst02.wav,1.1,1.25,0.98,1.02,7,4000,,,auto,,,,,bomber
+weap_50cal_waist_anim,3,weapons/50cal/50cal_burst03.wav,1.1,1.25,0.98,1.02,7,4000,,,auto,,,,,bomber
+weap_50cal_waist_anim,4,weapons/50cal/50cal_burst04.wav,1.1,1.25,0.98,1.02,7,4000,,,auto,,,,,bomber
+
+#B17 Dorsal Turret,,,,,,,,,,,,,,,,
+dorsal_turret_spin,,vehicles/dorsal_spin01.wav,0.5,,0.8,,50,300,,,,,,looping,,bomber
+dorsal_turret_spin_high,,vehicles/dorsal_spin01.wav,1,,,,50,300,,,,,,looping,,bomber
+dorsal_turret_spin_low,,vehicles/dorsal_spin01.wav,0,,,,50,300,,,,,,looping,,bomber
+dorsal_turret_stop,,vehicles/dorsal_end01.wav,0.3,0.4,0.8,,50,300,,,,,,,,bomber
+turret_die,,explosions/turret_die.wav,1,,,,200,500,,,auto,streamed,,,,bomber
+
+#B17 Bomb drops,,,,,,,,,,,,,,,,
+distant_bomb_whistles,,misc/bomb_whistle_long03.mp3,0.5,,,,,,,,local,streamed,,,,bomber
+bomb_whistle,1,misc/bomb_whistle01.wav,0.9,1.1,0.9,1.1,7,10000,,,,,,,master,bomber
+bomb_whistle,2,misc/bomb_whistle02.wav,0.9,1.1,0.9,1.1,7,10000,,,,,,,master,bomber
+bomb_whistle,3,misc/bomb_whistle03.wav,0.9,1.1,0.9,1.1,7,10000,,,,,,,master,bomber
+bomb_whistle,4,misc/bomb_whistle04.wav,0.9,1.1,0.9,1.1,7,10000,,,,,,,master,bomber
+bombs_away_01,,misc/bombs_away01.mp3,0.7,,,,,,,,local,streamed,,,,kharkov2
+bombs_away_01a,,misc/bombs_away01.mp3,1.2,,,,,,,,local,streamed,,,,kharkov2
+
+#B17 bomb release,,,,,,,,,,,,,,,,
+bomb_release,1,misc/bomb_release01.wav,0.8,1,0.8,1.2,20,500,,,,,,,,bomber
+bomb_release,2,misc/bomb_release03.wav,0.8,1,0.8,1.2,20,500,,,,,,,,bomber
+bomb_release,3,null.wav,0.8,1,0.8,1.2,20,500,,,,,,,,bomber
+bomb_release,4,misc/bomb_release03.wav,0.8,1,0.8,1.2,20,500,,,,,,,,bomber
+bomb_release,5,null.wav,0.8,1,0.8,1.2,20,500,,,,,,,,bomber
+
+#B17 Bomb hits,,,,,,,,,,,,,,,,
+bomb_hit,1,explosions/explo_distant02.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bomber
+bomb_hit,2,explosions/explo_distant04.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bomber
+bomb_hit,3,explosions/explo_distant05.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bomber
+bomb_hit,4,explosions/explo_distant07.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bomber
+bomb_hit,5,explosions/explo_distant08.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bomber
+bomb_hit,6,explosions/explo_distant09.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bomber
+bomb_hit,7,explosions/explo_distant10.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bomber
+
+#B17 misc,,,,,,,,,,,,,,,,
+crank_rotate,,misc/crank_rotate.wav,0.85,,,,100,300,,,,streamed,,looping,,bomber
+valve_wheel_turn,,misc/metal_turn_short.wav,0.8,,,,100,300,,,,streamed,,,,bomber
+engine_fire_high,,fire/engine_fire.wav,0.5,,,,800,20000,,,,streamed,,looping,,bomber
+engine_fire_low,,fire/engine_fire.wav,0,,,,800,20000,,,,streamed,,looping,,bomber
+
+#Distant whistles,,,,,,,,,,,,,,,,
+distant_whistle_01,,misc/whistle_blow_rolloff2.wav,0.8,,1.05,,5000,10000,,,,,,,master,trenches foy
+distant_whistle_02,,misc/whistle_blow_rolloff2.wav,0.8,,,,5000,10000,,,,,,,master,trenches foy
+distant_whistle_03,,misc/whistle_blow_rolloff3.wav,0.7,,1.05,,5000,10000,,,,,,,master,trenches foy
+
+
+#allied bomb,,,,,,,,,,,,,,,,
+allied_bomb,1,explosions/mortar_dirt01.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,bastogne1 bastogne2 noville
+allied_bomb,2,explosions/mortar_dirt02.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,bastogne1 bastogne2 noville
+allied_bomb,3,explosions/mortar_dirt03.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,bastogne1 bastogne2 noville
+allied_bomb,4,explosions/mortar_dirt04.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,bastogne1 bastogne2 noville
+allied_bomb,5,explosions/mortar_dirt05.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,bastogne1 bastogne2 noville
+
+#Stuka Bomb,,,,,,,,,,,,,,,,
+stuka_bomb,1,explosions/mortar_dirt01.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov1 kursk2 trenches
+stuka_bomb,2,explosions/mortar_dirt02.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov1 kursk2 trenches
+stuka_bomb,3,explosions/mortar_dirt03.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov1 kursk2 trenches
+stuka_bomb,4,explosions/mortar_dirt04.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov1 kursk2 trenches
+stuka_bomb,5,explosions/mortar_dirt05.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov1 kursk2 trenches
+stuka_bomb,1,explosions/mortar_dirt01.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov2
+stuka_bomb,2,explosions/mortar_dirt02.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov2
+stuka_bomb,3,explosions/mortar_dirt03.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov2
+stuka_bomb,4,explosions/mortar_dirt04.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov2
+stuka_bomb,5,explosions/mortar_dirt05.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,kharkov2
+stuka_bomb,6,null.wav,,,,,2000,12000,,,voice,,4,,,kharkov2
+
+#Metal Explosions,,,,,,,,,,,,,,,,
+explo_metal_rand,1,explosions/explo_metal01.wav,1.5,1.5,0.8,1.1,800,8500,,,voice,,,,,! sicily2 menu game_main
+explo_metal_rand,2,explosions/explo_metal02.wav,1.5,1.5,0.8,1.1,800,8500,,,voice,,,,,! sicily2 menu game_main
+#explo_metal_rand,1,explosions/bomber_explode01.wav,1.7,,1,,3000,17000,,,voice,,,,,sicily2
+#explo_metal_rand,2,explosions/bomber_explode01.wav,1.7,,1,,3000,17000,,,voice,,,,,sicily2
+explo_metal_rand,1,explosions/explo_metal01.wav,1.5,,1,,2000,12000,,,voice,,,,,sicily2
+explo_metal_rand,2,explosions/explo_metal02.wav,1.5,,1,,2000,12000,,,voice,,,,,sicily2
+
+#Radio Explosions,,,,,,,,,,,,,,,,
+radio_explode,1,explosions/radio_explode01.wav,1.2,1.35,0.9,1.1,100,1000,,,voice,,,,,sicily1
+radio_explode,2,explosions/radio_explode02.wav,1.2,1.35,0.9,1.1,100,1000,,,voice,,,,,sicily1
+
+#dirt fall,,,,,,,,,,,,,,,,
+dirt_fall,1,misc/dirt_fall01.wav,1.25,1.5,0.9,1.1,200,800,,,,,,,,bastogne1 foy noville trenches
+dirt_fall,2,misc/dirt_fall02.wav,1.25,1.5,0.9,1.1,200,800,,,,,,,,bastogne1 foy noville trenches
+dirt_fall,3,misc/dirt_fall03.wav,1.25,1.5,0.9,1.1,200,800,,,,,,,,bastogne1 foy noville trenches
+dirt_fall,4,misc/dirt_fall04.wav,1.25,1.5,0.9,1.1,200,800,,,,,,,,bastogne1 foy noville trenches
+#dirt_fall,5,null.wav,,,,,100,600,,,,,,,,bastogne1 foy noville trenches
+
+
+#fatigue breath,,,,,,,,,,,,,,,,
+fatigue_breath,1,misc/fatigue/fatigue_breath01.wav,1,1.2,,,50,1000,,,item,,,,,
+fatigue_breath,2,misc/fatigue/fatigue_breath02.wav,1,1.2,,,50,1000,,,item,,,,,
+fatigue_breath,3,misc/fatigue/fatigue_breath03.wav,1,1.2,,,50,1000,,,item,,,,,
+fatigue_breath,4,misc/fatigue/fatigue_breath04.wav,1,1.2,,,50,1000,,,item,,,,,
+
+#Sprint Gear Rattle Sounds,,,,,,,,,,,,,,,,
+gear_rattle_sprint,1,misc/gear_rattle03.wav,0.9,1.25,1.2,1.4,120,1200,,,auto,,,,,
+gear_rattle_sprint,2,misc/gear_rattle05.wav,0.9,1.25,1.2,1.4,120,1200,,,auto,,,,,
+gear_rattle_sprint,3,misc/gear_rattle02.wav,0.9,1.25,1.2,1.4,120,1200,,,auto,,,,,
+gear_rattle_sprint,4,null.wav,0.9,1.25,1.2,1.4,120,1200,,,auto,,3,,,
+
+#Misc Foley,,,,,,,,,,,,,,,,
+foley_scramble,1,misc/foley_scramble01.wav,1.25,1.5,0.85,1.05,300,1000,,,body,,,,,trenches
+foley_scramble,2,misc/foley_scramble02.wav,1.25,1.5,0.85,1.05,300,1000,,,body,,,,,trenches
+foley_scramble,3,misc/foley_scramble03.wav,1.25,1.5,0.85,1.05,300,1000,,,body,,,,,trenches
+foley_land,1,misc/foley_land01.wav,1.25,1.5,0.85,1.05,300,1000,,,body,,,,,trenches
+foley_land,2,misc/foley_land02.wav,1.25,1.5,0.85,1.05,300,1000,,,body,,,,,trenches
+foley_land,3,misc/foley_land03.wav,1.25,1.5,0.85,1.05,300,1000,,,body,,,,,trenches
+foley_mg34_deploy,,weapons/mg34/mg34_deploy.wav,1,,,,100,2500,,,auto,,,,,foy
+troops_running,,misc/troops_running.mp3,1.5,,,,300,1000,,,auto,streamed,,looping,,trenches
+Pissing_Guy,,misc/german_pissing.wav,0.67,0.67,,,400,2000,,,,,,looping,,trainbridge
+drop_from_tree,,misc/release_and_drop_from_tree.mp3,1,,,,200,1000,,,auto,streamed,,,,trainbridge
+
+
+#Misc rattles,,,,,,,,,,,,,,,,
+big_shake,1,misc/big_shake01.wav,0.9,1.1,0.85,1.1,,,,,local,streamed,,,,bomber
+big_shake,2,misc/big_shake02.wav,0.9,1.1,0.85,1.1,,,,,local,streamed,,,,bomber
+big_shake,3,misc/big_shake02.wav,0.9,1.1,0.85,1.1,,,,,local,streamed,,,,bomber
+medium_shake,1,misc/med_shake01.wav,0.9,1.1,0.85,1.1,,,,,local,streamed,,,,bomber
+medium_shake,2,misc/med_shake02.wav,0.9,1.1,0.85,1.1,,,,,local,streamed,,,,bomber
+medium_shake,3,misc/med_shake03.wav,0.9,1.1,0.85,1.1,,,,,local,streamed,,,,bomber
+super_shake,1,misc/big_shake01.wav,1.4,1.6,0.85,1.1,,,,,local,streamed,,,,bomber
+super_shake,2,misc/big_shake02.wav,1.4,1.6,0.85,1.1,,,,,local,streamed,,,,bomber
+super_shake,3,misc/big_shake02.wav,1.4,1.6,0.85,1.1,,,,,local,streamed,,,,bomber
+damage_shake_high,,misc/damage_shake_loop.wav,0.85,,,,700,900,,,auto,streamed,,looping,,bomber
+damage_shake_low,,misc/damage_shake_loop.wav,0,,,,700,900,,,auto,streamed,,looping,,bomber
+
+#misc crashes,,,,,,,,,,,,,,,,
+bunker_cavein,,misc/big_wood_dirt_cavein.wav,1.5,,,,300,2000,,,,,,,,trenches
+stone_wood_crash,1,misc/stone_wood_crash01.wav,1,,,,750,4000,,,auto,,,,,foy
+stone_wood_crash,2,misc/stone_wood_crash02.wav,1,,,,750,4000,,,auto,,,,,foy
+house_collapse,,misc/house_collapse.wav,1.3,,,,800,1800,,,auto,streamed,,,,foy foy_sg
+metal_break,1,misc/metal_break01.wav,1,1.2,,,50,3500,,,auto,,,,,bomber
+metal_break,2,misc/metal_break02.wav,1,1.2,,,50,3500,,,auto,,,,,bomber
+metal_break,3,misc/metal_break03.wav,1,1.2,,,50,3500,,,auto,,,,,bomber
+wood_crash,1,vehicles/crashes/wood_crash01.wav,1.7,,0.9,1.05,2500,3600,,,auto,,,,,trainbridge
+wood_crash,2,vehicles/crashes/wood_crash02.wav,1.7,,0.9,1.05,2500,3600,,,auto,,,,,trainbridge
+#Tank_gate_breakthrough,,misc/tank_break_gate.wav,1.25,1.25,0.9,1.05,1200,3600,,,auto,,,,,trainbridge
+big_stone_crash,1,misc/big_stone_crash01.wav,1,1.4,0.9,1.1,600,6000,,,auto,,,,,kharkov1 kharkov2
+big_stone_crash,2,misc/big_stone_crash02.wav,1,1.4,0.9,1.1,600,6000,,,auto,,,,,kharkov1 kharkov2
+big_stone_crash,3,misc/big_stone_crash03.wav,1,1.4,0.9,1.1,600,6000,,,auto,,,,,kharkov1 kharkov2
+big_stone_crash,1,misc/big_stone_crash01.wav,1.1,,0.7,,600,10000,,,auto,,,,,sicily1
+big_stone_crash,2,misc/big_stone_crash02.wav,1.1,,0.7,,600,10000,,,auto,,,,,sicily1
+big_stone_crash,3,misc/big_stone_crash03.wav,1.1,,0.7,,600,10000,,,auto,,,,,sicily1
+long_stone_crash,,misc/long_stone_crash.wav,1.3,,,,600,6000,,,auto,streamed,,,,kharkov1 kharkov2
+long_stone_crash,,misc/long_stone_crash02.mp3,1.45,,,,600,10000,,,auto,streamed,,,,sicily1
+table_crash,,misc/table_crash01.wav,1.6,,,,50,1500,,,auto,streamed,,,,foy
+lantern_crash,,glass/glass05.wav,1.5,,1.1,,200,2000,,,auto,streamed,,,,foy
+chicken_crate_smash,1,vehicles/crashes/chicken_crate_smash01.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,sicily2
+chicken_crate_smash,2,vehicles/crashes/chicken_crate_smash02.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,sicily2
+chicken_crate_smash,3,vehicles/crashes/chicken_crate_smash03.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,sicily2
+fence_crash,,vehicles/crashes/wood_crash02.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,sicily2
+boarded_window_kick,,doors/door_wd_kick.wav,1.5,1.5,0.9,1.1,350,2000,,,auto,,,,,sicily2
+
+
+#misc explosions,,,,,,,,,,,,,,,,
+explode_bunker,,explosions/explo_bridge.wav,1.5,1.5,,,5000,,,,auto,,,,master,trenches
+explo_tower01,,explosions/explo_rock02.wav,1.5,,,,750,6000,,,voice,,,,,foy
+explo_bldg01,,explosions/explo_rock01.wav,1.5,,,,750,6000,,,voice,,,,,foy
+explo_bldg02,,explosions/building_explode02.wav,1.7,,,,1200,8000,,,voice,,,,master,kharkov2
+glass_building_explode,,explosions/glass_building_explode.wav,1.6,,,,2000,10000,,,voice,,,,master,kharkov2
+
+#misc debris,,,,,,,,,,,,,,,,
+stone_debris,1,misc/stone_debris01.wav,1,,,,750,4000,,,auto,,,,,foy
+stone_debris,2,misc/stone_debris02.wav,1,,,,750,4000,,,auto,,,,,foy
+stone_debris,3,misc/stone_debris03.wav,1,,,,750,4000,,,auto,,,,,foy
+more_stone_debris,1,misc/stone_debris01.wav,1.4,1.7,0.9,1.1,750,4000,,,auto,,,,,foy
+more_stone_debris,2,misc/stone_debris02.wav,1.4,1.7,0.9,1.1,750,4000,,,auto,,,,,foy
+more_stone_debris,3,misc/stone_debris03.wav,1.4,1.7,0.9,1.1,750,4000,,,auto,,,,,foy
+
+#Vehicles,,,,,,,,,,,,,,,,
+player_truck_move,,vehicles/player_truck_move.wav,1,,,,,,,,local,streamed,,looping,,
+car_door_close_loud,,vehicles/car_door_close.wav,1,1,,,45,1000,,,,,,,,trainbridge
+fishing_boat_ride,,vehicles/fishing_boat_ride.mp3,1.25,,,,,,,,local,streamed,,,,sicily1
+truck_out_of_gas,,vehicles/truck_out_of_gas.mp3,0.7,,,,100,500,,,auto,streamed,,,,sicily1
+
+#Barrage ,,,,,,,,,,,,,,,,
+distant_barrage_long,,explosions/distant_barrage_long01.wav,2,,,,,,,,local,streamed,,,,trenches
+distant_barrage_short,,explosions/distant_barrage_short01.wav,1.5,,,,,,,,local,streamed,,,,trenches
+
+#Stalin Artillery Barrage,,,,,,,,,,,,,,,,
+Stalingrad_Artillery_Launch,,explosions/artillery_launch.wav,1.25,1.25,,,5000000,5000000,,,announcer,streamed,,,master,kursk2
+
+#Weather,,,,,,,,,,,,,,,,
+rain,,weather/rain01.wav,1,,,,,,,,local,streamed,,looping,,
+rain_puddle,,weather/rain_puddle01.wav,0.9,,,,50,200,,,,streamed,,looping,,
+rain_local,,weather/rain01.wav,0.75,,,,50,200,,,,streamed,,looping,,
+#rain_local,,weather/rain_local01.wav,1,,,,50,300,,,,,,looping,,
+rain_gutter,,weather/rain_puddle01.wav,1,,,,50,200,,,,streamed,,looping,,! Trenches
+rain_gutter,,weather/rain_puddle01.wav,1,,,,50,500,,,,streamed,,looping,,trenches
+rain_metal,,weather/rain_metal.wav,1.25,,,,50,400,,,,streamed,,looping,,
+rain_metal_wide,,weather/rain_metal.wav,1.25,,,,200,600,,,,streamed,,looping,,
+rain_netting,,weather/rain_netting.wav,1.25,,,,200,400,,,,streamed,,looping,,
+rain_trickle,,weather/rain_trickle.wav,1.4,,,,50,300,,,,streamed,,looping,,
+bomber_wind01,,weather/bomber_wind01.wav,1,,,,75,150,,,,streamed,,looping,,
+bomber_wind02,,weather/bomber_wind01.wav,0.65,,,,200,250,,,,streamed,,looping,,
+#bomber_wind03_low,,weather/bomber_wind03.wav,0,,,,75,175,,,,streamed,,looping,,bomber
+#bomber_wind03_high,,weather/bomber_wind03.wav,1.1,,,,75,175,,,,streamed,,looping,,bomber
+bomber_wind03_low,,weather/bomber_wind03_rattles.wav,0,,,,150,500,,,,streamed,,looping,,bomber
+bomber_wind03_high,,weather/bomber_wind03_rattles.wav,1.1,,,,150,500,,,,streamed,,looping,,bomber
+#bombay_wind_high,,weather/bomber_wind01.wav,1.25,,,,200,500,,,voice,streamed,,looping,,
+#bombay_wind_low,,weather/bomber_wind01.wav,0,,,,200,500,,,voice,streamed,,looping,,
+bombay_wind_low,,weather/bomber_wind01.wav,0,,,,200,500,,,auto,streamed,,looping,0.8,
+bombay_wind_high,,weather/bomber_wind01.wav,1.15,,,,200,500,,,auto,streamed,,looping,0.8,
+tail_damage_low,,weather/bomber_wind03.wav,0,,0.75,,75,175,,,,streamed,,looping,,bomber
+tail_damage_high,,weather/bomber_wind03.wav,0.8,,1,,75,175,,,,streamed,,looping,,bomber
+waist_damage_low,,weather/bomber_wind03.wav,0,,1.1,,75,175,,,,streamed,,looping,,bomber
+waist_damage_high,,weather/bomber_wind03.wav,0.8,,1.2,,75,175,,,,streamed,,looping,,bomber
+
+
+#Misc radio,,,,,,,,,,,,,,,,
+russian_radio01,,misc/ru_radio_loop.wav,1.5,,,,100,600,,,,streamed,,looping,,trenches
+radio_bruckner,,music/radio_bruckner_2.wav,1.05,,,,100,1500,,,voice,streamed,,looping,,sicily1
+radio_german,,mp/radio_german01.mp3,0.7,,,,10,1500,,,auto,streamed,,looping,,trainbridge
+radio_german,,mp/radio_german01.mp3,0.4,,,,100,500,,,auto,streamed,,looping,,foy
+german_radio,,misc/amb_radio_loop.wav,0.8,0.8,,,12,450,,,,streamed,,looping,,game_uo
+german_radio_pathfinder,,misc/radio_static_loop.wav,0.75,0.75,,,5,1250,,,,streamed,,looping,,game_uo
+radio_static,,misc/radio_static_loop.wav,0.85,0.85,,,12,450,,,,streamed,,looping,,game_uo
+phonograph_chopin,,music/chopin_record.mp3,0.5,,,,100,4000,,,voice,streamed,,,,trainbridge
+
+#Trenches,,,,,,,,,,,,,,,,
+#vehicles,,,,,,,,,,,,,,,,
+big_stuka_crash01,,vehicles/crashes/big_stuka_crash01.mp3,1.8,,,,100000,,,,voice,streamed,,,master,trenches
+big_stuka_crash02,,vehicles/crashes/big_stuka_crash02.mp3,1.8,,,,100000,,,,voice,streamed,,,mater,trenches
+trenches_flyover01,,vehicles/stuka_by_new01.wav,1.25,,,,100000,,,,auto,streamed,,,0.5,trenches
+trenches_flyover02,,vehicles/stuka_by04.wav,1.25,,,,100000,,,,auto,streamed,,,0.5,trenches
+
+
+
+#Fires,,,,,,,,,,,,,,,,
+truckfire,,fire/Fire_med_loop01.wav,0.95,,,,10,700,,,auto,streamed,,looping,,game_uo
+truckfire_high,,fire/Fire_med_loop01.wav,0.95,,,,10,700,,,auto,streamed,,looping,,game_uo
+truckfire_low,,fire/Fire_med_loop01.wav,0,,,,10,700,,,auto,streamed,,looping,,game_uo
+planefire,,fire/Fire_med_loop01.wav,1.5,,,,200,1000,,,auto,streamed,,looping,,trenches
+planefire_high,,fire/Fire_med_loop01.wav,1.5,,,,200,1000,,,auto,streamed,,looping,,trenches
+planefire_low,,fire/Fire_med_loop01.wav,0,,,,200,1000,,,auto,streamed,,looping,,trenches
+housefire,,fire/Fire_Big_loop02.wav,0.8,1,,,400,650,,,auto,streamed,,looping,,trenches
+barrelfire,,fire/Fire_Sm_loop01.wav,0.65,0.8,,,5,1000,,,auto,streamed,,looping,,! Bastogne2 game_main
+barrelfire,,fire/Fire_Sm_loop01.wav,0.55,,,,5,400,,,auto,streamed,,looping,,bastogne2
+roadside_fire,,fire/Fire_med_loop02.wav,0.9,,,,50,600,,,auto,streamed,,looping,,noville
+big_smoldering_fire,,fire/raging_fire.wav,0.5,,,,100,800,,,auto,streamed,,looping,,noville
+fireplace,,fire/Fire_Sm_loop01.wav,0.65,0.8,,,5,200,,,auto,streamed,,looping,,game_uo
+fl_catch_fire_high,,fire/Fire_med_loop01.wav,0.95,,,,10,450,,,auto,streamed,,looping,,game_uo
+fl_catch_fire_low,,fire/Fire_med_loop01.wav,0,,,,10,450,,,auto,streamed,,looping,,game_uo
+
+
+
+#Foy fires,,,,,,,,,,,,,,,,
+housefire01_low,,fire/Fire_Sm_loop01.wav,0,,,,200,400,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire01_high,,fire/Fire_Sm_loop01.wav,0.8,,,,200,400,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire02_low,,fire/Fire_med_loop02.wav,0,,,,200,700,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire02_high,,fire/Fire_med_loop02.wav,0.8,,,,200,700,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire03_low,,fire/Fire_med_loop01.wav,0,,,,400,900,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire03_high,,fire/Fire_med_loop01.wav,0.65,,,,400,900,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire04_low,,fire/Fire_Big_loop02.wav,0,,,,600,1100,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire04_high,,fire/Fire_Big_loop02.wav,0.65,,,,600,1100,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire05_low,,fire/raging_fire.wav,0,,,,800,2000,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+housefire05_high,,fire/raging_fire.wav,1,,,,800,2000,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+building_fire_low,,fire/Fire_med_loop01.wav,0,,,,600,1500,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+building_fire_high,,fire/Fire_med_loop01.wav,0.6,,,,600,1500,,,auto,streamed,,looping,,foy kharkov1 kharkov2
+
+
+
+
+
+
+#Fighter planes,,,,,,,,,,,,,,,,
+fighter_steady01,,vehicles/fighter_steady01.wav,0.8,,1.05,,100,18000,,,auto,streamed,,looping,,bomber
+fighter_steady02,,vehicles/fighter_steady02.wav,0.8,,0.95,,100,18000,,,auto,streamed,,looping,,bomber
+spit_flyover01,,vehicles/spit_flyover01.wav,1.2,,,,6000,30000,,,auto,streamed,,,,bomber
+spit_intercept01,,vehicles/fighter_steady01.wav,1.25,,1.05,,6000,30000,,,auto,streamed,,,,bomber
+spit_intercept02,,vehicles/fighter_steady02.wav,1.25,,0.95,,6000,30000,,,auto,streamed,,,,bomber
+spit_return01,,vehicles/spit_return01.wav,1.2,,,,100000,,,,auto,streamed,,,,bomber
+spit_return02,,vehicles/spit_return02.wav,1.2,,,,100000,,,,auto,streamed,,,,bomber
+bf109_gun_loop,,vehicles/stuka_gun_loop.wav,1.2,1.35,1.2,,5,4500,,,voice,,,looping,,bomber
+bf109_gun_fire,,weapons/bar/bar_01.wav,1.5,1.7,0.95,1,5,15000,,,voice,,,,,kharkov1 kharkov2 kursk kursk2 noville trenches 
+bf109_attack01,1,vehicles/bf109_attack01a.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack01,2,vehicles/bf109_attack01b.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack01,3,vehicles/bf109_attack01c.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack02,1,vehicles/bf109_attack02a.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack02,2,vehicles/bf109_attack02b.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack02,3,vehicles/bf109_attack02c.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack03,1,vehicles/bf109_attack03a.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack03,2,vehicles/bf109_attack03b.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack03,3,vehicles/bf109_attack03c.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack04,1,vehicles/bf109_attack04a.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack04,2,vehicles/bf109_attack04b.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack04,3,vehicles/bf109_attack04c.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,kharkov1 kursk kursk2 noville trenches 
+bf109_attack01,1,vehicles/bf109_attack01a.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack01,2,vehicles/bf109_attack01b.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack01,3,vehicles/bf109_attack01c.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack02,1,vehicles/bf109_attack02a.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack02,2,vehicles/bf109_attack02b.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack02,3,vehicles/bf109_attack02c.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack03,1,vehicles/bf109_attack03a.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack03,2,vehicles/bf109_attack03b.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack03,3,vehicles/bf109_attack03c.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack04,1,vehicles/bf109_attack04a.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack04,2,vehicles/bf109_attack04b.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_attack04,3,vehicles/bf109_attack04c.wav,1.25,1.5,0.95,1.05,100000,,,,auto,streamed,,,,kharkov2
+bf109_gun_fire,,weapons/bar/bar_01.wav,1.5,1.7,0.95,1,5,15000,,,voice,,,,0.8,bomber
+bf109_attack01,1,vehicles/bf109_attack01a.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack01,2,vehicles/bf109_attack01b.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack01,3,vehicles/bf109_attack01c.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack02,1,vehicles/bf109_attack02a.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack02,2,vehicles/bf109_attack02b.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack02,3,vehicles/bf109_attack02c.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack03,1,vehicles/bf109_attack03a.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack03,2,vehicles/bf109_attack03b.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack03,3,vehicles/bf109_attack03c.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack04,1,vehicles/bf109_attack04a.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack04,2,vehicles/bf109_attack04b.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+bf109_attack04,3,vehicles/bf109_attack04c.wav,0.9,1.1,0.95,1.05,100000,,,,auto,,,,0.8,bomber
+spit_gun_fire,,weapons/bar/bar_01.wav,1.5,1.7,0.95,1,5,15000,,,voice,,,,0.8,bomber
+p47_attack,1,vehicles/bf109_attack02a.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,bastogne1 bastogne2 foy noville
+p47_attack,2,vehicles/bf109_attack02b.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,bastogne1 bastogne2 foy noville
+p47_attack,3,vehicles/bf109_attack02c.wav,1,1.25,0.95,1.05,100000,,,,auto,streamed,,,,bastogne1 bastogne2 foy noville
+
+
+#Flak,,,,,,,,,,,,,,,,
+flak_burst,1,explosions/explo_distant01.wav,1.4,1.6,0.9,1.1,100,30000,1201,5000,auto,,,,0.5,bomber
+flak_burst,2,explosions/explo_distant02.wav,1.4,1.6,0.9,1.1,100,30000,1201,5000,auto,,,,0.5,bomber
+flak_burst,3,explosions/explo_distant03.wav,1.4,1.6,0.9,1.1,100,30000,1201,5000,auto,,,,0.5,bomber
+flak_burst,4,explosions/explo_distant07.wav,1.4,1.6,0.9,1.1,100,30000,1201,5000,auto,,,,0.5,bomber
+flak_burst,5,explosions/explo_distant09.wav,1.4,1.6,0.9,1.1,100,30000,1201,5000,auto,,,,0.5,bomber
+flak_burst,6,explosions/explo_distant01.wav,0.75,1.1,0.9,1.1,100,8000,5001,8000,auto,,,,0.5,bomber
+flak_burst,7,explosions/explo_distant02.wav,0.75,1.1,0.9,1.1,100,8000,5001,8000,auto,,,,0.5,bomber
+flak_burst,8,explosions/explo_distant03.wav,0.75,1.1,0.9,1.1,100,8000,5001,8000,auto,,,,0.5,bomber
+flak_burst,9,explosions/explo_distant07.wav,0.75,1.1,0.9,1.1,100,8000,5001,8000,auto,,,,0.5,bomber
+flak_burst,10,explosions/explo_distant09.wav,0.75,1.1,0.9,1.1,100,8000,5001,8000,auto,,,,0.5,bomber
+flak_burst,11,explosions/flak_burst_near01.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,,,,bomber
+flak_burst,12,explosions/flak_burst_near02.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,,,,bomber
+flak_burst,13,explosions/flak_burst_near03.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,,,,bomber
+flak_burst,14,explosions/flak_burst_near04.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,,,,bomber
+flak_burst,15,explosions/flak_burst_near05.wav,1.2,1.4,0.9,1.1,100,100,0,1200,auto,,,,,bomber
+flak_burst_many,1,explosions/explo_distant01.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,,,0.5,bomber
+flak_burst_many,2,explosions/explo_distant02.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,,,0.5,bomber
+flak_burst_many,3,explosions/explo_distant03.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,,,0.5,bomber
+flak_burst_many,4,explosions/explo_distant07.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,,,0.5,bomber
+flak_burst_many,5,explosions/explo_distant09.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,,,0.5,bomber
+flak_burst_many,7,null.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,10,,,bomber
+flak_burst_many,8,null.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,10,,,bomber
+flak_burst_many,9,null.wav,0.75,1.1,0.9,1.1,100,8000,1201,5000,auto,,10,,,bomber
+flak_burst_many,10,explosions/explo_distant01.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,,,,bomber
+flak_burst_many,11,explosions/explo_distant02.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,,,,bomber
+flak_burst_many,12,explosions/explo_distant03.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,,,,bomber
+flak_burst_many,13,null.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,10,,,bomber
+flak_burst_many,14,null.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,10,,,bomber
+flak_burst_many,15,null.wav,1.2,1.4,0.9,1.1,500,20000,0,1200,auto,,10,,,bomber
+distant_flak_loop_low,,explosions/distant_flak_loop01.wav,0,,,,,,,,local,,,looping,0.75,bomber
+distant_flak_loop_high,,explosions/distant_flak_loop01.wav,1.4,,,,,,,,local,,,looping,0.75,bomber
+distant_flak_loop_low,,explosions/distant_flak_loop01.wav,0,,,,,,,,local,,,looping,0.75,trenches
+distant_flak_loop_high,,explosions/distant_flak_loop01.wav,1,,,,,,,,local,,,looping,0.75,trenches
+flak_hit_01,,explosions/flak_hit01.wav,1.7,,1.2,,200,5000,,,auto,,,,,bomber
+
+#Tank sounds,,,,,,,,,,,,,,,,
+tankdrive_treefall,,misc/treefall.wav,1.25,,0.95,1.05,2800,,,,voice,,,,,kharkov1 kharkov2 kursk kursk2 noville trenches
+tankdrive_treefall,,misc/treefall.wav,1.25,1.4,0.95,1.05,600,3000,,,voice,,,,,bastogne1 bastogne2
+
+tiger_idle_low,,vehicles/tank_02_idle.wav,0,,0.75,,750,2500,,,,,,looping,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+tiger_idle_high,,vehicles/tank_02_idle.wav,0.75,,1,,750,2500,,,,,,looping,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+tiger_engine_low,,vehicles/tank_02_move.wav,0,,0.75,,2800,11000,,,,,,looping,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+tiger_engine_high,,vehicles/tank_02_move.wav,1.25,,1,,2800,11000,,,,,,looping,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+tiger_fire,1,weapons/flak/flak88_fire02.wav,1.25,1.25,0.9,1.1,1000,8500,,,,,,,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+tiger_fire,2,weapons/flak/flak88_fire03.wav,1.25,1.25,0.9,1.1,1000,8500,,,,,,,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+tiger_turret_spin,,vehicles/turret_spin_01.wav,1,1,,,200,700,,,,,,looping,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+tiger_turret_stop,,vehicles/turret_end_01.wav,0.57,0.8,,,200,700,,,,,,,,bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+
+panzerIV_idle_low,,vehicles/tank_02_idle.wav,0,,0.75,,750,2500,,,,,,looping,,trainbridge sicily1 sicily2 bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+panzerIV_idle_high,,vehicles/tank_02_idle.wav,0.75,,1,,750,2500,,,,,,looping,,trainbridge sicily1 sicily2 bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+panzerIV_engine_low,,vehicles/tank_03_move.wav,0,,0.75,,2800,11000,,,,,,looping,,trainbridge sicily2 bastogne1 kharkov1 kharkov2 kursk kursk2 ponyri trenches
+panzerIV_engine_high,,vehicles/tank_03_move.wav,1.25,,1,,2800,11000,,,,,,looping,,trainbridge sicily2 bastogne1 kharkov1 kharkov2 kursk kursk2 ponyri trenches
+panzerIV_engine_low,,vehicles/tank_03_move.wav,0,,0.75,,700,5000,,,,,,looping,,bastogne2 noville sicily1
+panzerIV_engine_high,,vehicles/tank_03_move.wav,1.25,,1,,700,5000,,,,,,looping,,bastogne2 noville sicily1
+panzerIV_fire,1,weapons/flak/flak88_fire02.wav,1.25,1.25,0.9,1.1,1000,8500,,,,,,,,trainbridge sicily1 sicily2 bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+panzerIV_fire,2,weapons/flak/flak88_fire03.wav,1.25,1.25,0.9,1.1,1000,8500,,,,,,,,trainbridge sicily1 sicily2 bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+panzerIV_turret_spin,,vehicles/turret_spin_01.wav,1,1,,,200,700,,,,,,looping,,trainbridge sicily1 sicily2 bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+panzerIV_turret_stop,,vehicles/turret_end_01.wav,0.57,0.8,,,200,700,,,,,,,,trainbridge sicily1 sicily2 bastogne1 bastogne2 noville kharkov1 kharkov2 kursk kursk2 ponyri trenches
+
+t34_idle_low,,vehicles/tank_01_idle.wav,0,,0.75,,300,2800,,,,,,looping,,kharkov1 kharkov2 kursk1 kursk2 ponyri trenches
+t34_idle_high,,vehicles/tank_01_idle.wav,0.75,,1,,300,2800,,,,,,looping,,kharkov1 kharkov2 kursk1 kursk2 ponyri trenches
+t34_engine_low,,vehicles/tank_01_move.wav,0,,0.75,,500,7000,,,,,,looping,,kursk1 kursk2 ponyri trenches
+t34_engine_high,,vehicles/tank_01_move.wav,0.75,,1,,500,7000,,,,,,looping,,kursk1 kursk2 ponyri trenches
+t34_engine_low,,vehicles/tank_01_move.wav,0.25,,0.75,,500,7000,,,,,,looping,,kharkov1 kharkov2 
+t34_engine_high,,vehicles/tank_01_move.wav,1,,1,,500,7000,,,,,,looping,,kharkov1 kharkov2 
+t34_fire,1,weapons/flak/flak88_fire02.wav,1.25,1.25,0.9,1.1,500,5000,,,,,,,,kharkov1 kharkov2 kursk1 kursk2 ponyri trenches
+t34_fire,2,weapons/flak/flak88_fire03.wav,1.25,1.25,0.9,1.1,500,5000,,,,,,,,kharkov1 kharkov2 kursk1 kursk2 ponyri trenches
+t34_turret_spin,,vehicles/turret_spin_01.wav,1.25,,,,200,700,,,,,,looping,,kharkov1 kharkov2 kursk1 kursk2 ponyri trenches
+t34_turret_stop,,vehicles/turret_end_01.wav,,,,,200,700,,,,,,,,kharkov1 kharkov2 kursk1 kursk2 ponyri trenches
+
+sherman_idle_low,,vehicles/tank_04_idle.wav,0,,1,,300,3500,,,,,,looping,,bastogne1 foy noville
+sherman_idle_high,,vehicles/tank_04_idle.wav,0.6,,1,,300,3500,,,,,,looping,,bastogne1 foy noville
+sherman_idle_low,,vehicles/tank_04_idle.wav,0,,1,,100,3500,,,,,,looping,,bastogne2
+sherman_idle_high,,vehicles/tank_04_idle.wav,0.5,,1,,100,3500,,,,,,looping,,bastogne2
+sherman_engine_low,,vehicles/tank_04_move.wav,0.35,,1,,500,7000,,,,,,looping,,bastogne1 foy 
+sherman_engine_high,,vehicles/tank_04_move.wav,1,,1,,500,7000,,,,,,looping,,bastogne1 foy 
+sherman_engine_low,,vehicles/tank_04_move.wav,0.35,,1,,500,7000,,,,,,looping,0.6,noville
+sherman_engine_high,,vehicles/tank_04_move.wav,1,,1,,500,7000,,,,,,looping,0.6,noville
+sherman_engine_low,,vehicles/tank_04_move.wav,0.2,,1,,100,3500,,,,,,looping,,bastogne2
+sherman_engine_high,,vehicles/tank_04_move.wav,1,,1,,100,3500,,,,,,looping,,bastogne2
+sherman_fire,1,weapons/flak/flak88_fire02.wav,1.25,1.25,0.9,1.1,500,5000,,,,,,,,bastogne1 bastogne2 foy noville
+sherman_fire,2,weapons/flak/flak88_fire03.wav,1.25,1.25,0.9,1.1,500,5000,,,,,,,,bastogne1 bastogne2 foy noville
+sherman_turret_spin,,vehicles/turret_spin_01.wav,1.25,,,,200,700,,,,,,looping,,bastogne1 bastogne2 foy noville
+sherman_turret_stop,,vehicles/turret_end_01.wav,,,,,200,700,,,,,,,,bastogne1 bastogne2 foy noville
+
+sherman_die_long,,vehicles/crashes/sherman_die02.mp3,1.25,,,,500,5000,,,voice,streamed,,,,noville
+
+tank_splash,,vehicles/crashes/truck_splash.wav,1,1,0.9,1.05,2500,3600,,,auto,,,,,bastogne1 trenches kharkov1 kharkov2 kursk kursk2 noville
+
+
+
+#Truck Sounds,,,,,,,,,,,,,,,,
+truck_idle_low,,vehicles/truck_idle.wav,0,,0.75,,150,2000,,,voice,,,looping,,! Bomber trainbridge menu game_main
+truck_idle_high,,vehicles/truck_idle.wav,1,,1,,150,2000,,,voice,,,looping,,! Bomber trainbridge menu game_main
+truck_engine_low,,vehicles/truck_move.wav,0,,0.75,,350,5000,,,voice,,,looping,,! Bomber trainbridge menu game_main
+truck_engine_high,,vehicles/truck_move.wav,1,,1,,350,5000,,,voice,,,looping,,! Bomber trainbridge menu game_main
+truck_idle_low,,vehicles/truck_idle.wav,0,,0.75,,150,2000,,,voice,,,looping,,trainbridge
+truck_idle_high,,vehicles/truck_idle.wav,1.2,,1,,150,2000,,,voice,,,looping,,trainbridge
+truck_engine_low,,vehicles/truck_move.wav,0,,0.75,,350,5000,,,voice,,,looping,,trainbridge
+truck_engine_high,,vehicles/truck_move.wav,1.25,,1,,350,5000,,,voice,,,looping,,trainbridge
+
+#Jeep ,,,,,,,,,,,,,,,,
+jeep_idle_low,,vehicles/jeep_idle01.wav,0,,0.75,,150,1500,,,voice,,,looping,,bastogne1 bastogne2
+jeep_idle_high,,vehicles/jeep_idle01.wav,0.75,,1,,150,1500,,,voice,,,looping,,bastogne1 bastogne2
+jeep_engine_low,,vehicles/jeep_move01.wav,0,,1,,350,5000,,,voice,,,looping,,bastogne1 bastogne2
+jeep_engine_high,,vehicles/jeep_move01.wav,1.3,,1,,350,5000,,,voice,,,looping,,bastogne1 bastogne2
+jeep_start,,vehicles/kubel_start.wav,1.8,,,,2000,2000,,,,,,,,bastogne1 bastogne2
+
+#HalfTrack Sounds,,,,,,,,,,,,,,,,
+halftrack_idle_low,,vehicles/truck_idle.wav,0,,0.75,,150,5000,,,voice,,,looping,,bastogne1 bastogne2
+halftrack_idle_high,,vehicles/truck_idle.wav,0.75,,1,,150,5000,,,voice,,,looping,,bastogne1 bastogne2
+halftrack_engine_high,,vehicles/truck_move.wav,0,,0.75,,350,5000,,,voice,,,looping,,bastogne1 bastogne2
+halftrack_engine_low,,vehicles/truck_move.wav,1.25,,1,,350,5000,,,voice,,,looping,,bastogne1 bastogne2
+
+#Kubel Sounds,,,,,,,,,,,,,,,,
+kubel_idle_low,,vehicles/kubel_idle.wav,0,,1,,75,1200,,,voice,,,looping,,bastogne1 bastogne2 sicily1 sicily2 trainbridge
+kubel_idle_high,,vehicles/kubel_idle.wav,1,,1,,75,1200,,,voice,,,looping,,bastogne1 bastogne2 sicily1 sicily2 trainbridge
+kubel_engine_high,,vehicles/kubel_move.wav,1.15,,0.75,,350,2500,,,voice,,,looping,,bastogne1 bastogne2 sicily1 sicily2 trainbridge
+kubel_engine_low,,vehicles/kubel_move.wav,0,,1,,350,2500,,,voice,,,looping,,bastogne1 bastogne2 sicily1 sicily2 trainbridge
+kubel_start,,vehicles/kubel_start.wav,1.4,,,,2000,2000,,,,,,,,bastogne1 bastogne2 sicily1 sicily2 trainbridge
+
+#BMW Bike Sounds,,,,,,,,,,,,,,,,
+bmwbike_idle_low,,vehicles/motorcycle_idle.wav,0,,0.75,,150,3500,,,voice,,,looping,master,sicily1 sicily2
+bmwbike_idle_high,,vehicles/motorcycle_idle.wav,0.67,,1,,150,3500,,,voice,,,looping,master,sicily1 sicily2
+bmwbike_engine_low,,vehicles/motorcycle_move.wav,0,,0.75,,350,3500,,,voice,,,looping,master,sicily1 sicily2
+bmwbike_engine_high,,vehicles/motorcycle_move.wav,1.25,,1,,350,3500,,,voice,,,looping,master,sicily1 sicily2
+bmwbike_idle_low,,vehicles/motorcycle_idle.wav,0,,0.75,,150,4500,,,voice,,,looping,,bastogne2 
+bmwbike_idle_high,,vehicles/motorcycle_idle.wav,0.67,,1,,150,4500,,,voice,,,looping,,bastogne2 
+bmwbike_engine_low,,vehicles/motorcycle_move.wav,0,,0.75,,350,4500,,,voice,,,looping,,bastogne2 
+bmwbike_engine_high,,vehicles/motorcycle_move.wav,1.25,,1,,350,4500,,,voice,,,looping,,bastogne2 
+bmw_steps_short_up,,vehicles/bmw_steps_short_up.mp3,1.25,,,,,,,,local,streamed,,,,sicily2
+bmw_steps_short_down,,vehicles/bmw_steps_short_down.mp3,1.25,,,,,,,,local,streamed,,,,sicily2
+bmw_steps_bounce_01,,vehicles/bmw_steps_bounce.mp3,1.1,,,,,,,,local,streamed,,,,sicily2
+bmw_steps_bounce_02,,vehicles/bmw_steps_bounce.mp3,1.1,,,,,,,,local,streamed,,,,sicily2
+bmw_steps_bounce_03,,vehicles/bmw_steps_bounce.mp3,1.1,,,,,,,,local,streamed,,,,sicily2
+bike_horn_frantic,,vehicles/bike_horn_frantic.mp3,1.5,,,,700,5000,,,auto,streamed,,,,bastogne2
+
+
+
+#Train Sounds,,,,,,,,,,,,,,,,
+train_idle_high,,vehicles/train_idle_loop.wav,1.6,,,,500,3500,,,auto,streamed,,looping,,trenches
+train_idle_low,,vehicles/train_idle_loop.wav,0,,,,500,3500,,,auto,streamed,,looping,,trenches
+
+#PT Boat,,,,,,,,,,,,,,,,
+ptboat_idle_low,,vehicles/ptboat_idle.wav,0,,,,150,5000,,,voice,,,looping,,sicily2
+ptboat_idle_high,,vehicles/ptboat_idle.wav,0.75,,,,150,5000,,,voice,,,looping,,sicily2
+ptboat_engine_low,,vehicles/ptboat_move.wav,0,,,,350,5000,,,voice,,0.7,looping,,sicily2
+ptboat_engine_high,,vehicles/ptboat_move.wav,1.6,,,,350,5000,,,voice,,0.7,looping,,sicily2
+boat_dock_rocking,,vehicles/boat_dock_rocking.mp3,1,,,,50,500,,,,streamed,,looping,,sicily2
+#bow_wash,,vehicles/bow_wash.wav,1,,,,,,,,local,streamed,,looping,,sicily2
+
+#Doors,,,,,,,,,,,,,,,,
+wood_door_open_short,1,doors/wood_door_open_short01.wav,1.25,1.4,0.9,1.1,120,800,,,auto,,,,,foy   
+wood_door_open_short,2,doors/wood_door_open_short02.wav,1.25,1.4,0.9,1.1,120,800,,,auto,,,,,foy   
+barn_door_open,,doors/barn_door_open01.wav,1.4,,,,200,1000,,,auto,,,,,bastogne2 trenches
+shutter_open,,doors/shutter_open.wav,1.25,1.4,0.9,1.1,200,2000,,,auto,,,,,noville
+wood_door_kick,,doors/door_wd_kick02.wav,1.5,,0.9,1.1,120,900,,,auto,,,,,game_uo
+gate_open_fast,,doors/kick_wood_gate.wav,1.5,,,,120,800,,,auto,,,,,trainbridge bastogne2
+
+#Bomber Explosions,,,,,,,,,,,,,,,,
+bomber_hit_01,,explosions/bomber_hit01.wav,1.8,,1,,5000,20000,,,weapon,,,,,bomber
+bomber_explode_01,,explosions/bomber_explode01.wav,1.7,,1,,5000,20000,,,voice,,,,,bomber
+bomber_explode_02,,explosions/bomber_explode01.wav,1.7,,1,,5000,20000,,,voice,,,,,bomber
+bomber_hit,,explosions/bomber_hit01.wav,1.6,1.8,0.95,1.05,5000,20000,,,weapon,,,,,bomber kharkov2
+bomber_explode,,explosions/bomber_explode01.wav,1.5,1.7,0.95,1.05,5000,20000,,,voice,,,,,bomber kharkov2
+bomber_die_01,,vehicles/crashes/bomber_die01.wav,1,,,,1000,50000,,,body,,,,,bomber
+bomber_die_02,,vehicles/crashes/bomber_die02.wav,1.1,,,,1000,50000,,,voice,streamed,,,,bomber
+bomber_die_03,,vehicles/crashes/bomber_die03.wav,1.2,,,,1000,50000,,,voice,streamed,,,,bomber
+bomber_die_friendly,,vehicles/crashes/bomber_die_friendly.wav,1,,,,1000,50000,,,voice,streamed,,,,bomber
+bomber_die_01,,vehicles/crashes/bomber_die01.wav,0.8,,,,100000,,,,body,,,,,kharkov2
+bomber_die_02,,vehicles/crashes/bomber_die02.wav,0.8,,,,100000,,,,voice,streamed,,,,kharkov2
+bomber_die_03,,vehicles/crashes/bomber_die03.wav,0.8,,,,100000,,,,voice,streamed,,,,kharkov2
+bomber_die_friendly,,vehicles/crashes/bomber_die_friendly.wav,0.8,,,,100000,,,,voice,streamed,,,,kharkov2
+wing_hit_01,,explosions/prop_die02.wav,1.2,,1,,800,20000,,,voice,streamed,,,,bomber
+wing_hit_02,,explosions/prop_die01.wav,1.2,,1,,800,20000,,,voice,streamed,,,,bomber
+tail_section_explode,,explosions/tail_section_explode.wav,1.2,,,,800,20000,,,weapon,,,,,bomber
+
+
+#Fighter Explosions,,,,,,,,,,,,,,,,
+fighter_explode,1,explosions/fighter_explode01.wav,1.7,1.9,1,1.2,3000,22000,,,voice,,,,,bomber
+fighter_explode,2,explosions/fighter_explode02.wav,1.7,1.9,1,1.2,3000,22000,,,voice,,,,,bomber
+fighter_explode,3,explosions/bomber_hit01.wav,1.7,1.9,1,1.2,3000,22000,,,voice,,,,,bomber
+
+#Shell Flashes,,,,,,,,,,,,,,,,
+shell_flash,1,explosions/explo_distant02.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bastogne1 bastogne2 kharkov1 kharkov2 trenches sicily1 all_mp game_uo
+shell_flash,2,explosions/explo_distant04.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bastogne1 bastogne2 kharkov1 kharkov2 trenches sicily1 all_mp game_uo
+shell_flash,3,explosions/explo_distant05.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bastogne1 bastogne2 kharkov1 kharkov2 trenches sicily1 all_mp game_uo
+shell_flash,4,explosions/explo_distant07.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bastogne1 bastogne2 kharkov1 kharkov2 trenches sicily1 all_mp game_uo
+shell_flash,5,explosions/explo_distant08.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bastogne1 bastogne2 kharkov1 kharkov2 trenches sicily1 all_mp game_uo
+shell_flash,6,explosions/explo_distant09.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bastogne1 bastogne2 kharkov1 kharkov2 trenches sicily1 all_mp game_uo
+shell_flash,7,explosions/explo_distant10.wav,0.8,1.07,0.9,1.1,500000,500000,,,auto,,,,,bastogne1 bastogne2 kharkov1 kharkov2 trenches sicily1 all_mp game_uo
+
+
+
+
+
+#AA Tracers,,,,,,,,,,,,,,,,
+distant_ack,1,misc/distant_ack01.wav,1.3,1.6,1,1.2,7000,18000,,,auto,,,,,trenches kharkov1 kharkov2
+distant_ack,2,misc/distant_ack02.wav,1.3,1.6,1,1.2,7000,18000,,,auto,,,,,trenches kharkov1 kharkov2
+distant_ack,3,misc/distant_ack03.wav,1.3,1.6,1,1.2,7000,18000,,,auto,,,,,trenches kharkov1 kharkov2
+distant_ack,4,null.wav,,,,,100,100,,,auto,,,,,trenches kharkov1 kharkov2
+
+#Squadron Flyovers,,,,,,,,,,,,,,,,
+squadron_flyover_01,,vehicles/squadron_flyover01.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+squadron_flyover_02,,vehicles/squadron_flyover02.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+squadron_flyover_03,,vehicles/squadron_flyover03.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+squadron_flyover_04,,vehicles/squadron_flyover04.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+squadron_flyover_01_short,,vehicles/squadron_flyover01_short.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+squadron_flyover_02_short,,vehicles/squadron_flyover02_short.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+squadron_flyover_03_short,,vehicles/squadron_flyover03_short.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+squadron_flyover_04_short,,vehicles/squadron_flyover04_short.wav,0.85,1.1,1,1.15,7000,20000,,,auto,streamed,,,,game_uo
+
+#Fighter flyovers,,,,,,,,,,,,,,,,
+fighter_flyover_01,,vehicles/fighter_flyover01.wav,1,1.25,1,1.15,4000,12000,,,auto,streamed,,,,game_uo
+fighter_flyover_02,,vehicles/fighter_flyover02.wav,1,1.25,1,1.15,4000,12000,,,auto,streamed,,,,game_uo
+fighter_flyover_03,,vehicles/c47_flyby01.wav,1,1.25,1,1.15,4000,12000,,,auto,streamed,,,,game_uo
+fighter_flyover_04,,vehicles/c47_flyby02.wav,1,1.25,1,1.15,4000,12000,,,auto,streamed,,,,game_uo
+
+#Stukas,,,,,,,,,,,,,,,,
+stuka_flyby_01,,vehicles/stuka_by_new01.wav,,1.25,,,100000,,,,auto,streamed,,,,trenches
+stuka_flyby_02,,vehicles/stuka_by_new02.wav,,1.25,,,100000,,,,auto,streamed,,,,trenches
+stuka_flyby_03,,vehicles/stuka_by_new03.wav,,1.25,,,100000,,,,auto,streamed,,,,trenches
+stuka_attack_01,,vehicles/stuka_by01_attack.wav,,1.25,,,100000,,,,auto,streamed,,,,trenches
+stuka_attack_02,,vehicles/stuka_by04_attack.wav,,1.25,,,100000,,,,auto,streamed,,,,trenches
+stuka_attack_03,,vehicles/stuka_by05_attack.wav,,1.25,,,100000,,,,auto,streamed,,,,trenches
+
+#bomber loops,,,,,,,,,,,,,,,,
+bomber_loop_01_high,,vehicles/c47_drone_loop.wav,1.25,,0.9,,7000,20000,,,auto,,,looping,,kharkov2
+bomber_loop_01_low,,vehicles/c47_drone_loop.wav,0,,0.9,,7000,20000,,,auto,,,looping,,kharkov2
+bomber_loop_02_high,,vehicles/c47_drone_loop.wav,1.25,,1,,7000,20000,,,auto,,,looping,,kharkov2
+bomber_loop_02_low,,vehicles/c47_drone_loop.wav,0,,1,,7000,20000,,,auto,,,looping,,kharkov2
+bomber_loop_03_high,,vehicles/c47_drone_loop.wav,1.25,,1.1,,7000,20000,,,auto,,,looping,,kharkov2
+bomber_loop_03_low,,vehicles/c47_drone_loop.wav,0,,1.1,,7000,20000,,,auto,,,looping,,kharkov2
+bomber_rumble_high,,misc/rumble.wav,1.3,,,,,,,,local,streamed,,looping,,kharkov2
+bomber_rumble_low,,misc/rumble.wav,0,,,,,,,,local,streamed,,looping,,kharkov2
+
+
+#Shellshock,,,,,,,,,,,,,,,,
+shellshock_loop,,misc/shellshock_loop.wav,0.6,,,,,,,,shellshock,streamed,,looping,,game_uo
+shellshock_loop_silent,,misc/shellshock_loop.wav,0,,,,,,,,shellshock,streamed,,looping,,game_uo
+shellshock_end,,misc/shellshock_exit.wav,1.25,,,,,,,,announcer,streamed,,,,game_uo
+shellshock_end_abort,,null.wav,0,,,,,,,,announcer,,,,,game_uo
+
+
+
+#V2 Rocket Explosion,,,,,,,,,,,,,,,,
+Explo_V2_Rocket,,explosions/explo_V2_Rocket01.wav,1.5,1.5,0.8,1.1,750,6000,,,voice,,,,,kursk kursk2
+
+#Water sounds,,,,,,,,,,,,,,,,
+waterlap,,water/waterlap.wav,0.75,0.85,,,200,1600,,,voice,,,looping,,foy
+waterlap,,water/waterlap.wav,0.65,,,,200,1600,,,voice,,,looping,,sicily1
+waterlap,,water/waterlap.wav,0.65,,,,400,2400,,,voice,,,looping,,sicily2
+waterlap,,water/waterlap.wav,0.55,,,,400,2400,,,voice,,,looping,,trainbridge
+waterlap_bridge,,water/waterlap.wav,0.75,,,,400,1400,,,voice,,,looping,,trainbridge
+dock_creeks,,misc/dock_creeks.mp3,0.9,,,,200,1600,,,auto,streamed,,looping,,sicily1
+dock_creeks,,misc/dock_creeks.mp3,0.9,,,,300,2000,,,auto,streamed,,looping,,sicily2
+
+#Vehicle Skids,,,,,,,,,,,,,,,,
+dirt_skid,1,vehicles/skids/skid01.wav,1.2,1.3,0.9,1.1,2500,,,,auto,,,,,! Bomber menu game_main 
+dirt_skid,2,vehicles/skids/skid02.wav,1.2,1.3,0.9,1.1,2500,,,,auto,,,,,! Bomber menu game_main 
+dirt_skid,3,vehicles/skids/skid03.wav,1.2,1.3,0.9,1.1,2500,,,,auto,,,,,! Bomber menu game_main 
+dirt_skid,4,vehicles/skids/skid04.wav,1.2,1.3,0.9,1.1,2500,,,,auto,,,,,! Bomber menu game_main 
+dirt_skid,5,vehicles/skids/skid05.wav,1.2,1.3,0.9,1.1,2500,,,,auto,,,,,! Bomber menu game_main 
+stop_skid,1,vehicles/skids/skid02.wav,1.2,1.3,0.9,1.1,2500,,,,auto,,,,,! Bomber menu game_main 
+stop_skid,2,vehicles/skids/skid03.wav,1.2,1.3,0.9,1.1,2500,,,,auto,,,,,! Bomber menu game_main 
+
+#Vehicle Crash sounds,,,,,,,,,,,,,,,,
+Tank_stone_breakthrough,,misc/tank_break_stone.wav,1.5,1.5,0.9,1.05,1200,3600,,,auto,,,,,
+Tank_gate_breakthrough,,misc/tank_break_gate.wav,1.25,1.25,0.9,1.05,1200,3600,,,auto,,,,,! Bomber menu game_main 
+Tank_push_car,,misc/tank_break_gate.wav,1.25,1.25,0.9,1.05,1200,3600,,,auto,,,,,! Bomber menu game_main 
+human_crunch,1,null.wav,1.25,1.25,0.9,1.05,240,1800,,,auto,,,,,! Bomber menu game_main 
+human_crunch,2,null.wav,1.25,1.25,0.9,1.05,240,1800,,,auto,,,,,! Bomber menu game_main 
+crash_wood,1,vehicles/crashes/wood_crash01.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,! Bomber menu game_main 
+crash_wood,2,vehicles/crashes/wood_crash02.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,! Bomber menu game_main 
+truck_splash,,vehicles/crashes/truck_splash.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,! Bomber menu game_main 
+car_roll,1,vehicles/crashes/car_roll.wav,1,1,0.9,1.05,1200,3600,,,auto,,,,,! Bomber menu game_main 
+car_roll,2,vehicles/crashes/car_roll02.wav,1,1,0.9,1.05,1300,3600,,,auto,,,,,! Bomber menu game_main 
+Barricade_smash,,vehicles/crashes/metal_crash.wav,1.5,1.5,0.9,1.05,2500,3600,,,auto,,,,,! Bomber menu game_main 
+truck_land_impact,,vehicles/crashes/truck_land.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,! Bomber menu game_main 
+truck_crash_gate,,vehicles/crashes/gate_crash.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,! Bomber menu game_main 
+truck_crash_wood_barrier,,vehicles/crashes/gate_crash.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,! Bomber menu game_main 
+vehicle_impact,,vehicles/crashes/metal_crash.wav,1.5,1.5,0.9,1.05,50,3500,,,auto,,,,,! Bomber menu game_main 
+vehicle_flip,,vehicles/crashes/vehicle_flip.wav,1.5,1.5,0.9,1.05,50,3500,,,auto,,,,,sicily2
+car_crush_01,,vehicles/crashes/car_crush01.wav,1.25,,,,300,3600,,,auto,,,,,kharkov2
+car_crush_02,,vehicles/crashes/car_crush02.wav,1.1,,1.05,,300,3000,,,auto,,,,,kharkov2
+big_truck_crash,,vehicles/crashes/big_truck_crash.mp3,1.35,,,,4000,10000,,,voice,streamed,,,,trainbridge
+
+
+#Mortar Launches,,,,,,,,,,,,,,,,
+mortar_launch,,explosions/mortar_launch.wav,1.05,1.2,0.8,1.1,300,1200,,,auto,,,,,bastogne1
+mortar_load,,explosions/mortar_load.wav,1.05,1.2,0.8,1.1,1000,1200,,,auto,,,,,bastogne1
+
+#treeburst,,,,,,,,,,,,,,,,
+#treeburst,,misc/treefall.wav,1.25,1.4,0.95,1.05,600,2000,,,voice,,,,,bastogne1
+
+#alarms,,,,,,,,,,,,,,,,
+Klaxxon_alarm,,misc/klaxxon.wav,0.65,,,,5000,15000,,,weapon,,,looping,,sicily1
+Air_raid_siren,,misc/air_raid.wav,0.95,0.95,,,5000,15000,,,,,,looping,,sicily1
+
+#Elevator Sounds,,,,,,,,,,,,,,,,
+Elevator_Very_Long,,misc/elevator.wav,1.25,,,,1200,3600,,,weapon,,,,,sicily1
+
+#Boat Explosions ,,,,,,,,,,,,,,,,
+explo_boat,1,explosions/boat_exp02.wav,1.5,1.5,0.9,1.1,1000,8500,,,voice,,,,,sicily2
+explo_boat,2,explosions/boat_exp01.wav,1.5,1.5,0.9,1.1,1000,8500,,,voice,,,,,sicily2
+
+#tent wind,,,,,,,,,,,,,,,,
+tent_flap_wind,,misc/tent_flap_wind.mp3,1,,,,50,600,,,auto,streamed,,looping,,bastogne2
+
+# trainbridge train sounds,,,,,,,,,,,,,,,,
+train_loop_low,,vehicles/train_loop.wav,0,,,,3000,9000,,,auto,streamed,,looping,,trainbridge
+train_loop_high,,vehicles/train_loop.wav,1.3,,,,3000,9000,,,auto,streamed,,looping,,trainbridge
+train_loop_distant_low,,vehicles/train_loop_distant.wav,0,,,,4000,20000,,,auto,streamed,,looping,,trainbridge
+train_loop_distant_high,,vehicles/train_loop_distant.wav,0.6,,,,4000,20000,,,auto,streamed,,looping,,trainbridge
+train_whistle,,vehicles/train_whistle.mp3,1.4,,,,3000,9000,,,voice,streamed,,,,trainbridge
+train_whistle_distant,,vehicles/train_whistle_distant.mp3,0.6,,,,100000,,,,voice,streamed,,,,trainbridge kharkov2
+train_whistle_very_distant_01,,vehicles/train_whistle_very_distant.mp3,0.35,,,,100000,,,,voice,streamed,,,,trainbridge
+train_whistle_very_distant_02,,vehicles/train_whistle_very_distant.mp3,0.7,,,,100000,,,,voice,streamed,,,,trainbridge
+train_approach,,vehicles/train_approach.wav,1,,,,3000,9000,,,weapon,streamed,,,,trainbridge
+
+#trainbridge wreck,,,,,,,,,,,,,,,,
+train_bridge_wreck,,vehicles/crashes/train_bridge_wreck.mp3,1.35,,,,1000,10000,,,voice,streamed,,,,trainbridge
+train_skid,,vehicles/crashes/train_skid.mp3,1.2,,,,1000,10000,,,voice,streamed,,,,trainbridge
+train_steam_blast,,vehicles/train_steam_blast.mp3,1,,,,100,3000,,,voice,streamed,,,,trainbridge
+stone_water_crash01,,misc/stone_water_crash01.mp3,1.1,,,,1000,10000,,,voice,streamed,,,,trainbridge
+stone_water_crash02,,misc/stone_water_crash02.mp3,1.1,,,,1000,10000,,,voice,streamed,,,,trainbridge
+stone_water_crash03,,misc/stone_water_crash03.mp3,0.75,,,,1000,6000,,,voice,streamed,,,,trainbridge
+stone_water_crash04,,misc/stone_water_crash04.mp3,0.75,,,,1000,6000,,,voice,streamed,,,,trainbridge
+stone_water_crash05,,misc/stone_water_crash01.mp3,1.1,,,,1000,10000,,,voice,streamed,,,,trainbridge
+stone_water_crash06,,misc/stone_water_crash03.mp3,0.75,,,,1000,6000,,,voice,streamed,,,,trainbridge
+
+#Big Blasts,,,,,,,,,,,,,,,,
+big_blast,1,explosions/mortar_dirt01.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,trainbridge all_mp game_gmi
+big_blast,2,explosions/mortar_dirt02.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,trainbridge all_mp game_gmi
+big_blast,3,explosions/mortar_dirt03.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,trainbridge all_mp game_gmi
+big_blast,4,explosions/mortar_dirt04.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,trainbridge all_mp game_gmi
+big_blast,5,explosions/mortar_dirt05.wav,0.9,1.2,0.8,1.2,2000,12000,,,voice,,,,,trainbridge all_mp game_gmi
+
+#document pickup,,,,,,,,,,,,,,,,
+paper_pickup,1,misc/PU_paper01.wav,0.87,1.07,0.9,1.1,60,120,,,item,,,,,sicily1
+paper_pickup,2,misc/PU_paper02.wav,0.87,1.07,0.9,1.1,60,120,,,item,,,,,sicily1
+paper_slide_desk,,misc/paper_slide_desk.mp3,0.8,,,,50,250,,,auto,streamed,,,,bastogne2
+
+#detonator,,,,,,,,,,,,,,,,
+detonator,,misc/detonator.wav,1.2,,,,10,200,,,item,,,,,trainbridge
+
+#parachute in tree creaks,,,,,,,,,,,,,,,,
+swing_in_tree,1,misc/swing_in_tree01.mp3,0.45,0.55,,,,,,,local,streamed,,,,trainbridge
+swing_in_tree,2,misc/swing_in_tree01.mp3,0.45,0.55,,,,,,,local,streamed,,,,trainbridge
+swing_in_tree,3,misc/swing_in_tree01.mp3,0.45,0.55,,,,,,,local,streamed,,,,trainbridge
+
+
+#Bomber Parachute,,,,,,,,,,,,,,,,
+free_fall,,misc/free_fall.wav,0.8,,,,,,,,local,streamed,,,,bomber
+chute_deploy,,misc/chute_deploy.wav,1.5,,,,,,,,local,streamed,,,,bomber
+
+#Animation melee,,,,,,,,,,,,,,,,
+smack_prisoner01,,misc/smack_prisoner01.wav,1.2,,,,80,1500,,,auto,streamed,,,,bastogne2
+smack_prisoner02,,misc/smack_prisoner02.wav,1.2,,,,80,1500,,,auto,streamed,,,,bastogne2
+
+#flare,,,,,,,,,,,,,,,,
+flare,,misc/flare.mp3,1.5,,,,50000,50000,,,auto,streamed,,,,bastogne2
+
+#Mortar Launches,,,,,,,,,,,,,,,,
+mortar_launch,,explosions/mortar_launch.wav,1.05,,,,7,6000,,,auto,,,,,bastogne2

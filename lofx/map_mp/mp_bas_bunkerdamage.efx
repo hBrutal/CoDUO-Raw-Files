@@ -1,0 +1,128 @@
+Particle
+{
+	name				fog
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel absoluteAccel evenDistribution
+
+	count				0 1
+
+	life				5000 6000
+
+	delay				0 5000
+
+	cullrange			16000
+
+	origin				-100 -100 0 100 100 0
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-2 -2 25 2 2 100
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.3686 0.4 0.3922
+		end				0.7725 0.7725 0.7725
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.8
+		end				0
+		parm			0.25 0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				150 250
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fog_fractal
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				0 1
+
+	life				5000 6000
+
+	delay				0 5000
+
+	cullrange			8000
+
+	origin				-75 -75 0 75 75 0
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-2 -2 75 2 2 125
+
+	acceleration		0 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.2588 0.2706 0.2745
+		end				0.7529 0.7529 0.7529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.6
+		end				0
+		parm			0.25 0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				200 150
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

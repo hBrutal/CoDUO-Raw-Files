@@ -1,0 +1,111 @@
+FxRunner
+{
+	name				a
+
+	count				0 1
+
+	cullrange			4000
+
+	origin				0 -176 232 0 176 -384
+
+	playfx
+	[
+		fx/map_foy/nests/a_stage4
+	]
+}
+
+FxRunner
+{
+	name				b
+
+	count				0 1
+
+	cullrange			4000
+
+	origin				0 176 -130 0 440 230
+
+	playfx
+	[
+		fx/map_foy/nests/b_stage4
+	]
+}
+
+FxRunner
+{
+	name				c
+
+	count				0 1
+
+	cullrange			4000
+
+	origin				48 440 144
+
+	playfx
+	[
+		fx/map_foy/nests/c_stage4
+	]
+}
+
+FxRunner
+{
+	name				d
+
+	count				0 1
+
+	cullrange			4000
+
+	origin				25 440 -47
+
+	playfx
+	[
+		fx/map_foy/nests/d_stage4
+	]
+}
+
+FxRunner
+{
+	name				e
+
+	count				0 1
+
+	cullrange			4000
+
+	origin				48 317 -133
+
+	playfx
+	[
+		fx/map_foy/nests/e_stage4
+	]
+}
+
+FxRunner
+{
+	name				f
+
+	count				0 1
+
+	cullrange			4000
+
+	origin				48 -96 -388
+
+	playfx
+	[
+		fx/map_foy/nests/f_stage4
+	]
+}
+
+FxRunner
+{
+	name				g
+
+	count				0 1
+
+	cullrange			4000
+
+	origin				25 -176 -297
+
+	playfx
+	[
+		fx/map_foy/nests/g_stage4
+	]
+}

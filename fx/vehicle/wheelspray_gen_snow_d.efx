@@ -1,0 +1,202 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				500 3000
+
+	delay				0 10
+
+	cullrange			4000
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.6235 0.6431 0.6078
+		end				0.4353 0.4275 0.4157
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_fractal
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				500 3000
+
+	delay				0 10
+
+	cullrange			8000
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.4353 0.4275 0.4157
+		end				0.4392 0.4235 0.451
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_mist_snow
+
+	flags				useAlpha
+
+	life				500 2000
+
+	delay				0 10
+
+	cullrange			2000
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.5373 0.5608 0.5569
+		end				0.6235 0.6431 0.6078
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_fractal_snow
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				500 1000
+
+	delay				0 10
+
+	cullrange			3000
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.4392 0.4235 0.451
+		end				0.6235 0.6431 0.6078
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}

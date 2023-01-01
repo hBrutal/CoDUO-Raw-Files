@@ -1,0 +1,15 @@
+Emitter
+{
+	flags				useModel
+
+	life				510
+
+	cullrange			800
+
+	angle				90 0 0
+
+	models
+	[
+		xmodel/mp_brush_straight
+	]
+}

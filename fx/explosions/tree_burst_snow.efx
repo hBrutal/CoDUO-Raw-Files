@@ -1,0 +1,141 @@
+Particle
+{
+	name				mist
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				1 2
+
+	life				2000
+
+	cullrange			6000
+
+	origin				-50 -50 -50 50 50 50
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			-15 -15 -15 15 15 15
+
+	gravity				-400 -200
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 100
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_a
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				snow_gibs
+
+	flags				usePhysics useAlpha
+
+	count				3
+
+	life				2000
+
+	cullrange			1500
+
+	bounce				0.25 0.5
+
+	origin				-50 -50 -50 50 50 50
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			-15 -15 -15 15 15 15
+
+	gravity				-600 -400
+
+	alpha
+	{
+		end				0
+		parm			0.25
+	}
+
+	size
+	{
+		start			0.5 4
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_snow_a
+		debree/debree_gib_snow_b
+	]
+}
+
+Particle
+{
+	name				mist_linger
+
+	flags				useAlpha
+
+	count				1 2
+
+	life				1000 3000
+
+	cullrange			4000
+
+	origin				-50 -50 -50 50 50 50
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			-15 -15 -15 15 15 15
+
+	gravity				-50 -100
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_a
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}

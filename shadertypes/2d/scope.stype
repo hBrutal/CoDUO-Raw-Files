@@ -1,0 +1,8 @@
+{
+	nopicmip
+	nomipmaps
+	{
+		map clamp $texturename
+		blendFunc blend
+	}
+}

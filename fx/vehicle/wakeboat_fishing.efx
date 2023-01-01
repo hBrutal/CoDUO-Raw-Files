@@ -1,0 +1,223 @@
+OrientedParticle
+{
+	name				wake_right
+
+	flags				useAlpha
+
+	count				0
+
+	life				3500
+
+	origin				0 -2 0 0 2 0
+
+	rotation			300 310
+
+	velocity			0 75 5
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			40 60
+		end				175 225
+		flags			linear
+	}
+
+	shaders
+	[
+		water/froth_t_a
+		water/froth_t_b
+	]
+}
+
+OrientedParticle
+{
+	name				front_foam_rigth
+
+	count				0
+
+	life				1000 2000
+
+	origin				0 500 -50 0 500 -75
+
+	rotation			210 360
+
+	rotationDelta		-5 5
+
+	velocity			0 0 -15 0 0 -25
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			45 65
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}
+
+OrientedParticle
+{
+	name				front_foam_left
+
+	count				0
+
+	life				1000 2000
+
+	origin				0 500 50 0 500 75
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 0 15 0 0 25
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			45 65
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}
+
+OrientedParticle
+{
+	name				back_foam
+
+	life				5000 7000
+
+	delay				0 300
+
+	origin				0 50 0 0 75 0
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -5 0 0 5 0
+
+	alpha
+	{
+		start			0.15 0.25
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				400 500
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}
+
+OrientedParticle
+{
+	name				back_centralback
+
+	flags				useAlpha
+
+	count				0
+
+	life				4000
+
+	origin				0 -15 25 0 15 50
+
+	rotation			90
+
+	velocity			0 0 -5 0 0 5
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				25
+		flags			linear
+	}
+
+	shaders
+	[
+		water/froth_t2_a
+	]
+}
+
+OrientedParticle
+{
+	name				wake_left
+
+	flags				useAlpha
+
+	count				0
+
+	life				3500
+
+	origin				0 -2 0 0 2 0
+
+	rotation			10 20
+
+	rotationDelta		1 2
+
+	velocity			0 -75 5
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			40 60
+		end				175 225
+		flags			linear
+	}
+
+	shaders
+	[
+		water/froth_t_a
+		water/froth_t_b
+	]
+}

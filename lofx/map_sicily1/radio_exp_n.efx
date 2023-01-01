@@ -1,0 +1,56 @@
+Tail
+{
+	flags				usePhysics
+
+	spawnFlags			evenDistribution
+
+	count 0 1
+
+	life				250 500
+
+	delay				0 50
+
+	cullrange			600
+
+	bounce				0.25
+
+	velocity			25 -100 -100 50 100 100
+
+	acceleration		-50 -50 -50 50 50 50
+
+	gravity				-500 -200
+
+	rgb
+	{
+		start			1 0.8235 0.651
+		end				1 0.502 0
+		parm			25 75
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		parm			90 95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			0.75 2
+		end				0.25 0.5
+	}
+
+	length
+	{
+		start			2 15
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_tail_a
+		fire/spark_tail_a
+	]
+}

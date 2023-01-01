@@ -1,0 +1,20 @@
+// syntax:
+// float floatVar
+// int intVar
+// string stringVar
+
+// Note: In order to use the float/int/string, it must be used/referenced in the script 
+// before it's even acknowledged by the code. And prints do NOT work, if that's all that 
+// the variable is doing in the script. ie, println(mg42.blah).
+
+
+int	script_panzer		// Used to determine if this guy is a panzer guy. (_respawner_gmi.gsc)
+int	script_random		// Mainly used to get spawners to randomly choose a node, if targeting more than 1. (_spawner_gmi.gsc)
+int	script_stalingradspawn	// Used to call the stalingrad spawn instead of the normal spawn.(_squad_manager.gsc)
+int	script_breathpuff	// Used to show breath fx on snow levels.(_spawner_gmi.gsc)
+int 	script_tankmgaccuracy	// Used to modify the accuracy of a tank (specificly in sicily2 when the tank gives chase).
+int 	script_flashlight	// used to tell the engine that the guy has a flashlight until he goes into combat 
+int 	script_dontdeploy	// used to tell lmg carriers not to deploy if set to 1.  The first goal position they reach after set to zero is setup point 
+
+string	script_damagemodel	//	used in base assault . MUST THINK OF A CLEANER WAY 
+

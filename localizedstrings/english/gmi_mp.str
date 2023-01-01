@@ -1,0 +1,267 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           RESCUE
+LANG_ENGLISH        "Rescue Mode Test"
+
+REFERENCE           ALLIED_SPAWN_PRIMARY
+LANG_ENGLISH        "You will be spawned in the primary deploy location."
+
+REFERENCE           ALLIED_SPAWN_SECONDARY
+LANG_ENGLISH        "You will be spawned in the forward deploy location when it is available."
+
+REFERENCE           AXIS_SPAWN_PRIMARY
+LANG_ENGLISH        "You will be spawned in the primary deploy location."
+
+REFERENCE           CEASEFIRE
+LANG_ENGLISH        "Cease Fire"
+
+REFERENCE           AXIS_SPAWN_SECONDARY
+LANG_ENGLISH        "You will be spawned in the forward deploy location when it is available."
+
+REFERENCE           ALLIES_DESTROY_OBJECTIVE_TAKEN
+LANG_ENGLISH        "^4%s ^7completed the ^8Allies ^7secondary objective!"
+
+REFERENCE           AXIS_DESTROY_OBJECTIVE_TAKEN
+LANG_ENGLISH        "^1%s ^7completed the ^9Axis ^7secondary objective!"
+
+REFERENCE           YOU_WILL_SPAWN_WITH_AN_NEXT
+LANG_ENGLISH        "You will start with an %s the next time you spawn."
+
+REFERENCE           YOU_WILL_SPAWN_WITH_A_NEXT
+LANG_ENGLISH        "You will start with a %s the next time you spawn."
+
+REFERENCE           ALLIES_HOLD_OBJECTIVE_TAKEN
+LANG_ENGLISH        "The ^8Allies ^7have taken control of the forward deploy point!"
+
+REFERENCE           AXIS_HOLD_OBJECTIVE_TAKEN
+LANG_ENGLISH        "The ^9Axis ^7have taken control of the forward deploy point!"
+
+REFERENCE           ALLIES_TOO_MANY_PLAYERS
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "^8Allied team has too many players!"
+
+REFERENCE           AXIS_TOO_MANY_PLAYERS
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "^9Axis team has too many players!"
+
+REFERENCE           TEAMKILLER_DELAY
+LANG_ENGLISH        "You are being delayed one reinforcement wave for teamkilling."
+
+REFERENCE           TEAMKILLER_DELAY_LONG
+LANG_ENGLISH        "You are being delayed two reinforcement waves for excessive teamkilling."
+
+REFERENCE           TEAMKILLER_FORGIVEN
+LANG_ENGLISH        "Your teamkill has been forgiven."
+
+REFERENCE           RE_OBJ_SWORD_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the beachhead bunker (Blue Box)"
+
+REFERENCE           RE_OBJ_SWORD_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the beachhead bunker (Blue Box)"
+
+REFERENCE           RE_OBJ_SWORD_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the beachhead bunker.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe beachhead bunker is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_SWORD_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the beachhead bunker.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe beachhead bunker is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_SWORD_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the beachhead bunker. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the beachhead bunker. (Blue Box)"
+
+REFERENCE           RE_OBJ_ARNHEM_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the bridge (Blue Box)"
+
+REFERENCE           RE_OBJ_ARNHEM_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the bridge (Blue Box)"
+
+REFERENCE           RE_OBJ_ARNHEM_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the bridge. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the bridge (Blue Box)"
+
+REFERENCE           RE_OBJ_ARNHEM_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the bridge.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe bridge is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_BERLIN_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the supply room.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe supply room is the Blue Square on your compass."
+
+REFERENCE           ARTILLERY_INCOMING
+LANG_ENGLISH        "Artillery strike in %s seconds!"
+
+REFERENCE           TANK_ACTIVATE_HELP
+LANG_ENGLISH        "Hold JUMP to always drive forwards\nPress ACTIVATE to Dismount"
+
+REFERENCE           TANK_CAPTURED
+LANG_ENGLISH        "Enemy tank captured!"
+
+REFERENCE           TANK_CAPTURING
+LANG_ENGLISH        "Capturing enemy tank..."
+
+REFERENCE           CAPTURED_AXIS_TANK_BROADCAST
+LANG_ENGLISH        "%s captured an axis tank."
+
+REFERENCE           CAPTURED_ALLIED_TANK_BROADCAST
+LANG_ENGLISH        "%s captured an allied tank."
+
+REFERENCE           GAME_VEHICLE_DELAY_IGNORE
+LANG_ENGLISH        "Position change ignored"
+
+REFERENCE           GAME_VEHICLE_UNLINK_BLOCKED
+LANG_ENGLISH        "Vehicle exit blocked"
+
+REFERENCE           RE_OBJ_BERLIN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the supply room. (Blue Box)"
+
+REFERENCE           RE_OBJ_BERLIN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the supply room. (Blue Box)"
+
+REFERENCE           RE_OBJ_ARNHEM_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the bridge.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe bridge is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_BERLIN_SPAWN_ATTACKER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the supply room.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe supply room is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_BERLIN_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the supply room. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the supply room. (Blue Box)"
+
+REFERENCE           RE_OBJ_KHARKOV_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the steps of the State House (Blue Box)."
+
+REFERENCE           RE_OBJ_KHARKOV_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the State House (Blue Box)."
+
+REFERENCE           RE_OBJ_KHARKOV_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the State House.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe State House is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_KHARKOV_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the State House.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe State House is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_KHARKOV_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the State House. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the State House. (Blue Box)"
+
+REFERENCE           RE_OBJ_FOY_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the radio room on the top floor of the allied farmhouse. (Blue Box)"
+
+REFERENCE           RE_OBJ_FOY_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the allied farmhouse. (Blue Box)"
+
+REFERENCE           RE_OBJ_FOY_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the allied farmhouse.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe allied farmhouse is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_FOY_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the allied farmhouse.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe allied farmhouse is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_FOY_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the allied farmhouse. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the allied farmhouse. (Blue Box)"
+
+REFERENCE           RE_OBJ_ITALY_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the allied command post (Blue Box)."
+
+REFERENCE           RE_OBJ_ITALY_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the allied command post (Blue Box)."
+
+REFERENCE           RE_OBJ_ITALY_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the allied command post.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe allied command post is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_ITALY_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the allied command post.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe allied command post is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_ITALY_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the allied command post. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the allied command post. (Blue Box)"
+
+REFERENCE           RE_OBJ_SICILY_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the truck (Blue Box)."
+
+REFERENCE           RE_OBJ_SICILY_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the truck (Blue Box)."
+
+REFERENCE           RE_OBJ_SICILY_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the truck.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe truck is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_SICILY_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the truck.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe truck is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_SICILY_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the truck. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the truck. (Blue Box)"
+
+REFERENCE           RE_OBJ_CASSINO_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the truck (Blue Box)."
+
+REFERENCE           RE_OBJ_CASSINO_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the truck (Blue Box)."
+
+REFERENCE           RE_OBJ_CASSINO_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the truck.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe truck is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_CASSINO_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the truck.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe truck is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_CASSINO_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the truck. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the truck. (Blue Box)"
+
+REFERENCE           RE_OBJ_KURSK_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the allied hut (Blue Box)."
+
+REFERENCE           RE_OBJ_KURSK_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the allied hut (Blue Box)."
+
+REFERENCE           RE_OBJ_KURSK_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the allied hut (Blue Box)."
+
+REFERENCE           RE_OBJ_KURSK_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio from the Allies.  Keep them from the allied hut (Blue Box)"
+
+REFERENCE           RE_OBJ_KURSK_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the allied hut. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the allied hut. (Blue Box)"
+
+REFERENCE           RE_OBJ_RHINEVALLEY_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the truck (Blue Box)."
+
+REFERENCE           RE_OBJ_RHINEVALLEY_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the truck (Blue Box)."
+
+REFERENCE           RE_OBJ_RHINEVALLEY_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the truck.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe truck is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_RHINEVALLEY_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the truck.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe truck is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_RHINEVALLEY_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the truck. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the truck. (Blue Box)"
+
+REFERENCE           CAPTURING_SECONDARY_SPAWN
+LANG_ENGLISH        "Capturing Forward Deploy"
+
+REFERENCE           CALLING_IN_ARTILLERY
+LANG_ENGLISH        "Calling in Artillery Strike"
+
+REFERENCE           RE_OBJ_STREETS_ATTACKER
+LANG_ENGLISH        "Capture the Code Book (Yellow Star) and Field Radio (Yellow Star) and take them to the allied command post (Blue Box)."
+
+REFERENCE           RE_OBJ_STREETS_DEFENDER
+LANG_ENGLISH        "Defend the Code Book (Yellow Star) and Field Radio (Yellow Star) from the Allies.  Keep them from the allied command post (Blue Box)."
+
+REFERENCE           RE_OBJ_STREETS_SPAWN_ATTACKER
+LANG_ENGLISH        "Capture the Code Book and the Field Radio from the Germans.\nTake them to the allied command post.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe allied command post is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_STREETS_SPAWN_DEFENDER
+LANG_ENGLISH        "Defend the Code Book and Field Radio from the Allies.\nDon't let the Allies take them to the allied command post.\nThe Book and Field Radio are the Yellow Stars on your compass.\nThe allied command post is the Blue Square on your compass."
+
+REFERENCE           RE_OBJ_STREETS_SPECTATOR
+LANG_ENGLISH        "Allies: Capture the Code Book and Field Radio, take them to the allied command post. (Blue Box)\nAxis: Defend the Code Book and Field Radio from the Allies. Keep them from the allied command post. (Blue Box)"
+
+
+ENDMARKER
+
+

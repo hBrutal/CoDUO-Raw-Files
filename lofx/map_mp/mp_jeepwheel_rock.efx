@@ -1,0 +1,51 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				500
+
+	delay				0 10
+
+	cullrange			4000
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.3686 0.4 0.3922
+		end				0.5098 0.5216 0.4784
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			15 35
+		end				75 100
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

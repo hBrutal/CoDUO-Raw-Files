@@ -1,0 +1,172 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation affectedByWind
+
+	life				250 300
+
+	delay				0 100
+
+	cullrange			1000
+
+	origin				0 10 0 0 13 0
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-12 -12 -12 12 12 12
+
+	acceleration		-12 -12 -12 12 12 12
+
+	rgb
+	{
+		start			0.3059 0.2902 0.3333
+		end				0.1216 0.1098 0.08627
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			5
+		end				20 30
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fire
+
+	flags				setShaderTime relative
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				1 2
+
+	life				75 125
+
+	delay				0 15
+
+	cullrange			4000
+
+	origin				0 10 0 0 13 0
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			-1 -1 -1 1 1 1
+
+	acceleration		-1 -1 -1 1 1 1
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			5
+		end				15 20
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}
+
+Particle
+{
+	name				smoke_lit
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation affectedByWind
+
+	count				0 1
+
+	life				250 300
+
+	cullrange			2000
+
+	origin				0 10 0 0 13 0
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-10 10
+
+	rotationDelta		-5 5
+
+	velocity			-7 -7 -7 7 7 7
+
+	acceleration		-7 -7 -7 7 7 7
+
+	rgb
+	{
+		parm			15 25
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			5
+		end				20 30
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_a
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}

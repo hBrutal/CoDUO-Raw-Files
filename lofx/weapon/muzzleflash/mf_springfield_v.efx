@@ -1,0 +1,105 @@
+FxRunner
+{
+	name				_call_globals
+
+	flags				relative
+
+	playfx
+	[
+		fx/weapon/muzzleflash/_global_r_v
+	]
+}
+
+Particle
+{
+	name				fire_base_core
+
+	flags				depthHack relative
+
+	count				2
+
+	life				50 75
+
+	origin				0 0 0 3 0 0
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			5 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4
+		end				6 8
+		flags			linear
+	}
+
+	shaders
+	[
+		weapon_v/muzzleflash_f_a
+		weapon_v/muzzleflash_f_b
+		weapon_v/muzzleflash_f_a
+		weapon_v/muzzleflash_f_b
+	]
+}
+
+Particle
+{
+	name				fire_base_gas
+
+	flags				depthHack relative
+
+	count				2
+
+	life				50 75
+
+	origin				0 0 0 3 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			5 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.15 0.25
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			6 8
+		end				16 18
+		flags			linear
+	}
+
+	shaders
+	[
+		weapon_v/muzzleflash_s_c
+		weapon_v/muzzleflash_s_b
+		weapon_v/muzzleflash_s_c
+		weapon_v/muzzleflash_s_d
+	]
+}

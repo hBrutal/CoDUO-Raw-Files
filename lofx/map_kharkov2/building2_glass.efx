@@ -1,0 +1,711 @@
+Particle
+{
+	name				fire_exp_core
+
+	count 0 0
+
+	life				125 300
+
+	cullrange			32000
+
+	origin				0 -25 -12 12 25 12
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -21 -21 21 21 21
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			100
+		end				320 362
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}
+
+Emitter
+{
+	name				gibs_metal_burn
+
+	flags				usePhysics emitFx
+
+	count 0 0
+
+	life				500 1000
+
+	cullrange			5000
+
+	bounce				0.25 0.75
+
+	origin				0 -25 -25 50 25 25
+
+	angle				0 0 0 360 360 360
+
+	velocity			200 -200 -200 1500 200 200
+
+	gravity				-600 -400
+
+	density				50
+
+	size
+	{
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	emitfx
+	[
+		fx/fire/fire_trail_25
+	]
+}
+
+Particle
+{
+	name				smoke_ring
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel oppositeRotation orgOnCylinder axisFromSphere
+
+	count 0 0
+
+	life				1000 2000
+
+	delay				500 1000
+
+	cullrange			8000
+
+	radius				1 5
+
+	rotation			10
+
+	rotationDelta		-5 5
+
+	rotationClamp		-5 5
+
+	velocity			350 0 0
+
+	velocityClamp		0 0 13
+
+	acceleration		750 0 0
+
+	rgb
+	{
+		end				0.2314 0.2314 0.2314
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				275 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				smoke_big_base
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 1 1
+
+	life				1000 2000
+
+	delay				150 6000
+
+	cullrange			8000
+
+	origin				-50 -25 -25 0 25 25
+
+	rotation			-15 15
+
+	rotationDelta		-2 2
+
+	velocity			25 -25 -25 100 25 25
+
+	gravity				0 50
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 125
+		end				200 450
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				fire_mushroom
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ clampRotation useAlpha
+
+	spawnFlags			oppositeAccel oppositeRotation axisFromSphere evenDistribution
+
+	count 1 1
+
+	life				750
+
+	delay				100 300
+
+	cullrange			8000
+
+	radius				1 25
+
+	rotation			0 360
+
+	rotationDelta		-40 40
+
+	rotationAccel		40
+
+	rotationClamp		2 3
+
+	velocity			700 -50 -50 900 50 50
+
+	velocityClamp		63 0 -25 175 0 -45
+
+	acceleration		975 0 0 1100 0 0
+
+	gravity				25
+
+	rgb
+	{
+		end				0.702 0.5098 0.2235
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				210 360
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a_blend
+		fire/fire_ball_a_blend
+		fire/fire_ball_a_blend
+	]
+}
+
+Particle
+{
+	name				smoke_mushroom
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ clampRotation useAlpha
+
+	spawnFlags			oppositeAccel oppositeRotation axisFromSphere evenDistribution
+
+	count 0 0
+
+	life				2750 2250
+
+	delay				100 400
+
+	cullrange			8000
+
+	origin				0 -25 -25 0 25 25
+
+	radius				1 25
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	rotationClamp		10 5
+
+	velocity			199 0 25 1025 0 50
+
+	velocityClamp		25 0 0 150 0 0
+
+	acceleration		925 0 0 1200 0 0
+
+	gravity				25
+
+	alpha
+	{
+		end				0
+		parm			0.75 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				220 330
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_ring
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			cheapOrgCalc oppositeAccel oppositeRotation orgOnCylinder axisFromSphere
+
+	count 2 2
+
+	life				250 500
+
+	delay				50 450
+
+	cullrange			4000
+
+	origin				-50 0 0 50 0 0
+
+	radius				1 5
+
+	rotation			10
+
+	rotationDelta		-5 5
+
+	rotationClamp		-5 5
+
+	velocity			350 -200 -200 350 200 200
+
+	acceleration		750 0 0
+
+	gravity				0 50
+
+	rgb
+	{
+		end				0.2314 0.2314 0.2314
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				275 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+	]
+}
+
+Emitter
+{
+	name				glass_gib
+
+	flags				useModel usePhysics
+
+	count 0 0
+
+	life				250 3000
+
+	cullrange			2000
+
+	bounce				0.25 0.75
+
+	angle				0 0 0 360 360 360
+
+	angleDelta			-45 -45 -45 45 45 45
+
+	velocity			100 -300 -300 500 300 300
+
+	gravity				-600 -400
+
+	size
+	{
+		start			1 5
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_glass_a
+		xmodel/m_gib_glass_b
+		xmodel/m_gib_glass_c
+	]
+}
+
+Particle
+{
+	name				fire_ring_add
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ
+
+	spawnFlags			cheapOrgCalc oppositeAccel oppositeRotation orgOnCylinder axisFromSphere rgbComponentInterpolation
+
+	count 1 1
+
+	life				250 500
+
+	delay				200 450
+
+	radius				1 5
+
+	rotation			10
+
+	rotationDelta		-5 5
+
+	rotationClamp		-5 5
+
+	velocity			300 0 0 500 0 0
+
+	acceleration		750 0 0
+
+	gravity				0 50
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				275 300
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				fire
+
+	flags				clampVelocityX clampRotation
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count 1 1
+
+	life				400 700
+
+	delay				0 500
+
+	cullrange			6000
+
+	origin				0 -5 -5 0 5 5
+
+	rotation			-80 -90
+
+	rotationDelta		5 10
+
+	rotationClamp		-90
+
+	velocity			450 -15 -15 1000 15 15
+
+	velocityClamp		15 0 0 35 0 0
+
+	acceleration		850 0 0 950 0 0
+
+	gravity				100 125
+
+	rgb
+	{
+		start			0.6039 0.4275 0.3216
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			45 55
+		end				315 225
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}
+
+Particle
+{
+	name				fire_mushroom_add
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ clampRotation
+
+	spawnFlags			oppositeAccel oppositeRotation axisFromSphere evenDistribution
+
+	count 0 0
+
+	life				250 500
+
+	delay				100 300
+
+	cullrange			6000
+
+	radius				1 25
+
+	rotation			0 360
+
+	rotationDelta		-40 40
+
+	rotationAccel		40
+
+	rotationClamp		2 3
+
+	velocity			575 -50 -50 800 50 50
+
+	acceleration		475 0 0 700 0 0
+
+	gravity				25
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				210 360
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+FxRunner
+{
+	name				_call_2ndary_fire
+
+	origin				-50 0 0
+
+	playfx
+	[
+		fx/map_kharkov2/building2_secondaryfire
+	]
+}
+
+Emitter
+{
+	name				gib_concrete
+
+	flags				useModel usePhysics
+
+	count 2 2
+
+	life				5000 6000
+
+	cullrange			4000
+
+	bounce				0.25 0.5
+
+	angle				0 0 0 360 360 360
+
+	angleDelta			-45 -45 -45 45 45 45
+
+	velocity			100 -300 -300 400 300 300
+
+	gravity				-600 -400
+
+	size
+	{
+		start			8 24
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_brick_a
+		xmodel/m_gib_brick_b
+		xmodel/m_gib_brick_c
+	]
+}
+
+Particle
+{
+	name				glass_large
+
+	spawnFlags			oppositeAccel oppositeRotation axisFromSphere evenDistribution
+
+	count 1 1
+
+	life				2750 2250
+
+	cullrange			32000
+
+	delay				100 400
+
+	origin				0 -25 -25 0 25 25
+
+	radius				1 25
+
+	rotation			0 360
+
+	rotationDelta		-40 40
+
+	rotationClamp		10 5
+
+	velocity			100 -200 0 800 200 400
+
+	gravity				-600 -400
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15
+		flags			random linear
+	}
+
+	size
+	{
+		start			100 150
+		end				220 275
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_plg_glass_a
+		debree/debree_plg_glass_a
+		debree/debree_plg_glass_a
+	]
+}

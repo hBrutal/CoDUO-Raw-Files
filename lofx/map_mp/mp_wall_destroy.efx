@@ -1,0 +1,235 @@
+Particle
+{
+	name				smoke_linger_mist_bottom
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				3
+
+	life				1000 1500
+
+	delay				25
+
+	cullrange			1500
+
+	origin				-3 -100 -100 50 100 100
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			-6 -25 -25 75 25 25
+
+	acceleration		-8 -8 -8 8 8 8
+
+	gravity				75 150
+
+	rgb
+	{
+		start			0.5569 0.5843 0.5843
+		end				0.3529 0.3804 0.3804
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				225 250
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_shroom
+
+	flags				useAlpha
+
+	life				1500 2000
+
+	cullrange			32000
+
+	origin				0 -50 -50 50 50 50
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			50 -15 -15 150 15 15
+
+	gravity				50 75
+
+	rgb
+	{
+		start			0.5569 0.5765 0.549
+		end				0.251 0.2667 0.2667
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			175 200
+		end				225 250
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_shaft_top
+
+	flags				useAlpha
+
+	life				150 250
+
+	delay				25
+
+	cullrange			2500
+
+	origin				0 -6 -6 0 6 6
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			275 -35 -35 275 35 35
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5098 0.5216 0.4784
+		end				0.3529 0.3804 0.3804
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_wht_a
+		smoke/smk_p_topsm_wht_b
+		smoke/smk_p_topsm_wht_b
+	]
+}
+
+Particle
+{
+	name				dirt_fall_base
+
+	flags				useAlpha
+
+	count				2
+
+	life				250 500
+
+	delay				50
+
+	cullrange			1000
+
+	origin				0 -50 -50 25 50 50
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			100 -15 -15 575 15 15
+
+	acceleration		0 -25 -25 -50 25 25
+
+	gravity				-350 -625
+
+	rgb
+	{
+		end				0.7412 0.7765 0.749
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			75 100
+		end				150 200
+		flags			linear
+	}
+
+	size2
+	{
+		start			100
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_plg_concrete_a
+		debree/debree_plg_concrete_a
+		debree/debree_plg_concrete_a
+	]
+}

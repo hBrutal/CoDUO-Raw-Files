@@ -1,0 +1,238 @@
+FxRunner
+{
+	name				3d_above
+
+	count 0 0
+
+	origin				1000 1.5e+004 -1e+004 5000 1.5e+004 1e+004
+
+	playfx
+	[
+		fx/map_bomber/cloudsingle_3d_altocumulus
+	]
+}
+
+FxRunner
+{
+	name				3d_below
+
+	count 0 0
+
+	origin				-1000 1.5e+004 -1e+004 -5000 1.5e+004 1e+004
+
+	playfx
+	[
+		fx/map_bomber/cloudsingle_3d_altocumulus
+	]
+}
+
+FxRunner
+{
+	name				3d_right
+
+	count 3 3
+
+	origin				-5000 -1.5e+004 3000 2500 1.5e+004 3.5e+004
+
+	playfx
+	[
+		fx/map_bomber/cloudsingle_3d_altocumulus
+	]
+}
+
+FxRunner
+{
+	name				3d_left
+
+	count 3 3
+
+	origin				-5000 -1.5e+004 -3.5e+004 2500 1.5e+004 -3000
+
+	playfx
+	[
+		fx/map_bomber/cloudsingle_3d_altocumulus
+	]
+}
+
+Particle
+{
+	name				below_spread_mist
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	count 7 7
+
+	life				2.5e+004
+
+	cullrange			40000
+
+	origin				-2000 -2.5e+004 -3.5e+004 -7500 2.5e+004 3.5e+004
+
+	wind				100
+
+	rotation			-15 15
+
+	velocity			-5 -2000 -5 5 -2000 5
+
+	rgb
+	{
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			2000 2500
+		end				25
+		parm			0.5
+	}
+
+	size2
+	{
+		start			2000 2500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_f
+		smoke/smk_p_none_org_f
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_f
+		smoke/smk_p_fray_org_f
+	]
+}
+
+Particle
+{
+	name				below_spread_lit
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	nonUniformScale		1
+
+	count 7 7
+
+	life				2.5e+004
+
+	cullrange			40000
+
+	origin				-2000 -2.5e+004 -3.5e+004 -7500 2.5e+004 3.5e+004
+
+	wind				100
+
+	rotation			-5 5
+
+	rotationDelta		-0.5 0.5
+
+	velocity			-5 -2000 -5 5 -2000 5
+
+	rgb
+	{
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			4000 4500
+		end				25
+		parm			0.5
+	}
+
+	size2
+	{
+		start			4000 4500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_org_a
+		smoke/smk_p_top_org_a
+		smoke/smk_p_top_org_a
+		smoke/smk_p_top_org_d
+		smoke/smk_p_top_org_d
+		smoke/smk_p_top_org_d
+		smoke/smk_p_top_org_i
+		smoke/smk_p_top_org_i
+		smoke/smk_p_top_org_i
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_a
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_c
+		smoke/smk_p_fray_org_f
+		smoke/smk_p_fray_org_f
+	]
+}
+
+OrientedParticle
+{
+	name				cloudlayer_high
+
+	flags				useAlpha
+
+	count 1 1
+
+	life				1.2e+005
+
+	origin				5000 -1.2e+005 -6e+004 2e+004 1.2e+005 6e+004
+
+	rotation			88 92
+
+	velocity			-5 -2000 -200 5 -2000 200
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			6e+004 8e+004
+		end				6e+004 8e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		atmosphere/cloud_plane_cirrus_a
+		atmosphere/cloud_plane_cirrus_a
+	]
+}

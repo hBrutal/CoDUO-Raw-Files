@@ -1,0 +1,99 @@
+Particle
+{
+	name				fire_base
+
+	flags				relative
+
+	count				2
+
+	life				75 100
+
+	origin				0 0 0 6 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			10 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			26 30
+		end				21 23
+		flags			linear
+	}
+
+	shaders
+	[
+		weapon_v/muzzleflash_f_a
+		weapon_v/muzzleflash_f_b
+		weapon_v/muzzleflash_f_a
+		weapon_v/muzzleflash_f_b
+	]
+}
+
+Particle
+{
+	name				fire_gas
+
+	flags				relative
+
+	life				75 100
+
+	origin				0 0 0 6 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			10 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.1 0.2
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			30 32
+		end				15 16
+		flags			linear
+	}
+
+	shaders
+	[
+		weapon_v/muzzleflash_s_c
+		weapon_v/muzzleflash_s_b
+		weapon_v/muzzleflash_s_c
+		weapon_v/muzzleflash_s_d
+	]
+}
+
+CameraShake
+{
+	life				35 40
+
+	radius				1000
+
+	intensity			3
+}

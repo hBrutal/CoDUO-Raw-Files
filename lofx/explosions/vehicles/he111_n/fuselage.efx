@@ -1,0 +1,43 @@
+Emitter
+{
+	name				M_fuselage
+
+	flags				useModel deathFx emitFx
+
+	spawnFlags			absoluteAccel
+
+	life				2000 3000
+
+	angleDelta			-2 -2 -15 2 2 15
+
+	velocity			800 -100 -100 1200 100 100
+
+	gravity				-600 -400
+
+	density				200
+
+	models
+	[
+		xmodel/v_ge_air_he111_d_fuselage_p
+	]
+
+	deathfx
+	[
+		fx/explosions/artillery/flak_single_1000d_ns
+	]
+
+	emitfx
+	[
+		fx/fire/fire_trail_100
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_1000d_ns
+	]
+}

@@ -1,0 +1,53 @@
+Tail
+{
+	name				rain_fine_spawnimpact
+
+	flags				usePhysics impactKills impactFx
+
+	spawnFlags			absoluteVel absoluteAccel orgOnCylinder
+
+	count				0 1
+
+	life				500
+
+	delay				0 300
+
+	cullrange			600
+
+	radius				0 50
+
+	wind				50 60
+
+	velocity			0 0 -25
+
+	gravity				-1600
+
+	alpha
+	{
+		start			0.1 0.2
+	}
+
+	size
+	{
+		start			5 10
+		end				10 15
+	}
+
+	length
+	{
+		start			0
+		end				40 85
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_drop_a
+		water/rain_drop_a
+	]
+
+	impactfx
+	[
+		/fx/atmosphere/rain_hit_generic
+	]
+}

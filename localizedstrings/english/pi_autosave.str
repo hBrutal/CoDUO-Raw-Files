@@ -1,0 +1,67 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           PONYRI1
+LANG_ENGLISH        "Assault The Rail Station"
+
+REFERENCE           PONYRI2
+LANG_ENGLISH        "Flush Out Left Flank"
+
+REFERENCE           PONYRI3
+LANG_ENGLISH        "Clear The Station"
+
+REFERENCE           PONYRI4
+LANG_ENGLISH        "Advance On The Town"
+
+REFERENCE           PONYRI5
+LANG_ENGLISH        "Entering The School"
+
+REFERENCE           PONYRI6
+LANG_ENGLISH        "Leaving The School"
+
+REFERENCE           PONYRI7
+LANG_ENGLISH        "Helping Boris Destroy The Panzer"
+
+REFERENCE           PONYRI8
+LANG_ENGLISH        "Flushing Out the Machinegun Nest"
+
+REFERENCE           PONYRI9
+LANG_ENGLISH        "Entering The Factory"
+
+REFERENCE           PONYRI10
+LANG_ENGLISH        "The Factory Assembly Room"
+
+REFERENCE           KURSK1
+LANG_ENGLISH        "Find a place to cross the stream"
+
+REFERENCE           KURSK2
+LANG_ENGLISH        "German resistance at the stream eliminated"
+
+REFERENCE           KURSK3
+LANG_ENGLISH        "German ambush repulsed"
+
+REFERENCE           KURSK4
+LANG_ENGLISH        "Tigers!"
+
+REFERENCE           KURSK5
+LANG_ENGLISH        "Clearing secured"
+
+REFERENCE           KURSK6
+LANG_ENGLISH        "Approaching Prokhorovka"
+
+
+ENDMARKER
+
+

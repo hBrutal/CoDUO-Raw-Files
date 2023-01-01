@@ -1,0 +1,53 @@
+Particle
+{
+	name				smoke_trail_lit
+
+	flags				useAlpha
+
+	spawnFlags			affectedByWind
+
+	count				0 1
+
+	life				3000 4000
+
+	delay				0 300
+
+	cullrange			32000
+
+	radius				72
+
+	wind				75
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			75 -15 -15 200 15 15
+
+	rgb
+	{
+		start			0.8824 0.8667 0.8353
+		end				0.8824 0.8667 0.8353
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}

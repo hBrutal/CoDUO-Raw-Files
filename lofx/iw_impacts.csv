@@ -1,0 +1,136 @@
+# This file maps impact types to effects,,
+"# It can be overridden in part by just specifying some effects in a CSV file in the ""fx"" folder that has a later name alphabetically",,
+"# It has the simple syntax that the first column is the impact type, the second is the surface type, and the thrid is the effect name",,
+"# The impact type is one of: bullet_small_normal, bullet_small_reflect, bullet_large_normal, bullet_large_reflect, grenade_bounce, and grenade_explode",,
+"# The surface type is one of the valid surface impact types for the surfaceparm shader command, or ""default"".  Default is only used if the code cannot figure out the correct surface type",,
+"# The effect name should be a full path, including extension, to the effect to play for this type of impact on this type of surface",,
+"# The effect name may be left blank, in which case no effect is played for this impact.",,
+"# If any impact effect has no row entry in any file, the game will not load any maps.  The console lists which surface types had no entries.",,
+"# These effects usually should not specify sounds, since a corresponding sound alias will be played at the same time as the effect",,
+"# For bullet hits, two effects are played, either or both of which may be blank:",,
+"# The ""normal"" effect is played at the impact point facing the surface normal.  This should usually be used for decals.",,
+"# The ""reflect"" effect is played at the impact point facing the direction of impact reflected off the surface.",,
+
+grenade_bounce,default,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,bark,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,brick,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,carpet,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,cloth,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,concrete,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,dirt,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,flesh,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,foliage,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,glass,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,grass,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,gravel,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,ice,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,metal,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,mud,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,paper,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,plaster,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,rock,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,sand,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,snow,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,water,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,wood,fx/weapon/impacts/grenade_bounce_generic.efx
+grenade_bounce,asphalt,fx/weapon/impacts/grenade_bounce_generic.efx
+
+grenade_explode,default,fx\weapon\explosions\grenade_generic.efx
+grenade_explode,bark,fx\weapon\explosions\grenade_wood.efx
+grenade_explode,brick,fx\weapon\explosions\grenade_brick.efx
+grenade_explode,carpet,fx\weapon\explosions\grenade_cloth.efx
+grenade_explode,cloth,fx\weapon\explosions\grenade_cloth.efx
+grenade_explode,concrete,fx\weapon\explosions\grenade_concrete.efx
+grenade_explode,dirt,fx\weapon\explosions\grenade_dirt.efx  
+grenade_explode,flesh,fx\weapon\explosions\grenade_flesh.efx
+grenade_explode,foliage,fx\weapon\explosions\grenade_grass.efx
+grenade_explode,glass,fx\weapon\explosions\grenade_glass.efx
+grenade_explode,grass,fx\weapon\explosions\grenade_grass.efx
+grenade_explode,gravel,fx\weapon\explosions\grenade_gravel.efx
+grenade_explode,ice,fx\weapon\explosions\grenade_ice.efx
+grenade_explode,metal,fx\weapon\explosions\grenade_metal.efx
+grenade_explode,mud,fx\weapon\explosions\grenade_mud.efx
+grenade_explode,paper,fx\weapon\explosions\grenade_cloth.efx
+grenade_explode,plaster,fx\weapon\explosions\grenade_cloth.efx
+grenade_explode,rock,fx\weapon\explosions\grenade_gravel.efx
+grenade_explode,sand,fx\weapon\explosions\grenade_sand.efx
+grenade_explode,snow,fx\weapon\explosions\grenade_snow.efx
+grenade_explode,water,fx\weapon\explosions\grenade_water.efx
+grenade_explode,wood,fx\weapon\explosions\grenade_wood.efx
+grenade_explode,asphalt,fx\weapon\explosions\grenade_asphalt.efx
+
+rocket_explode,default,fx\weapon\explosions\rocket_generic.efx
+rocket_explode,brick,fx\weapon\explosions\rocket_brick.efx
+rocket_explode,bark,fx\weapon\explosions\rocket_wood.efx
+rocket_explode,carpet,fx\weapon\explosions\rocket_cloth.efx
+rocket_explode,cloth,fx\weapon\explosions\rocket_cloth.efx
+rocket_explode,concrete,fx\weapon\explosions\rocket_concrete.efx
+rocket_explode,dirt,fx\weapon\explosions\rocket_dirt.efx
+rocket_explode,flesh,fx\weapon\explosions\rocket_flesh.efx
+rocket_explode,foliage,fx\weapon\explosions\rocket_grass.efx
+rocket_explode,glass,fx\weapon\explosions\rocket_glass.efx
+rocket_explode,grass,fx\weapon\explosions\rocket_grass.efx
+rocket_explode,gravel,fx\weapon\explosions\rocket_gravel.efx
+rocket_explode,ice,fx\weapon\explosions\rocket_ice.efx
+rocket_explode,metal,fx\weapon\explosions\rocket_metal.efx
+rocket_explode,mud,fx\weapon\explosions\rocket_mud.efx
+rocket_explode,paper,fx\weapon\explosions\rocket_cloth.efx
+rocket_explode,plaster,fx\weapon\explosions\rocket_plaster.efx
+rocket_explode,rock,fx\weapon\explosions\rocket_gravel.efx
+rocket_explode,sand,fx\weapon\explosions\rocket_sand.efx
+rocket_explode,snow,fx\weapon\explosions\rocket_snow.efx
+rocket_explode,water,fx\weapon\explosions\rocket_water.efx
+rocket_explode,wood,fx\weapon\explosions\rocket_wood.efx
+rocket_explode,asphalt,fx\weapon\explosions\rocket_asphalt.efx
+
+molotov_explode_normal,default,fx\weapon\explosions\grenade_generic.efx
+molotov_explode_normal,bark,fx\weapon\explosions\grenade_wood.efx
+molotov_explode_normal,brick,fx\weapon\explosions\grenade_brick.efx
+molotov_explode_normal,bark,fx\weapon\explosions\grenade_wood.efx
+molotov_explode_normal,brick,fx\weapon\explosions\grenade_brick.efx
+molotov_explode_normal,carpet,fx\weapon\explosions\grenade_cloth.efx
+molotov_explode_normal,cloth,fx\weapon\explosions\grenade_cloth.efx
+molotov_explode_normal,concrete,fx\weapon\explosions\grenade_concrete.efx
+molotov_explode_normal,dirt,fx\weapon\explosions\grenade_dirt.efx
+molotov_explode_normal,flesh,fx\weapon\explosions\grenade_flesh.efx
+molotov_explode_normal,foliage,fx\weapon\explosions\grenade_grass.efx
+molotov_explode_normal,glass,fx\weapon\explosions\grenade_glass.efx
+molotov_explode_normal,grass,fx\weapon\explosions\grenade_grass.efx
+molotov_explode_normal,gravel,fx\weapon\explosions\grenade_gravel.efx
+molotov_explode_normal,ice,fx\weapon\explosions\grenade_ice.efx
+molotov_explode_normal,metal,fx\weapon\explosions\grenade_metal.efx
+molotov_explode_normal,mud,fx\weapon\explosions\grenade_mud.efx
+molotov_explode_normal,paper,fx\weapon\explosions\grenade_cloth.efx
+molotov_explode_normal,plaster,fx\weapon\explosions\grenade_cloth.efx
+molotov_explode_normal,rock,fx\weapon\explosions\grenade_gravel.efx
+molotov_explode_normal,sand,fx\weapon\explosions\grenade_sand.efx
+molotov_explode_normal,snow,fx\weapon\explosions\grenade_snow.efx
+molotov_explode_normal,water,fx\weapon\explosions\grenade_water.efx
+molotov_explode_normal,wood,fx\weapon\explosions\grenade_wood.efx
+molotov_explode_normal,asphalt,fx\weapon\explosions\grenade_asphalt.efx
+
+molotov_explode_reflect,default
+molotov_explode_reflect,bark
+molotov_explode_reflect,brick
+molotov_explode_reflect,bark
+molotov_explode_reflect,brick
+molotov_explode_reflect,carpet
+molotov_explode_reflect,cloth
+molotov_explode_reflect,concrete
+molotov_explode_reflect,dirt
+molotov_explode_reflect,flesh
+molotov_explode_reflect,foliage
+molotov_explode_reflect,glass
+molotov_explode_reflect,grass
+molotov_explode_reflect,gravel
+molotov_explode_reflect,ice
+molotov_explode_reflect,metal
+molotov_explode_reflect,mud
+molotov_explode_reflect,paper
+molotov_explode_reflect,plaster
+molotov_explode_reflect,rock
+molotov_explode_reflect,sand
+molotov_explode_reflect,snow
+molotov_explode_reflect,water
+molotov_explode_reflect,wood
+molotov_explode_reflect,asphalt

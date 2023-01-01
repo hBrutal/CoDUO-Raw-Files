@@ -1,0 +1,116 @@
+Particle
+{
+	name				smoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				8
+
+	life				3500 4500
+
+	delay				0 5000
+
+	cullrange			16000
+
+	origin				-2 6 -6 15 6 6
+
+	radius				60 50
+
+	wind				100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			35 -1 -1 50 1 1
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		start			0.4706 0.5255 0.5608
+		end				0.2588 0.2706 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				75 100
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_lit
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				15
+
+	life				1000 1500
+
+	delay				0 5000
+
+	origin				-2 6 -6 0 6 6
+
+	radius				60 50
+
+	rotation			170 190
+
+	rotationDelta		-5 5
+
+	velocity			20 -1 -1 45 1 1
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		end				0.7176 0.5255 0.3176
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				50 75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_fire_a
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_c
+	]
+}

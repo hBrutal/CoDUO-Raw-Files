@@ -1,0 +1,75 @@
+Particle
+{
+	name				flare
+
+	count 0 0
+
+	life				600
+
+	origin				-55 150 0 -40 -140 -65
+
+	rgb
+	{
+		start			1 1 0
+		end				0.9137 0.9059 0.6196
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1690
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/flash1
+	]
+}
+
+Particle
+{
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				100
+
+	delay				0 70
+
+	origin				0 360 0 0 -350 0
+
+	rgb
+	{
+		start			1 1 0.5412
+		end				1 0.7765 0.251
+		flags			random linear
+	}
+
+	alpha
+	{
+		end				0.1
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			2500
+		end				30
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/glow_yellow_a
+	]
+}

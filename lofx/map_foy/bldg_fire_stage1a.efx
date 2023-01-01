@@ -1,0 +1,13 @@
+FxRunner
+{
+	name				roomstart_1
+
+	count				0 1
+
+	cullrange			1000
+
+	playfx
+	[
+		fx/map_foy/nests/room1start
+	]
+}

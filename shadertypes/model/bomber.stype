@@ -1,0 +1,11 @@
+{
+	surfaceparm metal
+//	sort outerBlend
+	{
+		map $texturename
+//		rgbGen lightingDiffuse
+		blendfunc blend
+		depthWrite
+	}
+}
+

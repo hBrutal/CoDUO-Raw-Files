@@ -1,0 +1,188 @@
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			oppositeRotation orgOnSphere axisFromSphere
+
+	count				45
+
+	life				2000 3000
+
+	radius				150 200
+
+	height				10 20
+
+	rotation			50 120
+
+	rotationDelta		-6 6
+
+	velocity			20 0 0 40 0 0
+
+	gravity				-100
+
+	rgb
+	{
+		start			0.8078 0.8824 0.9686
+		end				0.651 0.7922 0.9412
+		parm			1
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.7
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			79 124
+		end				144 230
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/riverspray2
+	]
+}
+
+Particle
+{
+	name				gib_wood
+
+	flags				usePhysics impactKills
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count				51 60
+
+	life				6000 1e+004
+
+	bounce				0.25 0.5
+
+	origin				0 -30 -30 50 30 30
+
+	radius				20 15
+
+	height				40 50
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			500 -300 0 900 300 300
+
+	gravity				-800
+
+	size
+	{
+		start			12 18
+		end				0
+		parm			96
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_metal_a
+		debree/debree_gib_metal_b
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			cheapOrgCalc oppositeAccel evenDistribution
+
+	life				200
+
+	radius				11 40
+
+	velocity			4000 -290 -290 5000 290 290
+
+	acceleration		-2000 0 0
+
+	gravity				-200 -300
+
+	density				4
+
+	variance			0
+
+	size
+	{
+		start			25 150
+		end				200
+	}
+
+	emitfx
+	[
+		fx/pi_fx/water_plume_comp
+	]
+}
+
+Particle
+{
+	name				Copy of smoke_ring
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			oppositeRotation orgOnSphere axisFromSphere evenDistribution
+
+	count				19 21
+
+	life				2000 4000
+
+	origin				0 0 30 0 0 50
+
+	radius				100 220
+
+	height				20 40
+
+	rotation			170 190
+
+	rotationClamp		-0.5 0.5
+
+	velocity			100 0 0 150 0 0
+
+	gravity				-100 -150
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.6
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			50 90
+		end				120 160
+		flags			linear
+	}
+
+	length
+	{
+		end				0.5
+		parm			1
+		flags			linear
+	}
+
+	shaders
+	[
+		water/froth_t_a
+		water/froth_t_b
+		water/froth_t2_a
+	]
+}

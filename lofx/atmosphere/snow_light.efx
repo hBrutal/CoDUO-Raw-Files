@@ -1,0 +1,48 @@
+Particle
+{
+	name				snow_area
+
+	flags				usePhysics impactKills
+
+	count				0 1
+
+	life				3500
+
+	cullrange			2000
+
+	origin				-620 -350 300 400 350 300
+
+	radius				100 600
+
+	height				0
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-15 -15 -125 15 15 -150
+
+	acceleration		-8 -8 -8 8 8 8
+
+	alpha
+	{
+		start			0.25 0.5
+	}
+
+	size
+	{
+		start			1 2
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		snow/snow_flake_a
+		snow/snow_flake_a
+		snow/snow_flake_a
+	]
+}

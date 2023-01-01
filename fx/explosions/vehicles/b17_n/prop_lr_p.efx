@@ -1,0 +1,32 @@
+Emitter
+{
+	name				M_prop_lr_hold
+
+	flags				useModel
+
+	spawnFlags			absoluteAccel
+
+	life				500 1000
+
+	angleDelta			-5 -5 45 5 5 85
+
+	velocity			400 -200 -200 800 200 200
+
+	acceleration		-1000 0 0 -500 0 0
+
+	gravity				-600 -400
+
+	density				150
+
+	size
+	{
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/v_us_air_b-17_prop_lr(d)
+	]
+}

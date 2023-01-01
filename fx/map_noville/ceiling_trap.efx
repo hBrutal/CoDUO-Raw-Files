@@ -1,0 +1,236 @@
+Particle
+{
+	name				dust_lit
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel oppositeRotation evenDistribution
+
+	count				3 4
+
+	life				2500 3000
+
+	delay				0 300
+
+	cullrange			2000
+
+	origin				-32 -32 0 32 32 90
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	rotationAccel		2
+
+	velocity			-25 50 -25 25 100 25
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				0 -25
+
+	rgb
+	{
+		start			0.2902 0.2706 0.2078 0.2902 0.2667 0.2078
+		end				0.4667 0.4196 0.3686
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				150 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_a
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Emitter
+{
+	name				model_wood
+
+	flags				useModel usePhysics
+
+	spawnFlags			absoluteVel
+
+	count				10
+
+	life				1000 2000
+
+	cullrange			1000
+
+	bounce				0.15 0.75
+
+	origin				0 0 0 0 0 90
+
+	angle				0 0 0 180 180 180
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			-25 300 -25 -25 400 25
+
+	gravity				-600 -400
+
+	size
+	{
+		start			3 12
+	}
+
+	models
+	[
+		xmodel/m_gib_wood_a
+		xmodel/m_gib_wood_b
+		xmodel/m_gib_wood_c
+	]
+}
+
+Particle
+{
+	name				dust_mist_linger
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel oppositeRotation
+
+	count				4 6
+
+	life				3000 4000
+
+	delay				0 1000
+
+	cullrange			1000
+
+	origin				-32 -32 0 32 32 90
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	rotationAccel		15
+
+	rotationClamp		-5 5
+
+	velocity			-5 -5 -5 5 5 5
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				0 -25
+
+	rgb
+	{
+		start			0.2902 0.2706 0.2078 0.2902 0.2667 0.2078
+		end				0.6824 0.6431 0.5569 0.6824 0.6431 0.5529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				gib_wood
+
+	flags				usePhysics useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				8
+
+	life				2500 3000
+
+	cullrange			1000
+
+	bounce				0.25 0.5
+
+	origin				-32 -32 0 32 32 90
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			-50 50 -50 50 500 50
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				-600 -400
+
+	rgb
+	{
+		end				0.4667 0.4196 0.3686
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			1 6
+		end				0
+		parm			95 98
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_b
+	]
+}
+
+FxRunner
+{
+	name				ceiling_dust
+
+	spawnFlags			orgOnCylinder
+
+	count				10
+
+	delay				0 5000
+
+	cullrange			1000
+
+	origin				80 0 0
+
+	radius				1 25
+
+	playfx
+	[
+		fx/map_noville/basement_ceiling_dust
+	]
+}

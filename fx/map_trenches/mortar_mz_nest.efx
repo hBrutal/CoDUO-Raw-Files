@@ -1,0 +1,129 @@
+Particle
+{
+	name				bottom
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel absoluteAccel
+
+	life				100
+
+	delay				180 170
+
+	origin				2000 0 0 1900 0 0
+
+	rgb
+	{
+		start			0.9922 0.7686 0.5176
+		end				0.2235 0.06667 0.06667
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			2800 3000
+		end				0
+	}
+
+	shaders
+	[
+		atmosphere/cloud_underlit_a
+		atmosphere/cloud_underlit_b
+	]
+}
+
+Particle
+{
+	name				top_a
+
+	spawnFlags			absoluteVel absoluteAccel
+
+	count				1 2
+
+	life				500 700
+
+	delay				110 150
+
+	origin				900 0 0
+
+	rotation			5 -5
+
+	rotationDelta		-0.5 0.5
+
+	rgb
+	{
+		start			0.9922 0.7686 0.5176
+		end				0.1412 0.1608 0.2078
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.2 0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			2870 2892
+		end				2900
+		flags			linear
+	}
+
+	shaders
+	[
+		atmosphere/cloud_underlit_top_a
+		atmosphere/cloud_underlit_top_b
+	]
+}
+
+Particle
+{
+	name				top_b
+
+	spawnFlags			absoluteVel absoluteAccel
+
+	life				400 600
+
+	delay				190 200
+
+	origin				900 0 0
+
+	rotation			3 -3
+
+	rotationDelta		-0.5 0.5
+
+	rgb
+	{
+		start			0.9922 0.7686 0.5176
+		end				0.2235 0.06667 0.06667
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.6
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			2600 2700
+		end				0
+	}
+
+	shaders
+	[
+		atmosphere/cloud_underlit_top_a
+		atmosphere/cloud_underlit_top_b
+	]
+}

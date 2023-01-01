@@ -1,0 +1,193 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           PLACE
+LANG_ENGLISH        "Just outside Ponyri"
+
+REFERENCE           DATE
+LANG_ENGLISH        "July 11, 1943"
+
+REFERENCE           TIME
+LANG_ENGLISH        "1100 hrs"
+
+REFERENCE           ANTONOV_INTROSPEECH2
+LANG_ENGLISH        "Listen well, comrades. Just beyond this hill to the north, we will advance to a train station, where our tanks will gently persuade the enemy to abandon their posts, or die.  Once the station has been secured, we will press our advantage until the only Germans left in Ponyri are dead! Move out!"
+
+REFERENCE           ANTONOV_TANKSCOVER
+LANG_ENGLISH        "Fall in behind! Use the tanks for cover!"
+
+REFERENCE           ANTONOV_OUTFLANK
+LANG_ENGLISH        "Left flank - left flank!"
+
+REFERENCE           ANTONOV_RAILSNIPERS2
+LANG_ENGLISH        "Sniper in the tower! Yuri - stop him - we will take care of the Germans in the station."
+
+REFERENCE           ANTONOV_INTOSTATION
+LANG_ENGLISH        "You men - into the station! Drive them out! Go! Go! Go!"
+
+REFERENCE           ANTONOV_SECURE
+LANG_ENGLISH        "Yuri, get back down!"
+
+REFERENCE           ANTONOV_REGROUP1
+LANG_ENGLISH        "Regroup!"
+
+REFERENCE           ANTONOV_REGROUP2
+LANG_ENGLISH        "To me!"
+
+REFERENCE           ANTONOV_SPEECH2
+LANG_ENGLISH        "Nicely done men, we have them on the run -- so let's keep it that way. Move out!"
+
+REFERENCE           VASSILI_TAKECOVER4
+LANG_ENGLISH        "Don't stop.  Keep moving forward."
+
+REFERENCE           VASSILI_HEADSDOWN
+LANG_ENGLISH        "Down - get down! Machineguns! Yuri get into that schoolhouse and teach them a lesson!"
+
+REFERENCE           BORIS_MEDIC
+LANG_ENGLISH        "Man Down! Medic!"
+
+REFERENCE           ANTONOV_EXPLOSIVES
+LANG_ENGLISH        "It's too late for that. Yuri, grab his explosives, we're going to need them."
+
+REFERENCE           ANTONOV_EXPLOSIVES2
+LANG_ENGLISH        "Yuri, get those explosives - NOW!"
+
+REFERENCE           ANTONOV_PANZER_MOVE
+LANG_ENGLISH        "Panzer! Get around it! Move!"
+
+REFERENCE           ANTONOV_KILLTANK1
+LANG_ENGLISH        "We have to get through here! Boris, flank right behind these buildings and plant your charges on that Panzer!"
+
+REFERENCE           ANTONOV_KILLTANK2
+LANG_ENGLISH        "Yuri! Follow Boris and cover him while he destroys that tank!"
+
+REFERENCE           ANTONOV_STOPMG
+LANG_ENGLISH        "Machine Gun! Flank left and move in behind it!"
+
+REFERENCE           ANTONOV_STOPMG2
+LANG_ENGLISH        "Yuri! Flank left with Boris and get behind that machinegun!"
+
+REFERENCE           ANTONOV_ASSAULT
+LANG_ENGLISH        "Move in! The assault on the factory has begun!"
+
+REFERENCE           ANTONOV_BASMENT
+LANG_ENGLISH        "Yuri - into the basement! We will hold off the Germans here!"
+
+REFERENCE           ANTONOV_BASMENT2
+LANG_ENGLISH        "Hurry - into the basement! You must go now!"
+
+REFERENCE           ANON_THRUDOORS
+LANG_ENGLISH        "Get through those doors!"
+
+REFERENCE           ANON_TOOQUIET1
+LANG_ENGLISH        "It's too quiet, we've taken them by surprise!"
+
+REFERENCE           ANON_TOOQUIET2
+LANG_ENGLISH        "Let's hurry to the factory floor!"
+
+REFERENCE           ANON_TOOQUIET3
+LANG_ENGLISH        "Quickly! Move - move!"
+
+REFERENCE           ANON_TOOQUIET4
+LANG_ENGLISH        "While our forces keep them occupied we'll slaughter them from within."
+
+REFERENCE           ANON_GOODSHOT
+LANG_ENGLISH        "Good shot! Keep going."
+
+REFERENCE           ANON_ALMOSTTHERE
+LANG_ENGLISH        "Keep going.  We're almost there!"
+
+REFERENCE           ANON_CATWALK
+LANG_ENGLISH        "We must get across that catwalk."
+
+REFERENCE           ANON_SERGEANT
+LANG_ENGLISH        "There's the sergeant below!  They made it!"
+
+REFERENCE           ANTONOV_PFAUST
+LANG_ENGLISH        "There's a man in that tank!  Find a Panzerfaust and take care of him!"
+
+REFERENCE           ANTONOV_PFAUST2
+LANG_ENGLISH        "Take out that tank!"
+
+REFERENCE           COMMISSAR_ENDING
+LANG_ENGLISH        "Comrades! We have driven the enemy from Ponyri, and we will not rest until the whole German army has been driven off Russian soil!"
+
+REFERENCE           OBJECTIVE1
+LANG_ENGLISH        "Take the rail station"
+
+REFERENCE           OBJECTIVE1A
+LANG_ENGLISH        "Flank to the left of the rails"
+
+REFERENCE           OBJECTIVE1B
+LANG_ENGLISH        "Eliminate German sniper in the tower"
+
+REFERENCE           OBJECTIVE1C
+LANG_ENGLISH        "Clear the rail station of German forces"
+
+REFERENCE           OBJECTIVE1D
+LANG_ENGLISH        "Rendezvous with Antonov"
+
+REFERENCE           OBJECTIVE2
+LANG_ENGLISH        "Clear the town of German resistance"
+
+REFERENCE           OBJECTIVE3
+LANG_ENGLISH        "Sweep the school and eliminate the machine gunners"
+
+REFERENCE           OBJECTIVE3A
+LANG_ENGLISH        "Enter the school from the west"
+
+REFERENCE           OBJECTIVE3B
+LANG_ENGLISH        "Eliminate the machinegun nest upstairs"
+
+REFERENCE           OBJECTIVE3C
+LANG_ENGLISH        "Regroup with your squad"
+
+REFERENCE           OBJECTIVE4
+LANG_ENGLISH        "Get to the tractor factory"
+
+REFERENCE           OBJECTIVE4A
+LANG_ENGLISH        "Recover the explosives"
+
+REFERENCE           OBJECTIVE4B
+LANG_ENGLISH        "Protect Semashko while he plants charges on the tank"
+
+REFERENCE           OBJECTIVE4C
+LANG_ENGLISH        "Eliminate the machine gun emplacement"
+
+REFERENCE           OBJECTIVE4F
+LANG_ENGLISH        "Clear the way to the factory"
+
+REFERENCE           OBJECTIVE4G
+LANG_ENGLISH        "Assault the factory"
+
+REFERENCE           OBJECTIVE5A
+LANG_ENGLISH        "Enter the factory through the basement"
+
+REFERENCE           OBJECTIVE5B
+LANG_ENGLISH        "Get to the top floor catwalks"
+
+REFERENCE           OBJECTIVE5C
+LANG_ENGLISH        "Get the panzerfaust and destroy the tank"
+
+REFERENCE           OBJECTIVE5D
+LANG_ENGLISH        "Eliminate all German resistance"
+
+REFERENCE           OBJECTIVE5E
+LANG_ENGLISH        "Regroup with your troops"
+
+
+ENDMARKER
+
+

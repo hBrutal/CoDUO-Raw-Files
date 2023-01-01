@@ -1,0 +1,54 @@
+Particle
+{
+	flags				usePhysics useAlpha
+
+	spawnFlags			orgOnSphere evenDistribution
+
+	count				0 1
+
+	life				1250 1750
+
+	delay				0 300
+
+	cullrange			1500
+
+	bounce				0.5 0.75
+
+	radius				1 25
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			150 -25 -25 200 25 25
+
+	acceleration		-2 -2 -2 2 2 2
+
+	gravity				-600 -400
+
+	rgb
+	{
+		end				0.7804 0.8157 0.8275
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 30
+		end				65 95
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_psm_water_a
+		debree/debree_psm_water_a
+		debree/debree_psm_water_a
+	]
+}

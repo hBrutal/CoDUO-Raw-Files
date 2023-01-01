@@ -1,0 +1,170 @@
+Particle
+{
+	name				spray
+
+	flags				usePhysics useAlpha
+
+	spawnFlags			cheapOrgCalc orgOnSphere evenDistribution
+
+	count				4
+
+	life				750 1000
+
+	delay				0 300
+
+	cullrange			1500
+
+	bounce				0.5 0.75
+
+	radius				1 3
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			15 -10 -10 25 10 10
+
+	acceleration		-2 -2 -2 2 2 2
+
+	gravity				-200 -150
+
+	rgb
+	{
+		start			0.4706 0.4196 0.3725
+		end				0.6784 0.6392 0.5373
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4 6
+		end				15
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_psm_water_a
+		debree/debree_psm_water_b
+		debree/debree_psm_water_c
+	]
+}
+
+Tail
+{
+	name				stream
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc evenDistribution
+
+	count				3
+
+	life				600 800
+
+	delay				0 300
+
+	cullrange			600
+
+	velocity			15 0 0 20 0 0
+
+	gravity				-200 -150
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			3 4
+		end				7 8
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		end				50 55
+		flags			linear
+	}
+
+	shaders
+	[
+		water/water_sheet_lg_brown_a
+		water/water_sheet_lg_brown_b
+	]
+}
+
+Particle
+{
+	name				source
+
+	flags				usePhysics useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				750 1000
+
+	delay				0 300
+
+	cullrange			1000
+
+	bounce				0.5 0.75
+
+	origin				-5 0 0 0 0 0
+
+	radius				1 3
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			15 -10 -10 25 10 10
+
+	acceleration		-2 -2 -2 2 2 2
+
+	gravity				-100 -50
+
+	rgb
+	{
+		start			0.4706 0.4196 0.3725
+		end				0.6784 0.6392 0.5373
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			10 12
+		end				15
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_psm_water_a
+		debree/debree_psm_water_b
+		debree/debree_psm_water_c
+	]
+}

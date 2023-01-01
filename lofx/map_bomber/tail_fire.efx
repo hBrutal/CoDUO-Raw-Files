@@ -1,0 +1,59 @@
+Particle
+{
+	name				fire_flames
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	life				500 750
+
+	delay				50 300
+
+	cullrange			10000
+
+	origin				-10 0 0 10 0 30
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			25 -5 -5 25 5 5
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			10 15
+		end				20 30
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}

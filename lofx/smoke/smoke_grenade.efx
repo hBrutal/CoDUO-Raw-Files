@@ -1,0 +1,129 @@
+Particle
+{
+	name				center_volume
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			absoluteVel oppositeRotation evenDistribution
+
+	count				7 12
+
+	life				1e+004 1.5e+004
+
+	delay				0 5000
+
+	origin				-24 0 0
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	rotationAccel		5
+
+	rotationClamp		-0.5 0.5
+
+	velocity			-10 -10 5 10 10 18
+
+	rgb
+	{
+		start			0.7765 0.7216 0.6824
+		end				0 0 0
+	}
+
+	alpha
+	{
+		end				0
+		parm			75 85
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			0
+		end				150 300
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke_grenade/smk_p_top_wht_a
+		smoke_grenade/smk_p_top_wht_b
+		smoke_grenade/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				mist_volume
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			absoluteVel oppositeRotation evenDistribution
+
+	count				22 27
+
+	life				1.5e+004 2e+004
+
+	delay				0 1.5e+004
+
+	origin				-24 0 0 -25 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rotationAccel		10
+
+	rotationClamp		-1 1
+
+	velocity			-15 -15 0 15 15 15
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7529
+		end				0 0 0
+	}
+
+	alpha
+	{
+		end				0
+		parm			75 85
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			0
+		end				200 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke_grenade/smk_p_none_wht_a
+		smoke_grenade/smk_p_none_wht_b
+		smoke_grenade/smk_p_none_wht_c
+	]
+}
+
+Sound
+{
+	name				Sound
+
+	delay				2200
+
+	sounds
+	[
+		smokegrenade_smoke
+	]
+}

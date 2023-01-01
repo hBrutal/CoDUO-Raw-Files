@@ -1,0 +1,239 @@
+"# If the text in the first column of a row starts with a # character, the row is ignored",,
+,,"If the first column for a row is blank, then the row is ignored"
+# The first non-comment line of a sound alias file specifies the key name for all values appearing in this column.,,
+"# This means it is safe to swap entire columns around, though you should never swap partial columns.",,
+"# You can invent new keys, but the game will ignore them if it doesn't know about them.",,
+"# You can leave out keys, but the ""name"" and ""file"" keys must always be present.",,
+
+,name,name of the alias that is used to play this sound (required)
+,sequence,"used to uniquely identify alias entries when more than one sound goes to an alias, used only to catch unwanted duplicates (default = 0)"
+,file,the name of the file that contains the sound data (required)
+,vol_min,"0 is silent, 1 is full volume (default = 1)"
+,vol_max,"0 is silent, 1 is full volume (default = same as vol_min)"
+,pitch_min,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (default = 1)"
+,pitch_max,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (default = same as pitch_min)"
+,dist_min,"within this distance in inches, the sound is always full volume (default = 120)"
+,dist_max,"outside this distance in inches, the sound is not started.  If left blank or set to 0, the sound will play from any distance.  This does not affect sound volume falloff."
+,channel,"auto, menu, weapon, voice, item, body, local, music, announcer (default = auto)",,,,,,,,,,,,,
+,type,streamed / loaded (default = loaded),,,,,,,,,,,,,
+,probability,weight to use for the weighted probability of playing this sound instead of another sound (default = 1),,,,,,,,,,,,,
+,loop,"whether this sound is ""looping"" or ""nonlooping"" (default = ""nonlooping"")",,,,,,,,,,,,,
+,masterslave,"if ""master"", this is a master sound.  If a number, then this sound won't exceed this volume whenever any master sound is playing.  If blank, then neither master nor slave.",,,,,,,,,,,,,
+,loadspec,"space-separated list of which maps should use this alias; eg, ""burnville dawnville"".  If blank, the alias is used on all maps.",,,,,,,,,,,,,
+
+name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,channel,type,probability,loop,masterslave,loadspec,subtitle
+
+#US Base Assault,,,,,,,,,,,,,,,
+us_gen_underattack,1,voiceovers/mp/us_base_assault/us_gen_underattack1.mp3,1.3,,,,10000,,auto,streamed,,,,,
+us_gen_underattack,2,voiceovers/mp/us_base_assault/us_gen_underattack2.mp3,1.3,,,,10000,,auto,streamed,,,,,
+us_gen_breached,1,voiceovers/mp/us_base_assault/us_gen_breached1.mp3,1.3,,,,10000,,auto,streamed,,,,,
+us_gen_breached,2,voiceovers/mp/us_base_assault/us_gen_breached2.mp3,1.3,,,,10000,,auto,streamed,,,,,
+us_gen_destroyed,1,voiceovers/mp/us_base_assault/us_gen_destroyed1.mp3,1.3,,,,10000,,auto,streamed,,,,,
+us_gen_destroyed,2,voiceovers/mp/us_base_assault/us_gen_destroyed2.mp3,1.3,,,,10000,,auto,streamed,,,,,
+us_bomb_planted,1,voiceovers/mp/us_base_assault/us_bomb_planted1.mp3,1.3,,,,10000,,auto,streamed
+us_bomb_planted,2,voiceovers/mp/us_base_assault/us_bomb_planted2.mp3,1.3,,,,10000,,auto,streamed
+us_bomb_diffused,1,voiceovers/mp/us_base_assault/us_bomb_diffused.mp3,1.3,,,,10000,,auto,streamed
+us_bomb_diffused,2,voiceovers/mp/us_base_assault/us_bomb_diffused2.mp3,1.3,,,,10000,,auto,streamed
+
+#UK Base Assault,,,,,,,,,,
+uk_gen_underattack,1,voiceovers/mp/uk_base_assault/uk_gen_underattack1.mp3,1.3,,,,10000,,auto,streamed
+uk_gen_underattack,2,voiceovers/mp/uk_base_assault/uk_gen_underattack2.mp3,1.3,,,,10000,,auto,streamed
+uk_gen_breached,1,voiceovers/mp/uk_base_assault/uk_gen_breached1.mp3,1.3,,,,10000,,auto,streamed
+uk_gen_breached,2,voiceovers/mp/uk_base_assault/uk_gen_breached2.mp3,1.3,,,,10000,,auto,streamed
+uk_gen_destroyed,1,voiceovers/mp/uk_base_assault/uk_gen_destroyed1.mp3,1.3,,,,10000,,auto,streamed
+uk_gen_destroyed,2,voiceovers/mp/uk_base_assault/uk_gen_destroyed2.mp3,1.3,,,,10000,,auto,streamed
+uk_bomb_planted,1,voiceovers/mp/uk_base_assault/uk_bomb_planted1.mp3,1.3,,,,10000,,auto,streamed
+uk_bomb_planted,2,voiceovers/mp/uk_base_assault/uk_bomb_planted2.mp3,1.3,,,,10000,,auto,streamed
+uk_bomb_diffused,1,voiceovers/mp/uk_base_assault/uk_bomb_diffused.mp3,1.3,,,,10000,,auto,streamed
+uk_bomb_diffused,2,voiceovers/mp/uk_base_assault/uk_bomb_diffused2.mp3,1.3,,,,10000,,auto,streamed
+
+#RU Base Assault,,,,,,,,,,
+ru_gen_underattack,1,voiceovers/mp/ru_base_assault/ru_gen_underattack1.mp3,1.3,,,,10000,,auto,streamed
+ru_gen_underattack,2,voiceovers/mp/ru_base_assault/ru_gen_underattack2.mp3,1.3,,,,10000,,auto,streamed
+ru_gen_breached,1,voiceovers/mp/ru_base_assault/ru_gen_breached1.mp3,1.3,,,,10000,,auto,streamed
+ru_gen_breached,2,voiceovers/mp/ru_base_assault/ru_gen_breached2.mp3,1.3,,,,10000,,auto,streamed
+ru_gen_destroyed,1,voiceovers/mp/ru_base_assault/ru_gen_destroyed1.mp3,1.3,,,,10000,,auto,streamed
+ru_gen_destroyed,2,voiceovers/mp/ru_base_assault/ru_gen_destroyed2.mp3,1.3,,,,10000,,auto,streamed
+ru_bomb_planted,1,voiceovers/mp/ru_base_assault/ru_bomb_planted1.mp3,1.3,,,,10000,,auto,streamed
+ru_bomb_planted,2,voiceovers/mp/ru_base_assault/ru_bomb_planted2.mp3,1.3,,,,10000,,auto,streamed
+ru_bomb_diffused,1,voiceovers/mp/ru_base_assault/ru_bomb_diffused.mp3,1.3,,,,10000,,auto,streamed
+ru_bomb_diffused,2,voiceovers/mp/ru_base_assault/ru_bomb_diffused2.mp3,1.3,,,,10000,,auto,streamed
+
+#GE Base Assault,,,,,,,,,,
+ge_gen_underattack,1,voiceovers/mp/ge_base_assault/ge_gen_underattack1.mp3,1.3,,,,10000,,auto,streamed
+ge_gen_underattack,2,voiceovers/mp/ge_base_assault/ge_gen_underattack2.mp3,1.3,,,,10000,,auto,streamed
+ge_gen_breached,1,voiceovers/mp/ge_base_assault/ge_gen_breached1.mp3,1.3,,,,10000,,auto,streamed
+ge_gen_breached,2,voiceovers/mp/ge_base_assault/ge_gen_breached2.mp3,1.3,,,,10000,,auto,streamed
+ge_gen_destroyed,1,voiceovers/mp/ge_base_assault/ge_gen_destroyed1.mp3,1.3,,,,10000,,auto,streamed
+ge_gen_destroyed,2,voiceovers/mp/ge_base_assault/ge_gen_destroyed2.mp3,1.3,,,,10000,,auto,streamed
+ge_bomb_planted,1,voiceovers/mp/ge_base_assault/ge_bomb_planted1.mp3,1.3,,,,10000,,auto,streamed
+ge_bomb_planted,2,voiceovers/mp/ge_base_assault/ge_bomb_planted2.mp3,1.3,,,,10000,,auto,streamed
+ge_bomb_diffused,1,voiceovers/mp/ge_base_assault/ge_bomb_diffused.mp3,1.3,,,,10000,,auto,streamed
+ge_bomb_diffused,2,voiceovers/mp/ge_base_assault/ge_bomb_diffused2.mp3,1.3,,,,10000,,auto,streamed
+
+#RU CTF,,,,,,,,,,
+ru_grabbed_enemy_flag,,voiceovers/mp/ru_ctf/ru_captured_flag01.mp3,1.3,,,,10000,,auto,streamed
+ru_captured_flag,,voiceovers/mp/ru_ctf/ru_captured_flag02.mp3,1.3,,,,10000,,auto,streamed
+ru_our_flag_taken,,voiceovers/mp/ru_ctf/ru_flag_taken01.mp3,1.3,,,,10000,,auto,streamed
+ru_our_flag_captured,,voiceovers/mp/ru_ctf/ru_flag_taken02.mp3,1.3,,,,10000,,auto,streamed
+ru_flag_returned,,voiceovers/mp/ru_ctf/ru_flag_returned.mp3,1.3,,,,10000,,auto,streamed
+
+#UK CTF,,,,,,,,,,
+uk_grabbed_enemy_flag,,voiceovers/mp/uk_ctf/uk_captured_flag01.mp3,1.3,,,,10000,,auto,streamed
+uk_captured_flag,,voiceovers/mp/uk_ctf/uk_captured_flag02.mp3,1.3,,,,10000,,auto,streamed
+uk_our_flag_taken,,voiceovers/mp/uk_ctf/uk_flag_taken01.mp3,1.3,,,,10000,,auto,streamed
+uk_our_flag_captured,,voiceovers/mp/uk_ctf/uk_flag_taken02.mp3,1.3,,,,10000,,auto,streamed
+uk_flag_returned,,voiceovers/mp/uk_ctf/uk_flag_returned.mp3,1.3,,,,10000,,auto,streamed
+
+#US CTF,,,,,,,,,,
+us_grabbed_enemy_flag,,voiceovers/mp/us_ctf/us_captured_flag01.mp3,1.3,,,,10000,,auto,streamed
+us_captured_flag,,voiceovers/mp/us_ctf/us_captured_flag02.mp3,1.3,,,,10000,,auto,streamed
+us_our_flag_taken,,voiceovers/mp/us_ctf/us_flag_taken01.mp3,1.3,,,,10000,,auto,streamed
+us_our_flag_captured,,voiceovers/mp/us_ctf/us_flag_taken02.mp3,1.3,,,,10000,,auto,streamed
+us_flag_returned,,voiceovers/mp/us_ctf/us_flag_returned.mp3,1.3,,,,10000,,auto,streamed
+
+#GE CTF,,,,,,,,,,
+ge_grabbed_enemy_flag,,voiceovers/mp/ge_ctf/ge_captured_flag01.mp3,1.3,,,,10000,,auto,streamed
+ge_captured_flag,,voiceovers/mp/ge_ctf/ge_captured_flag02.mp3,1.3,,,,10000,,auto,streamed
+ge_our_flag_taken,,voiceovers/mp/ge_ctf/ge_flag_taken01.mp3,1.3,,,,10000,,auto,streamed
+ge_our_flag_captured,,voiceovers/mp/ge_ctf/ge_flag_taken02.mp3,1.3,,,,10000,,auto,streamed
+ge_flag_returned,,voiceovers/mp/ge_ctf/ge_flag_returned.mp3,1.3,,,,10000,,auto,streamed
+
+#US DOMINATION,,,,,,,,,,
+us_losing_ground,,voiceovers/mp/us_domination/us_being_overrun.mp3,1.3,,,,10000,,auto,streamed
+us_lost_ground,,voiceovers/mp/us_domination/us_stand_fast.mp3,1.3,,,,10000,,auto,streamed
+us_ground_taken,1,voiceovers/mp/us_domination/us_ground_taken.mp3,1.3,,,,10000,,auto,streamed
+us_ground_taken,2,voiceovers/mp/us_domination/us_pushing_back.mp3,1.3,,,,10000,,auto,streamed
+us_area_secured,,voiceovers/mp/us_domination/us_area_secured.mp3,1.3,,,,10000,,auto,streamed
+
+#UK DOMINATION,,,,,,,,,,
+uk_losing_ground,,voiceovers/mp/uk_domination/uk_stand_fast.mp3,1.3,,,,10000,,auto,streamed
+uk_lost_ground,,voiceovers/mp/uk_domination/uk_broken_through.mp3,1.3,,,,10000,,auto,streamed
+uk_ground_taken,1,voiceovers/mp/uk_domination/uk_ground_taken.mp3,1.3,,,,10000,,auto,streamed
+uk_ground_taken,2,voiceovers/mp/uk_domination/uk_pushing_back.mp3,1.3,,,,10000,,auto,streamed
+uk_area_secured,,voiceovers/mp/uk_domination/uk_sector_secured.mp3,1.3,,,,10000,,auto,streamed
+
+#RU DOMINATION,,,,,,,,,,
+ru_losing_ground,,voiceovers/mp/ru_domination/ru_stand_fast.mp3,1.3,,,,10000,,auto,streamed
+ru_lost_ground,,voiceovers/mp/ru_domination/ru_broken_through.mp3,1.3,,,,10000,,auto,streamed
+ru_ground_taken,1,voiceovers/mp/ru_domination/ru_ground_taken.mp3,1.3,,,,10000,,auto,streamed
+ru_ground_taken,2,voiceovers/mp/ru_domination/ru_pushing_back.mp3,1.3,,,,10000,,auto,streamed
+ru_area_secured,,voiceovers/mp/ru_domination/ru_area_secure.mp3,1.3,,,,10000,,auto,streamed
+
+#GE DOMINATION,,,,,,,,,,
+ge_losing_ground,,voiceovers/mp/ge_domination/ge_losing_ground.mp3,1.3,,,,10000,,auto,streamed
+ge_lost_ground,,voiceovers/mp/ge_domination/ge_under_attack.mp3,1.3,,,,10000,,auto,streamed
+ge_ground_taken,,voiceovers/mp/ge_domination/ge_ground_taken.mp3,1.3,,,,10000,,auto,streamed
+ge_area_secured,,voiceovers/mp/ge_domination/ge_area_secured.mp3,1.3,,,,10000,,auto,streamed
+
+#US ARTILLERY,,,,,,,,,,
+us_fire_mission,,voiceovers/mp/us_arty/us_fire_mission.mp3,1.3,,,,10000,,auto,streamed
+us_incoming,,voiceovers/mp/us_arty/us_incoming.mp3,1.3,,,,10000,,auto,streamed
+us_noarty,,voiceovers/mp/us_arty/us_noarty.mp3,1.3,,,,10000,,auto,streamed
+us_arty_gtg,,voiceovers/mp/us_arty/us_arty_gtg.mp3,1.3,,,,10000,,auto,streamed
+us_need_arty_support,,voiceovers/mp/us_arty/us_need_arty_support.mp3,1.4,,,,60,6000,voice,streamed
+
+#UK ARTILLERY,,,,,,,,,,
+uk_fire_mission,,voiceovers/mp/uk_arty/uk_fire_mission.mp3,1.3,,,,10000,,auto,streamed
+uk_incoming,,voiceovers/mp/uk_arty/uk_incoming.mp3,1.3,,,,10000,,auto,streamed
+uk_noarty,,voiceovers/mp/uk_arty/uk_noarty.mp3,1.3,,,,10000,,auto,streamed
+uk_arty_gtg,,voiceovers/mp/uk_arty/uk_arty_gtg.mp3,1.3,,,,10000,,auto,streamed
+uk_need_arty_support,,voiceovers/mp/uk_arty/uk_need_arty_support.mp3,1.4,,,,60,6000,voice,streamed
+
+#RU ARTILLERY,,,,,,,,,,
+ru_fire_mission,,voiceovers/mp/ru_arty/ru_fire_mission.mp3,1.3,,,,10000,,auto,streamed
+ru_incoming,,voiceovers/mp/ru_arty/ru_incoming.mp3,1.3,,,,10000,,auto,streamed
+ru_noarty,,voiceovers/mp/ru_arty/ru_noarty.mp3,1.3,,,,10000,,auto,streamed
+ru_arty_gtg,,voiceovers/mp/ru_arty/ru_arty_gtg.mp3,1.3,,,,10000,,auto,streamed
+ru_need_arty_support,,voiceovers/mp/ru_arty/ru_need_arty_support.mp3,1.4,,,,60,6000,voice,streamed
+,,,,,,,10000,,,
+#GE ARTILLERY,,,,,,,10000,,,
+ge_fire_mission,,voiceovers/mp/ge_arty/ge_fire_mission.mp3,1.3,,,,10000,,auto,streamed
+ge_incoming,,voiceovers/mp/ge_arty/ge_incoming.mp3,1.3,,,,10000,,auto,streamed
+ge_noarty,,voiceovers/mp/ge_arty/ge_noarty.mp3,1.3,,,,10000,,auto,streamed
+ge_arty_gtg,,voiceovers/mp/ge_arty/ge_arty_gtg.mp3,1.3,,,,10000,,auto,streamed
+ge_need_arty_support,,voiceovers/mp/ge_arty/ge_need_arty_support.mp3,1.4,,,,60,6000,voice,streamed
+
+#GE VEHICLES,,,,,,,,,,
+ge_pickup,,voiceovers/mp/ge_vehicles/ge_pickup.mp3,1.4,,,,60,6000,voice,streamed
+ge_tank,,voiceovers/mp/ge_vehicles/ge_tank.mp3,1.4,,,,60,6000,voice,streamed
+ge_jeep,,voiceovers/mp/ge_vehicles/ge_jeep.mp3,1.4,,,,60,6000,voice,streamed
+ge_heavy_tank,,voiceovers/mp/ge_vehicles/ge_heavy_tank.mp3,1.4,,,,60,6000,voice,streamed
+ge_rpg,,voiceovers/mp/ge_vehicles/ge_rpg.mp3,1.4,,,,60,6000,voice,streamed
+ge_armor,,voiceovers/mp/ge_vehicles/ge_armor.mp3,1.4,,,,60,6000,voice,streamed
+ge_tank2,,voiceovers/mp/ge_vehicles/ge_tank2.mp3,1.4,,,,60,6000,voice,streamed
+ge_machingun,,voiceovers/mp/ge_vehicles/ge_machingun.mp3,1.4,,,,60,6000,voice,streamed
+ge_jeep_full,,voiceovers/mp/ge_vehicles/ge_jeep_full.mp3,1.4,,,,60,6000,voice,streamed
+ge_getin_jeep,,voiceovers/mp/ge_vehicles/ge_getin_jeep.mp3,1.4,,,,60,6000,voice,streamed
+
+#UK VEHICLES,,,,,,,,,,
+uk_pickup,,voiceovers/mp/uk_vehicles/uk_pickup.mp3,1.4,,,,60,6000,voice,streamed
+uk_tank,,voiceovers/mp/uk_vehicles/uk_tank.mp3,1.4,,,,60,6000,voice,streamed
+uk_jeep,,voiceovers/mp/uk_vehicles/uk_jeep.mp3,1.4,,,,60,6000,voice,streamed
+uk_heavy_tank,,voiceovers/mp/uk_vehicles/uk_heavy_tank.mp3,1.4,,,,60,6000,voice,streamed
+uk_rpg,,voiceovers/mp/uk_vehicles/uk_rpg.mp3,1.4,,,,60,6000,voice,streamed
+uk_armor,,voiceovers/mp/uk_vehicles/uk_armor.mp3,1.4,,,,60,6000,voice,streamed
+uk_tank2,,voiceovers/mp/uk_vehicles/uk_tank2.mp3,1.4,,,,60,6000,voice,streamed
+uk_jeep_full,,voiceovers/mp/uk_vehicles/uk_jeep_full.mp3,1.4,,,,60,6000,voice,streamed
+uk_getin_jeep,,voiceovers/mp/uk_vehicles/uk_getin_jeep.mp3,1.4,,,,60,6000,voice,streamed
+uk_geton_50,,voiceovers/mp/uk_vehicles/uk_geton_50.mp3,1.4,,,,60,6000,voice,streamed
+
+#US VEHICLES,,,,,,,,,,
+us_pickup,,voiceovers/mp/us_vehicles/us_pickup.mp3,1.4,,,,60,6000,voice,streamed
+us_tank,,voiceovers/mp/us_vehicles/us_tank.mp3,1.4,,,,60,6000,voice,streamed
+us_jeep,,voiceovers/mp/us_vehicles/us_jeep.mp3,1.4,,,,60,6000,voice,streamed
+us_heavy_tank,,voiceovers/mp/us_vehicles/us_heavy_tank.mp3,1.4,,,,60,6000,voice,streamed
+us_rpg,,voiceovers/mp/us_vehicles/us_rpg.mp3,1.4,,,,60,6000,voice,streamed
+us_armor,,voiceovers/mp/us_vehicles/us_armor.mp3,1.4,,,,60,6000,voice,streamed
+us_tank2,,voiceovers/mp/us_vehicles/us_tank2.mp3,1.4,,,,60,6000,voice,streamed
+us_jeep_full,,voiceovers/mp/us_vehicles/us_jeep_full.mp3,1.4,,,,60,6000,voice,streamed
+us_getin_jeep,,voiceovers/mp/us_vehicles/us_getin_jeep.mp3,1.4,,,,60,6000,voice,streamed
+us_geton_50,,voiceovers/mp/us_vehicles/us_geton_50.mp3,1.4,,,,60,6000,voice,streamed
+
+#RU VEHICLES,,,,,,,,,,
+ru_pickup,,voiceovers/mp/ru_vehicles/ru_pickup.mp3,1.4,,,,60,6000,voice,streamed
+ru_tank,,voiceovers/mp/ru_vehicles/ru_tank.mp3,1.4,,,,60,6000,voice,streamed
+ru_jeep,,voiceovers/mp/ru_vehicles/ru_jeep.mp3,1.4,,,,60,6000,voice,streamed
+ru_heavy_tank,,voiceovers/mp/ru_vehicles/ru_heavy_tank.mp3,1.4,,,,60,6000,voice,streamed
+ru_rpg,,voiceovers/mp/ru_vehicles/ru_rpg.mp3,1.4,,,,60,6000,voice,streamed
+ru_armor,,voiceovers/mp/ru_vehicles/ru_armor.mp3,1.4,,,,60,6000,voice,streamed
+ru_tank2,,voiceovers/mp/ru_vehicles/ru_tank2.mp3,1.4,,,,60,6000,voice,streamed
+ru_machingun,,voiceovers/mp/ru_vehicles/ru_machingun.mp3,1.4,,,,60,6000,voice,streamed
+ru_jeep_go,,voiceovers/mp/ru_vehicles/ru_jeep_go.mp3,1.4,,,,60,6000,voice,streamed
+ru_getin_jeep,,voiceovers/mp/ru_vehicles/ru_getin_jeep.mp3,1.4,,,,60,6000,voice,streamed
+
+#US GENERIC V-SAY,,,,,,,,,,
+us_thanks,1,voiceovers/mp/us_gen/us_thanks1.mp3,1.4,,,,60,6000,voice,streamed
+us_thanks,2,voiceovers/mp/us_gen/us_thanks2.mp3,1.4,,,,60,6000,voice,streamed
+us_redeploy,,voiceovers/mp/us_gen/us_redeploy.mp3,1.4,,,,60,6000,voice,streamed
+us_spotted,,voiceovers/mp/us_gen/us_spotted.mp3,1.4,,,,60,6000,voice,streamed
+us_behind,,voiceovers/mp/us_gen/us_behind.mp3,1.4,,,,60,6000,voice,streamed
+us_smokeout,,voiceovers/mp/us_gen/us_smokeout.mp3,1.4,,,,60,6000,voice,streamed
+us_bazooka,,voiceovers/mp/us_gen/us_bazooka.mp3,1.4,,,,60,6000,voice,streamed
+
+#UK GENERIC V-SAY,,,,,,,,,,
+uk_thanks,1,voiceovers/mp/uk_gen/uk_thanks1.mp3,1.4,,,,60,6000,voice,streamed
+uk_thanks,2,voiceovers/mp/uk_gen/uk_thanks2.mp3,1.4,,,,60,6000,voice,streamed
+uk_redeploy,,voiceovers/mp/uk_gen/uk_redeploy.mp3,1.4,,,,60,6000,voice,streamed
+uk_spotted,,voiceovers/mp/uk_gen/uk_spotted.mp3,1.4,,,,60,6000,voice,streamed
+uk_behind,,voiceovers/mp/uk_gen/uk_behind.mp3,1.4,,,,60,6000,voice,streamed
+uk_smokeout,,voiceovers/mp/uk_gen/uk_smokeout.mp3,1.4,,,,60,6000,voice,streamed
+uk_bazooka,,voiceovers/mp/uk_gen/uk_bazooka.mp3,1.4,,,,60,6000,voice,streamed
+
+#RU GENERIC V-SAY,,,,,,,,,,
+ru_thanks,1,voiceovers/mp/ru_gen/ru_thanks1.mp3,1.6,,,,60,6000,voice,streamed
+ru_thanks,2,voiceovers/mp/ru_gen/ru_thanks2.mp3,1.6,,,,60,6000,voice,streamed
+ru_redeploy,,voiceovers/mp/ru_gen/ru_redeploy.mp3,1.4,,,,60,6000,voice,streamed
+ru_spotted,,voiceovers/mp/ru_gen/ru_spotted.mp3,1.4,,,,60,6000,voice,streamed
+ru_behind,,voiceovers/mp/ru_gen/ru_behind.mp3,1.4,,,,60,6000,voice,streamed
+ru_smokeout,,voiceovers/mp/ru_gen/ru_smokeout.mp3,1.4,,,,60,6000,voice,streamed
+ru_bazooka,,voiceovers/mp/ru_gen/ru_bazooka.mp3,1.4,,,,60,6000,voice,streamed
+
+#GE GENERIC V-SAY,,,,,,,,,,
+ge_thanks,1,voiceovers/mp/ge_gen/ge_thanks1.mp3,1.4,,,,60,6000,voice,streamed
+ge_thanks,2,voiceovers/mp/ge_gen/ge_thanks2.mp3,1.4,,,,60,6000,voice,streamed
+ge_redeploy,,voiceovers/mp/ge_gen/ge_redeploy.mp3,1.4,,,,60,6000,voice,streamed
+ge_spotted,,voiceovers/mp/ge_gen/ge_spotted.mp3,1.4,,,,60,6000,voice,streamed
+ge_behind,,voiceovers/mp/ge_gen/ge_behind.mp3,1.4,,,,60,6000,voice,streamed
+ge_smokeout,,voiceovers/mp/ge_gen/ge_smokeout.mp3,1.4,,,,60,6000,voice,streamed
+ge_bazooka,,voiceovers/mp/ge_gen/ge_bazooka.mp3,1.4,,,,60,6000,voice,streamed

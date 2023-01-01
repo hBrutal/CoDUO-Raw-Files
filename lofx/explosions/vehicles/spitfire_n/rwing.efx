@@ -1,0 +1,35 @@
+Emitter
+{
+	name				M_rwing
+
+	flags				useModel usePhysics
+
+	life				5000
+
+	cullrange			10000
+
+	bounce				0.25 0.5
+
+	angleDelta			-25 -2 -2 25 2 2
+
+	velocity			400 -200 -200 800 200 -600
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_br_air_spitfire_rwing
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_400
+	]
+}

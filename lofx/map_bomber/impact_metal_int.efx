@@ -1,0 +1,53 @@
+OrientedParticle
+{
+	name				spark_orient
+
+	life				100 200
+
+	cullrange			2500
+
+	origin				0.5 0 0 1 0 0
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -15 -15 2 15 15
+
+	size
+	{
+		start			0
+		end				15 25
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_static_a
+		fire/spark_static_a
+		fire/spark_static_a
+	]
+}
+
+Tail
+{
+	life				500
+
+	velocity			1600 0 0
+
+	size
+	{
+		start			3
+	}
+
+	length
+	{
+		start			200
+	}
+
+	shaders
+	[
+		fire/spark_tail_a
+		fire/spark_tail_a
+	]
+}

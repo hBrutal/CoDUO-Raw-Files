@@ -1,0 +1,118 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           CTF
+LANG_ENGLISH        "Capture The Flag"
+
+REFERENCE           MATCHSTARTING
+LANG_ENGLISH        "Match Starting"
+
+REFERENCE           MATCHRESUMING
+LANG_ENGLISH        "Match Resuming"
+
+REFERENCE           PLAYER_CAPTURED_FLAG_AXIS
+LANG_ENGLISH        "%s ^9captured the flag for the Axis."
+
+REFERENCE           PLAYER_CAPTURED_FLAG_ALLIES
+LANG_ENGLISH        "%s ^8captured the flag for the Allies."
+
+REFERENCE           ATTACKER_OBJECTIVE
+LANG_ENGLISH        "Capture the other team's flag and return it to your base."
+
+REFERENCE           SPECTATOR_OBJECTIVE
+LANG_ENGLISH        "Join the fight and help your team capture the enemy team's flag."
+
+REFERENCE           TIMEEXPIRED
+LANG_ENGLISH        "The time has expired."
+
+REFERENCE           ROUND_DRAW
+LANG_ENGLISH        "The round is a draw."
+
+REFERENCE           FLAG_INMINES
+LANG_ENGLISH        "%s dropped the flag in a mine field. "
+
+REFERENCE           AXIS_FLAG_DROPPED
+LANG_ENGLISH        "^9The Axis flag has been dropped."
+
+REFERENCE           ALLIES_FLAG_DROPPED
+LANG_ENGLISH        "^8The Allies flag has been dropped."
+
+REFERENCE           AXIS_FLAG_TIMEOUT_RETURNING
+LANG_ENGLISH        "^9The Axis flag has been returned to base."
+
+REFERENCE           ALLIES_FLAG_TIMEOUT_RETURNING
+LANG_ENGLISH        "^8The Allies flag has been returned to base."
+
+REFERENCE           AXIS_PICKED_UP_FLAG
+LANG_ENGLISH        "^9You have the Allied flag!\n^9Return to your base!"
+
+REFERENCE           ALLIES_PICKED_UP_FLAG
+LANG_ENGLISH        "^8You have the Axis flag!\n^8Return to your base!"
+
+REFERENCE           AXIS_CAPTURED_FLAG
+LANG_ENGLISH        "^9The Axis has captured the Allied flag!"
+
+REFERENCE           ALLIES_CAPTURED_FLAG
+LANG_ENGLISH        "^8The Allies have captured the Axis flag!"
+
+REFERENCE           PLAYER_RETURNED_FLAG_AXIS
+LANG_ENGLISH        "%s ^9returned the flag for the Axis."
+
+REFERENCE           PLAYER_RETURNED_FLAG_ALLIES
+LANG_ENGLISH        "%s ^8returned the flag for the Allies."
+
+REFERENCE           U_R_CARRYING_AXIS
+LANG_ENGLISH        "^9You are carrying the Allied flag!"
+
+REFERENCE           U_R_CARRYING_ALLIES
+LANG_ENGLISH        "^8You are carrying the Axis flag!"
+
+REFERENCE           AXIS_FLAG_RETURNED
+LANG_ENGLISH        "^9The Axis flag has been returned to base!"
+
+REFERENCE           ALLIES_FLAG_RETURNED
+LANG_ENGLISH        "^8The Allies flag has been returned to base!"
+
+REFERENCE           AXIS_FLAG_TAKEN
+LANG_ENGLISH        "^9The Axis flag has been taken by %s^9."
+
+REFERENCE           ALLIES_FLAG_TAKEN
+LANG_ENGLISH        "^8The Allies flag has been taken by %s^8."
+
+REFERENCE           DEFENDED_AXIS_FLAG
+LANG_ENGLISH        "^9%s ^9defended the Axis flag."
+
+REFERENCE           DEFENDED_ALLIES_FLAG
+LANG_ENGLISH        "^8%s ^8defended the Allied flag."
+
+REFERENCE           ASSISTED_AXIS_FLAG_CARRIER
+LANG_ENGLISH        "^9%s ^9assisted the Axis flag carrier."
+
+REFERENCE           ASSISTED_ALLIES_FLAG_CARRIER
+LANG_ENGLISH        "^8%s ^8assisted the Allied flag carrier."
+
+REFERENCE           FLAG_INWATER
+LANG_ENGLISH        "%s dropped the flag in the water. "
+
+REFERENCE           ALLIEDMISSIONACCOMPLISHED
+LANG_ENGLISH        "^8The Allies have won the battle."
+
+REFERENCE           AXISMISSIONACCOMPLISHED
+LANG_ENGLISH        "^9The Axis Forces have won the battle."
+
+
+ENDMARKER
+
+

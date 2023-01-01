@@ -1,0 +1,297 @@
+OrientedParticle
+{
+	name				cloud_a
+
+	flags				useAlpha
+
+	life				1.2e+005 2.4e+005
+
+	delay				0 2e+004
+
+	origin				-1e+004 1.2e+005 -2e+004 -2e+004 1.2e+005 2e+004
+
+	rotation			88 92
+
+	velocity			-5 -1500 -200 5 -2500 200
+
+	rgb
+	{
+		start			0.7961 0.6863 0.5725
+		end				0.8275 0.6471 0.5373
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3 0.85
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			6e+004 8e+004
+		end				6e+004 8e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		atmosphere/cloud_plane_altocumulus_a
+		atmosphere/cloud_plane_altocumulus_a
+	]
+}
+
+OrientedParticle
+{
+	name				cloud_b
+
+	flags				useAlpha
+
+	count 0 0
+
+	life				1.2e+005 2.4e+005
+
+	delay				0 2e+004
+
+	origin				-1e+004 1.2e+005 -2e+004 -2e+004 1.2e+005 2e+004
+
+	rotation			268 272
+
+	velocity			-5 -1500 -200 5 -2500 200
+
+	rgb
+	{
+		start			0.8196 0.6902 0.5451
+		end				0.8863 0.8353 0.7608
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3 0.85
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			6e+004 8e+004
+		end				6e+004 8e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		atmosphere/cloud_plane_altocumulus_a
+		atmosphere/cloud_plane_altocumulus_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground
+
+	flags				useAlpha
+
+	life				1.6e+005
+
+	delay				0 2e+004
+
+	origin				-2.5e+004 1.6e+005 0
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	rgb
+	{
+		start			1 0.9686 0.851
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				7.5e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bomberground_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_right
+
+	flags				useAlpha
+
+	life				1.6e+005
+
+	delay				0 2e+004
+
+	origin				-2.5e+004 1.6e+005 4.5e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	rgb
+	{
+		start			1 0.9686 0.851
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				7.5e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bomberground_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_right2
+
+	flags				useAlpha
+
+	life				1.6e+005
+
+	delay				0 2e+004
+
+	origin				-2.5e+004 1.6e+005 9.1e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	rgb
+	{
+		start			1 0.9686 0.851
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				7.5e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bomberground_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_left
+
+	flags				useAlpha
+
+	life				1.6e+005
+
+	delay				0 2e+004
+
+	origin				-2.5e+004 1.6e+005 -4.5e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	rgb
+	{
+		start			1 0.9686 0.851
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				7.5e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bomberground_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_left2
+
+	flags				useAlpha
+
+	life				1.6e+005
+
+	delay				0 2e+004
+
+	origin				-2.5e+004 1.6e+005 -9.1e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	rgb
+	{
+		start			1 0.9686 0.851
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				7.5e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bomberground_a
+	]
+}

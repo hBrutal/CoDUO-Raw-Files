@@ -1,0 +1,40 @@
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				3000
+
+	origin				22 0 0 52 0 0
+
+	radius				24 16
+
+	rotation			360 -360
+
+	rotationDelta		4 -4
+
+	velocity			42 18 18 36 -18 -18
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			555 0
+		flags			linear
+	}
+
+	size
+	{
+		start			15
+		end				55
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/medium_smoke
+	]
+}

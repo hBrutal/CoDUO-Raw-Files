@@ -1,0 +1,223 @@
+Emitter
+{
+	name				M_fuselage_hold
+
+	flags				useModel deathFx emitFx
+
+	life				1500 2000
+
+	angleDelta			0 0 -5 0 0 -10
+
+	velocity			1750 0 0
+
+	gravity				-300
+
+	density				200
+
+	models
+	[
+		xmodel/v_ge_air_me-109_fuselage(d)
+	]
+
+	deathfx
+	[
+		fx\explosions\vehicles\me109_n/fuselage_p
+	]
+
+	emitfx
+	[
+		fx/map_bomber/fire_trail_100_pushed
+	]
+}
+
+Emitter
+{
+	name				M_lwing_hold
+
+	flags				useModel deathFx
+
+	life				0 500
+
+	origin				-88.51 -94.83 -16.21
+
+	velocity			1750 0 0
+
+	gravity				-300
+
+	density				100
+
+	models
+	[
+		xmodel/v_ge_air_me-109_lwing(d)
+	]
+
+	deathfx
+	[
+		fx\explosions\vehicles\me109_n/lwing_p
+	]
+}
+
+Emitter
+{
+	name				M_propeller_hold
+
+	flags				useModel deathFx
+
+	life				500 2000
+
+	origin				48.08 0.001 2.519
+
+	angleDelta			0 0 75
+
+	velocity			1750 0 0
+
+	gravity				-300
+
+	density				100
+
+	models
+	[
+		xmodel/v_ge_air_me-109_propeller(d)
+	]
+
+	deathfx
+	[
+		fx\explosions\vehicles\me109_n/propeller_p
+	]
+}
+
+Emitter
+{
+	name				M_rwing_hold
+
+	flags				useModel deathFx
+
+	life				1500 2000
+
+	origin				-88.51 102.7 -16.21
+
+	angleDelta			0 0 -10 3 0 -10
+
+	velocity			1750 -200 200
+
+	gravity				-300
+
+	density				100
+
+	models
+	[
+		xmodel/v_ge_air_me-109_rwing(d)
+	]
+
+	deathfx
+	[
+		fx\explosions\vehicles\me109_n/rwing_p
+	]
+}
+
+Emitter
+{
+	name				M_tail_hold
+
+	flags				useModel deathFx
+
+	life				1500 2000
+
+	origin				-313.9 0 -0.007
+
+	angleDelta			0 0 -5 0 0 -10
+
+	velocity			1750 0 0
+
+	gravity				-300
+
+	density				100
+
+	models
+	[
+		xmodel/v_ge_air_me-109_tail(d)
+	]
+
+	deathfx
+	[
+		fx\explosions\vehicles\me109_n/tail_p
+	]
+}
+
+Emitter
+{
+	name				M_windshield_hold
+
+	flags				useModel deathFx
+
+	life				500 2000
+
+	origin				-116.1 0 27.96
+
+	angleDelta			0 0 -5 0 0 5
+
+	velocity			1750 0 200
+
+	gravity				-300
+
+	density				75
+
+	models
+	[
+		xmodel/v_ge_air_me-109_windshield(d)
+	]
+
+	deathfx
+	[
+		fx\explosions\vehicles\me109_n/windshield_p
+	]
+}
+
+FxRunner
+{
+	name				_FX_callexp
+
+	playfx
+	[
+		fx\explosions\vehicles\me109_n/base_exp_p
+	]
+}
+
+Emitter
+{
+	name				onfire
+
+	flags				useModel
+
+	spawnFlags			absoluteAccel
+
+	life				4000
+
+	cullrange			15000
+
+	angle				90 0 0
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			1500 0 300 1500 0 800
+
+	acceleration		-1000 0 50 -500 0 0
+
+	gravity				-200 -400
+
+	density				25
+
+	size
+	{
+		end				0
+		parm			50
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_bombercrew_a
+		xmodel/m_gib_bombercrew_b
+		xmodel/m_gib_bombercrew_c
+	]
+}

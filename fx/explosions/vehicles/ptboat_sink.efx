@@ -1,0 +1,328 @@
+OrientedParticle
+{
+	name				foam
+
+	spawnFlags			evenDistribution
+
+	count				0
+
+	life				5000 6000
+
+	delay				1000 1.5e+004
+
+	cullrange			6000
+
+	origin				0 -125 -125 0 125 125
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	alpha
+	{
+		start			0.15 0.25
+		end				0
+		parm			0.15 0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			250 325
+		end				650 900
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}
+
+Particle
+{
+	name				mist
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	count				0
+
+	life				1000 2000
+
+	delay				2000 1.2e+004
+
+	origin				0 -100 -100 0 100 100
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 0 25 0 0 200
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			135 145
+		end				275 225
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_psm_water_a
+		debree/debree_psm_water_b
+		debree/debree_psm_water_c
+	]
+}
+
+OrientedParticle
+{
+	name				foam_turb
+
+	spawnFlags			evenDistribution
+
+	count				0
+
+	life				1500 2250
+
+	delay				2000 1.5e+004
+
+	origin				0 -125 -125 0 125 125
+
+	rotation			0 360
+
+	rotationDelta		-2 2
+
+	alpha
+	{
+		start			0.25 0.35
+		end				0
+		parm			0.15 0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			150 125
+		end				250 300
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}
+
+Tail
+{
+	name				water_eject_spray_base
+
+	flags				useAlpha
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count				0
+
+	life				1000 1600
+
+	delay				3000 1.2e+004
+
+	cullrange			8000
+
+	origin				50 -100 -100 50 100 100
+
+	velocity			325 -300 -300 300 300 300
+
+	velocityClamp		200 0 0
+
+	rgb
+	{
+		end				0.7294 0.7412 0.7804
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				400 450
+		flags			linear
+	}
+
+	length
+	{
+		start			200
+		end				550
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_water_a
+		debree/debree_t_water_b
+		debree/debree_t_water_c
+	]
+}
+
+Tail
+{
+	name				Copy of water_eject_spray_base
+
+	flags				useAlpha
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count				0
+
+	life				500 1000
+
+	delay				8000 1.1e+004
+
+	origin				50 -100 -100 50 100 100
+
+	velocity			325 -300 -300 300 300 300
+
+	rgb
+	{
+		end				0.7294 0.7412 0.7804
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				400 450
+		flags			linear
+	}
+
+	length
+	{
+		start			200
+		end				550
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_water_a
+		debree/debree_t_water_b
+		debree/debree_t_water_c
+	]
+}
+
+Particle
+{
+	name				Copy of mist
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	count				0
+
+	life				1000 2000
+
+	delay				6000 1.2e+004
+
+	origin				0 -75 -75 0 75 75
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-50 -50 400 50 50 600
+
+	gravity				-400 -500
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 75
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_psm_water_a
+		debree/debree_psm_water_b
+		debree/debree_psm_water_c
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of mist
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	count				0
+
+	life				2000 3000
+
+	delay				8000 1.1e+004
+
+	origin				0 -75 -75 0 75 75
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-50 -50 400 50 50 600
+
+	gravity				-400 -500
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75
+		end				175 250
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_psm_water_a
+		debree/debree_psm_water_b
+		debree/debree_psm_water_c
+	]
+}

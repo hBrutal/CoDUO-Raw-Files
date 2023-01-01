@@ -1,0 +1,19 @@
+Emitter
+{
+	flags				emitFx
+
+	life 2500.000000 2500.000000
+
+	delay 0 250
+
+	angleDelta			0 60 0
+
+	velocity			200 0 0
+
+	density				6
+
+	emitfx
+	[
+		fx/tests/dummytest/nest
+	]
+}

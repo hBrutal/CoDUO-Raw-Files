@@ -1,0 +1,457 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           DOMINATION
+LANG_ENGLISH        "Domination"
+
+REFERENCE           MATCHSTARTING
+LANG_ENGLISH        "Match Starting"
+
+REFERENCE           MATCHRESUMING
+LANG_ENGLISH        "Match Resuming"
+
+REFERENCE           WAIT_TILL_MATCHSTART
+LANG_ENGLISH        "You must wait until the match is started."
+
+REFERENCE           AXIS_CAP_FLAG_SOLO
+LANG_ENGLISH        "%s ^9Captured "
+
+REFERENCE           ALLIES_CAP_FLAG_SOLO
+LANG_ENGLISH        "%s ^8Captured "
+
+REFERENCE           ALLIES_CAP_FLAG_TEAM
+LANG_ENGLISH        "%s ^8was taken by"
+
+REFERENCE           AXIS_CAP_FLAG_TEAM
+LANG_ENGLISH        "%s ^9was taken by"
+
+REFERENCE           AXIS_FLAG_OVERRUN
+LANG_ENGLISH        "The ^9Axis ^7are overtaking "
+
+REFERENCE           ALLIES_FLAG_OVERRUN
+LANG_ENGLISH        "The ^8Allies ^7are overtaking "
+
+REFERENCE           OBJ_ALLIES
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the ^9Axis"
+
+REFERENCE           OBJ_AXIS
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the ^8Allies"
+
+REFERENCE           OBJ_SPECTATOR
+LANG_ENGLISH        "^8Allies: ^7Capture all known flags.\n\n^9Axis: ^7Capture all known Flags."
+
+REFERENCE           OBJ_SPECTATOR_ALLIES
+LANG_ENGLISH        "^8Allies: ^7Capture all known flags.\n\n^9Axis: ^7Capture all known Flags."
+
+REFERENCE           OBJ_SPECTATOR_AXIS
+LANG_ENGLISH        "^8Allies: ^7Capture all known flags.\n\n^9Axis: ^7Capture all known Flags."
+
+REFERENCE           UNNAMED_FLAG0
+LANG_ENGLISH        "Flag 1"
+
+REFERENCE           UNNAMED_FLAG1
+LANG_ENGLISH        "Flag 2"
+
+REFERENCE           UNNAMED_FLAG2
+LANG_ENGLISH        "Flag 3"
+
+REFERENCE           UNNAMED_FLAG3
+LANG_ENGLISH        "Flag 4"
+
+REFERENCE           UNNAMED_FLAG4
+LANG_ENGLISH        "Flag 5"
+
+REFERENCE           FLAG1_MP_ARNHEM
+LANG_ENGLISH        "Allied Street"
+
+REFERENCE           FLAG2_MP_ARNHEM
+LANG_ENGLISH        "Allied Headquarters"
+
+REFERENCE           FLAG3_MP_ARNHEM
+LANG_ENGLISH        "Church"
+
+REFERENCE           FLAG4_MP_ARNHEM
+LANG_ENGLISH        "Axis Headquarters"
+
+REFERENCE           FLAG5_MP_ARNHEM
+LANG_ENGLISH        "Axis Street"
+
+REFERENCE           FLAG1_MP_UO_CARENTAN
+LANG_ENGLISH        "Allied Base Exit"
+
+REFERENCE           FLAG2_MP_UO_CARENTAN
+LANG_ENGLISH        "Broken Home"
+
+REFERENCE           FLAG3_MP_UO_CARENTAN
+LANG_ENGLISH        "Grassy Courtyard"
+
+REFERENCE           FLAG4_MP_UO_CARENTAN
+LANG_ENGLISH        "Arches Building"
+
+REFERENCE           FLAG5_MP_UO_CARENTAN
+LANG_ENGLISH        "Axis Base Exit"
+
+REFERENCE           FLAG1_MP_UO_DAWNVILLE
+LANG_ENGLISH        "Allied Base Exit"
+
+REFERENCE           FLAG2_MP_UO_DAWNVILLE
+LANG_ENGLISH        "Chicken Coop"
+
+REFERENCE           FLAG3_MP_UO_DAWNVILLE
+LANG_ENGLISH        "Middle Half-Track"
+
+REFERENCE           FLAG4_MP_UO_DAWNVILLE
+LANG_ENGLISH        "Cemetery"
+
+REFERENCE           FLAG5_MP_UO_DAWNVILLE
+LANG_ENGLISH        "Axis Base Exit"
+
+REFERENCE           FLAG1_MP_UO_DEPOT
+LANG_ENGLISH        "Axis Flatbed Railcar"
+
+REFERENCE           FLAG2_MP_UO_DEPOT
+LANG_ENGLISH        "Warehouse"
+
+REFERENCE           FLAG3_MP_UO_DEPOT
+LANG_ENGLISH        "Rooftop"
+
+REFERENCE           FLAG4_MP_UO_DEPOT
+LANG_ENGLISH        "Motorpool"
+
+REFERENCE           FLAG5_MP_UO_DEPOT
+LANG_ENGLISH        "Allied AA Railcar"
+
+REFERENCE           FLAG1_MP_UO_HARBOR
+LANG_ENGLISH        "Waterfront Warehouse"
+
+REFERENCE           FLAG2_MP_UO_HARBOR
+LANG_ENGLISH        "Storage Garage"
+
+REFERENCE           FLAG3_MP_UO_HARBOR
+LANG_ENGLISH        "German 88 Gun"
+
+REFERENCE           FLAG4_MP_UO_HARBOR
+LANG_ENGLISH        "Crate and Barrel Alley"
+
+REFERENCE           FLAG5_MP_UO_HARBOR
+LANG_ENGLISH        "Russian Back Alley"
+
+REFERENCE           FLAG1_MP_SWORD
+LANG_ENGLISH        "Beachhead Bunker"
+
+REFERENCE           FLAG2_MP_SWORD
+LANG_ENGLISH        "Artillery Bunker"
+
+REFERENCE           FLAG3_MP_SWORD
+LANG_ENGLISH        "Barnyard"
+
+REFERENCE           FLAG4_MP_SWORD
+LANG_ENGLISH        "Backyard"
+
+REFERENCE           FLAG5_MP_SWORD
+LANG_ENGLISH        "Church"
+
+REFERENCE           OBJ_SWORD_OBJ_ATTACKER
+LANG_ENGLISH        "The Allies must secure the town of Lion Sur-Mer."
+
+REFERENCE           OBJ_SWORD_OBJ_DEFENDER
+LANG_ENGLISH        "Protect the beachhead and the town of Lion Sur-Mer."
+
+REFERENCE           OBJ_SWORD_OBJ_SPECTATOR
+LANG_ENGLISH        "Join in the battle for the beachhead and Lion Sur-Mer."
+
+REFERENCE           OBJ_SWORD_SPAWN_ATTACKER
+LANG_ENGLISH        "The Allies must secure the town of Lion Sur-Mer."
+
+REFERENCE           OBJ_SWORD_SPAWN_DEFENDER
+LANG_ENGLISH        "Protect the beachhead and the town of Lion Sur-Mer."
+
+REFERENCE           OBJ_ARNHEM_OBJ_ATTACKER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           OBJ_ARNHEM_OBJ_DEFENDER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           OBJ_ARNHEM_OBJ_SPECTATOR
+LANG_ENGLISH        "Join in the battle for Arnhem."
+
+REFERENCE           OBJ_ARNHEM_SPAWN_ATTACKER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           OBJ_ARNHEM_SPAWN_DEFENDER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           ROUND_DRAW
+LANG_ENGLISH        "The round is a draw."
+
+REFERENCE           CAPTURING_FLAG
+LANG_ENGLISH        "Capturing Flag"
+
+REFERENCE           FLAG2_MP_KURSK
+LANG_ENGLISH        "the Allied Hill"
+
+REFERENCE           FLAG1_MP_KURSK
+LANG_ENGLISH        "the Allied Well"
+
+REFERENCE           FLAG5_MP_KURSK
+LANG_ENGLISH        "the Axis Cemetery"
+
+REFERENCE           FLAG4_MP_KURSK
+LANG_ENGLISH        "the Axis Windmill"
+
+REFERENCE           FLAG3_MP_KURSK
+LANG_ENGLISH        "the Valley"
+
+REFERENCE           FLAG4_MP_ITALY
+LANG_ENGLISH        "the Town Center"
+
+REFERENCE           FLAG2_MP_ITALY
+LANG_ENGLISH        "the Town Alley"
+
+REFERENCE           FLAG1_MP_ITALY
+LANG_ENGLISH        "the Allied Plains"
+
+REFERENCE           FLAG5_MP_ITALY
+LANG_ENGLISH        "the Axis Plains"
+
+REFERENCE           FLAG1_MP_FOY
+LANG_ENGLISH        "the Cattle Pen"
+
+REFERENCE           FLAG2_MP_FOY
+LANG_ENGLISH        "the Southern House"
+
+REFERENCE           FLAG3_MP_FOY
+LANG_ENGLISH        "the East Courtyard"
+
+REFERENCE           FLAG4_MP_FOY
+LANG_ENGLISH        "the West Courtyard"
+
+REFERENCE           FLAG5_MP_FOY
+LANG_ENGLISH        "the Bridge"
+
+REFERENCE           FLAG1_MP_KHARKOV
+LANG_ENGLISH        "the Russian State House"
+
+REFERENCE           FLAG2_MP_KHARKOV
+LANG_ENGLISH        "the Embassy"
+
+REFERENCE           FLAG3_MP_KHARKOV
+LANG_ENGLISH        "the Leveled Houses"
+
+REFERENCE           FLAG4_MP_KHARKOV
+LANG_ENGLISH        "the Conscript Registration House"
+
+REFERENCE           TIMEEXPIRED
+LANG_ENGLISH        "The time has expired."
+
+REFERENCE           ALLIEDMISSIONACCOMPLISHED
+LANG_ENGLISH        "^8The Allies have won the battle."
+
+REFERENCE           AXISMISSIONACCOMPLISHED
+LANG_ENGLISH        "^9The Axis Forces have won the battle."
+
+REFERENCE           FLAG2_MP_BERLIN
+LANG_ENGLISH        "the Bunker"
+
+REFERENCE           FLAG1_MP_BERLIN
+LANG_ENGLISH        "the West Flak Gun"
+
+REFERENCE           FLAG3_MP_BERLIN
+LANG_ENGLISH        "the Central Flak Gun"
+
+REFERENCE           FLAG4_MP_BERLIN
+LANG_ENGLISH        "the Apartment Complex"
+
+REFERENCE           FLAG5_MP_BERLIN
+LANG_ENGLISH        "the Courtyard"
+
+REFERENCE           OBJ_BERLIN_OBJ_ATTACKER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           OBJ_BERLIN_OBJ_DEFENDER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           OBJ_BERLIN_OBJ_SPECTATOR
+LANG_ENGLISH        "Join in the battle for Berlin."
+
+REFERENCE           OBJ_BERLIN_SPAWN_ATTACKER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           OBJ_BERLIN_SPAWN_DEFENDER
+LANG_ENGLISH        "Your team must capture all known flags in order to defeat the Axis/Allies."
+
+REFERENCE           OBJ_FOY_OBJ_ATTACKER
+LANG_ENGLISH        "You must secure the town of Foy."
+
+REFERENCE           OBJ_FOY_OBJ_DEFENDER
+LANG_ENGLISH        "You must defend the town of Foy"
+
+REFERENCE           OBJ_FOY_OBJ_SPECTATOR
+LANG_ENGLISH        "Join in the battle for Foy."
+
+REFERENCE           OBJ_FOY_SPAWN_ATTACKER
+LANG_ENGLISH        "You must secure the town of Foy."
+
+REFERENCE           OBJ_FOY_SPAWN_DEFENDER
+LANG_ENGLISH        "You must defend the town of Foy."
+
+REFERENCE           FLAG1_MP_RHINEVALLEY
+LANG_ENGLISH        "the Eastern Vineyards"
+
+REFERENCE           FLAG2_MP_RHINEVALLEY
+LANG_ENGLISH        "the Southern Village"
+
+REFERENCE           FLAG3_MP_RHINEVALLEY
+LANG_ENGLISH        "Schloss Stolzenfels"
+
+REFERENCE           FLAG4_MP_RHINEVALLEY
+LANG_ENGLISH        "the Pass"
+
+REFERENCE           FLAG5_MP_RHINEVALLEY
+LANG_ENGLISH        "the Western Vineyards"
+
+REFERENCE           FLAG1_MP_UO_POWCAMP
+LANG_ENGLISH        "North Barracks"
+
+REFERENCE           FLAG2_MP_UO_POWCAMP
+LANG_ENGLISH        "Prison Motor Pool"
+
+REFERENCE           FLAG3_MP_UO_POWCAMP
+LANG_ENGLISH        "Central Guard Tower"
+
+REFERENCE           FLAG4_MP_UO_POWCAMP
+LANG_ENGLISH        "Supply Shed"
+
+REFERENCE           FLAG5_MP_UO_POWCAMP
+LANG_ENGLISH        "Outdoor Mess Yard"
+
+REFERENCE           FLAG1_MP_UO_HURTGEN
+LANG_ENGLISH        "German HQ Bunker"
+
+REFERENCE           FLAG2_MP_UO_HURTGEN
+LANG_ENGLISH        "German Flak 88"
+
+REFERENCE           FLAG3_MP_UO_HURTGEN
+LANG_ENGLISH        "Creekbed Outpost"
+
+REFERENCE           FLAG4_MP_UO_HURTGEN
+LANG_ENGLISH        "Bridge Bunker"
+
+REFERENCE           FLAG5_MP_UO_HURTGEN
+LANG_ENGLISH        "Far Woods Bunker"
+
+REFERENCE           FLAG1_MP_PONYRI
+LANG_ENGLISH        "the School"
+
+REFERENCE           FLAG2_MP_PONYRI
+LANG_ENGLISH        "the Railyard"
+
+REFERENCE           FLAG3_MP_PONYRI
+LANG_ENGLISH        "the Central Hill"
+
+REFERENCE           FLAG4_MP_PONYRI
+LANG_ENGLISH        "the Farm"
+
+REFERENCE           FLAG5_MP_PONYRI
+LANG_ENGLISH        "the Factory"
+
+REFERENCE           FLAG6_MP_UO_HURTGEN
+LANG_ENGLISH        "Lone Road Outpost"
+
+REFERENCE           FLAG5_MP_KHARKOV
+LANG_ENGLISH        "the Estate Courtyard"
+
+REFERENCE           FLAG6_MP_KHARKOV
+LANG_ENGLISH        "the Lenin House Library"
+
+REFERENCE           FLAG1_MP_CASSINO
+LANG_ENGLISH        "the German Alley"
+
+REFERENCE           FLAG2_MP_CASSINO
+LANG_ENGLISH        "the German Street"
+
+REFERENCE           FLAG3_MP_CASSINO
+LANG_ENGLISH        "the Courtyard"
+
+REFERENCE           FLAG4_MP_CASSINO
+LANG_ENGLISH        "the Allied Alley"
+
+REFERENCE           FLAG5_MP_CASSINO
+LANG_ENGLISH        "the Allied Street"
+
+REFERENCE           FLAG5_MP_STANJEL
+LANG_ENGLISH        "the Allied Gun Nest"
+
+REFERENCE           FLAG4_MP_STANJEL
+LANG_ENGLISH        "the Allied Underground Quarters"
+
+REFERENCE           FLAG1_MP_STANJEL
+LANG_ENGLISH        "the Axis Headquarters"
+
+REFERENCE           FLAG2_MP_STANJEL
+LANG_ENGLISH        "the Axis Alley"
+
+REFERENCE           FLAG3_MP_STANJEL
+LANG_ENGLISH        "the Hill Ruins"
+
+REFERENCE           FLAG1_MP_SICILY
+LANG_ENGLISH        "the Allied Docks"
+
+REFERENCE           FLAG2_MP_SICILY
+LANG_ENGLISH        "the Allied Street"
+
+REFERENCE           FLAG3_MP_SICILY
+LANG_ENGLISH        "the Amphitheatre"
+
+REFERENCE           FLAG4_MP_SICILY
+LANG_ENGLISH        "the Axis Ruins"
+
+REFERENCE           FLAG5_MP_SICILY
+LANG_ENGLISH        "the Axis Docks"
+
+REFERENCE           FLAG1_MP_PEAKS
+LANG_ENGLISH        "the American Entry Point"
+
+REFERENCE           FLAG2_MP_PEAKS
+LANG_ENGLISH        "the American Bunker"
+
+REFERENCE           FLAG3_MP_PEAKS
+LANG_ENGLISH        "the Bridge"
+
+REFERENCE           FLAG4_MP_PEAKS
+LANG_ENGLISH        "the German Shack"
+
+REFERENCE           FLAG5_MP_PEAKS
+LANG_ENGLISH        "the German Entry Point"
+
+REFERENCE           FLAG1_MP_STREETS
+LANG_ENGLISH        "Flag 1"
+
+REFERENCE           FLAG2_MP_STREETS
+LANG_ENGLISH        "Flag 2"
+
+REFERENCE           FLAG3_MP_STREETS
+LANG_ENGLISH        "Flag 3"
+
+REFERENCE           FLAG4_MP_STREETS
+LANG_ENGLISH        "Flag 4"
+
+REFERENCE           FLAG5_MP_STREETS
+LANG_ENGLISH        "Flag 5"
+
+
+ENDMARKER
+
+

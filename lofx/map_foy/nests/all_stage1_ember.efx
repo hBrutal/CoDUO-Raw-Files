@@ -1,0 +1,138 @@
+Particle
+{
+	name				aftersmoke
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				750 900
+
+	cullrange			3000
+
+	origin				0 -2 -2 0 2 2
+
+	wind				50
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			15 -2 -2 30 2 2
+
+	gravity				15 25
+
+	rgb
+	{
+		end				0.3961 0.3882 0.4039
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			10 15
+		end				25 35
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				afterfire_stationary
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				500 750
+
+	delay				0 500
+
+	cullrange			4000
+
+	origin				-2 -2 -2 2 2 2
+
+	wind				50
+
+	rotation			5 -5
+
+	rotationDelta		2 -2
+
+	velocity			7 -2 -2 15 2 2
+
+	gravity				15 25
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			7 10
+		end				15 25
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}
+
+OrientedParticle
+{
+	life				350 500
+
+	cullrange			4000
+
+	origin				5 0 0
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	alpha
+	{
+		end				0
+		parm			0.1
+		flags			linear
+	}
+
+	size
+	{
+		start			15 25
+		end				25 35
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_ball_a
+		fire/flame_ball_a
+		fire/flame_ball_a
+	]
+}

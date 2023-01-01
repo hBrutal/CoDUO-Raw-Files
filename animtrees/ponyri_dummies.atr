@@ -1,0 +1,22 @@
+// "run"
+sprint1_loop
+stand_shoot_run_forward
+crouchrun_loop_forward_1
+
+// "death"
+death_run_forward_crumple
+crouchrun_death_drop
+crouchrun_death_crumple
+death_run_onfront
+death_run_onleft
+death_explosion_back13
+
+// Panzerfaust
+panzerfaust_standidle2crouchaim
+
+hideLowWall_1
+hideLowWall2crouch
+crouch_alert2aim_A
+crouch_shoot_straight
+crouch_aim2alert_A
+crouch_alert_A_idle

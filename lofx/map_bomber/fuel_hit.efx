@@ -1,0 +1,48 @@
+OrientedParticle
+{
+	name				ripple
+
+	count				0 1
+
+	life				250 450
+
+	delay				0 50
+
+	origin				0.5 -0.25 -0.25 1 0.25 0.25
+
+	radius				880 380
+
+	height				0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -2 -2 0 2 2
+
+	rgb
+	{
+		start			0.3176 0.2745 0.2
+		end				0.5098 0.4588 0.3412
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				3 12
+		flags			linear
+	}
+
+	shaders
+	[
+		water/water_ripple_a
+	]
+}

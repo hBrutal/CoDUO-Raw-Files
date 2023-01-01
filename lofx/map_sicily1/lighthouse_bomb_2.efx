@@ -1,0 +1,203 @@
+Particle
+{
+	name				smoke_linger_mist
+
+	flags				useAlpha
+
+	life				2000 4000
+
+	delay				25
+
+	cullrange			8000
+
+	origin				0 -50 -50 0 50 50
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			-125 -210 -210 175 210 210
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.3569 0.3569 0.3765
+		end				0.1882 0.1843 0.2
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			200 250
+		end				300 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fire_exp_core
+
+	life				125 300
+
+	cullrange			32000
+
+	origin				0 -50 -50 0 50 50
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-100 -160 -160 160 160 160
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			250 450
+		end				500 700
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}
+
+Particle
+{
+	name				smoke_big_base
+
+	flags				useAlpha
+
+	life				1000 2000
+
+	delay				150 450
+
+	cullrange			8000
+
+	origin				0 -50 -50 0 50 50
+
+	rotation			-15 15
+
+	rotationDelta		-2 2
+
+	velocity			-100 -75 -75 75 75 75
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			500 650
+		end				800 1200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				Copy of smoke_plumer_shaft
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				4000 5000
+
+	delay				50 200
+
+	cullrange			4000
+
+	origin				0 -50 -50 0 50 50
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			-100 -150 -150 200 150 150
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5098 0.5216 0.4784
+		end				0.3686 0.4 0.3922
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			400 500
+		end				700 800
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}

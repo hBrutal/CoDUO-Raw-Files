@@ -1,0 +1,15 @@
+Emitter
+{
+	flags				deathFx
+
+	life				2000
+
+	velocity			1000 500 -500
+
+	gravity				-600
+
+	deathfx
+	[
+		fx/map_bastogne2/flare
+	]
+}

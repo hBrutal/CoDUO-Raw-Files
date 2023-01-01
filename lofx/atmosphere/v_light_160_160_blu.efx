@@ -1,0 +1,93 @@
+Particle
+{
+	name				p1
+
+	flags				impactKills
+
+	life				6e+009
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.2
+		end				0
+	}
+
+	size
+	{
+		start			160
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p5
+
+	flags				impactKills
+
+	life				6e+009
+
+	origin				80 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.12
+		end				0
+	}
+
+	size
+	{
+		start			160
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p9
+
+	flags				impactKills
+
+	life				6e+009
+
+	origin				160 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.04
+		end				0
+	}
+
+	size
+	{
+		start			160
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}

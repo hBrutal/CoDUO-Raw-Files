@@ -1,0 +1,132 @@
+Particle
+{
+	name				smoke_blast
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 1 1
+
+	life				250 550
+
+	delay				0 15
+
+	cullrange			4000
+
+	origin				0 0 0 5 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 -15 -15 150 15 15
+
+	gravity				-200 -100
+
+	rgb
+	{
+		start			0.9098 1 1
+		end				0.7412 0.7765 0.749
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			5
+		end				35 50
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_twht_b
+		smoke/smk_p_fractal_twht_b
+		smoke/smk_p_fractal_twht_c
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Decal
+{
+	name				impact_mark
+
+	life				2e+004
+
+	cullrange			800
+
+	rotation			0 360
+
+	size
+	{
+		start			1 3
+	}
+
+	shaders
+	[
+		impact/bullet_snow_a
+		impact/bullet_snow_a	]
+}
+
+Particle
+{
+	name				dustfall
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 1
+
+	life				500 750
+
+	delay				0 250
+
+	cullrange			800
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			0 0 0 30 0 0
+
+	gravity				0 -65
+
+	rgb
+	{
+		end				0.7412 0.7765 0.749
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			0 5
+		end				10 60
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}

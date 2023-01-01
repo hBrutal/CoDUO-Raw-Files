@@ -1,0 +1,150 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				500 3000
+
+	delay				0 10
+
+	cullrange			4000
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.3569 0.3882 0.3294
+		end				0.5529 0.5059 0.3882
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_fractal
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				500 3000
+
+	delay				0 10
+
+	cullrange			8000
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.5529 0.5059 0.3882
+		end				0.7059 0.6745 0.6118
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_mist_snow
+
+	flags				useAlpha
+
+	life				500 1000
+
+	delay				0 10
+
+	cullrange			2000
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.3569 0.3882 0.3294
+		end				0.3843 0.349 0.2667
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

@@ -1,0 +1,9 @@
+FxRunner
+{
+	origin				-150 0 0
+
+	playfx
+	[
+		fx/weapon/explosions/artillery_concrete
+	]
+}

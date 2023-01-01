@@ -1,0 +1,110 @@
+Tail
+{
+	name				sparks
+
+	flags				usePhysics
+
+	spawnFlags			evenDistribution
+
+	count				1 5
+
+	life				250 1500
+
+	delay				0 50
+
+	cullrange			600
+
+	bounce				0.25
+
+	origin				0 15 0 0 17 0
+
+	velocity			0 0 -25 25 -50 25
+
+	acceleration		-50 -50 -50 50 50 50
+
+	gravity				-500 -200
+
+	rgb
+	{
+		start			1 0.8235 0.651
+		end				1 0.502 0
+		parm			25 75
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		parm			90 95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			0.5 1
+		end				0 0.25
+	}
+
+	length
+	{
+		start			2 3
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_tail_a
+		fire/spark_tail_b
+	]
+}
+
+Particle
+{
+	name				smoke
+
+	flags				useAlpha
+
+	count				1 2
+
+	life				250 750
+
+	origin				-2 15 -2 2 17 2
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-2 -5 -2 2 0 2
+
+	gravity				0 20
+
+	rgb
+	{
+		start			0.3451 0.3333 0.3686
+		end				0.1882 0.1843 0.2
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			2 3
+		end				4 8
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

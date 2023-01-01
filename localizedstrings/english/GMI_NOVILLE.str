@@ -1,0 +1,52 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           OBJECTIVE_1
+LANG_ENGLISH        "Clear Houses with Cpt. Foley and First Squad."
+
+REFERENCE           OBJECTIVE_3
+LANG_ENGLISH        "Clear Chateau."
+
+REFERENCE           OBJECTIVE_2
+LANG_ENGLISH        "Rendezvous at the Chateau."
+
+REFERENCE           OBJECTIVE_4
+LANG_ENGLISH        "Protect South Flank."
+
+REFERENCE           OBJECTIVE_5
+LANG_ENGLISH        "Protect North Flank."
+
+REFERENCE           OBJECTIVE_6
+LANG_ENGLISH        "Protect Third Squad and Sgt. Moody."
+
+REFERENCE           OBJECTIVE_7
+LANG_ENGLISH        "Defend Chateau."
+
+REFERENCE           OBJECTIVE_6_TRACKER
+LANG_ENGLISH        "Protect Third Squad. (%s remaining)"
+
+REFERENCE           OBJECTIVE_6_MOODY
+LANG_ENGLISH        "Protect Sgt. Moody."
+
+REFERENCE           OBJECTIVE_8
+LANG_ENGLISH        "Regroup with Cpt. Foley."
+
+REFERENCE           OBJECTIVE_7_TANK
+LANG_ENGLISH        "Destroy incoming tank."
+
+
+ENDMARKER
+
+

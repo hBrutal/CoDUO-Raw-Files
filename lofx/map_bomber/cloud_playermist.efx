@@ -1,0 +1,299 @@
+Particle
+{
+	name				clouds
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				0 1
+
+	life				1e+004
+
+	cullrange			10000
+
+	origin				-2000 -2000 -750 2000 2000 -750
+
+	wind				100
+
+	rotation			-10 10
+
+	velocity			-50 -50 250 50 50 250
+
+	rgb
+	{
+		start			0.8824 0.8667 0.8353
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			200 300
+		end				200 300
+		flags			linear
+	}
+
+	size2
+	{
+		start			2000 2500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_a
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_c
+		smoke/smk_p_none_org_f
+		smoke/smk_p_none_org_f
+	]
+}
+
+Particle
+{
+	name				spread_mist_right
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				0 1
+
+	life				1000 1500
+
+	delay				0 300
+
+	origin				250 -250 -750 750 250 -750
+
+	rotation			0 360
+
+	velocity			-50 -50 1000 50 50 1000
+
+	rgb
+	{
+		start			0.8667 0.7569 0.6431
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.15 0.3
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			250 400
+		end				250 400
+		flags			linear
+	}
+
+	size2
+	{
+		start			2000 2500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				spread_mist_left
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				0 1
+
+	life				1000 1500
+
+	delay				0 300
+
+	origin				-250 -250 -750 -750 250 -750
+
+	rotation			0 360
+
+	velocity			-50 -50 1000 50 50 1000
+
+	rgb
+	{
+		start			0.8667 0.7569 0.6431
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.15 0.3
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			250 400
+		end				250 400
+		flags			linear
+	}
+
+	size2
+	{
+		start			2000 2500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				spread_mist_top
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				0 1
+
+	life				1000 1500
+
+	delay				0 300
+
+	origin				-250 250 -750 250 750 -750
+
+	rotation			0 360
+
+	velocity			-50 -50 1000 50 50 1000
+
+	rgb
+	{
+		start			0.8667 0.7569 0.6431
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.15 0.3
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			250 400
+		end				250 400
+		flags			linear
+	}
+
+	size2
+	{
+		start			2000 2500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				spread_mist_bottom
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				0 1
+
+	life				1000 1500
+
+	delay				0 300
+
+	origin				-250 -250 -750 250 -750 -750
+
+	rotation			0 360
+
+	velocity			-50 -50 1000 50 50 1000
+
+	rgb
+	{
+		start			0.8667 0.7569 0.6431
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.15 0.3
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			250 400
+		end				250 400
+		flags			linear
+	}
+
+	size2
+	{
+		start			2000 2500
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}

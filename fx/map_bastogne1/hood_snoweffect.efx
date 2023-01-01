@@ -1,0 +1,194 @@
+Particle
+{
+	name				fog
+
+	flags				useAlpha
+
+	spawnFlags			absoluteAccel evenDistribution
+
+	count				4
+
+	life				750
+
+	delay				0 250
+
+	cullrange			1000
+
+	origin				85 -35 50 160 35 75
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-5 -2 -2 -5 2 2
+
+	acceleration		-2 -2 -2 2 2 2
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.7765 0.8275 0.8902
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.4
+		end				0
+		parm			0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			15 25
+		end				35 60
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_a
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				snow
+
+	spawnFlags			absoluteAccel evenDistribution
+
+	count				4
+
+	life				1000
+
+	delay				0 250
+
+	cullrange			750
+
+	origin				85 -25 50 160 25 55
+
+	rotation			0 360
+
+	rotationDelta		-50 50
+
+	velocity			-5 -2 -0.5 -5 2 0.5
+
+	acceleration		50 -150 -2 0 150 10
+
+	gravity				0 50
+
+	rgb
+	{
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.1
+		flags			linear
+	}
+
+	size
+	{
+		start			0.5 1.5
+		end				0
+		parm			98
+		flags			nonlinear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		snow/snow_flake_a
+		snow/snow_flake_b
+		snow/snow_flake_c
+	]
+}
+
+Particle
+{
+	name				swirl
+
+	flags				relative
+
+	spawnFlags			absoluteAccel evenDistribution
+
+	count				0
+
+	life				250 750
+
+	delay				0 250
+
+	cullrange			750
+
+	origin				85 -25 50 85 25 55
+
+	rotation			0 360
+
+	rotationDelta		-40 40
+
+	rotationAccel		-1 1
+
+	velocity			-50 -10 5 -75 10 25
+
+	acceleration		-2 -2 -2 2 2 2
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.7765 0.8275 0.8902
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.3
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			5 10
+		end				15 25
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		snow/snow_swirl_a
+		snow/snow_swirl_b
+		snow/snow_swirl_c
+	]
+}

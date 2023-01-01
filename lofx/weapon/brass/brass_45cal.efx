@@ -1,0 +1,55 @@
+Emitter
+{
+	flags				useModel
+
+	life				500
+
+	cullrange			400
+
+	angle				360 360 360 -360 -360 -360
+
+	angleDelta			233 233 233 -233 -233 -233
+
+	velocity			100 0 0
+
+	acceleration		132 132 132 -132 -132 -132
+
+	gravity				-800
+
+	size
+	{
+		start			0.6
+		end				0.15
+	}
+
+	models
+	[
+		xmodel/m_gib_9mm
+	]
+}
+
+Emitter
+{
+	name				Copy of Unnamed Emitter 0
+
+	flags				usePhysics impactKills impactFx
+
+	life				1500
+
+	cullrange			200
+
+	velocity			100 0 0
+
+	gravity				-800
+
+	size
+	{
+		start			0.15
+		end				0.15
+	}
+
+	impactfx
+	[
+		fx/shellejects/shelleject_riflesound
+	]
+}

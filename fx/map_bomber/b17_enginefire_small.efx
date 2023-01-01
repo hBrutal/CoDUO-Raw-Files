@@ -1,0 +1,220 @@
+Particle
+{
+	name				smoke_trail_mist_top
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				1500 2000
+
+	delay				0 300
+
+	origin				0 -25 50 75 25 50
+
+	radius				48
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			2000 15 15
+
+	acceleration		-15 -50 -50 15 50 50
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.9412 1 1
+		end				0.1216 0.1098 0.08627
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				450 800
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}
+
+Particle
+{
+	name				fire
+
+	spawnFlags			evenDistribution
+
+	count				3
+
+	life				100 200
+
+	delay				0 300
+
+	origin				0 -25 -50 -100 25 50
+
+	radius				48
+
+	rotation			360 0
+
+	rotationDelta		-25 25
+
+	velocity			2000 0 0 2000 15 15
+
+	acceleration		-15 -50 -50 15 50 50
+
+	gravity				0 25
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				150 300
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}
+
+Particle
+{
+	name				embers
+
+	spawnFlags			evenDistribution
+
+	count				3
+
+	life				2000 3000
+
+	delay				0 300
+
+	cullrange			10000
+
+	origin				0 -25 50 75 25 50
+
+	radius				48
+
+	rotation			360 0
+
+	rotationDelta		-25 25
+
+	velocity			2000 -50 -50 3000 50 50
+
+	acceleration		-15 -50 -50 15 50 50
+
+	gravity				-200 25
+
+	rgb
+	{
+		start			0.9412 1 1
+		end				0.1216 0.1098 0.08627
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			5 10
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		misc/glow_red_a
+		misc/glow_red_b
+	]
+}
+
+Particle
+{
+	name				debree
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution
+
+	life				1500 2500
+
+	delay				0 300
+
+	cullrange			10000
+
+	origin				0 -25 50 75 25 50
+
+	radius				48
+
+	rotation			360 0
+
+	rotationDelta		-45 45
+
+	velocity			200 -50 0 2000 50 500
+
+	acceleration		-15 -50 -50 15 50 50
+
+	gravity				-500 -300
+
+	rgb
+	{
+		start			0.9412 1 1
+		end				0.1216 0.1098 0.08627
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+	}
+
+	size
+	{
+		start			3 24
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_metal_a
+		debree/debree_gib_metal_b
+	]
+}

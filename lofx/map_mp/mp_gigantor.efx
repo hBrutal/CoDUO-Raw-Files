@@ -1,0 +1,103 @@
+Particle
+{
+	name				smoke
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				4
+
+	life				4000 5000
+
+	delay				0 5000
+
+	origin				100 -250 -250 345 250 250
+
+	rotation			328 -256
+
+	rotationDelta		-5 5
+
+	velocity			400 0 0 333 0 0
+
+	rgb
+	{
+		start			0.6627 0.6863 0.7059
+		end				0.5098 0.5216 0.4784
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.8
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			200 400
+		end				1000
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_lit
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				2000 3000
+
+	delay				0 5000
+
+	origin				0 -100 -100 100 100 100
+
+	rotation			170 190
+
+	rotationDelta		-5 5
+
+	velocity			400 0 0 233 0 0
+
+	rgb
+	{
+		end				0.7176 0.5255 0.3176
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 125
+		end				1050 700
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_c
+	]
+}

@@ -1,0 +1,463 @@
+Light
+{
+	name				D_light
+
+	life 50.000000 50.000000
+
+	rgb
+	{
+		end				0.9765 0.949 0.651
+		flags			linear
+	}
+
+	size
+	{
+		start			400
+		flags			linear
+	}
+}
+
+Particle
+{
+	name				smoke_mist
+
+	flags				useAlpha
+
+	count 2 5
+
+	life 1500.000000 3000.000000
+
+	delay 12 12
+
+	origin				-15 -15 -15 15 15 15
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			0 -25 -25 100 25 25
+
+	gravity				-100 50
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				100 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_mist_a
+		smoke/smoke_mist_b
+		smoke/smoke_mist_c
+	]
+}
+
+Particle
+{
+	name				smoke_plume_puff
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 2 3
+
+	life 250.000000 500.000000
+
+	delay 12 75
+
+	origin				-15 -15 -15 15 15 15
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			100 -25 -25 500 25 25
+
+	gravity				-100 100
+
+	rgb
+	{
+		start			0.8157 0.7922 0.7569
+	}
+
+	alpha
+	{
+		end				0
+		parm			0 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				200 300
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_puff_a
+		smoke/smoke_puff_b
+		smoke/smoke_puff_c
+	]
+}
+
+Decal
+{
+	name				scortch_mark
+
+	life 10000.000000 15000.000000
+
+	delay 7 12
+
+	rotation			0 360
+
+	size
+	{
+		start			72 144
+	}
+
+	shaders
+	[
+		impact/scorch_dirt_a
+		impact/scorch_dirt_b
+		impact/scorch_dirt_c
+	]
+}
+
+Line
+{
+	name				smoke_tendril_vertical
+
+	flags				useAlpha
+
+	count 1 4
+
+	life 375.000000 500.000000
+
+	delay 25 25
+
+	origin				10 -10 -10 10 10 10
+
+	origin2				250 -100 -100 650 100 100
+
+	rgb
+	{
+		start			0.8157 0.7922 0.7569 0.8078 0.7608 0.7333
+	}
+
+	alpha
+	{
+		end				0
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			15 35
+		end				100 250
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_line_a
+		smoke/smoke_line_b
+		smoke/smoke_line_c
+	]
+}
+
+OrientedParticle
+{
+	name				smoke_ground
+
+	flags				useAlpha
+
+	count 1 1
+
+	life 1000.000000 1500.000000
+
+	delay 12 12
+
+	origin				5 15 15 15 15 15
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -10 -10 5 10 10
+
+	alpha
+	{
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			25 150
+		end				200 250
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_mist_a
+		smoke/smoke_mist_b
+		smoke/smoke_mist_c
+	]
+}
+
+Line
+{
+	name				smoke_tendril_base
+
+	flags				useAlpha
+
+	count 5 7
+
+	life 250.000000 750.000000
+
+	delay 25 25
+
+	origin				10 -10 -10 10 10 10
+
+	origin2				35 -225 -225 370 225 225
+
+	rgb
+	{
+		start			0.8157 0.7922 0.7569 0.8078 0.7608 0.7333
+	}
+
+	alpha
+	{
+		end				0
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			15 35
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smoke_line_a
+		smoke/smoke_line_b
+		smoke/smoke_line_c
+	]
+}
+
+Particle
+{
+	name				dirtplume_base
+
+	flags				useAlpha
+
+	count 2 4
+
+	life 500.000000 1000.000000
+
+	delay 12 12
+
+	origin				-25 -15 -15 0 15 15
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			150 -50 -50 350 50 50
+
+	gravity				-600 -250
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			25 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			15 35
+		end				75 200
+		flags			linear
+	}
+
+	size2
+	{
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_sphere_a
+		debree/debree_sphere_b
+		debree/debree_sphere_c
+	]
+}
+
+Particle
+{
+	name				dirtplume_shroom
+
+	flags				useAlpha
+
+	count 1 2
+
+	life 1125.000000 1375.000000
+
+	delay 12 12
+
+	origin				0 -15 -15 25 15 15
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			600 -35 -35 700 35 35
+
+	gravity				-650 -550
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			75 85
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			15 35
+		end				150 250
+		parm			0 25
+		flags			nonlinear
+	}
+
+	size2
+	{
+		end				100 200
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_sphere_a
+		debree/debree_sphere_b
+		debree/debree_sphere_c
+	]
+}
+
+Particle
+{
+	name				dirtplume_shaft
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 2 3
+
+	life 1125.000000 1250.000000
+
+	delay 12 125
+
+	origin				-25 -15 -15 0 15 15
+
+	rotationDelta		-0.5 0.5
+
+	velocity			450 -15 -15 650 15 15
+
+	gravity				-650 -550
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			75 85
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			15 35
+		end				75 100
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				100 150
+		flags			linear
+	}
+
+	length
+	{
+		start			100
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_sphere_a
+		debree/debree_sphere_b
+		debree/debree_sphere_c
+	]
+}

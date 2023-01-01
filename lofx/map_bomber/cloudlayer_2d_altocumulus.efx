@@ -1,0 +1,44 @@
+OrientedParticle
+{
+	name				cloudlayer_LOW
+
+	flags				useAlpha
+
+	count 0 0
+
+	life				1.2e+005 2.4e+005
+
+	delay				0 2e+004
+
+	origin				-1e+004 1.2e+005 -6e+004 -2e+004 1.2e+005 6e+004
+
+	rotation			88 92
+
+	velocity			-5 -1500 -200 5 -2500 200
+
+	rgb
+	{
+		start			0.9922 0.851 0.6902
+	}
+
+	alpha
+	{
+		start			0.25 0.65
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			6e+004 8e+004
+		end				6e+004 8e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		atmosphere/cloud_plane_altocumulus_a
+		atmosphere/cloud_plane_altocumulus_a
+	]
+}

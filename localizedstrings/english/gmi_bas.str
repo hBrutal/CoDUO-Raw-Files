@@ -1,0 +1,73 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           BOMB_UNARMED
+LANG_ENGLISH        "The bomb is not armed."
+
+REFERENCE           BASE_ASSAULT
+LANG_ENGLISH        "Base Assault"
+
+REFERENCE           MATCHSTARTING
+LANG_ENGLISH        "Match Starting"
+
+REFERENCE           MATCHRESUMING
+LANG_ENGLISH        "Match Resuming"
+
+REFERENCE           ATTACKER_OBJECTIVE
+LANG_ENGLISH        "Destroy the opposing team's bases."
+
+REFERENCE           SPECTATOR_OBJECTIVE
+LANG_ENGLISH        "Join the battle and help your team destroy the enemy team's bases."
+
+REFERENCE           TIMEEXPIRED
+LANG_ENGLISH        "The time has expired."
+
+REFERENCE           ROUND_DRAW
+LANG_ENGLISH        "The round is a draw."
+
+REFERENCE           PLANTING_BOMB
+LANG_ENGLISH        "Planting Bomb"
+
+REFERENCE           DIFFUSING_BOMB
+LANG_ENGLISH        "Defusing Bomb"
+
+REFERENCE           USE_TO_DEFUSE
+LANG_ENGLISH        "Press [{+activate}] to defuse the bomb."
+
+REFERENCE           USE_TO_PLANT
+LANG_ENGLISH        "Press [{+activate}] to arm the bomb."
+
+REFERENCE           AXIS_DEFEND
+LANG_ENGLISH        "This bomb can only be armed by the Allies. Defend it!"
+
+REFERENCE           ALLIES_DEFEND
+LANG_ENGLISH        "This bomb can only be armed by the Axis. Defend it!"
+
+REFERENCE           AXIS_DEFEND_DEFUSE
+LANG_ENGLISH        "This bomb can only be defused by the Allies. Defend it!"
+
+REFERENCE           ALLIES_DEFEND_DEFUSE
+LANG_ENGLISH        "This bomb can only be defused by the Axis. Defend it!"
+
+REFERENCE           DEFENDED_AXIS_BASE
+LANG_ENGLISH        "%s ^9defended an axis base."
+
+REFERENCE           DEFENDED_ALLIES_BASE
+LANG_ENGLISH        "%s ^8defended an allied base."
+
+
+ENDMARKER
+
+

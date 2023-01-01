@@ -1,0 +1,17 @@
+# This file defines the default soundalias files to load if no map specific loadspec file is found
+# If you want to include sounds into your map file which are not included here you should make a seperate 
+"# load spec file int the form of ""<map name>.csv"" using this file as a base.  You should only load the"
+# soundalias files which are absolutely necessary to keep the sound memory footprint as small as possible
+#*********************************************************************************************************
+dialog_generic.csv
+gmi_dialog_generic.csv
+gmi_music.csv
+gmi_sound.csv
+gmi_voiceovers.csv
+iw_music.csv
+iw_sound.csv
+iw_sound2.csv
+iw_voiceovers.csv
+pi_sound.csv
+surface_gmi_sound.csv
+wep_gmi_sound.csv

@@ -1,0 +1,69 @@
+Emitter
+{
+	flags				useModel usePhysics
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				2 3
+
+	life				4000 1e+004
+
+	radius				15 30
+
+	angle				50 50 50 0 0 0
+
+	angleDelta			50 50 50 0 0 0
+
+	velocity			30 0 0 100 0 0
+
+	gravity				-100 -200
+
+	size
+	{
+		start			4 8
+		end				5 30
+	}
+
+	models
+	[
+		xmodel/m_gib_dirt_a
+		xmodel/m_gib_dirt_b
+		xmodel/m_gib_dirt_c
+		xmodel/m_gib_metal_a
+		xmodel/m_gib_metal_b
+		xmodel/m_gib_metal_c
+		xmodel/m_gib_wood_a
+		xmodel/m_gib_wood_b
+		xmodel/m_gib_wood_c
+	]
+}
+
+Particle
+{
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count				3
+
+	life				3000 4000
+
+	radius				10 40
+
+	velocity			15 0 0 20 0 0
+
+	gravity				-75 -150
+
+	size
+	{
+		start			20 40
+		end				60 100
+		parm			1
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_plg_dirt_a
+		debree/debree_plg_dirt_b
+		debree/debree_plg_dirt_c
+	]
+}

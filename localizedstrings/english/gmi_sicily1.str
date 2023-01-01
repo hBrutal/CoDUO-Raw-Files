@@ -1,0 +1,112 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           OBJECTIVE_1_0
+LANG_ENGLISH        "Eliminate the guards inside the dock house"
+
+REFERENCE           OBJECTIVE_1_1
+LANG_ENGLISH        "Storm the bunker and eliminate the rest of the guards"
+
+REFERENCE           OBJECTIVE_1_2
+LANG_ENGLISH        "Get in the back of the truck"
+
+REFERENCE           OBJECTIVE_1_3
+LANG_ENGLISH        "Engage the enemy at the lighthouse and get inside to plant your charges"
+
+REFERENCE           OBJECTIVE_1_4
+LANG_ENGLISH        "Engage the enemy at the lighthouse and get inside to plant your charges"
+
+REFERENCE           OBJECTIVE_1_5
+LANG_ENGLISH        "Engage the enemy at the lighthouse and get inside to plant your charges"
+
+REFERENCE           OBJECTIVE_2
+LANG_ENGLISH        "Plant the charges in the lighthouse (%s of 3 remaining)"
+
+REFERENCE           OBJECTIVE_3_0
+LANG_ENGLISH        "Regroup with Major Ingram outside the lighthouse"
+
+REFERENCE           OBJECTIVE_3_1
+LANG_ENGLISH        "Head to the top of the path"
+
+REFERENCE           OBJECTIVE_3_2
+LANG_ENGLISH        "Do not engage the enemy until the reinforcements have passed"
+
+REFERENCE           OBJECTIVE_3_3
+LANG_ENGLISH        "(this objective has been removed)\n"
+
+REFERENCE           OBJECTIVE_3_4
+LANG_ENGLISH        "Get up onto the wall"
+
+REFERENCE           OBJECTIVE_3_5
+LANG_ENGLISH        "Find the radio rooms"
+
+REFERENCE           OBJECTIVE_4
+LANG_ENGLISH        "Disable the communications equipment (%s of 5 radios remaining)"
+
+REFERENCE           OBJECTIVE_5_0
+LANG_ENGLISH        "Find a way down into the courtyard"
+
+REFERENCE           OBJECTIVE_5_1
+LANG_ENGLISH        "Regroup with Major Ingram's squad"
+
+REFERENCE           OBJECTIVE_5_2
+LANG_ENGLISH        "Secure the underground garage"
+
+REFERENCE           OBJECTIVE_6_0
+LANG_ENGLISH        "Find the documents"
+
+REFERENCE           OBJECTIVE_7_0
+LANG_ENGLISH        "Get on the elevator"
+
+REFERENCE           OBJECTIVE_7_1
+LANG_ENGLISH        "Find the cliff gun emplacements"
+
+REFERENCE           OBJECTIVE_8
+LANG_ENGLISH        "Plant the charges on the guns (%s of 3 remaining)"
+
+REFERENCE           OBJECTIVE_9_0
+LANG_ENGLISH        "Find the munitions magazine for the guns"
+
+REFERENCE           OBJECTIVE_9_1
+LANG_ENGLISH        "Plant the charges in the magazine (%s of 3 remaining)"
+
+REFERENCE           OBJECTIVE_10_0
+LANG_ENGLISH        "Get back to the elevator"
+
+REFERENCE           OBJECTIVE_10_1
+LANG_ENGLISH        "Regroup in the garage"
+
+REFERENCE           OBJECTIVE_10_2
+LANG_ENGLISH        "Head out to the courtyard"
+
+REFERENCE           OBJECTIVE_10_3
+LANG_ENGLISH        "Get in the sidecar of the motorbike"
+
+REFERENCE           DONT_GO_TOO_FAR
+LANG_ENGLISH        "You are in danger of disobeying orders!"
+
+REFERENCE           YOU_WENT_TOO_FAR
+LANG_ENGLISH        "You disobeyed orders by leaving the squad behind!"
+
+REFERENCE           GET_ON_BIKE
+LANG_ENGLISH        "Press [USE] to get on the motorcycle"
+
+REFERENCE           OBJECTIVE_0
+LANG_ENGLISH        "Stay concealed until the docks sentry is eliminated."
+
+
+ENDMARKER
+
+

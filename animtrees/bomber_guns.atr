@@ -1,0 +1,13 @@
+50cal_anims
+{
+	bomber_50cal_waistgunner_firingA
+	bomber_50cal_waistgunner_firingB
+	bomber_50cal_waistgunner_idleleft
+	bomber_50cal_waistgunner_idleright
+	bomber_50cal_waistgunner_stretchright
+	bomber_50cal_waistgunner_lookleft
+
+	bomber_50cal_waistgunner_motioningright
+	bomber_50cal_waistgunner_flak1right
+	bomber_50cal_waistgunner_flak2right
+}

@@ -1,0 +1,24 @@
+Particle
+{
+	flags				usePhysics impactFx
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				1000
+
+	origin				0 0 50
+
+	velocity			0 0 -500
+
+	gravity				-2000
+
+	size
+	{
+		start			0
+	}
+
+	impactfx
+	[
+		fx/map_foy/nests/towersound
+	]
+}

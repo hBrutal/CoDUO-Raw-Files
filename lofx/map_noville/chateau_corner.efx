@@ -1,0 +1,170 @@
+Particle
+{
+	name				smoke_linger_mist_bottom
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count 1 2
+
+	life				6000 7500
+
+	delay				1500
+
+	cullrange			2500
+
+	origin				-4 -9 -9 115 9 9
+
+	rotationDelta		-2 2
+
+	velocity			-9 -38 -38 25 38 38
+
+	gravity				0 10
+
+	rgb
+	{
+		start			0.5294 0.5412 0.4902
+		end				0.4667 0.4196 0.3686
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				575 625
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+		smoke/smk_p_topsm_wht_a
+		smoke/smk_p_topsm_wht_b
+		smoke/smk_p_topsm_wht_b
+	]
+}
+
+Particle
+{
+	name				gib_chunk
+
+	flags				usePhysics
+
+	spawnFlags			absoluteVel
+
+	count 5 6
+
+	life				500 2000
+
+	delay				0 50
+
+	cullrange			1000
+
+	bounce				0.25 0.5
+
+	origin				0 -12 -12 0 12 12
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -275 75 -500 50 450
+
+	gravity				-800 -500
+
+	size
+	{
+		start			1 12
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_plaster_a
+		debree/debree_gib_plaster_a
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_a
+	]
+}
+
+Particle
+{
+	name				gm_smoke_shockwave_initial
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count 1 1
+
+	life				1500 2000
+
+	delay				1500
+
+	cullrange			2000
+
+	radius				36 100
+
+	height				1 30
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			0 -75 -75 50 75 75
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5412 0.5373 0.4902
+		end				0.2824 0.3098 0.2902
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			35 75
+		end				250 425
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/weapon/explosions/artillery_wood
+	]
+}

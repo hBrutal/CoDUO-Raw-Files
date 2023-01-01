@@ -1,0 +1,27 @@
+Particle
+{
+	flags				deathFx
+
+	spawnFlags			absoluteVel
+
+	life				50
+
+	cullrange			32000
+
+	velocity			0 0 50
+
+	size
+	{
+		start			0
+	}
+
+	shaders
+	[
+		water/water_drop_a
+	]
+
+	deathfx
+	[
+		fx/map_trainbridge/bridge_water_impact
+	]
+}

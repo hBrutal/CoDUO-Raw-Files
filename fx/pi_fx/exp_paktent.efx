@@ -1,0 +1,89 @@
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			oppositeRotation orgOnSphere axisFromSphere
+
+	count				20 25
+
+	life				5000 9000
+
+	radius				85 120
+
+	height				5 15
+
+	rotation			50 120
+
+	rotationDelta		-6 6
+
+	rotationClamp		-0.5 0.5
+
+	velocity			13 0 0 26 0 0
+
+	rgb
+	{
+		start			0.9216 0.8902 0.8471
+		end				0.5412 0.4275 0.3569
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0 1
+		flags			linear
+	}
+
+	size
+	{
+		start			40 60
+		end				100 180
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			oppositeAccel orgOnSphere axisFromSphere evenDistribution
+
+	count				2 3
+
+	life				140 150
+
+	radius				11 40
+
+	velocity			3300 0 2000 3500 0 2000
+
+	acceleration		-2000 0 0
+
+	gravity				-200 -300
+
+	density				5 4
+
+	variance			1 2
+
+	size
+	{
+		start			25 150
+		end				200
+	}
+
+	emitfx
+	[
+		fx/pi_fx/junk_comp
+	]
+}

@@ -1,0 +1,150 @@
+Particle
+{
+	name				smoke_mist_back
+
+	flags				useAlpha
+
+	life				500 3000
+
+	delay				0 10
+
+	origin				0 -20 0 0 20 0
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 0 0 150 0 0
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.902 0.9843 1
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				debree_p_back
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				500 1000
+
+	delay				0 300
+
+	origin				0 -20 0 0 20 0
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			200 0 0 275 0 0
+
+	gravity				-300
+
+	rgb
+	{
+		start			0.8824 0.8667 0.8353
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_plg_water_a
+		debree/debree_plg_water_a
+		debree/debree_plg_water_a
+	]
+}
+
+Tail
+{
+	name				base_spray_back
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				500
+
+	delay				0 300
+
+	origin				-10 -20 -5 10 20 5
+
+	velocity			350 0 0 400 0 0
+
+	gravity				-100
+
+	alpha
+	{
+		start			0.25 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				50 100
+		flags			linear
+	}
+
+	length
+	{
+		start			50 100
+		end				150 250
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+	]
+}

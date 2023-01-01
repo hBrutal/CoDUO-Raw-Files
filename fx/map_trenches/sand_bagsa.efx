@@ -1,0 +1,53 @@
+Emitter
+{
+	name				MG42
+
+	flags				useModel usePhysics
+
+	life				5000
+
+	bounce				0.5
+
+	angleDelta			10 10 45 -10 -10 -45
+
+	velocity			-100 -100 1000 100 100 500
+
+	acceleration		-50 -50 400 50 50 400
+
+	gravity				-800
+
+	models
+	[
+		xmodel/mg42_nobipod
+	]
+}
+
+Emitter
+{
+	name				BAG-2r
+
+	flags				useModel usePhysics
+
+	count				30 40
+
+	life				5000
+
+	bounce				0.1 0.25
+
+	origin				64 64 0 -64 -64 64
+
+	angle				10 0 0
+
+	angleDelta			-25 -25 -5 25 25 5
+
+	velocity			0 0 700 0 0 1000
+
+	acceleration		150 150 100 -150 -150 200
+
+	gravity				-800
+
+	models
+	[
+		xmodel/o_rs_prp_sandbag(d)
+	]
+}

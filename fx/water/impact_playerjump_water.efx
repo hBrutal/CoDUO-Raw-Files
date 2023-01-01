@@ -1,0 +1,118 @@
+Line
+{
+	name				smoke_exit
+
+	count				1 2
+
+	life				200 350
+
+	cullrange			3000
+
+	origin2				30 -5 -5 70 5 5
+
+	rgb
+	{
+		end				0.1412 0.1608 0.2078
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.1 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			1 10
+		end				20 80
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_splash_a
+		water/rain_splash_b
+		water/rain_splash_c
+	]
+}
+
+Particle
+{
+	name				drops
+
+	flags				useAlpha
+
+	count				5 10
+
+	life				250 500
+
+	delay				0 25
+
+	cullrange			600
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			50 -25 -25 425 25 25
+
+	gravity				-600 -400
+
+	alpha
+	{
+		start			0.25 0.5
+	}
+
+	size
+	{
+		start			0.5
+		end				0
+		parm			25 50
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		water/water_drop_a
+	]
+}
+
+OrientedParticle
+{
+	name				ripple
+
+	count				4 5
+
+	life				150 750
+
+	cullrange			3000
+
+	origin				0 -1 -1 0 1 1
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -5 -5 0 5 5
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				70
+		flags			linear
+	}
+
+	shaders
+	[
+		water/water_ripple_a
+	]
+}

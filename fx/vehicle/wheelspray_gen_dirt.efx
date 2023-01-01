@@ -1,0 +1,103 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				useAlpha
+
+	life				1500 2000
+
+	delay				0 10
+
+	cullrange			4000
+
+	origin				0 0 25
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.2863 0.2667 0.2275
+		end				0.4627 0.4235 0.3294
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_fractal
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				1500 2000
+
+	delay				0 10
+
+	cullrange			8000
+
+	origin				0 0 25
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 -15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.4627 0.4235 0.3294
+		end				0.2863 0.2667 0.2275
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}

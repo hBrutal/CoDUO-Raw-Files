@@ -1,0 +1,10 @@
+{
+	surfaceparm glass
+	polygonOffset
+	{
+		map $texturename
+		rgbGen vertex
+		blendfunc blend
+		depthWrite
+	}
+}

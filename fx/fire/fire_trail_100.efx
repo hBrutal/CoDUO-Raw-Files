@@ -1,0 +1,106 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	life				3000 4500
+
+	delay				0 100
+
+	cullrange			4000
+
+	radius				60 50
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			-25 -25 -25 25 25 25
+
+	acceleration		-25 -25 -25 25 25 25
+
+	rgb
+	{
+		end				0.1216 0.1098 0.08627
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 100
+		end				300 500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}
+
+Particle
+{
+	name				fire
+
+	flags				setShaderTime relative
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				2
+
+	life				350 1250
+
+	delay				0 15
+
+	cullrange			8000
+
+	origin				-25 -25 -25 25 25 25
+
+	radius				60 50
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-25 -25 -25 25 25 25
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		end				0.7176 0.5255 0.3176
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 100
+		end				300 350
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}

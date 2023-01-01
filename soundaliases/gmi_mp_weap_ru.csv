@@ -1,0 +1,59 @@
+"# If the text in the first column of a row starts with a # character, the row is ignored",,
+,,"If the first column for a row is blank, then the row is ignored"
+# The first non-comment line of a sound alias file specifies the key name for all values appearing in this column.,,
+"# This means it is safe to swap entire columns around, though you should never swap partial columns.",,
+"# You can invent new keys, but the game will ignore them if it doesn't know about them.",,
+"# You can leave out keys, but the ""name"" and ""file"" keys must always be present.",,
+
+,name,name of the alias that is used to play this sound (required)
+,sequence,"used to uniquely identify alias entries when more than one sound goes to an alias, used only to catch unwanted duplicates (foliage = 0)"
+,file,the name of the file that contains the sound data (required)
+,vol_min,"0 is silent, 1 is full volume (foliage = 1)"
+,vol_max,"0 is silent, 1 is full volume (foliage = same as vol_min)"
+,pitch_min,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (foliage = 1)"
+,pitch_max,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (foliage = same as pitch_min)"
+,dist_min,"within this distance in inches, the sound is always full volume (foliage = 120)"
+,dist_max,"outside this distance in inches, the sound is not started.  If left blank or set to 0, the sound will play from any distance.  This does not affect sound volume falloff."
+,channel,"auto, menu, weapon, voice, item, body, local, music, announcer (foliage = auto)",,,,,,,,,,,,,,,
+,type,streamed / loaded (foliage = loaded),,,,,,,,,,,,,,,
+,probability,weight to use for the weighted probability of playing this sound instead of another sound (foliage = 1),,,,,,,,,,,,,,,
+,loop,"whether this sound is ""looping"" or ""nonlooping"" (foliage = ""nonlooping"")",,,,,,,,,,,,,,,
+,masterslave,"if ""master"", this is a master sound.  If a number, then this sound won't exceed this volume whenever any master sound is playing.  If blank, then neither master nor slave.",,,,,,,,,,,,,,,
+,loadspec,"space-separated list of which maps should use this alias; eg, ""burnville dawnville"".  If blank, the alias is used on all maps.",,,,,,,,,,,,,,,
+
+name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,lod_min,lod_max,channel,type,probability,loop,masterslave,loadspec,subtitle
+
+#LOD Weapon Sounds,,,,,,,,,,,,,,,,,
+
+#Russian,,,,,,,,,,,,,,,,,
+antitank_rifle_fire,1,weapons/AntiTank/rat_01.wav,1.14,1.25,0.9,1.05,7,3500,0,1800,weapon,,,,,,
+antitank_rifle_fire,2,weapons/AntiTank/rat_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,,
+#weap_dp28_fire,,weapons/dp28/dp28_01.wav,1.25,1.4,0.95,1.05,10,7800,,,weapon,,,,,,
+weap_dp28_loop,,weapons/dp28/dp28_loop01.wav,1.6,,0.95,1,10,7800,,,weapon,,,looping,,,
+weap_dp28_cooldown,,weapons/dp28/dp28_cooldown.wav,1.2,,0.95,1,10,7800,,,auto,,,
+weap_nagant_fire,1,weapons/nagant/nagant_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_nagant_fire,2,weapons/nagant/nagant_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_nagant_sniper,1,weapons/nagant/nagant_sniper.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_nagant_sniper,2,weapons/nagant/nagant_sniper_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_ppsh_fire,1,weapons/ppsh/ppsh_01.wav,1.2,1.4,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_ppsh_fire,2,weapons/ppsh/ppsh_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_sg43_loop,,weapons/sg43/sg43_loop01.wav,1.25,1.4,0.95,1,10,7800,,,weapon,,,looping
+weap_sg43_cooldown,,weapons/sg43/sg43_cooldown.wav,1,1.1,0.95,1,10,7800,,,auto,,,
+weap_svt40_fire,,weapons/svt40/svt40_01.wav,1.35,1.5,0.95,1.05,50,3500,,,weapon,,,
+weap_tt33_fire,,weapons/tt33/tt33_01.wav,1.25,1.5,0.9,1.05,7,3500,,,weapon,,,
+
+
+
+#Weapon Foley,,,,,,,,,,,,,,
+#Russian,,,,,,,,,,,,,,
+weap_dp28_reload,,weapons/dp28/weap_dp28_reload.wav,1.5,1.5,,,7,500,,,auto
+weap_dp28_undeploy,,weapons/dp28/weap_dp28_undeploy.wav,1.1,,,,75,500,,,auto
+weap_nagant_reload,,weapons/kar98k/kar98_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_nagant_rechamber,,weapons/kar98k/kar98_rechamber.wav,1.15,1.35,,,7,500,,,auto
+weap_ppsh_reload,,weapons/ppsh/ppsh_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_ppsh_reload_not_empty,,weapons/ppsh/ppsh_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_ppsh_altswitch,,weapons/alt_fire_switch.wav,1,1,,,7,500,,,auto
+weap_svt40_reload_not_empty,,weapons/svt40/svt40_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_svt40_reload,,weapons/svt40/svt40_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_tt33_reload_not_empty,,weapons/tt33/tt33_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_tt33_reload,,weapons/tt33/tt33_reload.wav,1.25,1.5,,,7,500,,,auto

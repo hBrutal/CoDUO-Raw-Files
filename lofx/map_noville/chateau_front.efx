@@ -1,0 +1,176 @@
+Particle
+{
+	name				smoke_linger_mist_bottom
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				1 2
+
+	life				5000 5500
+
+	cullrange			2500
+
+	origin				-100 -75 -9 -150 75 9
+
+	rotationDelta		-2 2
+
+	velocity			-9 -38 -38 25 38 38
+
+	gravity				0 10
+
+	rgb
+	{
+		start			0.651 0.6706 0.6745
+		end				0.4784 0.5098 0.5137
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.45 0.75
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			250 400
+		end				550 625
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+		smoke/smk_p_topsm_wht_a
+		smoke/smk_p_topsm_wht_b
+		smoke/smk_p_topsm_wht_b
+	]
+}
+
+Particle
+{
+	name				fire_plumer_shaft
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ
+
+	spawnFlags			oppositeAccel
+
+	life				350 550
+
+	cullrange			3000
+
+	origin				-115 -25 -25 -50 25 25
+
+	rotation			0 360
+
+	rotationDelta		-2 2
+
+	velocity			400 -150 -150 775 150 150
+
+	acceleration		600 0 0
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5255 0.4275 0.2824
+		end				0.4902 0.3569 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.65
+		end				0
+		parm			0.15 0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			100 125
+		end				300 400
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				_effect_base
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				2000 2500
+
+	delay				0 1000
+
+	cullrange			32000
+
+	origin				-250 -150 -150 100 150 150
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			-25 -25 -25 25 25 25
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5294 0.5412 0.4902
+		end				0.4863 0.4941 0.4941
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100 125
+		end				400 600
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}

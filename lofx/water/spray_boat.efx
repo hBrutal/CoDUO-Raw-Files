@@ -1,0 +1,51 @@
+Tail
+{
+	name				base_spray
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				500
+
+	delay				0 300
+
+	cullrange			8000
+
+	origin				-10 -5 -5 10 5 5
+
+	velocity			350 0 75 400 0 150
+
+	gravity				-100
+
+	alpha
+	{
+		start			0.25 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				50 100
+		flags			linear
+	}
+
+	length
+	{
+		start			50 100
+		end				150 250
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+	]
+}

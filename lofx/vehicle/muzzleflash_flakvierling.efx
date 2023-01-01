@@ -1,0 +1,112 @@
+FxRunner
+{
+	name				_call_globals
+
+	flags				relative
+
+	playfx
+	[
+		fx/weapon/muzzleflash/_global_hmg
+	]
+}
+
+Particle
+{
+	name				fire_base
+
+	flags				relative
+
+	life				50 75
+
+	cullrange			32000
+
+	origin				0 0 0 12 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			48
+		end				24
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+	]
+}
+
+Particle
+{
+	name				fire_mid
+
+	flags				relative
+
+	life				50 75
+
+	cullrange			4000
+
+	origin				6 0 0 30 0 0
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			24
+		end				24
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/weapon/tracer/tracer_flakvierling
+	]
+}

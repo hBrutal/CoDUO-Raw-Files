@@ -1,0 +1,526 @@
+Particle
+{
+	name				smoke_linger_mist
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				5
+
+	life				8000 1e+004
+
+	delay				0 1250
+
+	cullrange			2000
+
+	origin				-25 -25 0 25 25 50
+
+	rotationDelta		-5 5
+
+	velocity			-15 -15 0 15 15 5
+
+	rgb
+	{
+		start			0.6627 0.6863 0.7059
+		end				0.3686 0.4 0.3922
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				150 200
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fire_exp_core
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				3
+
+	life				90 225
+
+	delay				0 150
+
+	cullrange			32000
+
+	origin				-25 -25 0 25 25 25
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			-50 -50 0 50 50 50
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_b
+		fire/exp_gen_c
+	]
+}
+
+Particle
+{
+	name				smoke_shock_out
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				5
+
+	life				1000
+
+	delay				75 750
+
+	cullrange			4000
+
+	origin				-50 -50 0 50 50 0
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			-232 -231 50 230 230 150
+
+	gravity				0 100
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				150 250
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_intial_burn
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				8
+
+	life				350 550
+
+	delay				0 250
+
+	cullrange			8000
+
+	origin				-50 -50 0 50 50 50
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-150 -150 0 150 150 150
+
+	rgb
+	{
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}
+
+Particle
+{
+	name				aftersmoke_underlit
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				10
+
+	life				1000 1500
+
+	delay				500 3000
+
+	cullrange			2000
+
+	origin				-5 -5 0 5 5 25
+
+	wind				50
+
+	rotation			-175 -185
+
+	rotationDelta		-2 2
+
+	velocity			10 -10 15 10 10 35
+
+	rgb
+	{
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				50 100
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_fire_a
+		smoke/smk_p_top_fire_b
+		smoke/smk_p_top_fire_c
+	]
+}
+
+Particle
+{
+	name				aftersmoke
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				60
+
+	life				4000 4500
+
+	delay				0 2e+004
+
+	cullrange			4000
+
+	origin				-50 -50 0 50 50 25
+
+	wind				50
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			-5 -5 15 5 5 25
+
+	rgb
+	{
+		end				0.7725 0.8157 0.8196
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 75
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}
+
+Particle
+{
+	name				afterfire_stationary
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count				15
+
+	life				750 1750
+
+	delay				1000 4000
+
+	cullrange			6000
+
+	origin				-5 -5 0 5 5 15
+
+	wind				50
+
+	rotation			5 -5
+
+	rotationDelta		2 -2
+
+	velocity			-10 -10 25 10 10 75
+
+	rgb
+	{
+		end				0.5137 0.4039 0.2941
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				50 75
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_b
+		fire/flame_lick_c
+		fire/flame_lick_d
+		fire/flame_lick_e
+		fire/flame_lick_f
+	]
+}
+
+Tail
+{
+	name				spark_shower
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				5
+
+	life				250 550
+
+	delay				0 150
+
+	cullrange			1000
+
+	velocity			-1800 -1800 400 1800 1800 1800
+
+	gravity				-600
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 150
+		end				100 200
+		flags			linear
+	}
+
+	length
+	{
+		start			100 200
+		end				400 1200
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_shower_a
+		fire/spark_shower_b
+		fire/spark_shower_c
+	]
+}
+
+Particle
+{
+	name				smoke_initial_firebalss
+
+	flags				clampVelocityX clampVelocityY useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel oppositeAccel
+
+	count				5
+
+	life				800 1000
+
+	delay				150 250
+
+	cullrange			2000
+
+	origin				-20 -20 0 20 20 50
+
+	rotation			-15 15
+
+	rotationDelta		-2 2
+
+	velocity			-150 -150 0 150 150 25
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}
+
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				15
+
+	life				300 400
+
+	cullrange			1000
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-1800 -1800 0 1800 1800 0
+
+	rgb
+	{
+		start			0.4549 0.4902 0.5608
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

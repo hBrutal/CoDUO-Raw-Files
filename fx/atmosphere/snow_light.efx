@@ -1,0 +1,140 @@
+Particle
+{
+	name				snow_area
+
+	flags				usePhysics impactKills
+
+	count				4
+
+	life				3500
+
+	cullrange			2000
+
+	origin				-620 -350 300 400 350 300
+
+	radius				100 600
+
+	height				0
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-15 -15 -125 15 15 -150
+
+	acceleration		-8 -8 -8 8 8 8
+
+	alpha
+	{
+		start			0.25 0.5
+	}
+
+	size
+	{
+		start			1 2
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		snow/snow_flake_a
+		snow/snow_flake_b
+		snow/snow_flake_c
+	]
+}
+
+Particle
+{
+	name				snow_whip
+
+	flags				usePhysics impactKills
+
+	life				3000 3500
+
+	cullrange			600
+
+	origin				-300 -200 300 0 200 300
+
+	radius				100 600
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-50 50
+
+	velocity			-15 -15 -125 15 15 -150
+
+	acceleration		-15 -15 -15 15 15 15
+
+	alpha
+	{
+		start			0.25 0.5
+	}
+
+	size
+	{
+		start			0.75
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		snow/snow_flake_a
+		snow/snow_flake_b
+		snow/snow_flake_c
+	]
+}
+
+Particle
+{
+	name				snow_close
+
+	flags				usePhysics impactKills
+
+	count				0 1
+
+	life				3000 3500
+
+	cullrange			600
+
+	origin				-420 -100 300 -140 100 300
+
+	radius				100 600
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-15 -15 -125 15 15 -150
+
+	acceleration		-8 -8 -8 8 8 8
+
+	alpha
+	{
+		start			0.25 0.5
+	}
+
+	size
+	{
+		start			0.25 0.75
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		snow/snow_flake_a
+		snow/snow_flake_b
+		snow/snow_flake_c
+	]
+}

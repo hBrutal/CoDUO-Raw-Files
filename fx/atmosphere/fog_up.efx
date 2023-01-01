@@ -1,0 +1,224 @@
+Particle
+{
+	name				fog_fractal
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				0 1
+
+	life				1e+004 1.2e+004
+
+	cullrange			3000
+
+	origin				-400 -25 50 400 25 200
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-2 25 -2 2 75 2
+
+	acceleration		0 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7529
+		end				0.7294 0.7412 0.7804
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.4
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			200 250
+		end				100 250
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fog
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel absoluteAccel
+
+	count				0 1
+
+	life				1e+004 1.2e+004
+
+	cullrange			3000
+
+	origin				-400 -25 50 400 25 200
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-2 25 -2 2 100 2
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7529
+		end				0.7294 0.7412 0.7804
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.2 0.4
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			100 200
+		end				150 250
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				dirt
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel absoluteAccel
+
+	count				1 4
+
+	life				1000 2000
+
+	cullrange			1000
+
+	origin				-200 -200 40 200 25 150
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-1 150 -0.5 -2 250 0.5
+
+	acceleration		-10 -10 -2 10 10 10
+
+	rgb
+	{
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.35 0.5
+	}
+
+	size
+	{
+		start			0.25 1
+		end				0
+		parm			85 90
+		flags			nonlinear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_gib_dirt_a
+		debree/debree_gib_dirt_b
+	]
+}
+
+Emitter
+{
+	name				paper
+
+	flags				useModel
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				0 1
+
+	life				5000
+
+	cullrange			2000
+
+	origin				-300 0 0 300 200 25
+
+	angle				0 0 0 360 360 360
+
+	angleDelta			-10 -10 -10 10 10 10
+
+	velocity			-2 150 -2 2 250 2
+
+	gravity				-25 25
+
+	size
+	{
+		start			0.5 1
+		end				0
+		parm			99
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_paper_a
+		xmodel/m_gib_paper_b
+		xmodel/m_gib_paper_c
+	]
+}

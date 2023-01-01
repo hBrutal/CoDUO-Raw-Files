@@ -1,0 +1,117 @@
+Particle
+{
+	name				fire_front_blast
+
+	life				150 250
+
+	delay				0 50
+
+	cullrange			32000
+
+	origin				0 0 0 0 48 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-50 400 -50 50 2200 50
+
+	rgb
+	{
+		end				0.651 0.2118 0
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.75
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			50 25
+		end				250 325
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				smoke_front_fractal
+
+	flags				useAlpha
+
+	life				250 500
+
+	cullrange			32000
+
+	origin				0 0 0 0 36 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-75 0 -75 75 800 75
+
+	gravity				0 100
+
+	rgb
+	{
+		start			0.7412 0.7765 0.749
+		end				0.1961 0.1922 0.2
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			35 55
+		end				225 275
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+Light
+{
+	life				100 250
+
+	cullrange			32000
+
+	origin				0 0 0 0 25 0
+
+	rgb
+	{
+		start			1 0.8039 0.5098
+		end				0.3255 0.007843 0.007843
+	}
+
+	size
+	{
+		start			2000 2500
+		end				500 750
+		flags			linear
+	}
+}

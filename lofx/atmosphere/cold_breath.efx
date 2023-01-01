@@ -1,0 +1,46 @@
+Particle
+{
+	name				breath
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				500 750
+
+	delay				0 500
+
+	cullrange			1000
+
+	origin				2 5 0 2 6 0
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			-2 5 -2 2 10 2
+
+	gravity				0 2
+
+	alpha
+	{
+		start			0.1 0.3
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			1 2
+		end				3 4
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

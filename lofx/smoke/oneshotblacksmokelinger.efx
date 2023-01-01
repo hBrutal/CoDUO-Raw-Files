@@ -1,0 +1,19 @@
+Particle
+{
+	name				stub
+
+	count 0 0
+
+	life				0
+
+	size
+	{
+		start			0
+		end				0
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+	]
+}

@@ -1,0 +1,28 @@
+Emitter
+{
+	flags				useModel usePhysics
+
+	life				5000 1000
+
+	bounce				1
+
+	angleDelta			-8 -8 0 8 8 0
+
+	velocity			500 -100 -100 100 100 100
+
+	gravity				-800
+
+	size
+	{
+		end				0
+	}
+
+	models
+	[
+		xmodel/mp_crate_misc_red4
+		xmodel/mp_crate_misc1
+		xmodel/mp_crate_misc1_stalingrad
+		xmodel/mp_crate_misc1a
+		xmodel/mp_crate_misc1a_stalingrad
+	]
+}

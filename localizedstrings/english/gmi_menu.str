@@ -1,0 +1,256 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           SELECT_SMOKE
+LANG_ENGLISH        "Select Smoke Grenade:  "
+
+REFERENCE           SELECT_SATCHEL
+LANG_ENGLISH        "Select Satchel:  "
+
+REFERENCE           SELECT_BINOCULARS
+LANG_ENGLISH        "Select Binoculars:  "
+
+REFERENCE           SPRINT
+LANG_ENGLISH        "Sprint:  "
+
+REFERENCE           PARTICLE_DETAIL
+LANG_ENGLISH        "Particle Detail:  "
+
+REFERENCE           ADVANCED_SETTINGS
+LANG_ENGLISH        "Advanced\n"
+
+REFERENCE           GENERAL_SETTINGS
+LANG_ENGLISH        "General"
+
+REFERENCE           GAMETYPE_SETTINGS
+LANG_ENGLISH        "Settings"
+
+REFERENCE           VEHICLE_SETTINGS
+LANG_ENGLISH        "Vehicles"
+
+REFERENCE           WEAPON_SETTINGS
+LANG_ENGLISH        "Weapons"
+
+REFERENCE           ALLOW_JEEPS
+LANG_ENGLISH        "Allow Jeeps:"
+
+REFERENCE           ALLOW_WILLYJEEP
+LANG_ENGLISH        "Allow Willys Jeep:  "
+
+REFERENCE           ALLOW_GAZ67B
+LANG_ENGLISH        "Allow GAZ67B:  "
+
+REFERENCE           ALLOW_HORCH
+LANG_ENGLISH        "Allow Horch:  "
+
+REFERENCE           ALLOW_TANKS
+LANG_ENGLISH        "Allow Tanks:  "
+
+REFERENCE           ALLOW_T34
+LANG_ENGLISH        "Allow T34:  "
+
+REFERENCE           ALLOW_SHERMAN
+LANG_ENGLISH        "Allow Sherman:  "
+
+REFERENCE           ALLOW_PANZERIV
+LANG_ENGLISH        "Allow PanzerIV:  "
+
+REFERENCE           ALLOW_ELEFANT
+LANG_ENGLISH        "Alllow Elefant:  "
+
+REFERENCE           ALLOW_SU152
+LANG_ENGLISH        "Allow SU152:  "
+
+REFERENCE           ALLOW_FLAK88
+LANG_ENGLISH        "Allow Flak88:  "
+
+REFERENCE           BATTLERANK
+LANG_ENGLISH        "Battle Rank:  "
+
+REFERENCE           ALLOW_THOMPSON
+LANG_ENGLISH        "Thompson (smg):  "
+
+REFERENCE           ALLOW_M1CARBINE
+LANG_ENGLISH        "M1 Carbine (rifle):  "
+
+REFERENCE           ALLOW_M1GARAND
+LANG_ENGLISH        "M1 Garand (rifle):  "
+
+REFERENCE           ALLOW_BAR
+LANG_ENGLISH        "BAR (assault):  "
+
+REFERENCE           ALLOW_SPRINGFIELD
+LANG_ENGLISH        "Springfield (sniper):  "
+
+REFERENCE           ALLOW_30CAL
+LANG_ENGLISH        "30cal (lmg):  "
+
+REFERENCE           ALLOW_ENFIELD
+LANG_ENGLISH        "Enfield (rifle):  "
+
+REFERENCE           ALLOW_BREN
+LANG_ENGLISH        "Bren (assault):  "
+
+REFERENCE           ALLOW_NAGANT
+LANG_ENGLISH        "Nagant (rifle):  "
+
+REFERENCE           ALLOW_SVT40
+LANG_ENGLISH        "SVT40 (rifle):  "
+
+REFERENCE           ALLOW_PPSH
+LANG_ENGLISH        "PPSH (smg):  "
+
+REFERENCE           ALLOW_NAGANTSNIPER
+LANG_ENGLISH        "Nagant (sniper):  "
+
+REFERENCE           ALLOW_DP28
+LANG_ENGLISH        "DP28 (lmg):  "
+
+REFERENCE           ALLOW_KAR98K
+LANG_ENGLISH        "KAR98k (rifle):  "
+
+REFERENCE           ALLOW_GEWEHR43
+LANG_ENGLISH        "Gewehr43 (rifle):  "
+
+REFERENCE           ALLOW_MP40
+LANG_ENGLISH        "MP40 (smg):  "
+
+REFERENCE           ALLOW_MP44
+LANG_ENGLISH        "MP44 (assault):  "
+
+REFERENCE           ALLOW_KAR98KSNIPER
+LANG_ENGLISH        "KAR98k (sniper):  "
+
+REFERENCE           ALLOW_MG34
+LANG_ENGLISH        "MG34 (lmg):  "
+
+REFERENCE           ALLOW_PANZERFAUST
+LANG_ENGLISH        "Panzerfaust:  "
+
+REFERENCE           ALLOW_PANZERSCHRECK
+LANG_ENGLISH        "Panzerschreck:  "
+
+REFERENCE           ALLOW_BAZOOKA
+LANG_ENGLISH        "Bazooka:  "
+
+REFERENCE           ALLOW_ARTILLERY
+LANG_ENGLISH        "Artillery:  "
+
+REFERENCE           ALLOW_SATCHEL
+LANG_ENGLISH        "Satchel Charge:  "
+
+REFERENCE           ALLOW_STEN
+LANG_ENGLISH        "Sten (smg):  "
+
+REFERENCE           ALLOW_FG42
+LANG_ENGLISH        "FG42:  "
+
+REFERENCE           ALLOW_FLAMETHROWER
+LANG_ENGLISH        "Flamethrower:  "
+
+REFERENCE           ALLOW_VOTE_MAP_RESTART
+LANG_ENGLISH        "Allow Vote Map Restart:  "
+
+REFERENCE           ALLOW_VOTE_MAP_ROTATE
+LANG_ENGLISH        "Allow Vote Next Map:  "
+
+REFERENCE           ALLOW_VOTE_MAP
+LANG_ENGLISH        "Allow Vote Map:  "
+
+REFERENCE           ALLOW_VOTE_GAMETYPE
+LANG_ENGLISH        "Allow Vote Game Type and Map:  "
+
+REFERENCE           ALLOW_VOTE_KICK
+LANG_ENGLISH        "Allow Vote Kick:  "
+
+REFERENCE           ALLOW_VOTE_BAN
+LANG_ENGLISH        "Allow Vote Ban:  "
+
+REFERENCE           SHELLSHOCK
+LANG_ENGLISH        "Shellshock:  "
+
+REFERENCE           START_ROUND_DELAY
+LANG_ENGLISH        "Start Round Delay (seconds):  "
+
+REFERENCE           END_ROUND_DELAY
+LANG_ENGLISH        "End Round Delay (seconds):  "
+
+REFERENCE           RESPAWN_WAVE_TIME
+LANG_ENGLISH        "Respawn Wave Time (seconds):  "
+
+REFERENCE           CLEAR_SCORES_EACH_ROUND
+LANG_ENGLISH        "Clear Scores Each Round:  "
+
+REFERENCE           DROPHEALTH
+LANG_ENGLISH        "Drop Health:  "
+
+REFERENCE           MAP
+LANG_ENGLISH        "Map:  "
+
+REFERENCE           ALLOW_SMOKE
+LANG_ENGLISH        "Smoke Grenades:  "
+
+REFERENCE           ALLOW_GRENADES
+LANG_ENGLISH        "Grenades:  "
+
+REFERENCE           ALLOW_PISTOLS
+LANG_ENGLISH        "Pistols:  "
+
+REFERENCE           SHELL_SHOCK_BLUR
+LANG_ENGLISH        "Shell Shock Screen Blur:  "
+
+REFERENCE           VEHICLE_TRAILS
+LANG_ENGLISH        "Vehicle Trails:  "
+
+REFERENCE           AFTER_ONE_MIN
+LANG_ENGLISH        "After One Minute"
+
+REFERENCE           AFTER_TWO_MIN
+LANG_ENGLISH        "After Two Minutes"
+
+REFERENCE           AFTER_THREE_MIN
+LANG_ENGLISH        "After Three Minutes"
+
+REFERENCE           AFTER_FOUR_MIN
+LANG_ENGLISH        "After Four Minutes"
+
+REFERENCE           AFTER_FIVE_MIN
+LANG_ENGLISH        "After Five Minutes"
+
+REFERENCE           SHOW_FLAG_CARRIERS
+LANG_ENGLISH        "Show Flag Carriers:  "
+
+REFERENCE           ALWAYS
+LANG_ENGLISH        "Always"
+
+REFERENCE           SKIP_TO_BRIEFING
+LANG_ENGLISH        "Skip to Debriefing"
+
+REFERENCE           SHOW_JEEPS
+LANG_ENGLISH        "Jeeps Allowed:"
+
+REFERENCE           SHOW_TANKS
+LANG_ENGLISH        "Tanks Allowed:"
+
+REFERENCE           RESPAWN_TIME
+LANG_ENGLISH        "Respawn Time (seconds):  "
+
+REFERENCE           ANNOUNCER_VOICE
+LANG_ENGLISH        "Announcer Voice:  "
+
+
+ENDMARKER
+
+

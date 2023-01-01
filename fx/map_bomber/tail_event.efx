@@ -1,0 +1,568 @@
+Emitter
+{
+	name				tail
+
+	flags				useModel continualLighting
+
+	life				7000
+
+	origin				-10 -281 0
+
+	angle				85 -5 0
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			0 -100 0
+
+	acceleration		0 -500 0
+
+	gravity				-200 -100
+
+	density				25
+
+	size
+	{
+		start			0.76
+	}
+
+	models
+	[
+		xmodel/v_us_air_b-17_tail_ending
+	]
+}
+
+Emitter
+{
+	name				metal_gibs
+
+	flags				useModel
+
+	spawnFlags			orgOnSphere
+
+	count				50
+
+	life				3000 5000
+
+	delay				0 500
+
+	origin				-70 -281 70
+
+	radius				0 100
+
+	height				0 100
+
+	angle				90 0 0
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			-50 -100 -50 50 -500 50
+
+	gravity				-200 -25
+
+	size
+	{
+		start			1 25
+	}
+
+	models
+	[
+		xmodel/m_gib_metal_a
+		xmodel/m_gib_metal_b
+		xmodel/m_gib_metal_c
+	]
+}
+
+Tail
+{
+	name				sparks
+
+	count				20
+
+	life				250 3000
+
+	delay				0 500
+
+	origin				-25 -281 -25 25 -281 25
+
+	velocity			-50 100 -50 50 500 50
+
+	gravity				-100 -25
+
+	rgb
+	{
+		end				0.949 0.5451 0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 5
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		start			12 35
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_tail_a
+		fire/spark_tail_b
+	]
+}
+
+Particle
+{
+	name				fireexp
+
+	count				20
+
+	life				150 550
+
+	delay				0 500
+
+	origin				-70 -490 -70 70 -250 70
+
+	rotation			0 360
+
+	rotationDelta		-35
+
+	velocity			-25 -25 -25 25 25 25
+
+	rgb
+	{
+		end				0.949 0.5451 0
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			15 35
+		end				100 300
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}
+
+FxRunner
+{
+	name				flak_spawn
+
+	count				5
+
+	delay				0 1500
+
+	origin				-35 -100 -35 35 -280 35
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_200_ns
+		fx/explosions/artillery/flak_single_400_ns
+	]
+}
+
+Emitter
+{
+	name				metal_gibs_player
+
+	flags				useModel
+
+	spawnFlags			orgOnSphere
+
+	count				15
+
+	life				3000 5000
+
+	delay				0 500
+
+	origin				-35 -281 -35 35 -281 35
+
+	radius				0 100
+
+	height				0 100
+
+	angle				90 0 0
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			-25 100 -25 25 200 25
+
+	gravity				-25 -50
+
+	size
+	{
+		start			1 25
+	}
+
+	models
+	[
+		xmodel/m_gib_metal_a
+		xmodel/m_gib_metal_b
+		xmodel/m_gib_metal_c
+	]
+}
+
+Emitter
+{
+	name				tailhold
+
+	flags				useModel
+
+	count				0
+
+	life				2000
+
+	origin				-10 -281 0
+
+	angle				90 0 0
+
+	angleDelta			-5 -5 0
+
+	density				25
+
+	size
+	{
+		start			0.76
+	}
+
+	models
+	[
+		xmodel/v_us_air_b-17_tail_ending
+	]
+}
+
+CameraShake
+{
+	name				camshake_1
+
+	flags				usePhysics
+
+	life				500
+
+	bounce				5
+
+	radius				5000
+
+	intensity			5
+}
+
+CameraShake
+{
+	name				camshake_2
+
+	flags				usePhysics
+
+	life				1000
+
+	delay				1000
+
+	bounce				13
+
+	radius				1.5e+004
+
+	intensity			13
+}
+
+Emitter
+{
+	name				metal_gibs_stream
+
+	flags				useModel
+
+	count				300
+
+	life				3000 5000
+
+	delay				0 6e+004
+
+	origin				-70 -250 -70 70 -280 70
+
+	radius				0 100
+
+	angle				90 0 0
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			-50 -200 -50 50 -500 50
+
+	acceleration		-35 -35 -35 35 35 35
+
+	gravity				-200 -25
+
+	size
+	{
+		start			1 12
+		end				0
+		parm			75 57
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_metal_a
+		xmodel/m_gib_metal_b
+		xmodel/m_gib_metal_c
+	]
+}
+
+Particle
+{
+	name				smoke
+
+	flags				useAlpha
+
+	count				600
+
+	life				500 750
+
+	delay				0 6e+004
+
+	origin				-70 -100 -70 70 -100 70
+
+	rotation			0 360
+
+	rotationDelta		-35
+
+	velocity			-25 -2000 -25 25 -2000 25
+
+	rgb
+	{
+		start			0.5412 0.6 0.6235
+		end				0.7843 0.7412 0.6824
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				400 600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				metal_p_stream
+
+	flags				useAlpha
+
+	count				600
+
+	life				500 1750
+
+	delay				0 6e+004
+
+	origin				-70 -180 -70 70 -180 70
+
+	rotation			0 360
+
+	rotationDelta		35 -35
+
+	velocity			-25 -2000 -25 25 -2000 25
+
+	acceleration		-25 -25 -25 25 25 25
+
+	gravity				-25 -100
+
+	rgb
+	{
+		start			0.5412 0.6 0.6235
+		end				0.7843 0.7412 0.6824
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			0.25 3
+		end				0
+		parm			75
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_metal_a
+		debree/debree_gib_metal_b
+	]
+}
+
+Tail
+{
+	name				full_plane_sparks
+
+	count				60
+
+	life				250 3000
+
+	delay				0 500
+
+	origin				-35 0 -35 35 -281 35
+
+	velocity			-100 -100 100 100 100 100
+
+	gravity				-100 -25
+
+	rgb
+	{
+		end				0.949 0.5451 0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 2
+		end				0
+		flags			linear
+	}
+
+	length
+	{
+		start			12 35
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_tail_a
+		fire/spark_tail_b
+	]
+}
+
+Particle
+{
+	name				spark_static
+
+	count				20
+
+	life				150 250
+
+	delay				0 500
+
+	origin				-35 -100 -35 35 -250 35
+
+	rotation			0 360
+
+	rotationDelta		-35
+
+	velocity			-25 -25 -25 25 25 25
+
+	rgb
+	{
+		end				0.949 0.5451 0
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			5 10
+		end				25 35
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_static_a
+		fire/spark_static_b
+		fire/spark_static_c
+	]
+}
+
+Particle
+{
+	name				fireexp2
+
+	count				20
+
+	life				150 550
+
+	delay				0 500
+
+	origin				-70 -100 -70 70 -250 70
+
+	rotation			0 360
+
+	rotationDelta		-35
+
+	velocity			-25 100 -25 25 500 25
+
+	rgb
+	{
+		end				0.949 0.5451 0
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			15 35
+		end				100 300
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}

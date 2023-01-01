@@ -1,0 +1,12 @@
+mortar_loadguy_readyidle 
+mortar_loadguy_waitidle  
+mortar_loadguy_waittwitch
+mortar_loadguy_pickup    
+mortar_loadguy_fire      
+                          
+               
+mortar_aimguy_readyidle
+mortar_aimguy_waitidle   
+mortar_aimguy_waittwitch 
+mortar_aimguy_pickup     
+mortar_aimguy_fire       

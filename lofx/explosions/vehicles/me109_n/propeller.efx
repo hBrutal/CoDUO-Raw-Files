@@ -1,0 +1,38 @@
+Emitter
+{
+	name				M_propeller
+
+	flags				useModel usePhysics emitFx
+
+	life				5000
+
+	bounce				0.25 0.5
+
+	angleDelta			-15 -5 45 15 5 65
+
+	velocity			300 -200 -200 800 200 200
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_ge_air_me-109_propeller(d)
+	]
+
+	emitfx
+	[
+		fx/smoke/smoke_trail_50
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_200
+	]
+}

@@ -1,0 +1,276 @@
+Particle
+{
+	name				smoke_linger_lit
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	life				5000 6000
+
+	origin				0 -25 -25 50 25 25
+
+	wind				25
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			0 -15 -15 15 15 15
+
+	rgb
+	{
+		start			1 0.502 0
+		parm			1 2
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				75 125
+		parm			0.15 0.5
+		flags			clamp
+	}
+
+	size2
+	{
+		start			200
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				smoke_linger_mist
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				0 1
+
+	life				5500 6500
+
+	origin				-100 -50 -50 100 50 50
+
+	wind				25
+
+	rotation			0 360
+
+	rotationDelta		-1 1
+
+	velocity			0 -15 -15 15 15 15
+
+	rgb
+	{
+		start			1 0.502 0
+		end				0.1529 0.1529 0.1529
+		parm			1 2
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				150 200
+		parm			0.5 2
+		flags			linear clamp
+	}
+
+	size2
+	{
+		start			200
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+CameraShake
+{
+	name				cam_shake
+
+	flags				usePhysics
+
+	life				50 350
+
+	bounce				1
+
+	radius				2500 5000
+
+	intensity			1
+}
+
+Light
+{
+	name				D_Light
+
+	life				250 450
+
+	origin				25 0 0
+
+	rgb
+	{
+		start			0.9922 0.851 0.5843
+		end				0.7765 0.3882 0
+		flags			linear
+	}
+
+	size
+	{
+		start			2000 3200
+		end				1000 1500
+		flags			linear
+	}
+}
+
+Particle
+{
+	name				fire_exp
+
+	spawnFlags			affectedByWind
+
+	life				100 150
+
+	delay				0 25
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-25 -20 -25 25 -20 25
+
+	acceleration		0 0 100
+
+	rgb
+	{
+		end				1 0.502 0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	alpha
+	{
+		end				0
+		parm			25 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				200 350
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}
+
+Particle
+{
+	name				Copy of smoke_linger_mist
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				0 1
+
+	life				5500 6500
+
+	origin				-100 -50 -50 100 50 50
+
+	rotation			0 360
+
+	rotationDelta		-1 1
+
+	velocity			0 -15 -15 15 15 15
+
+	rgb
+	{
+		start			1 0.502 0
+		end				0.498 0.498 0.498
+		parm			1 2
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				150 200
+		parm			0.5 2
+		flags			linear clamp
+	}
+
+	size2
+	{
+		start			200
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+CameraShake
+{
+	name				cam_shake
+
+	flags				usePhysics
+
+	life				50 350
+
+	bounce				16
+
+	radius				500
+
+	intensity			16
+}

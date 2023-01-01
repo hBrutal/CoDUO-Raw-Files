@@ -1,0 +1,50 @@
+Particle
+{
+	name				aftersmoke
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				7000 8000
+
+	cullrange			4000
+
+	origin				-15 -15 0 15 15 15
+
+	wind				50
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			15 -10 -50 30 10 -25
+
+	gravity				0 10
+
+	rgb
+	{
+		end				0.3961 0.3882 0.4039
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100 125
+		end				200 250
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}

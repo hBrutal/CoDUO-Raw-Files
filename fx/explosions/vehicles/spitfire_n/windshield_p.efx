@@ -1,0 +1,40 @@
+Emitter
+{
+	name				M_windshield
+
+	flags				useModel deathFx
+
+	spawnFlags			absoluteAccel
+
+	life				1000 3000
+
+	angleDelta			-5 -5 -25 5 5 25
+
+	velocity			800 -100 -100 1200 100 100
+
+	acceleration		-500 0 0
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_br_air_spitfire_windshield
+	]
+
+	deathfx
+	[
+		fx/map_bomber/exp_400d_pushed_ns
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/map_bomber/exp_200d_pushed_ns
+	]
+}

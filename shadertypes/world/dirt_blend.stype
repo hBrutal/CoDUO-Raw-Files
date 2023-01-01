@@ -1,0 +1,15 @@
+{
+	surfaceparm dirt
+	surfaceparm trans
+	//nomipmaps
+	//nopicmip
+	polygonOffset
+	{
+		map $texturename
+		rgbGen exactVertex
+		blendfunc blend
+		//depthWrite
+	nextbundle
+		map $lightmap
+	}
+}

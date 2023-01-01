@@ -1,0 +1,16 @@
+{
+	surfaceparm metal
+//	surfaceparm nonsolid
+//	surfaceparm trans
+	sort innerBlend
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		blendfunc blend
+//		alphaFunc GT0
+//		alphaFunc GE128
+//		alphaGen const .25
+		depthWrite
+	}
+}
+

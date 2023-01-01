@@ -1,0 +1,529 @@
+Particle
+{
+	name				smoke_linger_mist
+
+	flags				useAlpha
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count 2 3
+
+	life				2000 4000
+
+	delay				25
+
+	radius				1 35
+
+	height				1 35
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			0 -25 -25 100 25 25
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.3569 0.3569 0.3765
+		end				0.1882 0.1843 0.2
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		end				150 200
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fire_exp_core
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count 0 0
+
+	life				125 300
+
+	origin				0 0 0 50 0 0
+
+	radius				1 25
+
+	height				1 25
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -45 -45 45 45 45
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				125 275
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}
+
+Particle
+{
+	name				smoke_plumer_shaft
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count 1 2
+
+	life				1000
+
+	delay				50 100
+
+	radius				1 100
+
+	height				1 100
+
+	rotation			-15 15
+
+	rotationDelta		-5 5
+
+	velocity			0 -20 -20 100 20 20
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.4 0.4 0.4
+		end				0.4784 0.5098 0.5137
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 40
+		end				100 200
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count 3 3
+
+	life				500 1000
+
+	radius				1 25
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			400 0 0 600 0 0
+
+	rgb
+	{
+		start			0.5294 0.5412 0.4902
+		end				0.4784 0.5098 0.5137
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				250 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_big_base
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count 2 2
+
+	life				2000 3000
+
+	delay				0 350
+
+	radius				1 50
+
+	height				1 50
+
+	rotation			-15 15
+
+	rotationDelta		-2 2
+
+	velocity			0 -25 -25 49 25 25
+
+	rgb
+	{
+		start			0.4784 0.5098 0.5137
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_wht_a
+		smoke/smk_p_topsm_wht_b
+		smoke/smk_p_topsm_wht_b
+	]
+}
+
+Particle
+{
+	name				smoke_trans
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count 3 4
+
+	life				250 750
+
+	delay				0 150
+
+	radius				1 100
+
+	height				1 100
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			0 -25 -25 25 25 25
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+	]
+}
+
+Particle
+{
+	name				smoke_lit
+
+	spawnFlags			cheapOrgCalc orgOnCylinder axisFromSphere
+
+	count 0 1
+
+	life				500 1000
+
+	delay				150 350
+
+	radius				1 75
+
+	height				1 75
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -25 -25 25 25 25
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				75 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_fire_a
+		smoke/smk_p_out_fire_a
+		smoke/smk_p_out_fire_a
+	]
+}
+
+Particle
+{
+	name				gib_wood
+
+	flags				usePhysics impactKills
+
+	spawnFlags			axisFromSphere
+
+	count 2 5
+
+	life				6000 1e+004
+
+	bounce				0.25 0.5
+
+	origin				100 -30 -30 200 30 30
+
+	radius				1 50
+
+	height				1 50
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			500 -300 -300 900 300 300
+
+	gravity				-800
+
+	size
+	{
+		start			4 24
+		end				0
+		parm			96
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_a
+	]
+}
+
+Particle
+{
+	name				fire_shock_out_add
+
+	spawnFlags			orgOnCylinder axisFromSphere evenDistribution
+
+	count 1 1
+
+	life				300 500
+
+	delay				30 350
+
+	radius				1 25
+
+	height				1 25
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -50 -50 50 50 50
+
+	gravity				0 100
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			25
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			50 60
+		end				85 125
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				fire_yellow_blend
+
+	flags				useAlpha
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count 1 1
+
+	life				250 500
+
+	delay				0 350
+
+	radius				1 25
+
+	height				1 25
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			0 -50 -50 75 50 50
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				100 150
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a_blend
+		fire/fire_ball_a_blend
+		fire/fire_ball_a_blend
+	]
+}

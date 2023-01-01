@@ -1,0 +1,65 @@
+Particle
+{
+	name				center_volume
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			absoluteVel oppositeRotation orgOnCylinder evenDistribution
+
+	count 0 0
+
+	life				5000 1.2e+004
+
+	origin				-24 0 0
+
+	radius				0 46
+
+	rotation			-12 12
+
+	rotationDelta		-5 5
+
+	rotationAccel		5
+
+	rotationClamp		-0.5 0.5
+
+	velocity			-12 -12 8 12 12 12
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				0 10
+
+	rgb
+	{
+		start			0.4549 0.4353 0.3961
+		end				0.2863 0.1804 0.1804
+		parm			1
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			75 85
+		flags			linear
+	}
+
+	size
+	{
+		start			29 41
+		end				250 400
+		parm			1
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}

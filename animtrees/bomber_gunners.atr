@@ -1,0 +1,31 @@
+waistgunner_anims
+{
+	c_br_bomber_leftgunner_dead
+	c_br_bomber_leftgunner_death
+	c_br_bomber_leftgunner_idle
+	c_br_bomber_leftgunner_wounded
+	c_br_bomber_leftgunner_look
+	
+	c_br_bomber_rightgunner_dead
+	c_br_bomber_rightgunner_death
+	c_br_bomber_rightgunner_idle
+	c_br_bomber_rightgunner_stretch	
+
+	c_br_bomber_waistgunner_firingA
+	c_br_bomber_waistgunner_firingB
+	
+	c_br_bomber_rightgunner_motioning
+	c_br_bomber_leftgunner_motioning
+	c_br_bomber_rightgunner_flak1
+	c_br_bomber_rightgunner_flak2
+	c_br_bomber_leftgunner_flak1_in
+	c_br_bomber_leftgunner_flak1_loop
+	c_br_bomber_leftgunner_flak1_out
+}
+tailgunner_anims
+{
+	c_br_bomber_tailgunner_idle
+	c_br_bomber_tailgunner_strech
+	c_br_bomber_tailgunner_dead
+	c_br_bomber_tailgunner_flying
+}

@@ -1,0 +1,164 @@
+Particle
+{
+	name				fire_base
+
+	flags				relative
+
+	life				50 75
+
+	cullrange			32000
+
+	origin				0 0 0 6 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			24
+		end				12
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+	]
+}
+
+Light
+{
+	name				Light
+
+	flags				relative
+
+	life				100
+
+	origin				10 10 10
+
+	rgb
+	{
+		start			0.9922 0.8353 0.5412
+		end				0.8353 0.5176 0.1686
+		flags			random linear
+	}
+
+	size
+	{
+		start			200 210
+		end				100 110
+		flags			random linear
+	}
+}
+
+Particle
+{
+	name				fire_tip_a
+
+	flags				relative
+
+	life				50 75
+
+	cullrange			2000
+
+	origin				12 0 0 24 0 0
+
+	rotation			0 360
+
+	rotationDelta		-50 50
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			12
+		end				8
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+	]
+}
+
+Particle
+{
+	name				fire_mid
+
+	flags				relative
+
+	life				50 75
+
+	cullrange			4000
+
+	origin				3 0 0 15 0 0
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			12
+		end				12
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+		fire/muzzleflash_f_a
+	]
+}

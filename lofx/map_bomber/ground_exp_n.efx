@@ -1,0 +1,331 @@
+OrientedParticle
+{
+	name				cloud_lit
+
+	spawnFlags			absoluteVel
+
+	life				100 200
+
+	delay				50
+
+	rotation			0 360
+
+	rotationDelta		-2 2
+
+	velocity			-2000 0 0
+
+	rgb
+	{
+		end				0.9098 0.5255 0.007843
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			900 1200
+		end				3000 4000
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_cloud_bklit_a
+		fire/exp_cloud_bklit_a
+		fire/exp_cloud_bklit_a
+	]
+}
+
+OrientedParticle
+{
+	name				glow
+
+	spawnFlags			absoluteVel
+
+	life				200
+
+	delay				75
+
+	rotation			0 360
+
+	rotationDelta		-2 2
+
+	velocity			-2000 0 0
+
+	rgb
+	{
+		end				0.9098 0.5255 0.007843
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 1
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			600 900
+		end				3800 1.02e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/glow_red_a
+		misc/glow_red_b
+	]
+}
+
+OrientedParticle
+{
+	name				ring
+
+	spawnFlags			absoluteVel
+
+	life				100 200
+
+	rotation			0 360
+
+	rotationDelta		-2 2
+
+	velocity			-2000 0 0
+
+	rgb
+	{
+		end				0.9098 0.5255 0.007843
+	}
+
+	alpha
+	{
+		start			0.25 0.35
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				1700 2250
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ring_org_a
+		fire/fire_ring_org_a
+	]
+}
+
+Particle
+{
+	name				smoke_shroom
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	life				2e+004 2.1e+004
+
+	origin				100 -1500 -1500 100 1500 1500
+
+	rotation			-10 10
+
+	rotationDelta		-1 1
+
+	velocity			-2000 -150 200 -2100 150 350
+
+	rgb
+	{
+		end				0.7843 0.7412 0.6824
+	}
+
+	alpha
+	{
+		start			0.25
+		end				0
+		parm			0.01
+		flags			linear
+	}
+
+	size
+	{
+		start			2000 3200
+		end				5500 6500
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+		smoke/smk_p_topsm_wht_a
+		smoke/smk_p_topsm_wht_b
+		smoke/smk_p_topsm_wht_b
+	]
+}
+
+OrientedParticle
+{
+	name				smoke_shockout_orient
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	life				200 300
+
+	delay				50 75
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-2000 0 0
+
+	rgb
+	{
+		start			0.9922 0.9216 0.7765
+		end				0.7843 0.7412 0.6824
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			600 900
+		end				2500 3700
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+	]
+}
+
+OrientedParticle
+{
+	name				smoke__orient_ground
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	life				1e+004 1.2e+004
+
+	delay				100 150
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-2000 0 0
+
+	rgb
+	{
+		start			0.9922 0.9216 0.7765
+		end				0.7843 0.7412 0.6824
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.4
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			1600 2500
+		end				5500 6400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+	]
+}
+
+Particle
+{
+	name				smoke_shroom_rise
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	life				2e+004 2.1e+004
+
+	origin				100 -1500 -1500 100 1500 1500
+
+	rotation			-10 10
+
+	rotationDelta		-1 1
+
+	velocity			-2000 -150 400 -2100 150 650
+
+	rgb
+	{
+		end				0.9843 0.8549 0.5843
+	}
+
+	alpha
+	{
+		start			0.25
+		end				0
+		parm			0.01
+		flags			linear
+	}
+
+	size
+	{
+		start			2000 3200
+		end				9500 1.25e+004
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}

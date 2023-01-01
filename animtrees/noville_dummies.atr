@@ -1,0 +1,47 @@
+noville_dummies
+
+
+// Deaths
+death_run_forward_crumple
+crouchrun_death_drop
+crouchrun_death_crumple
+death_run_onfront
+death_run_onleft
+
+// Explosion Deaths
+death_explosion_back13
+death_explosion_forward13
+death_explosion_left11
+death_explosion_right13
+death_explosion_up10
+
+walk_run : loopsync
+{
+	// Runs in combat - pick one of these for each guy.
+	sprint1_loop
+	stand_shoot_run_forward
+	crouchrun_loop_forward_1
+	combatrun_forward_1
+	combatrun_forward_2
+
+	patrolwalk_bounce
+	soldierwalk_dazed_idle
+	c_limpA
+	patrolwalk_swagger
+	patrolwalk_tired
+	soldierwalk_dazed_twitch
+
+	standunarmed_walk_plain
+	standunarmed_walk_twitch1
+	standunarmed_walk_twitch2
+	standunarmed_walk_twitch3
+
+	soldierwalk_stiff_idle
+	soldierwalk_stiff_twitch
+
+	stand_walk_combat_loop_01
+	stand_walk_combat_loop_02
+
+	c_prisoner_walk_A
+	c_prisoner_walk_B
+}

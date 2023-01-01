@@ -1,0 +1,140 @@
+FxRunner
+{
+	name				_call_globals
+
+	flags				depthHack relative
+
+	playfx
+	[
+		fx/weapon/muzzleflash/_global_hmg_v
+	]
+}
+
+Particle
+{
+	name				fire_base
+
+	flags				depthHack relative
+
+	life				50 75
+
+	origin				0 0 0 4 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.6 0.85
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			17 19
+		end				8
+		flags			linear
+	}
+
+	shaders
+	[
+		weapon_v/muzzleflash_f_a
+		weapon_v/muzzleflash_f_b
+		weapon_v/muzzleflash_f_a
+		weapon_v/muzzleflash_f_b
+	]
+}
+
+Particle
+{
+	name				fire_gas
+
+	flags				depthHack relative
+
+	count				0 1
+
+	life				50 75
+
+	origin				0 0 0 4 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			20 24
+		end				14 16
+		flags			linear
+	}
+
+	shaders
+	[
+		weapon_v/muzzleflash_s_c
+		weapon_v/muzzleflash_s_b
+		weapon_v/muzzleflash_s_c
+		weapon_v/muzzleflash_s_d
+	]
+}
+
+OrientedParticle
+{
+	name				star
+
+	flags				depthHack relative
+
+	count				0 1
+
+	life				50 75
+
+	origin				-0.25 0 0 -1 0 0
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	alpha
+	{
+		start			0.1 0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			6 8
+		end				22 24
+		flags			linear
+	}
+
+	shaders
+	[
+		weapon_v/muzzleflash_fmg42
+	]
+}

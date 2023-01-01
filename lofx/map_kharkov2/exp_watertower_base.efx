@@ -1,0 +1,371 @@
+Particle
+{
+	name				1_fire_exp_core
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count 0 0
+
+	life				90 225
+
+	delay				0 250
+
+	cullrange			32000
+
+	origin				-150 -150 -300 150 150 -50
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-110 -110 0 110 -110 0
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			200 250
+		end				1300 1600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}
+
+Particle
+{
+	name				1_smoke_shock_out
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count 1 1
+
+	life				5475 5575
+
+	cullrange			8000
+
+	origin				-150 -150 -300 150 150 -100
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			-50 -50 50 50 50 50
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			50 150
+		end				350 450
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				1_fire_intial_burn
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution
+
+	count 1 1
+
+	life				350 450
+
+	delay				0 300
+
+	cullrange			8000
+
+	origin				-150 -150 -200 150 150 -100
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-150 -150 0 150 150 550
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				550 600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count 1 1
+
+	life				400 500
+
+	cullrange			2000
+
+	origin				-50 -50 -200 50 50 -100
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-1800 -1800 -100 1800 1800 100
+
+	rgb
+	{
+		start			0.7529 0.7804 0.7961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			200
+		end				400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_trans
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count 1 1
+
+	life				350 550
+
+	delay				0 350
+
+	cullrange			3000
+
+	origin				-150 -150 -300 150 150 -100
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			-150 -150 -300 150 150 -200
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				450 500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+	]
+}
+
+FxRunner
+{
+	name				_call_globals
+
+	spawnFlags			cheapOrgCalc
+
+	cullrange			32000
+
+	origin				0 0 -200
+
+	playfx
+	[
+		fx/weapon/explosions/_global_artillery
+	]
+}
+
+Emitter
+{
+	name				2_gibs_metal
+
+	flags				useModel
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count 3 3
+
+	life				3000 4000
+
+	cullrange			8000
+
+	origin				-150 -150 -250 150 150 0
+
+	angle				0 0 0 180 180 180
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			-500 -500 100 500 500 700
+
+	gravity				-600 -400
+
+	size
+	{
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/v_rs_lnd_gazaaa_gib_beam
+		xmodel/v_rs_lnd_gazaaa_gib_wood
+	]
+}
+
+Particle
+{
+	name				1_smoke_uplift_white
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count 1 1
+
+	life				3000 4000
+
+	delay				0 500
+
+	cullrange			8000
+
+	origin				-150 -150 -350 150 150 -50
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			-50 -50 0 50 50 100
+
+	gravity				25 100
+
+	rgb
+	{
+		start			0.5098 0.451 0.4157
+		end				0.3686 0.4 0.3922
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			200 250
+		end				400 550
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}

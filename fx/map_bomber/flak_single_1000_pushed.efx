@@ -1,0 +1,211 @@
+Particle
+{
+	name				smoke_linger_lit
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel absoluteAccel rgbComponentInterpolation
+
+	count				3
+
+	life				1e+004
+
+	origin				-225 -175 -175 325 175 175
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			-2050 -50 -50 -2050 50 50
+
+	acceleration		-2 -2 -2 2 -2 -2
+
+	rgb
+	{
+		start			1 0.502 0
+		end				0.4078 0.3882 0.4471
+		parm			0.5 2
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				200 500
+		parm			0.15 0.5
+		flags			clamp
+	}
+
+	size2
+	{
+		start			200
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_a
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				smoke_linger_mist
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel rgbComponentInterpolation
+
+	count				3
+
+	life				1e+004
+
+	origin				-500 -75 -75 500 75 75
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-1 1
+
+	velocity			-2000 -50 -50 -2000 50 50
+
+	acceleration		-5 -5 -5 5 5 -5
+
+	rgb
+	{
+		start			1 0.502 0
+		end				0.1216 0.1098 0.08627
+		parm			1 2
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				500 900
+		parm			0.5 2
+		flags			linear clamp
+	}
+
+	size2
+	{
+		start			200
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+CameraShake
+{
+	name				cam_shake
+
+	flags				usePhysics
+
+	life				50 350
+
+	bounce				16
+
+	radius				5000
+
+	intensity			16
+}
+
+Light
+{
+	name				D_Light
+
+	life				500 750
+
+	origin				25 0 0
+
+	rgb
+	{
+		start			0.9922 0.851 0.5843
+		end				0.2235 0.06667 0.06667
+		flags			linear
+	}
+
+	size
+	{
+		start			8000 8200
+		flags			linear
+	}
+}
+
+Particle
+{
+	name				fire_exp
+
+	life				100 150
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-2050 -50 -50 -2050 50 50
+
+	acceleration		0 0 100
+
+	rgb
+	{
+		end				1 0.502 0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	alpha
+	{
+		end				0
+		parm			25 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				600 1050
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_d
+		fire/exp_gen_e
+		fire/exp_gen_f
+	]
+}
+
+Sound
+{
+	sounds
+	[
+		flak_burst
+	]
+}

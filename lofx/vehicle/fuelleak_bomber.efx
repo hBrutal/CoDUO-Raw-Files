@@ -1,0 +1,49 @@
+Particle
+{
+	name				fuel_spray
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				250 450
+
+	delay				0 200
+
+	origin				-200 0 0 -100 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			2000 -100 -50 2000 100 150
+
+	acceleration		-25 -25 -25 25 25 25
+
+	rgb
+	{
+		start			0.2275 0.2078 0.1608
+		end				0.1961 0.1686 0.251
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				50 75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

@@ -1,0 +1,157 @@
+Particle
+{
+	name				p1
+
+	flags				usePhysics impactKills
+
+	life				6e+009
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.2
+		end				0
+	}
+
+	size
+	{
+		start			100
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p2
+
+	flags				usePhysics impactKills
+
+	life				6e+009
+
+	origin				50 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.15
+		end				0
+	}
+
+	size
+	{
+		start			110
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p3
+
+	flags				usePhysics impactKills
+
+	life				6e+009
+
+	origin				110 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.1
+		end				0
+	}
+
+	size
+	{
+		start			120
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p4
+
+	flags				usePhysics impactKills
+
+	life				6e+009
+
+	origin				170 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.075
+		end				0
+	}
+
+	size
+	{
+		start			130
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p5
+
+	flags				usePhysics impactKills
+
+	life				6e+009
+
+	origin				235 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.05
+		end				0
+	}
+
+	size
+	{
+		start			140
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}

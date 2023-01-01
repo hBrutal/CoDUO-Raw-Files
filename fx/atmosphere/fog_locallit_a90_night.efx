@@ -1,0 +1,113 @@
+Particle
+{
+	name				fog
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	count				0 1
+
+	life				3500
+
+	cullrange			1500
+
+	origin				-40 -15 -25 -50 15 25
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			15 -2 -2 35 2 2
+
+	rgb
+	{
+		start			0.3961 0.4078 0.5137
+		end				0.3255 0.3608 0.4902
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			50 85
+		end				50 85
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fog_lamplit
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				3500
+
+	cullrange			2000
+
+	origin				-40 -15 -5 -50 15 5
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			25 -2 -2 35 -2 2
+
+	rgb
+	{
+		start			0.3569 0.3725 0.4667
+		end				0.5804 0.5765 0.4039
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.65
+		end				0
+		parm			0.4 0.6
+		flags			linear
+	}
+
+	size
+	{
+		start			50 85
+		end				50 85
+		flags			linear
+	}
+
+	size2
+	{
+		start			200
+		end				600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_add_a
+		smoke/smk_p_none_wht_add_b
+		smoke/smk_p_none_wht_add_c
+	]
+}

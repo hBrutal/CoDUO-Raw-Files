@@ -1,0 +1,156 @@
+{
+	map		"mp_arnhem"
+	longname	"mp_arnhem"
+	gametype	"dom ctf re sd dm tdm hq bel"
+}
+
+{
+	map		"mp_berlin"
+	longname	"mp_berlin"
+	gametype	"dom ctf dm tdm re sd bel hq"
+}
+
+{
+	map		"mp_bocage"
+	longname	"mp_bocage"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_brecourt"
+	longname	"mp_brecourt"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_carentan"
+	longname	"mp_carentan"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_cassino"
+	longname	"mp_cassino"
+	gametype	"dom ctf dm tdm re sd bel hq"
+}
+
+{
+	map		"mp_chateau"
+	longname	"mp_chateau"
+	gametype	"dm tdm re bel hq"
+}
+
+{
+	map		"mp_dawnville"
+	longname	"mp_dawnville"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_depot"
+	longname	"mp_depot"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_foy"
+	longname	"mp_foy"
+	gametype	"bas dom ctf dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_harbor"
+	longname	"mp_harbor"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_hurtgen"
+	longname	"mp_hurtgen"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_italy"
+	longname	"mp_italy"
+	gametype	"bas dom ctf dm tdm re sd bel hq"
+}
+
+{
+	map		"mp_kharkov"
+	longname	"mp_kharkov"
+	gametype	"dom ctf dm tdm bel hq"
+}
+
+{
+	map		"mp_kursk"
+	longname	"mp_kursk"
+	gametype	"bas dom ctf dm tdm bel hq"
+}
+
+{
+	map		"mp_neuville"
+	longname	"mp_neuville"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_pavlov"
+	longname	"mp_pavlov"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_ponyri"
+	longname	"mp_ponyri"
+	gametype	"bas dom ctf dm tdm bel hq"
+}
+
+{
+	map		"mp_powcamp"
+	longname	"mp_powcamp"
+	gametype	"dm tdm re sd bel hq"
+}
+
+{
+	map		"mp_railyard"
+	longname	"mp_railyard"
+	gametype	"dm tdm sd re bel hq"
+}
+
+
+{
+	map		"mp_rhinevalley"
+	longname	"mp_rhinevalley"
+	gametype	"bas dom ctf dm tdm bel hq"
+}
+
+{
+	map		"mp_rocket"
+	longname	"mp_rocket"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_ship"
+	longname	"mp_ship"
+	gametype	"dm tdm re bel hq"
+}
+
+{
+	map		"mp_sicily"
+	longname	"mp_sicily"
+	gametype	"dom ctf dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_stalingrad"
+	longname	"mp_stalingrad"
+	gametype	"dm tdm sd re bel hq"
+}
+
+{
+	map		"mp_uo_stanjel"
+	longname	"mp_uo_stanjel"
+	gametype	"dom ctf dm tdm sd re bel hq"
+}

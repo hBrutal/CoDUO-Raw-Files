@@ -1,0 +1,133 @@
+"# If the text in the first column of a row starts with a # character, the row is ignored",,
+,,"If the first column for a row is blank, then the row is ignored"
+# The first non-comment line of a sound alias file specifies the key name for all values appearing in this column.,,
+"# This means it is safe to swap entire columns around, though you should never swap partial columns.",,
+"# You can invent new keys, but the game will ignore them if it doesn't know about them.",,
+"# You can leave out keys, but the ""name"" and ""file"" keys must always be present.",,
+
+,name,name of the alias that is used to play this sound (required)
+,sequence,"used to uniquely identify alias entries when more than one sound goes to an alias, used only to catch unwanted duplicates (foliage = 0)"
+,file,the name of the file that contains the sound data (required)
+,vol_min,"0 is silent, 1 is full volume (foliage = 1)"
+,vol_max,"0 is silent, 1 is full volume (foliage = same as vol_min)"
+,pitch_min,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (foliage = 1)"
+,pitch_max,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (foliage = same as pitch_min)"
+,dist_min,"within this distance in inches, the sound is always full volume (foliage = 120)"
+,dist_max,"outside this distance in inches, the sound is not started.  If left blank or set to 0, the sound will play from any distance.  This does not affect sound volume falloff."
+,channel,"auto, menu, weapon, voice, item, body, local, music, announcer (foliage = auto)",,,,,,,,,,,,,,,
+,type,streamed / loaded (foliage = loaded),,,,,,,,,,,,,,,
+,probability,weight to use for the weighted probability of playing this sound instead of another sound (foliage = 1),,,,,,,,,,,,,,,
+,loop,"whether this sound is ""looping"" or ""nonlooping"" (foliage = ""nonlooping"")",,,,,,,,,,,,,,,
+,masterslave,"if ""master"", this is a master sound.  If a number, then this sound won't exceed this volume whenever any master sound is playing.  If blank, then neither master nor slave.",,,,,,,,,,,,,,,
+,loadspec,"space-separated list of which maps should use this alias; eg, ""burnville dawnville"".  If blank, the alias is used on all maps.",,,,,,,,,,,,,,,
+
+name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,lod_min,lod_max,channel,type,probability,loop,masterslave,loadspec,subtitle
+
+#LOD Weapon Sounds,,,,,,,,,,,,,,,,,
+#American,,,,,,,,,,,,,,,,,
+weap_30cal_loop,1,weapons/30cal/30cal_loop.wav,1.25,1.4,0.99,1.01,7,3500,0,1800,weapon,,,looping,,,
+weap_30cal_loop,2,weapons/30cal/30cal_loop_distant.wav,0.85,0.95,0.99,1.01,7,8500,1800,8500,weapon,,,looping,,,
+weap_30cal_cooldown,1,weapons/30cal/30cal_cooldown.wav,1.25,1.4,0.99,1.01,7,3500,0,1800,auto,,,,,,
+weap_30cal_cooldown,2,weapons/30cal/30cal_cooldown_distant.wav,0.85,0.95,0.99,1.01,7,8500,1800,8500,auto,,,,,,
+weap_30cal_tank_loop,,weapons/30cal/30cal_tank_loop02.wav,1.25,1.4,0.98,1,7,3500,,,weapon,,,looping,,,
+weap_30cal_tank_cooldown,,weapons/30cal/30cal_tank_cooldown02.wav,1.25,1.4,0.98,1,7,3500,,,auto
+weap_50cal_box_fire,1,weapons/50cal_box/50cal_box_01.wav,1.5,1.7,0.98,1.02,7,3500,0,1800,weapon
+weap_50cal_box_fire,2,weapons/50cal_box/50cal_box_02.wav,1.5,1.7,0.98,1.02,7,3500,0,1800,weapon
+weap_50cal_box_fire,3,weapons/50cal_box/50cal_distant01.wav,1,1.2,0.98,1.02,7,8500,1800,8500,weapon
+weap_bar_fire,1,weapons/bar/bar_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon
+weap_bar_fire,2,weapons/bar/bar_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon
+#weap_bazooka_fire,1,weapons/bazooka/bazooka_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon
+#weap_bazooka_fire,2,weapons/bazooka/bazooka_01_distant.wav,0.9,1,0.9,1.05,7,8500,1800,8500,weapon
+weap_colt_fire,1,weapons/colt/colt45_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon
+weap_colt_fire,2,weapons/colt/colt45_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon
+weap_m1carbine_fire,1,weapons/m1carbine/m1carbine_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon
+weap_m1carbine_fire,2,weapons/m1carbine/m1carbine_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon
+weap_m1garand_fire,1,weapons/m1garand/m1garand_01.wav,1.35,1.5,0.9,1.05,7,3500,0,1800,weapon
+weap_m1garand_fire,2,weapons/m1garand/m1garand_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon
+weap_m1garand_lastshot,1,weapons/m1garand/m1garand_ping01.wav,1.35,1.5,,,7,3500,0,1800,auto
+weap_m1garand_lastshot,2,weapons/m1garand/m1garand_ping01_distant.wav,0.85,0.95,,,7,8500,1800,8500,auto
+weap_springfield_fire,1,weapons/springfield/springfield_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_springfield_fire,2,weapons/springfield/springfield_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_thompson_fire,1,weapons/thompson/thompson_01.wav,1.25,1.35,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_thompson_fire,2,weapons/thompson/thompson_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+#British,,,,,,,,,,,,,,
+weap_bren_fire,1,weapons/bren/bren_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_bren_fire,2,weapons/bren/bren_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_enfield_fire,1,weapons/enfield/enfield_01.wav,1.35,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_enfield_fire,2,weapons/enfield/enfield_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_silenced_sten_fire,,weapons/sten/silenced_sten_01.wav,1,1.2,0.9,1,7,1500,,,weapon,,,
+weap_silenced_sten_loop,,weapons/sten/silenced_sten_loop01.wav,1,1.2,0.9,1,7,1500,,,weapon,,,looping
+weap_silenced_sten_cooldown,,weapons/sten/silenced_sten_cooldown01.wav,0.85,0.95,0.9,1,7,1500,,,auto,,,
+weap_sten_fire,1,weapons/sten/sten_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_sten_fire,2,weapons/sten/sten_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_webley_fire,,weapons/webley/webley_01.wav,1.65,1.7,0.9,1.05,7,3500,,,weapon,,,
+#Russian,,,,,,,,,,,,,,
+antitank_rifle_fire,1,weapons/AntiTank/rat_01.wav,1.14,1.25,0.9,1.05,7,3500,0,1800,weapon,,,
+antitank_rifle_fire,2,weapons/AntiTank/rat_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+#weap_dp28_fire,,weapons/dp28/dp28_01.wav,1.25,1.4,0.95,1.05,10,7800,,,weapon,,,
+weap_dp28_loop,,weapons/dp28/dp28_loop01.wav,1.6,,0.95,1,10,7800,,,weapon,,,looping
+weap_dp28_cooldown,,weapons/dp28/dp28_cooldown.wav,1.2,,0.95,1,10,7800,,,auto,,,
+weap_nagant_fire,1,weapons/nagant/nagant_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_nagant_fire,2,weapons/nagant/nagant_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_nagant_sniper,1,weapons/nagant/nagant_sniper.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_nagant_sniper,2,weapons/nagant/nagant_sniper_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_ppsh_fire,1,weapons/ppsh/ppsh_01.wav,1.4,1.6,0.9,1.05,7,3500,0,1800,weapon,,,
+weap_ppsh_fire,2,weapons/ppsh/ppsh_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,
+weap_sg43_loop,,weapons/sg43/sg43_loop01.wav,1.25,1.4,0.95,1,10,7800,,,weapon,,,looping
+weap_sg43_cooldown,,weapons/sg43/sg43_cooldown.wav,1,1.1,0.95,1,10,7800,,,auto,,,
+weap_svt40_fire,,weapons/svt40/svt40_01.wav,1.35,1.5,0.95,1.05,50,3500,,,weapon,,,
+weap_tt33_fire,,weapons/tt33/tt33_01.wav,1.25,1.5,0.9,1.05,7,3500,,,weapon,,,
+
+
+
+
+
+#Weapon Foley,,,,,,,,,,,
+#American,,,,,,,,,,,
+weap_30cal_reload,,weapons/30cal/weap_30cal_reload.wav,1.5,1.5,,,7,500,,,auto
+weap_30cal_undeploy,,weapons/30cal/weap_30cal_undeploy.wav,1.1,,,,75,500,,,auto
+weap_bar_reload,,weapons/bar/bar_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_bar_reload_not_empty,,weapons/bar/bar_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_bar_altswitch,,weapons/alt_fire_switch.wav,1,1,,,7,500,,,auto
+weap_bar_pickup,,misc/PU_Weapon03.wav,1.14,1.25,,,7,500,,,auto
+weap_bar_ammopickup,,misc/PU_Weapon02.wav,1.14,1.25,,,7,500,,,auto
+weap_bar_raise,,misc/Equip_Rifle02.wav,1.14,1.25,,,7,500,,,auto
+weap_bar_putaway,,null.wav,1.14,1.25,,,7,500,,,auto
+#weap_bazooka_reload,,weapons/bazooka/bazooka_reload.wav,1.25,1.5,,,7,500,,,auto
+#weap_bazooka_reload_not_empty,,weapons/bazooka/bazooka_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_colt_reload,,weapons/colt/colt45_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_colt_reload_not_empty,,weapons/colt/colt45_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_m1carbine_reload,,weapons/m1carbine/m1carbine_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_m1carbine_reload_not_empty,,weapons/m1carbine/m1carbine_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_m1garand_reload,,weapons/m1garand/m1garand_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_springfield_reload_start,,weapons/kar98k/kar98_reload_start.wav,1.25,1.5,,,7,500,,,auto
+weap_springfield_reload_loop,,weapons/kar98k/kar98_reload_loop.wav,1.25,1.5,0.9,1.1,7,500,,,auto
+weap_springfield_reload,,weapons/springfield/springfield_reload_loop.wav,1.25,1.5,0.9,1.1,7,500,,,auto
+weap_springfield_reload_end,,weapons/enfield/enfield_reload_end.wav,1.25,1.5,,,7,500,,,auto
+weap_springfield_rechamber,,weapons/kar98k/kar98_rechamber.wav,1.15,1.35,,,7,500,,,auto
+weap_thompson_reload,,weapons/thompson/thompson_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_thompson_reload_not_empty,,weapons/thompson/thompson_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_thompson_altswitch,,weapons/alt_fire_switch.wav,1,1,,,7,500,,,auto
+#British,,,,,,,,,,,
+weap_bren_reload,,weapons/bren/bren_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_bren_reload_not_empty,,weapons/bren/bren_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_bren_altswitch,,weapons/alt_fire_switch.wav,1,1,,,7,500,,,auto
+weap_enfield_reload,,null.wav,1.25,1.5,,,7,500,,,auto
+weap_enfield_reload_start,,weapons/enfield/enfield_reload_start.wav,1.25,1.5,,,7,500,,,auto
+weap_enfield_reload_loop,,weapons/enfield/enfield_reload_loop.wav,1.25,1.5,0.9,1.1,7,500,,,auto
+weap_enfield_reload_end,,weapons/enfield/enfield_reload_end.wav,1.25,1.5,,,7,500,,,auto
+weap_sten_reload,,weapons/sten/sten_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_sten_reload_not_empty,,weapons/sten/sten_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_webley_reload,,weapons/webley/weap_webley_reload.wav,1.6,1.7,,,7,500,,,auto
+#Russian,,,,,,,,,,,
+weap_dp28_reload,,weapons/dp28/weap_dp28_reload.wav,1.5,1.5,,,7,500,,,auto
+weap_dp28_undeploy,,weapons/dp28/weap_dp28_undeploy.wav,1.1,,,,75,500,,,auto
+weap_nagant_reload,,weapons/kar98k/kar98_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_nagant_rechamber,,weapons/kar98k/kar98_rechamber.wav,1.15,1.35,,,7,500,,,auto
+weap_ppsh_reload,,weapons/ppsh/ppsh_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_ppsh_reload_not_empty,,weapons/ppsh/ppsh_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_ppsh_altswitch,,weapons/alt_fire_switch.wav,1,1,,,7,500,,,auto
+weap_svt40_reload_not_empty,,weapons/svt40/svt40_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_svt40_reload,,weapons/svt40/svt40_reload.wav,1.25,1.5,,,7,500,,,auto
+weap_tt33_reload_not_empty,,weapons/tt33/tt33_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto
+weap_tt33_reload,,weapons/tt33/tt33_reload.wav,1.25,1.5,,,7,500,,,auto

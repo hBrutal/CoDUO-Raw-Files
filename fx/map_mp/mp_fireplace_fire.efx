@@ -1,0 +1,111 @@
+Particle
+{
+	name				smoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				8
+
+	life				1250 3000
+
+	delay				0 5000
+
+	cullrange			750
+
+	origin				5 -5 -15 15 5 15
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			13 -2 -2 17 2 2
+
+	acceleration		0 -2 -2 0 2 2
+
+	rgb
+	{
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			5 8
+		end				20 30
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_a
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_flames
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				20
+
+	life				750 1050
+
+	delay				0 5000
+
+	cullrange			2000
+
+	origin				5 0 -15 10 0 15
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			5 -2 -2 10 2 2
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			8 10
+		end				17 20
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_b
+		fire/flame_lick_c
+		fire/flame_lick_d
+		fire/flame_lick_e
+		fire/flame_lick_f
+	]
+}

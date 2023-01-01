@@ -1,0 +1,39 @@
+FxRunner
+{
+	name				1st_explosion
+
+	flags				relative
+
+	playfx
+	[
+		fx/explosions/vehicles/t34_mp_n/1st_exp
+	]
+}
+
+FxRunner
+{
+	name				burn
+
+	flags				relative
+
+	delay				1000
+
+	playfx
+	[
+		fx/explosions/vehicles/t34_mp_n/burn
+	]
+}
+
+FxRunner
+{
+	name				2nd_explosion
+
+	flags				relative
+
+	delay				9750
+
+	playfx
+	[
+		fx/explosions/vehicles/t34_mp_n/2nd_exp
+	]
+}

@@ -1,0 +1,283 @@
+Light
+{
+	name				light
+
+	spawnFlags			cheapOrgCalc
+
+	life				2e+004
+
+	origin				0 0 72
+
+	rgb
+	{
+		start			0.6118 0.4549 0.3137
+		end				0.6118 0.3725 0.3137
+		flags			random
+	}
+
+	size
+	{
+		start			1000 2000
+		end				2 1
+		flags			random
+	}
+}
+
+Particle
+{
+	name				ray_a
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				2e+004
+
+	origin				0 0 24
+
+	rotation			0 360
+
+	rotationDelta		-20 -30
+
+	rotationClamp		7777
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.25
+		end				0
+		parm			95
+		flags			linear
+	}
+
+	size
+	{
+		start			64
+		end				48
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_r_a
+	]
+}
+
+Particle
+{
+	name				ray_b
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				2e+004
+
+	origin				0 0 24
+
+	rotation			0 360
+
+	rotationDelta		20 30
+
+	rotationClamp		7777
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.15
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			64
+		end				48
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_r_a
+	]
+}
+
+Particle
+{
+	name				center
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				2e+004
+
+	origin				0 0 24
+
+	rotation			0 360
+
+	rotationDelta		-5
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			20 40
+		end				15 20
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_m_a
+	]
+}
+
+Particle
+{
+	name				line
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				2e+004
+
+	origin				0 0 24
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			100 120
+		end				15 20
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_l_a
+	]
+}
+
+Particle
+{
+	name				lens
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				2e+004
+
+	origin				0 0 24
+
+	rotation			0 -90
+
+	rotationDelta		-2 2
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.05 0.15
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			60 90
+		end				15 20
+	}
+
+	shaders
+	[
+		misc/lens_flare_c_a
+	]
+}
+
+Particle
+{
+	name				Copy of center
+
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				150 250
+
+	origin				0 0 24
+
+	rotation			0 360
+
+	rotationDelta		-5
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			15 20
+		end				200 270
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/lens_flare_m_a
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/smoke/smoke_grenade
+	]
+}
+
+FxRunner
+{
+	playfx
+	[
+		fx/weapon/explosions/grenade_smoke_generic
+	]
+}

@@ -1,0 +1,199 @@
+FxRunner
+{
+	name				_call_globals
+
+	flags				relative
+
+	playfx
+	[
+		fx/weapon/muzzleflash/_global_smg
+	]
+}
+
+Particle
+{
+	name				fire_base
+
+	count				2
+
+	life				50 75
+
+	cullrange			32000
+
+	origin				0 0 0 5 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			6 8
+		end				12 14
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+	]
+}
+
+Particle
+{
+	name				fire_mid
+
+	count				3
+
+	life				50 75
+
+	cullrange			2000
+
+	origin				4 0 0 13 0 0
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			6 8
+		end				8 10
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+	]
+}
+
+Particle
+{
+	name				fire_tip_a
+
+	count				2
+
+	life				50 75
+
+	cullrange			1000
+
+	origin				0 0 0 18 0 0
+
+	rotation			0 360
+
+	rotationDelta		-50 50
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4 6
+		end				8 10
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+	]
+}
+
+Particle
+{
+	name				fire_tip_b
+
+	count				2
+
+	life				50 75
+
+	cullrange			1000
+
+	origin				15 0 0 22 0 0
+
+	rotation			0 360
+
+	rotationDelta		-50 50
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			4 6
+		end				8 10
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+	]
+}

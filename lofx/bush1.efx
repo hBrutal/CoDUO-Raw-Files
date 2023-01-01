@@ -1,0 +1,17 @@
+Emitter
+{
+	flags				depthHack useModel
+
+	spawnFlags			orgOnCylinder axisFromSphere
+
+	count 4 4
+
+	life				1.051e+004
+
+	radius				0 200
+
+	models
+	[
+		xmodel/mp_grassclod1
+	]
+}

@@ -1,0 +1,158 @@
+Particle
+{
+	name				dust_lit
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count				4 6
+
+	life				2000 3000
+
+	delay				0 150
+
+	cullrange			800
+
+	origin				-32 -32 0 32 32 0
+
+	rotation			-170 -190
+
+	rotationDelta		-2 2
+
+	gravity				-50 -150
+
+	rgb
+	{
+		start			0.4 0.4 0.4
+		end				0.3686 0.3294 0.2902
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			20 30
+		end				75 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_t_wht_b
+		smoke/smk_t_wht_c
+	]
+}
+
+Particle
+{
+	name				dust_chunks
+
+	flags				usePhysics useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count				5 8
+
+	life				2000 3000
+
+	delay				250 1000
+
+	cullrange			600
+
+	bounce				0.25 0.5
+
+	origin				-32 -32 0 32 32 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	gravity				-600 -300
+
+	rgb
+	{
+		start			0.4 0.4 0.4
+		end				0.7059 0.6667 0.5804
+	}
+
+	alpha
+	{
+		end				0
+	}
+
+	size
+	{
+		start			0.5 2
+		end				0
+		parm			90 900
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_dirt_a
+		debree/debree_gib_dirt_b
+	]
+}
+
+Particle
+{
+	name				dust_mist
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count				5 7
+
+	life				2000 3000
+
+	delay				0 350
+
+	cullrange			1600
+
+	origin				-32 -32 0 32 32 0
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	gravity				-10 -150
+
+	rgb
+	{
+		start			0.3686 0.3294 0.2902
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.1 0.2
+		flags			linear
+	}
+
+	size
+	{
+		start			24 36
+		end				85 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

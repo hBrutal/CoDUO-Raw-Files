@@ -1,0 +1,58 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           OBJECTIVE1
+LANG_ENGLISH        "Get Into Truck"
+
+REFERENCE           OBJECTIVE2
+LANG_ENGLISH        "Get Ammo from Bunker"
+
+REFERENCE           OBJECTIVE3
+LANG_ENGLISH        "Defend Right Flank"
+
+REFERENCE           OBJECTIVE4
+LANG_ENGLISH        "Flush out Left Flank"
+
+REFERENCE           OBJECTIVE5
+LANG_ENGLISH        "Follow Sgt. Antonov"
+
+REFERENCE           OBJECTIVE6
+LANG_ENGLISH        "Blow up 3 Elefant Tanks (%s remaining)"
+
+REFERENCE           OBJECTIVE7
+LANG_ENGLISH        "Meet up with Sgt. Antonov"
+
+REFERENCE           OBJECTIVE8
+LANG_ENGLISH        "Head to Village"
+
+REFERENCE           OBJECTIVE9
+LANG_ENGLISH        "Eliminate all Enemies in Village"
+
+REFERENCE           OBJECTIVE10
+LANG_ENGLISH        "Defend Village"
+
+REFERENCE           OBJECTIVE11
+LANG_ENGLISH        "Meet with Commissar"
+
+REFERENCE           REINFORCEMENTS
+LANG_ENGLISH        "Reinforcements arriving in: %s"
+
+REFERENCE           USE_TRUCK
+LANG_ENGLISH        "Press [%s] to Climb into Truck"
+
+
+ENDMARKER
+
+

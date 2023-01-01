@@ -1,0 +1,9 @@
+FxRunner
+{
+	name				_FX_callexp
+
+	playfx
+	[
+		fx/explosions/vehicles/he111_n/base_exp
+	]
+}

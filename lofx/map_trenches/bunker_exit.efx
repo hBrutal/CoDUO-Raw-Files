@@ -1,0 +1,110 @@
+Particle
+{
+	name				dust_mist
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count				2 3
+
+	life				3000 4000
+
+	cullrange			1500
+
+	origin				-32 -32 -48 32 32 48
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 -25 -25 400 25 25
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				0 50
+
+	rgb
+	{
+		start			0.2902 0.2706 0.2078 0.2902 0.2667 0.2078
+		end				0.6824 0.6431 0.5569 0.6824 0.6431 0.5529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				dust_lit
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count				2
+
+	life				2500 3000
+
+	cullrange			2000
+
+	origin				-32 -32 -48 32 32 48
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			50 -25 -25 400 25 25
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				0 50
+
+	rgb
+	{
+		start			0.2902 0.2706 0.2078 0.2902 0.2667 0.2078
+		end				0.6824 0.6431 0.5569 0.6824 0.6431 0.5529
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				150 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+	]
+}

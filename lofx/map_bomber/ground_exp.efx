@@ -1,0 +1,55 @@
+FxRunner
+{
+	name				your_plane
+
+	count 0 0
+
+	origin				-2.45e+004 -500 -7500 -2.45e+004 500 7500
+
+	playfx
+	[
+		fx/map_bomber/ground_exp_n
+	]
+}
+
+FxRunner
+{
+	name				front_right
+
+	count 0 0
+
+	origin				-2.45e+004 1.5e+004 -1e+004 -2.45e+004 1.5e+004 -1.5e+004
+
+	playfx
+	[
+		fx/map_bomber/ground_exp_n
+	]
+}
+
+FxRunner
+{
+	name				back_left
+
+	count 0 0
+
+	origin				-2.45e+004 -1e+004 1.5e+004 -2.45e+004 -1e+004 2.5e+004
+
+	playfx
+	[
+		fx/map_bomber/ground_exp_n
+	]
+}
+
+FxRunner
+{
+	name				back_right
+
+	count 0 0
+
+	origin				-2.45e+004 -5000 -5000 -2.45e+004 -5000 -1e+004
+
+	playfx
+	[
+		fx/map_bomber/ground_exp_n
+	]
+}

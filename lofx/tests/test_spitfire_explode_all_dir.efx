@@ -1,0 +1,201 @@
+Emitter
+{
+	name				fuselage
+
+	flags				useModel usePhysics
+
+	spawnFlags			cheapOrgCalc
+
+	life 10000.000000 10000.000000
+
+	cullrange			4000
+
+	bounce				0.25 0.5
+
+	angle				90 0 0
+
+	angleDelta			5 -5 -5 10 5 5
+
+	velocity			-200 400 -200 200 600 200
+
+	acceleration		0 -50 -50
+
+	gravity				-600 -400
+
+	models
+	[
+		xmodel/v_br_air_spitfire_fuselage
+	]
+}
+
+Emitter
+{
+	name				rwing
+
+	flags				useModel
+
+	spawnFlags			cheapOrgCalc
+
+	life 10000.000000 10000.000000
+
+	cullrange			4000
+
+	origin				-0.144 -167.3 12.68
+
+	angle				90 0 0
+
+	angleDelta			-5 -3 -5 5 3 -15
+
+	velocity			-200 -200 400 200 200 600
+
+	acceleration		0 -100 -100 0 100 100
+
+	gravity				-600 -400
+
+	models
+	[
+		xmodel/v_br_air_spitfire_rwing
+	]
+}
+
+Emitter
+{
+	name				tail
+
+	flags				useModel
+
+	spawnFlags			cheapOrgCalc
+
+	life 10000.000000 10000.000000
+
+	cullrange			3000
+
+	origin				-250.3 0.003 35.44
+
+	angle				90 0 0
+
+	angleDelta			-5 -5 -5 -15 -5 -5
+
+	velocity			-200 -600 -200 200 -400 200
+
+	acceleration		0 -100 -100 0 100 100
+
+	gravity				-600 -400
+
+	models
+	[
+		xmodel/v_br_air_spitfire_tail
+	]
+}
+
+Particle
+{
+	name				RefExplode
+
+	life 125.000000 125.000000
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	size
+	{
+		start			60
+	}
+
+	shaders
+	[
+		misc/glow_blue_a
+		misc/glow_blue_b
+	]
+}
+
+Emitter
+{
+	name				windshield
+
+	flags				useModel
+
+	spawnFlags			cheapOrgCalc
+
+	life 10000.000000 10000.000000
+
+	cullrange			1500
+
+	origin				-48.78 2.26 59.55
+
+	angle				90 0 0
+
+	angleDelta			-15 -5 -5 15 5 5
+
+	velocity			400 -200 -200 600 200 200
+
+	acceleration		-50 -50 -50 50 50 50
+
+	gravity				-600 -400
+
+	models
+	[
+		xmodel/v_br_air_spitfire_windshield
+	]
+}
+
+Emitter
+{
+	name				propeller
+
+	flags				useModel usePhysics
+
+	spawnFlags			cheapOrgCalc
+
+	life 10000.000000 10000.000000
+
+	cullrange			1500
+
+	bounce				0.25 0.5
+
+	origin				145 0.053 30.16
+
+	angle				90 0 0
+
+	angleDelta			-5 -5 15 5 5 50
+
+	velocity			-200 -200 -200 200 500 200
+
+	acceleration		-100 -100 -100
+
+	gravity				-600 -400
+
+	models
+	[
+		xmodel/v_br_air_spitfire_propeller
+	]
+}
+
+Emitter
+{
+	name				lwing
+
+	flags				useModel
+
+	spawnFlags			cheapOrgCalc
+
+	life 10000.000000 10000.000000
+
+	origin				-0.026 167.2 9.118
+
+	angle				90 0 0
+
+	angleDelta			-5 -3 -5 5 3 -15
+
+	velocity			-200 -200 -400 200 200 -600
+
+	acceleration		0 -100 -100 0 100 100
+
+	gravity				-600 -400
+
+	models
+	[
+		xmodel/v_br_air_spitfire_lwing
+	]
+}

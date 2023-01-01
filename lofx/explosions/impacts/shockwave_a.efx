@@ -1,0 +1,42 @@
+OrientedParticle
+{
+	name				fire_ring
+
+	life				150 250
+
+	delay				0 50
+
+	cullrange			8000
+
+	origin				15 0 0 50 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rgb
+	{
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		end				600 2000
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ring_org_a
+		fire/fire_ring_org_a
+	]
+}

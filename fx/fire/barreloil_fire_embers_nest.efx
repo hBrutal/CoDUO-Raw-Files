@@ -1,0 +1,40 @@
+Particle
+{
+	name				ember
+
+	spawnFlags			orgOnSphere
+
+	count				0 5
+
+	life				250 1500
+
+	cullrange			400
+
+	delay				0 50
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			15 -1 -1 35 1 1
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		start			0.7765 0.3882 0
+	}
+
+	size
+	{
+		start			0.25 1
+		end				0
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/glow_red_a
+		misc/glow_red_b
+	]
+}

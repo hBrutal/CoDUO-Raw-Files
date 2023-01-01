@@ -1,0 +1,30 @@
+Emitter
+{
+	name				M_rotor
+
+	flags				useModel
+
+	spawnFlags			absoluteAccel
+
+	life				500 1000
+
+	angleDelta			-5 -2 -80 5 2 -90
+
+	velocity			1200 -100 -100 2200 100 -300
+
+	gravity				-600 -400
+
+	density				75
+
+	size
+	{
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/v_ge_air_stuka(d)(p)_rotor
+	]
+}

@@ -1,0 +1,40 @@
+Emitter
+{
+	name				M_lwing_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			absoluteAccel
+
+	life				1000 1500
+
+	angleDelta			-5 -5 -5 5 5 5
+
+	velocity			100 -100 -800 200 100 -400
+
+	acceleration		-1000 0 0 -500 0 0
+
+	gravity				-600 -400
+
+	density				75
+
+	models
+	[
+		xmodel/v_us_air_b-17_lwing(d)
+	]
+
+	deathfx
+	[
+		fx/map_bomber/exp_1000_pushed_ns
+	]
+}
+
+FxRunner
+{
+	name				_FX_callexp
+
+	playfx
+	[
+		fx/map_bomber/exp_650_pushed_ns
+	]
+}

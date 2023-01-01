@@ -1,0 +1,21 @@
+line_officerA_stand_twitchA
+line_officerA_stand_twitchB
+line_officer_stand_idle
+line_officerA_wave
+leaderwalk_cocky_idle
+line_officerA_shoot
+
+facial
+{
+	facial_alert01
+	facial_alert02
+
+	f_trenches_gs_bunker_ev07_01
+	f_trenches_gs_bunker_ev07_02
+	f_trenches_gs_bunker_ev07_03
+}
+
+c_rs_trenches_sergeant_idleA
+c_rs_trenches_sergeant_idleB
+c_rs_trenches_sergeant_idle_twitch
+c_rs_trenches_sergeant_give_ammo

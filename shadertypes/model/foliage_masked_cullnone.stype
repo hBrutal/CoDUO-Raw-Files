@@ -1,0 +1,11 @@
+{
+	surfaceparm nonsolid
+	radialNormals
+	cull none
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		alphaFunc LT128
+		depthWrite
+	}
+}

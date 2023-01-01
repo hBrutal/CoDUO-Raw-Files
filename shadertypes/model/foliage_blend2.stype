@@ -1,0 +1,10 @@
+{
+	surfaceparm nonsolid
+	radialNormals
+	cull twosided
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+		blendFunc blend
+	}
+}

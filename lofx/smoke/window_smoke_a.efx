@@ -1,0 +1,52 @@
+Particle
+{
+	flags				useAlpha
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count				0 1
+
+	life				2000 2250
+
+	delay				0 300
+
+	cullrange			5000
+
+	origin				0 -5 -5 0 5 5
+
+	rotationDelta		1 3
+
+	rotationClamp		-90
+
+	velocity			75 -15 -15 75 15 15
+
+	acceleration		10 0 0
+
+	gravity				25 50
+
+	rgb
+	{
+		end				0.6745 0.4471 0.2745
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			55 65
+		end				85 95
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}

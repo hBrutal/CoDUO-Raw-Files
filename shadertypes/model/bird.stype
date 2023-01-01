@@ -1,0 +1,8 @@
+{
+	surfaceparm flesh
+	{
+		map $texturename
+		rgbGen lightingDiffuse
+	}
+}
+

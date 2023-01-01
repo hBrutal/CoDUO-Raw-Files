@@ -1,0 +1,118 @@
+Particle
+{
+	name				fire_flames
+
+	flags				setShaderTime
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				0 1
+
+	life				900 850
+
+	delay				50 300
+
+	cullrange			2000
+
+	origin				5 0 -10 7 0 10
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			10 -5 -5 15 5 5
+
+	acceleration		-2 -2 -2 2 2 2
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			6 8
+		end				13 16
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}
+
+Particle
+{
+	name				smoke_mist
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				0 1
+
+	life				1750 2000
+
+	delay				0 300
+
+	cullrange			900
+
+	origin				5 -5 -10 10 5 10
+
+	radius				60 50
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			15 -1 -1 20 1 1
+
+	acceleration		0 -2 -2 0 2 2
+
+	rgb
+	{
+		start			0.1529 0.1529 0.1529
+		end				0.3451 0.3333 0.3686
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			5 8
+		end				20 25
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

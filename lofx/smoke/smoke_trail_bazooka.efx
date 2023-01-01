@@ -1,0 +1,17 @@
+Emitter
+{
+	name				_emit_smoke
+
+	flags				emitFx relative
+
+	life				2e+004
+
+	density				25
+
+	variance			1 5
+
+	emitfx
+	[
+		fx/smoke/smoke_trail_bazooka_n
+	]
+}

@@ -1,0 +1,60 @@
+Emitter
+{
+	name				_ref
+
+	flags				useModel
+
+	count 0 0
+
+	life				1e+007 1e+006
+
+	angle				90 0 0
+
+	models
+	[
+		xmodel/v_us_lnd_willysjeep_d
+	]
+}
+
+Light
+{
+	flags				relative
+
+	life				6e+009
+
+	origin				0 250 0
+
+	size
+	{
+		start			600
+		end				600
+	}
+}
+
+FxRunner
+{
+	name				lamp_left
+
+	flags				relative
+
+	origin				35 70 -16
+
+	playfx
+	[
+		fx/vehicle/headlight_jeep_n
+	]
+}
+
+FxRunner
+{
+	name				lamp_right
+
+	flags				relative
+
+	origin				35 70 15
+
+	playfx
+	[
+		fx/vehicle/headlight_jeep_n
+	]
+}

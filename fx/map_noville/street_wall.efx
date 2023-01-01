@@ -1,0 +1,178 @@
+Particle
+{
+	name				smoke_linger_mist_bottom
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				5 8
+
+	life				6000 7500
+
+	delay				800 1200
+
+	cullrange			2500
+
+	origin				-100 -9 -9 -50 9 9
+
+	rotationDelta		-2 2
+
+	velocity			-9 -38 -38 25 38 38
+
+	gravity				0 10
+
+	rgb
+	{
+		start			0.5451 0.4784 0.3804
+		end				0.5412 0.5373 0.4902
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.8
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				475 525
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+		smoke/smk_p_topsm_wht_a
+		smoke/smk_p_topsm_wht_b
+		smoke/smk_p_topsm_wht_c
+	]
+}
+
+Particle
+{
+	name				gib_chunk
+
+	flags				usePhysics
+
+	spawnFlags			absoluteVel
+
+	count				30
+
+	life				500 2000
+
+	delay				0 50
+
+	cullrange			1000
+
+	bounce				0.25 0.5
+
+	origin				-50 -12 -100 -100 12 100
+
+	rotation			0 360
+
+	rotationDelta		-45 45
+
+	velocity			0 -275 75 500 275 450
+
+	gravity				-800 -500
+
+	rgb
+	{
+		start			0.498 0.498 0.498
+	}
+
+	size
+	{
+		start			0.5 10
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_concrete_a
+		debree/debree_gib_concrete_b
+	]
+}
+
+Particle
+{
+	name				gm_smoke_shockwave_initial
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			orgOnCylinder
+
+	count				5 6
+
+	life				1500 2000
+
+	delay				1500
+
+	cullrange			2000
+
+	origin				-100 0 0 -50 0 0
+
+	radius				36 100
+
+	height				1 30
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			0 -75 -75 25 75 75
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.5412 0.5373 0.4902
+		end				0.2824 0.3098 0.2902
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			35 75
+		end				250 425
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+FxRunner
+{
+	origin				-150 0 0
+
+	playfx
+	[
+		fx/weapon/explosions/artillery_concrete
+	]
+}

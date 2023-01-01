@@ -1,0 +1,57 @@
+Particle
+{
+	spawnFlags			cheapOrgCalc
+
+	nonUniformScale		1
+
+	count				0
+
+	life				100 150
+
+	delay				0 500
+
+	origin				-400 -400 0 400 400 100
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				500 600
+		flags			linear
+	}
+
+	size2
+	{
+		start			100
+		end				500 800
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/glow_yellow_a
+		misc/glow_yellow_b
+	]
+}
+
+FxRunner
+{
+	count				1 2
+
+	origin				0 0 500
+
+	playfx
+	[
+		/fx/map_trenches/mortar_mz_nest
+	]
+}

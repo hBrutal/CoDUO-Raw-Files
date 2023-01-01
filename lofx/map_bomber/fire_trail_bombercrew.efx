@@ -1,0 +1,113 @@
+Particle
+{
+	name				fire
+
+	flags				setShaderTime relative
+
+	spawnFlags			cheapOrgCalc absoluteVel evenDistribution rgbComponentInterpolation
+
+	count				0 1
+
+	life				75 125
+
+	delay				0 100
+
+	cullrange			10000
+
+	origin				-5 -5 -75 5 5 -120
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			-50 -15 -15 -50 15 15
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 60
+		end				35 60
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				smoke_lit
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			absoluteVel evenDistribution rgbComponentInterpolation
+
+	count				0 1
+
+	life				500 750
+
+	cullrange			18000
+
+	origin				0 0 -25 0 0 -100
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			-10 10
+
+	rotationDelta		-5 5
+
+	velocity			-2000 -15 -15 -2000 15 15
+
+	acceleration		-25 -25 -25 25 25 25
+
+	rgb
+	{
+		parm			15 25
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			40 50
+		end				159 250
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}

@@ -1,0 +1,45 @@
+FxRunner
+{
+	name				d_doorplug
+
+	count				0 1
+
+	cullrange			2500
+
+	origin				0 440 -30 0 440 -50
+
+	playfx
+	[
+		fx/map_foy/nests/d_doorplug
+	]
+}
+
+FxRunner
+{
+	name				b_doorplug
+
+	count				0 1
+
+	cullrange			2500
+
+	origin				0 185 140 0 195 160
+
+	playfx
+	[
+		fx/map_foy/nests/b_doorplug
+	]
+}
+
+FxRunner
+{
+	name				roomfull_3
+
+	count				0 1
+
+	cullrange			2500
+
+	playfx
+	[
+		fx/map_foy/nests/room3full
+	]
+}

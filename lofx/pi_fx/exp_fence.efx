@@ -1,0 +1,41 @@
+Particle
+{
+	flags				usePhysics useAlpha
+
+	spawnFlags			absoluteVel axisFromSphere
+
+	count 1 2
+
+	life				1.5e+004 2e+004
+
+	origin				0 -50 0 0 50 0
+
+	radius				15 20
+
+	rotationDelta		-120 120
+
+	velocity			-50 0 150 50 0 300
+
+	velocityClamp		0 0 0 0 0 20
+
+	gravity				-200
+
+	alpha
+	{
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			20
+		end				20
+	}
+
+	shaders
+	[
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_a
+	]
+}

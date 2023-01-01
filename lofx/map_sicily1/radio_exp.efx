@@ -1,0 +1,135 @@
+Particle
+{
+	name				spark_center
+
+	spawnFlags			orgOnSphere
+
+	life				100 200
+
+	cullrange			2000
+
+	origin				-2 -2 -2 2 2 2
+
+	radius				1 12
+
+	height				1 12
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -15 -15 15 15 15
+
+	rgb
+	{
+		start			1 0.8784 0.7686
+		end				1 0.502 0
+		parm			75
+		flags			nonlinear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			90
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			0
+		end				15 25
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_static_a
+		fire/spark_static_a
+		fire/spark_static_a
+	]
+}
+
+Particle
+{
+	name				smoke_blast_verticle
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel orgOnSphere axisFromSphere
+
+	life				3500 4000
+
+	cullrange			4000
+
+	origin				0 0 0 25 0 0
+
+	radius				1 36
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rotationClamp		10
+
+	velocity			0 -10 -10 25 10 10
+
+	rgb
+	{
+		start			0.6902 0.6902 0.6902
+		end				0.4784 0.5098 0.5137
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.1 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			35 45
+		end				75 95
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	life				150 250
+
+	cullrange			32000
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			35 45
+		end				65 75
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}

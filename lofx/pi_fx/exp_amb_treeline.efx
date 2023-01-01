@@ -1,0 +1,187 @@
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			oppositeRotation orgOnCylinder axisFromSphere
+
+	count 11 11
+
+	life				9000 1.6e+004
+
+	origin				300 0 0
+
+	radius				150 200
+
+	height				300
+
+	rotation			50 120
+
+	rotationDelta		-6 6
+
+	velocity			20 0 0 40 0 0
+
+	rgb
+	{
+		start			0.4549 0.4353 0.3961
+		end				0.2863 0.1804 0.1804
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			120 190
+		end				200 320
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Emitter
+{
+	name				Plume
+
+	flags				emitFx
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				300 400
+
+	radius				11 40
+
+	velocity			2496 0 0 3000 0 0
+
+	acceleration		0 -1e+004 -1e+004 0 1e+004 1e+004
+
+	gravity				100 -100
+
+	density				8 9
+
+	variance			10 16
+
+	size
+	{
+		start			25 150
+		end				200
+	}
+
+	emitfx
+	[
+		fx/pi_fx/smoke_tree_plume_comp
+	]
+}
+
+Particle
+{
+	name				HiSmoke
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			absoluteVel oppositeRotation orgOnSphere axisFromSphere
+
+	count 4 5
+
+	life				5000 9000
+
+	origin				350 0 0 450 0 0
+
+	radius				200 240
+
+	height				0
+
+	rotation			50 120
+
+	rotationDelta		-6 6
+
+	rotationClamp		-0.5 0.5
+
+	velocity			-60 -60 60 60 60 90
+
+	rgb
+	{
+		start			0.4549 0.4353 0.3961
+		end				0.2863 0.1804 0.1804
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			79 124
+		end				144 230
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Emitter
+{
+	name				Debri
+
+	flags				useModel usePhysics
+
+	spawnFlags			oppositeAccel orgOnCylinder evenDistribution
+
+	count 7 11
+
+	life				1e+004 1.5e+004
+
+	origin				0 0 40 0 0 20
+
+	radius				50 100
+
+	velocity			650 -290 -290 550 290 290
+
+	gravity				-300
+
+	density				20
+
+	variance			4 11
+
+	size
+	{
+		start			4 8
+		end				4 8
+	}
+
+	models
+	[
+		xmodel/m_gib_dirt_a
+		xmodel/m_gib_dirt_b
+		xmodel/m_gib_dirt_c
+	]
+}

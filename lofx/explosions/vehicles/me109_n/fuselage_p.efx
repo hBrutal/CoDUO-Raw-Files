@@ -1,0 +1,51 @@
+Emitter
+{
+	name				M_fuselage
+
+	flags				useModel deathFx emitFx
+
+	spawnFlags			absoluteAccel
+
+	life				500 3000
+
+	angleDelta			-2 -2 -15 2 2 15
+
+	velocity			1250 -100 -100 1750 100 100
+
+	acceleration		-500 0 0
+
+	gravity				-600 -400
+
+	density				200
+
+	size
+	{
+		end				0
+		parm			95
+	}
+
+	models
+	[
+		xmodel/v_ge_air_me-109_fuselage(d)
+	]
+
+	deathfx
+	[
+		fx/map_bomber/exp_1000d_pushed_ns
+	]
+
+	emitfx
+	[
+		fx/map_bomber/fire_trail_100_pushed
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/map_bomber/exp_650d_pushed_ns
+	]
+}

@@ -1,0 +1,486 @@
+Emitter
+{
+	name				M_tail_rwing_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				500 1500
+
+	origin				-699.5 -54.69 42.57
+
+	angle				90 0 0
+
+	angleDelta			-2 -2 -5 2 2 -5
+
+	velocity			-25 1000 -25 25 1000 25
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_tail_rwing(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/tail_rwing_p
+	]
+}
+
+Emitter
+{
+	name				M_tail_lwing_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				500 1500
+
+	origin				-699.5 43.42 42.57
+
+	angle				90 0 0
+
+	angleDelta			-2 -2 -5 2 2 -5
+
+	velocity			-25 1000 -25 25 1000 25
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_tail_lwing(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/tail_lwing_p
+	]
+}
+
+Emitter
+{
+	name				M_tail_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				500 1500
+
+	origin				-638.8 0.322 136.2
+
+	angle				90 0 0
+
+	angleDelta			0 0 -7
+
+	velocity			-100 1000 -100
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_tail(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/tail_p
+	]
+}
+
+Emitter
+{
+	name				M_rwing_hold
+
+	flags				useModel deathFx emitFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				250 750
+
+	origin				-31.86 -264.8 9.536
+
+	angle				90 0 0
+
+	angleDelta			-2 2 -15 2 2 -8
+
+	velocity			100 800 500 100 1200 500
+
+	gravity				-600 -400
+
+	density				200
+
+	models
+	[
+		xmodel/v_us_air_b-17_rwing(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/rwing_p
+	]
+
+	emitfx
+	[
+		fx/map_bomber/smoke_trail_100_pushed
+	]
+}
+
+Emitter
+{
+	name				M_prop_rr_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				250 750
+
+	origin				237.2 -393.5 13.45
+
+	angle				90 0 0
+
+	angleDelta			-10 -10 40 10 10 120
+
+	velocity			100 1200 500 100 1400 600
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_prop_rr(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/prop_rr_p
+	]
+}
+
+Emitter
+{
+	name				M_prop_rl_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				250 750
+
+	origin				268.1 -182.9 13.45
+
+	angle				90 0 0
+
+	angleDelta			-5 -5 40 5 5 120
+
+	velocity			100 1200 500 100 1400 600
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_prop_rl(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/prop_rl_p
+	]
+}
+
+Emitter
+{
+	name				M_prop_lr_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				2250
+
+	origin				268.2 183.1 13.45
+
+	angle				90 0 0
+
+	angleDelta			-2 -2 15 2 2 120
+
+	velocity			-300 1000 100
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_prop_lr(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/prop_lr_p
+	]
+}
+
+Emitter
+{
+	name				M_prop_ll_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				2250
+
+	origin				237.2 393.6 26.65
+
+	angle				90 0 0
+
+	angleDelta			-5 -5 45 5 5 120
+
+	velocity			-500 1000 100 -600 1000 100
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_prop_ll(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/prop_ll_p
+	]
+}
+
+Emitter
+{
+	name				M_lwing_hold
+
+	flags				useModel deathFx emitFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				2500
+
+	origin				-31.86 278.2 9.536
+
+	angle				90 0 0
+
+	angleDelta			0 0 -8
+
+	velocity			-400 1000 100
+
+	gravity				-600 -400
+
+	density				250
+
+	models
+	[
+		xmodel/v_us_air_b-17_lwing(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/lwing_p
+	]
+
+	emitfx
+	[
+		fx/map_bomber/smoke_trail_100_pushed
+	]
+}
+
+Emitter
+{
+	name				M_fuselage_hold
+
+	flags				useModel deathFx emitFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				2500
+
+	angle				90 0 0
+
+	angleDelta			0 0 -10
+
+	velocity			0 1000 0
+
+	gravity				-600 -400
+
+	density				200
+
+	models
+	[
+		xmodel/v_us_air_b-17_fuselage(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/fuselage_p
+	]
+
+	emitfx
+	[
+		fx/map_bomber/fire_trail_100_pushed
+	]
+}
+
+Emitter
+{
+	name				M_eng_rr_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				250 750
+
+	origin				146.6 -393.2 24.3
+
+	angle				90 0 0
+
+	angleDelta			-5 -10 -25 5 10 25
+
+	velocity			100 1200 500 100 1400 500
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_eng_rr(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/eng_rr_p
+	]
+}
+
+Emitter
+{
+	name				M_eng_rl_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				250 750
+
+	origin				176.6 -182.6 10.15
+
+	angle				90 0 0
+
+	angleDelta			-5 -10 -25 5 10 25
+
+	velocity			100 1200 500 100 1400 500
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_eng_rl(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/eng_rl_p
+	]
+}
+
+Emitter
+{
+	name				M_eng_lr_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				2250
+
+	origin				200.5 183.1 10.15
+
+	angle				90 0 0
+
+	angleDelta			-3 -3 -45 3 3 45
+
+	velocity			-350 1000 100
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_eng_lr(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/eng_lr_p
+	]
+}
+
+Emitter
+{
+	name				M_eng_ll_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life				2250
+
+	origin				173.4 393.7 24.3
+
+	angle				90 0 0
+
+	angleDelta			-2 -2 -25 2 2 25
+
+	velocity			-500 1000 100 -600 1000 100
+
+	gravity				-600 -400
+
+	density				150
+
+	models
+	[
+		xmodel/v_us_air_b-17_eng_ll(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/eng_ll_p
+	]
+}
+
+FxRunner
+{
+	name				_FX_callexp_base
+
+	spawnFlags			cheapOrgCalc
+
+	playfx
+	[
+		fx/explosions/vehicles/b17_n/base_exp_p
+	]
+}

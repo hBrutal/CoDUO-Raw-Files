@@ -1,0 +1,11 @@
+FxRunner
+{
+	count				1 2
+
+	origin				500 0 500
+
+	playfx
+	[
+		fx/pi_fx/lightning_sky_base
+	]
+}

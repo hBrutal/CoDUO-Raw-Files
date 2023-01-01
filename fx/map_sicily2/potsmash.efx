@@ -1,0 +1,169 @@
+Particle
+{
+	name				smoke_blast_ring
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel orgOnCylinder axisFromSphere
+
+	count				5
+
+	life				4500 5000
+
+	cullrange			2500
+
+	origin				0 0 0 48 0 0
+
+	radius				1 6
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			45 -10 -10 45 10 10
+
+	acceleration		30 0 0
+
+	rgb
+	{
+		start			0.6627 0.5294 0.4627
+		end				0.4353 0.4039 0.3176
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			15 25
+		end				45 55
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_blast_verticle
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel orgOnSphere axisFromSphere
+
+	count				5
+
+	life				3500 4000
+
+	cullrange			2500
+
+	origin				0 0 0 48 0 0
+
+	radius				1 36
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rotationClamp		10
+
+	velocity			0 -10 -10 25 10 10
+
+	rgb
+	{
+		start			0.4863 0.451 0.3961
+		end				0.4353 0.4039 0.3176
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.1 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			35 45
+		end				75 95
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				gibs
+
+	flags				usePhysics
+
+	count				10
+
+	life				1000 1500
+
+	delay				0 100
+
+	cullrange			2500
+
+	bounce				0.25 0.75
+
+	origin				0 -12 -12 24 12 12
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rotationAccel		-15 15
+
+	velocity			50 -200 -200 400 200 200
+
+	gravity				-600
+
+	rgb
+	{
+		start			0.6627 0.5294 0.4627
+	}
+
+	size
+	{
+		start			1 4
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_plaster_a
+		debree/debree_gib_plaster_b
+	]
+}
+
+Sound
+{
+	name				sound
+
+	sounds
+	[
+		impact_flower_pot
+	]
+}

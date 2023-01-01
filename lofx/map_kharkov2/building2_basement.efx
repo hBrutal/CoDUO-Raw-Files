@@ -1,0 +1,280 @@
+Particle
+{
+	name				dust_mist
+
+	flags				clampVelocityX clampVelocityY clampRotation useAlpha
+
+	spawnFlags			cheapOrgCalc oppositeAccel oppositeRotation evenDistribution
+
+	count 5 6
+
+	life				3000 4000
+
+	delay				0 5000
+
+	cullrange			1500
+
+	rotation			0 360
+
+	rotationDelta		-40 40
+
+	rotationAccel		15
+
+	rotationClamp		2
+
+	velocity			350 -150 0 750 150 0
+
+	velocityClamp		25 0 0 50 0 0
+
+	acceleration		200 -5 -5 250 5 5
+
+	gravity				-15 5
+
+	rgb
+	{
+		start			0.4784 0.5098 0.5137
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Emitter
+{
+	name				model_dirt
+
+	flags				useModel usePhysics
+
+	count 2 2
+
+	life				500 3000
+
+	delay				0 2000
+
+	cullrange			2000
+
+	bounce				0.15 0.75
+
+	angle				0 0 0 180 180 180
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			400 -250 150 900 250 450
+
+	gravity				-600 -400
+
+	size
+	{
+		start			3 24
+		end				0
+		parm			96
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_dirt_a
+		xmodel/m_gib_dirt_b
+		xmodel/m_gib_dirt_c
+	]
+}
+
+Particle
+{
+	name				dust_lit
+
+	flags				clampVelocityX clampVelocityY useAlpha
+
+	spawnFlags			cheapOrgCalc oppositeAccel evenDistribution
+
+	count 5 6
+
+	life				2500 3250
+
+	delay				0 3000
+
+	cullrange			8000
+
+	rotation			-10 10
+
+	rotationDelta		-3 3
+
+	rotationClamp		2
+
+	velocity			350 -150 0 700 150 0
+
+	velocityClamp		25 0 0 50 0 0
+
+	acceleration		250 -5 -5 300 5 5
+
+	gravity				-25 5
+
+	rgb
+	{
+		start			0.3922 0.4 0.3569
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			150
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				gibs_P
+
+	flags				usePhysics useAlpha
+
+	spawnFlags			cheapOrgCalc oppositeAccel
+
+	count 2 3
+
+	life				500 3000
+
+	delay				0 3000
+
+	cullrange			2000
+
+	bounce				0.25 0.75
+
+	rotation			0 360
+
+	rotationDelta		-40 40
+
+	rotationAccel		15
+
+	rotationClamp		2
+
+	velocity			200 -250 100 900 250 300
+
+	gravity				-600 -400
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+	}
+
+	size
+	{
+		start			0.5 3
+		end				0
+		parm			96
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_brick_a
+		debree/debree_gib_brick_a
+		debree/debree_gib_concrete_a
+		debree/debree_gib_concrete_a
+		debree/debree_gib_dirt_a
+		debree/debree_gib_dirt_a
+		debree/debree_gib_plaster_a
+		debree/debree_gib_plaster_a
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_a
+	]
+}
+
+Particle
+{
+	name				embers
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	count 1 2
+
+	life				500 3000
+
+	delay				0 3000
+
+	cullrange			1500
+
+	rotation			0 360
+
+	rotationDelta		-40 40
+
+	rotationAccel		15
+
+	rotationClamp		2
+
+	velocity			200 -250 25 900 250 300
+
+	acceleration		-10 -10 -10 10 10 10
+
+	rgb
+	{
+		end				1 0.502 0
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+	}
+
+	size
+	{
+		start			1 3
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		misc/glow_red_a
+		misc/glow_red_b
+	]
+}

@@ -1,0 +1,100 @@
+Particle
+{
+	name				smoke_lit
+
+	flags				useAlpha
+
+	life				3000 4000
+
+	cullrange			8000
+
+	rotation			15 -15
+
+	rotationDelta		2 -2
+
+	velocity			0 -12 -12 60 12 12
+
+	acceleration		-5 0 -2 0 0 0
+
+	gravity				5 15
+
+	rgb
+	{
+		end				0.6627 0.6863 0.7059
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 125
+		end				175 225
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_a
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_mist
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				5000 6000
+
+	cullrange			5000
+
+	rotation			0 360
+
+	rotationDelta		10 -10
+
+	velocity			0 -12 -12 60 12 12
+
+	acceleration		-5 0 -2 0 0 0
+
+	gravity				5 15
+
+	rgb
+	{
+		start			0.7529 0.7804 0.7961
+		end				0.4706 0.5255 0.5608
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			125 75
+		end				175 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

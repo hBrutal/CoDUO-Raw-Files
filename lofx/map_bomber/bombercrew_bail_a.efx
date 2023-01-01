@@ -1,0 +1,83 @@
+Emitter
+{
+	name				normal
+
+	flags				useModel
+
+	spawnFlags			absoluteVel absoluteAccel evenDistribution
+
+	count				3
+
+	life				4000
+
+	delay				0 1000
+
+	cullrange			25000
+
+	angle				90 0 0
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			-100 200 0
+
+	acceleration		-50 -50 50 50 50 0
+
+	gravity				-400
+
+	density				25
+
+	size
+	{
+		end				0
+		parm			50
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_bombercrew_a
+		xmodel/m_gib_bombercrew_b
+		xmodel/m_gib_bombercrew_c
+	]
+}
+
+Emitter
+{
+	name				onfire
+
+	flags				useModel
+
+	spawnFlags			absoluteVel absoluteAccel
+
+	life				4000
+
+	delay				1250 1500
+
+	cullrange			15000
+
+	angle				90 0 0
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			-100 200 0
+
+	acceleration		-50 -50 50 50 50 0
+
+	gravity				-400
+
+	density				25
+
+	size
+	{
+		end				0
+		parm			50
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_bombercrew_a
+		xmodel/m_gib_bombercrew_b
+		xmodel/m_gib_bombercrew_c
+	]
+}

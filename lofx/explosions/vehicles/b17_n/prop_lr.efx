@@ -1,0 +1,21 @@
+Emitter
+{
+	name				M_prop_lr_hold
+
+	flags				useModel
+
+	life				1e+004
+
+	angleDelta			-10 -10 15 10 10 120
+
+	velocity			400 -200 -200 800 200 200
+
+	gravity				-600 -400
+
+	density				50
+
+	models
+	[
+		xmodel/v_us_air_b-17_prop_lr(d)
+	]
+}

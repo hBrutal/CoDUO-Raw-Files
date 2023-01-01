@@ -1,0 +1,46 @@
+Particle
+{
+	name				spark_center
+
+	life				100 200
+
+	cullrange			2000
+
+	origin				-2 -2 -2 2 2 2
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -15 -15 15 15 15
+
+	rgb
+	{
+		start			1 0.8784 0.7686
+		end				1 0.502 0
+		parm			75
+		flags			nonlinear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			90
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			0
+		end				20 40
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_static_a
+		fire/spark_static_a
+		fire/spark_static_a
+	]
+}

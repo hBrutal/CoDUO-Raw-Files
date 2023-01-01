@@ -1,0 +1,203 @@
+Particle
+{
+	name				smoke_blast_ring
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel orgOnCylinder axisFromSphere
+
+	count				5
+
+	life				4500 5000
+
+	cullrange			2000
+
+	origin				-12 -12 -12 12 12 12
+
+	radius				1 6
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			45 -10 -10 45 10 10
+
+	acceleration		30 0 0
+
+	rgb
+	{
+		start			0.4824 0.5412 0.4588
+		end				0.5843 0.6118 0.6353
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			15 25
+		end				45 55
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_blast_verticle
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel orgOnSphere axisFromSphere
+
+	count				5
+
+	life				3500 4000
+
+	cullrange			3000
+
+	origin				0 0 0 12 0 0
+
+	radius				1 12
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rotationClamp		10
+
+	velocity			0 -10 -10 25 10 10
+
+	rgb
+	{
+		start			0.4902 0.5176 0.4824 0.5098 0.5216 0.4784
+		end				0.4706 0.5255 0.5608
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.1 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				55 75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	flags				usePhysics
+
+	count				10
+
+	life				1000 1500
+
+	delay				0 100
+
+	cullrange			2000
+
+	bounce				0.25 0.75
+
+	origin				0 -12 -12 12 12 12
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rotationAccel		-15 15
+
+	velocity			50 -100 -100 200 100 100
+
+	gravity				-600
+
+	rgb
+	{
+		start			0.6078 0.8824 0.5922
+	}
+
+	size
+	{
+		start			0.5 6
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_b
+	]
+}
+
+Particle
+{
+	flags				usePhysics
+
+	count				10
+
+	life				1000 1500
+
+	delay				0 100
+
+	cullrange			1000
+
+	bounce				0.25 0.75
+
+	origin				0 -12 -12 12 12 12
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rotationAccel		-15 15
+
+	velocity			50 -100 -100 200 100 100
+
+	gravity				-600
+
+	rgb
+	{
+		start			0.6078 0.8824 0.5922
+	}
+
+	size
+	{
+		start			0.5 6
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_b
+	]
+}

@@ -1,0 +1,53 @@
+FxRunner
+{
+	name				a
+
+	origin				0 50 175 0 125 50
+
+	playfx
+	[
+		fx/map_foy/nests/all_stage1
+	]
+}
+
+FxRunner
+{
+	name				b
+
+	count				1 2
+
+	origin				0 -125 180 0 -50 -75
+
+	playfx
+	[
+		fx/map_foy/nests/all_stage1
+	]
+}
+
+FxRunner
+{
+	name				REFF_a_fullextents
+
+	count				0
+
+	origin				0 0 232 0 176 0
+
+	playfx
+	[
+		fx/map_foy/nests/all_stage1
+	]
+}
+
+FxRunner
+{
+	name				REFF_ b_fullextents
+
+	count				0
+
+	origin				0 -176 232 0 0 -132
+
+	playfx
+	[
+		fx/map_foy/nests/all_stage1
+	]
+}

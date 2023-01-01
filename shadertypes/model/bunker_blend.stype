@@ -1,0 +1,12 @@
+{
+	surfaceparm gravel
+	sort outerBlend
+	nomipmaps
+	nopicmip
+	{
+		map $texturename
+//		rgbGen lightingDiffuse
+		blendfunc blend
+		depthWrite
+	}
+}

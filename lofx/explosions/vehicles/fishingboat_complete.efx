@@ -1,0 +1,929 @@
+Particle
+{
+	name				1_fire_exp_core
+
+	life				90 225
+
+	delay				0 250
+
+	cullrange			32000
+
+	origin				0 -150 -150 50 150 150
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -110 -110 110 -110 -110
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			200 250
+		end				1300 1600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}
+
+Particle
+{
+	name				1_smoke_uplift
+
+	flags				useAlpha
+
+	count				2
+
+	life				3000 4000
+
+	delay				0 500
+
+	cullrange			32000
+
+	origin				0 -50 -100 250 50 100
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			0 -50 -50 100 50 50
+
+	gravity				25 100
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				300 550
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				1_smoke_shock_out
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				5475 5575
+
+	cullrange			8000
+
+	origin				0 -350 -350 0 350 350
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			50 -50 -50 50 50 50
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			50 150
+		end				350 450
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				1_fire_intial_burn
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				350 450
+
+	delay				0 300
+
+	cullrange			8000
+
+	origin				25 -150 -150 50 150 150
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -150 -150 550 150 150
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				550 600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Tail
+{
+	name				1_spark_shower
+
+	life				250 750
+
+	delay				0 250
+
+	cullrange			4000
+
+	origin				0 -50 -50 50 50 50
+
+	velocity			0 -1400 -1400 1400 1400 1400
+
+	gravity				-400 -200
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				100
+		flags			linear
+	}
+
+	length
+	{
+		start			125 100
+		end				200 400
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/spark_shower_a
+		fire/spark_shower_a
+		fire/spark_shower_a
+	]
+}
+
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	life				400 500
+
+	cullrange			2000
+
+	origin				50 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -1800 -1800 200 1800 1800
+
+	rgb
+	{
+		start			0.7529 0.7804 0.7961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			200
+		end				400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+OrientedParticle
+{
+	name				fire_ring
+
+	life				250
+
+	delay				0 50
+
+	cullrange			4000
+
+	origin				50 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		end				1250 1500
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ring_org_a
+		fire/fire_ring_org_a
+	]
+}
+
+Particle
+{
+	name				smoke_trans
+
+	flags				useAlpha
+
+	life				350 550
+
+	delay				0 350
+
+	cullrange			3000
+
+	origin				25 -150 -150 150 150 150
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -150 -150 250 150 150
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				450 500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+		smoke/smk_p_out_trans_a
+	]
+}
+
+Particle
+{
+	name				mist_shockwave
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ clampRotation useAlpha
+
+	spawnFlags			cheapOrgCalc oppositeAccel oppositeRotation orgOnCylinder axisFromSphere evenDistribution
+
+	life				1000 1250
+
+	delay				25
+
+	cullrange			4000
+
+	radius				1 25
+
+	height				0
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	rotationAccel		10
+
+	rotationClamp		1
+
+	velocity			1200 0 0
+
+	acceleration		875 0 0
+
+	gravity				15 50
+
+	rgb
+	{
+		start			0.7765 0.8275 0.8902
+		end				0.902 0.9843 1
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				850
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Tail
+{
+	name				water_eject_spray
+
+	flags				useAlpha
+
+	count				2
+
+	life				500 600
+
+	delay				100
+
+	cullrange			4000
+
+	origin				0 -50 -50 50 50 50
+
+	velocity			1200 -400 -400 2500 400 400
+
+	velocityClamp		200 0 0
+
+	acceleration		500 0 0
+
+	rgb
+	{
+		end				0.7294 0.7412 0.7804
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				200 350
+		parm			0.15
+		flags			linear
+	}
+
+	length
+	{
+		start			200
+		end				1200 1050
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+	]
+}
+
+OrientedParticle
+{
+	name				foam_initial
+
+	life				5000 6000
+
+	cullrange			3000
+
+	origin				0 -25 -25 0 25 25
+
+	rotation			0 360
+
+	rotationDelta		-4 4
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.15 0.35
+		flags			linear
+	}
+
+	size
+	{
+		start			250 325
+		end				550 600
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/surface_froth
+	]
+}
+
+FxRunner
+{
+	name				_call_globals
+
+	cullrange			8000
+
+	playfx
+	[
+		fx/weapon/explosions/_global_artillery
+	]
+}
+
+Tail
+{
+	name				water_eject_spray_base
+
+	flags				useAlpha
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count				2
+
+	life				750 1000
+
+	delay				0 300
+
+	cullrange			4000
+
+	origin				50 -100 -100 50 100 100
+
+	velocity			325 -300 -300 600 300 300
+
+	velocityClamp		200 0 0
+
+	rgb
+	{
+		end				0.7294 0.7412 0.7804
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				400 550
+		flags			linear
+	}
+
+	length
+	{
+		start			200
+		end				550
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+		debree/debree_t_water_a
+	]
+}
+
+Particle
+{
+	name				2_fire_exp_core
+
+	life				90 225
+
+	delay				750 800
+
+	cullrange			32000
+
+	origin				0 -150 -150 50 150 150
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -110 -110 110 -110 -110
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			200 250
+		end				1300 1600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_a
+		fire/exp_gen_a
+		fire/exp_gen_c
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}
+
+Particle
+{
+	name				2_smoke_uplift
+
+	flags				useAlpha
+
+	count				2
+
+	life				3000 4000
+
+	delay				750 1250
+
+	cullrange			32000
+
+	origin				0 -50 -100 250 50 100
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			0 -50 -50 100 50 50
+
+	gravity				25 100
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				300 550
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				2_smoke_shock_out
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				5475 5575
+
+	delay				750 800
+
+	cullrange			6000
+
+	origin				0 -350 -350 0 350 350
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			50 -50 -50 50 50 50
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			50 150
+		end				350 450
+		flags			linear
+	}
+
+	length
+	{
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				2_fire_intial_burn
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				350 450
+
+	delay				750 900
+
+	cullrange			8000
+
+	origin				25 -150 -150 50 150 150
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -150 -150 550 150 150
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 100
+		end				550 600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_a
+		fire/fire_ball_a
+	]
+}
+
+Particle
+{
+	name				afterfire_stationary
+
+	spawnFlags			evenDistribution affectedByWind
+
+	count				62
+
+	life				750 1750
+
+	delay				0 6e+004
+
+	cullrange			8000
+
+	origin				0 -25 -25 25 25 25
+
+	wind				50
+
+	rotation			5 -5
+
+	rotationDelta		2 -2
+
+	velocity			75 -10 -10 150 10 10
+
+	rgb
+	{
+		end				0.7176 0.5255 0.3176
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				175 250
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_a
+		fire/flame_lick_c
+		fire/flame_lick_c
+		fire/flame_lick_f
+		fire/flame_lick_f
+	]
+}
+
+Particle
+{
+	name				aftersmoke
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution affectedByWind
+
+	count				45
+
+	life				4000 6000
+
+	delay				0 7e+004
+
+	cullrange			8000
+
+	origin				0 -50 -50 25 50 50
+
+	wind				50
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			125 -20 -20 150 20 20
+
+	gravity				0 15
+
+	rgb
+	{
+		end				0.3961 0.3882 0.4039
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 100
+		end				400 450
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}

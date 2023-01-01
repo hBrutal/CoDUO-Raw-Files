@@ -1,0 +1,310 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           TRENCHES1
+LANG_ENGLISH        "Get into the Bunker"
+
+REFERENCE           TRENCHES2
+LANG_ENGLISH        "Defend Right Flank"
+
+REFERENCE           TRENCHES3
+LANG_ENGLISH        "Flush out Left Flank"
+
+REFERENCE           TRENCHES4
+LANG_ENGLISH        "Incoming Elefant Tanks"
+
+REFERENCE           TRENCHES5
+LANG_ENGLISH        "Head Back to Village"
+
+REFERENCE           TRENCHES6
+LANG_ENGLISH        "Eliminate Enemies in Village"
+
+REFERENCE           BASTOGNE1_1
+LANG_ENGLISH        "En route to Company HQ"
+
+REFERENCE           BASTOGNE1_2
+LANG_ENGLISH        "Following Pvt. Anderson to your foxhole"
+
+REFERENCE           BASTOGNE1_3
+LANG_ENGLISH        "Holding the line (right)"
+
+REFERENCE           BASTOGNE1_4
+LANG_ENGLISH        "Holding the line (left)"
+
+REFERENCE           BASTOGNE1_5
+LANG_ENGLISH        "Attacking the two MG34 gunners"
+
+REFERENCE           BASTOGNE1_6
+LANG_ENGLISH        "Defending from tanks"
+
+REFERENCE           KHARKOV2_1
+LANG_ENGLISH        "Found Antonov"
+
+REFERENCE           KHARKOV2_2
+LANG_ENGLISH        "Reached Miesha"
+
+REFERENCE           KHARKOV2_3
+LANG_ENGLISH        "Engineers Blew up Trolleys."
+
+REFERENCE           KHARKOV2_4
+LANG_ENGLISH        "Destroyed He111s"
+
+REFERENCE           KHARKOV2_5
+LANG_ENGLISH        "Enroute to Trainyard"
+
+REFERENCE           KHARKOV1_1
+LANG_ENGLISH        "Advancing into City"
+
+REFERENCE           KHARKOV1_2
+LANG_ENGLISH        "Destroyed 2nd Anti-Tank Location"
+
+REFERENCE           KHARKOV1_3
+LANG_ENGLISH        "Advancing into City through Buildings."
+
+REFERENCE           KHARKOV1_4
+LANG_ENGLISH        "Clearing out Buildings"
+
+REFERENCE           KHARKOV1_5
+LANG_ENGLISH        "Entering Last Courtyard"
+
+REFERENCE           SICILY1_1
+LANG_ENGLISH        "Approaching the dock house"
+
+REFERENCE           SICILY1_2
+LANG_ENGLISH        "Approaching the Lighthouse"
+
+REFERENCE           SICILY1_3
+LANG_ENGLISH        "En route up the cliffside path"
+
+REFERENCE           SICILY1_4
+LANG_ENGLISH        "Approaching the breach in the fort wall"
+
+REFERENCE           SICILY1_5
+LANG_ENGLISH        "Courtyard battle"
+
+REFERENCE           SICILY1_6
+LANG_ENGLISH        "Entering the motorpool"
+
+REFERENCE           SICILY1_7
+LANG_ENGLISH        "Going down!"
+
+REFERENCE           SICILY1_8
+LANG_ENGLISH        "Gun 1 down"
+
+REFERENCE           SICILY1_10
+LANG_ENGLISH        "All guns destroyed!"
+
+REFERENCE           SICILY1_9
+LANG_ENGLISH        "Gun 2 down"
+
+REFERENCE           SICILY1_11
+LANG_ENGLISH        "On the way back to the motorpool"
+
+REFERENCE           BASTOGNE2_1
+LANG_ENGLISH        "Leaving for the mission."
+
+REFERENCE           BASTOGNE2_2
+LANG_ENGLISH        "Entering the forest."
+
+REFERENCE           BASTOGNE2_3
+LANG_ENGLISH        "Forest has been cleared"
+
+REFERENCE           BASTOGNE2_4
+LANG_ENGLISH        "Clear the MG42 nest (right flank)"
+
+REFERENCE           BASTOGNE2_5
+LANG_ENGLISH        "Spiking the guns."
+
+REFERENCE           BASTOGNE2_6
+LANG_ENGLISH        "The interrogation"
+
+REFERENCE           BASTOGNE2_7
+LANG_ENGLISH        "Rescuing the missing patrol."
+
+REFERENCE           BASTOGNE2_8
+LANG_ENGLISH        "En route to the crossroads."
+
+REFERENCE           BASTOGNE2_9
+LANG_ENGLISH        "Arriving at the Crossroads"
+
+REFERENCE           BASTOGNE2_10
+LANG_ENGLISH        "Crossroads secured"
+
+REFERENCE           FOY_1
+LANG_ENGLISH        "Assaulting the town."
+
+REFERENCE           FOY_2
+LANG_ENGLISH        "Kill the spotter."
+
+REFERENCE           FOY_3
+LANG_ENGLISH        "88 has been destroyed."
+
+REFERENCE           FOY_4
+LANG_ENGLISH        "Cleared first house."
+
+REFERENCE           FOY_5
+LANG_ENGLISH        "Clearing second house."
+
+REFERENCE           FOY_6
+LANG_ENGLISH        "Escaped burning house."
+
+REFERENCE           FOY_7
+LANG_ENGLISH        "Destroyed tiger tank."
+
+REFERENCE           FOY_8
+LANG_ENGLISH        "En route to the church."
+
+REFERENCE           FOY_9
+LANG_ENGLISH        "Captured the church."
+
+REFERENCE           FOY_10
+LANG_ENGLISH        "Kill german anti-tank troops."
+
+REFERENCE           FOY_11
+LANG_ENGLISH        "Moving up with the tanks."
+
+REFERENCE           FOY_12
+LANG_ENGLISH        "Assault across the bridge."
+
+REFERENCE           FOY_13
+LANG_ENGLISH        "Destroyed Hidden Tiger."
+
+REFERENCE           TRAINBRIDGE_1
+LANG_ENGLISH        "Rescued by Major Ingram."
+
+REFERENCE           TRAINBRIDGE_2
+LANG_ENGLISH        "Leaving the road."
+
+REFERENCE           TRAINBRIDGE_3
+LANG_ENGLISH        "Approaching the farm house."
+
+REFERENCE           TRAINBRIDGE_4
+LANG_ENGLISH        "Farmhouse has been cleared."
+
+REFERENCE           TRAINBRIDGE_5
+LANG_ENGLISH        "The barn has been cleared."
+
+REFERENCE           TRAINBRIDGE_6
+LANG_ENGLISH        "After woods."
+
+REFERENCE           TRAINBRIDGE_7
+LANG_ENGLISH        "Going to plant charges on the bridge."
+
+REFERENCE           TRAINBRIDGE_8
+LANG_ENGLISH        "All charges have been planted."
+
+REFERENCE           TRAINBRIDGE_9
+LANG_ENGLISH        "Waiting for the train to come."
+
+REFERENCE           TRAINBRIDGE_10
+LANG_ENGLISH        "Bridge has been blown."
+
+REFERENCE           TRAINBRIDGE_11
+LANG_ENGLISH        "Escaping through the woods."
+
+REFERENCE           TRAINBRIDGE_12
+LANG_ENGLISH        "Returning to the farmhouse."
+
+REFERENCE           TRAINBRIDGE_13
+LANG_ENGLISH        "In the truck."
+
+REFERENCE           TRAINBRIDGE_14
+LANG_ENGLISH        "Hiding from German trucks."
+
+REFERENCE           NOVILLE_1
+LANG_ENGLISH        "Off tank."
+
+REFERENCE           NOVILLE_2
+LANG_ENGLISH        "Artillery."
+
+REFERENCE           NOVILLE_3
+LANG_ENGLISH        "Before basement."
+
+REFERENCE           NOVILLE_4
+LANG_ENGLISH        "Basement blown."
+
+REFERENCE           NOVILLE_5
+LANG_ENGLISH        "Before street."
+
+REFERENCE           NOVILLE_6
+LANG_ENGLISH        "At chateau."
+
+REFERENCE           NOVILLE_7
+LANG_ENGLISH        "Protect South flank."
+
+REFERENCE           NOVILLE_8
+LANG_ENGLISH        "Protect North flank."
+
+REFERENCE           NOVILLE_9
+LANG_ENGLISH        "End protect North."
+
+REFERENCE           NOVILLE_10
+LANG_ENGLISH        "Start protect third squad."
+
+REFERENCE           NOVILLE_11
+LANG_ENGLISH        "Protect Moody."
+
+REFERENCE           NOVILLE_12
+LANG_ENGLISH        "End protect Moody."
+
+REFERENCE           NOVILLE_13
+LANG_ENGLISH        "Start final defend."
+
+REFERENCE           NOVILLE_14
+LANG_ENGLISH        "Finale."
+
+REFERENCE           BOMBER_1
+LANG_ENGLISH        "Flak over the coast"
+
+REFERENCE           BOMBER_2
+LANG_ENGLISH        "Bandits, 11 o'clock!"
+
+REFERENCE           BOMBER_3
+LANG_ENGLISH        "Watch out for flak!"
+
+REFERENCE           BOMBER_4
+LANG_ENGLISH        "The Whole Bloody Luftwaffe"
+
+REFERENCE           BOMBER_5
+LANG_ENGLISH        "Bombing run"
+
+REFERENCE           BASTOGNE2_11
+LANG_ENGLISH        "Convoy Ambush successful"
+
+REFERENCE           SICILY2_1
+LANG_ENGLISH        "Get to the shore."
+
+REFERENCE           SICILY2_2
+LANG_ENGLISH        "Get to the shore."
+
+REFERENCE           SICILY2_3
+LANG_ENGLISH        "Get to the shore."
+
+REFERENCE           SICILY2_4
+LANG_ENGLISH        "Follow Ingram."
+
+REFERENCE           SICILY2_5
+LANG_ENGLISH        "Follow Ingram."
+
+REFERENCE           SICILY2_6
+LANG_ENGLISH        "Board the captured German PT boat."
+
+REFERENCE           SICILY2_7
+LANG_ENGLISH        "Destroy all German PT boats."
+
+
+ENDMARKER
+
+

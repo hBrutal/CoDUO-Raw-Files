@@ -1,0 +1,45 @@
+Emitter
+{
+	name				M_tail
+
+	flags				useModel deathFx emitFx
+
+	spawnFlags			absoluteAccel
+
+	life				500 3000
+
+	angleDelta			-15 -2 -2 15 2 2
+
+	velocity			400 -100 -100 1750 100 100
+
+	acceleration		-500 0 0
+
+	gravity				-600 -400
+
+	density				250
+
+	models
+	[
+		xmodel/v_ge_air_me-109_tail(d)
+	]
+
+	deathfx
+	[
+		fx/map_bomber/exp_650d_pushed_ns
+	]
+
+	emitfx
+	[
+		fx/map_bomber/smoke_trail_50_pushed
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/map_bomber/exp_400d_pushed_ns
+	]
+}

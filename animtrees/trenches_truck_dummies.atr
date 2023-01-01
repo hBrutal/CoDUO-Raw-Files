@@ -1,0 +1,38 @@
+trenches_climbingontruck1
+trenches_climbingontruck2
+trenches_climbingontruck3
+trenches_climbingontruck4
+trenches_climbingontruck5
+trenches_climbingontruck6
+trenches_climbingontruck7
+trenches_climbingontruck8
+
+stand_alert_1
+stand_alert_2
+stand_alert_3
+
+// Explosion Deaths
+c_death_explosion_back13_down56units
+c_death_explosion_forward13_down56units
+c_death_explosion_left11_down56units
+c_death_explosion_right13_down56units
+c_death_explosion_up10_down56units
+
+
+walk_run : loopsync
+{
+	// Runs in combat - pick one of these for each guy.
+	sprint1_loop
+	stand_shoot_run_forward
+	crouchrun_loop_forward_1
+}
+
+c_br_sicily1_climbtruck_guy1
+c_br_sicily1_climbtruck_guy4
+c_br_sicily1_climbtruck_guy5
+c_br_sicily1_climbtruck_guy6
+
+c_br_sicily1_idletruck_guy1
+c_br_sicily1_idletruck_guy4
+c_br_sicily1_idletruck_guy5
+c_br_sicily1_idletruck_guy6

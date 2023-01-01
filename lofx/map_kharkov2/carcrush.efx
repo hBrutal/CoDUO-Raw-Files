@@ -1,0 +1,397 @@
+Particle
+{
+	name				smoke_plume
+
+	flags				clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count 1 1
+
+	life				750 1000
+
+	delay				0 200
+
+	cullrange			1500
+
+	origin				0 -6 -6 12 6 6
+
+	rotation			-10 10
+
+	rotationDelta		-5 5
+
+	velocity			-10 -100 -300 10 100 -200
+
+	velocityClamp		0 0 -25 0 0 -50
+
+	acceleration		0 0 100
+
+	gravity				5 25
+
+	rgb
+	{
+		start			0.4706 0.5255 0.5608
+		end				0.5098 0.5216 0.4784
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.7
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				125 225
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_linger
+
+	flags				useAlpha
+
+	count 1 1
+
+	life				2000 3000
+
+	delay				25
+
+	cullrange			2000
+
+	origin				0 -25 -25 25 25 25
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -50 -50 25 50 50
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.4471 0.4588 0.4157
+		end				0.5098 0.5216 0.4784
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				200 350
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				glass_shockwave
+
+	spawnFlags			evenDistribution
+
+	count 1 2
+
+	life				1700 2000
+
+	delay				0 200
+
+	cullrange			1000
+
+	origin				0 -15 -15 15 15 15
+
+	radius				30
+
+	rotation			-5 5
+
+	rotationDelta		-15 15
+
+	velocity			0 -100 -375 200 100 -575
+
+	gravity				-50 -200
+
+	rgb
+	{
+		start			0.749 0.7529 0.6863
+		end				0.7529 0.7529 0.7529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			80
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			25 50
+		end				75 125
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_plg_glass_a
+		debree/debree_plg_glass_a
+		debree/debree_plg_glass_a
+	]
+}
+
+Particle
+{
+	name				smoke_plume_m
+
+	flags				clampVelocityZ useAlpha
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count 1 1
+
+	life				750 1000
+
+	delay				0 200
+
+	cullrange			2000
+
+	origin				0 -6 -6 12 6 6
+
+	rotation			-10 10
+
+	rotationDelta		-5 5
+
+	velocity			-10 -100 300 10 100 200
+
+	acceleration		0 0 100
+
+	gravity				5 25
+
+	rgb
+	{
+		start			0.4706 0.5255 0.5608
+		end				0.5098 0.5216 0.4784
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.7
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50
+		end				125 225
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}
+
+Particle
+{
+	name				glass_shockwave_m
+
+	spawnFlags			evenDistribution
+
+	count 1 2
+
+	life				1700 2000
+
+	delay				0 200
+
+	cullrange			2000
+
+	origin				0 -15 -15 15 15 15
+
+	radius				30
+
+	rotation			-5 5
+
+	rotationDelta		-15 15
+
+	velocity			0 -100 375 200 100 575
+
+	gravity				-50 -200
+
+	rgb
+	{
+		start			0.749 0.7529 0.6863
+		end				0.7529 0.7529 0.7529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			80
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			25 50
+		end				75 125
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_plg_glass_a
+		debree/debree_plg_glass_a
+		debree/debree_plg_glass_a
+	]
+}
+
+Particle
+{
+	name				smoke_out
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 1 1
+
+	life				2000 3000
+
+	delay				0 700
+
+	cullrange			2000
+
+	origin				0 -25 -25 25 25 25
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -50 100 25 50 300
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.3686 0.4 0.3922
+		end				0.5098 0.5216 0.4784
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.75
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				200 350
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_out_m
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 1 1
+
+	life				2000 3000
+
+	delay				0 700
+
+	cullrange			2000
+
+	origin				0 -25 -25 25 25 25
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -50 -100 25 50 -300
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.3686 0.4 0.3922
+		end				0.5098 0.5216 0.4784
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.4 0.75
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				200 350
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

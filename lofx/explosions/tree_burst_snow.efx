@@ -1,0 +1,51 @@
+Particle
+{
+	name				mist
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation
+
+	count				0 1
+
+	life				2000
+
+	cullrange			6000
+
+	origin				-50 -50 -50 50 50 50
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			-15 -15 -15 15 15 15
+
+	gravity				-400 -200
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			75 100
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}

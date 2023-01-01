@@ -1,0 +1,107 @@
+Particle
+{
+	name				mist
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	count				2
+
+	life				2500 3000
+
+	cullrange			2000
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			-50 -50 25 50 50 100
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				0 20
+
+	rgb
+	{
+		end				0.902 0.9843 1
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				150 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_twht_b
+		smoke/smk_p_fractal_twht_b
+		smoke/smk_p_fractal_twht_c
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_b
+		smoke/smk_p_none_twht_c
+	]
+}
+
+Particle
+{
+	name				lit2
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	count				2
+
+	life				2500 3000
+
+	cullrange			4000
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			-150 -150 0 150 150 50
+
+	acceleration		-5 -5 -5 5 5 5
+
+	gravity				0 20
+
+	rgb
+	{
+		end				0.902 0.9843 1
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.4
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_b
+		smoke/smk_p_top_wht_c
+	]
+}

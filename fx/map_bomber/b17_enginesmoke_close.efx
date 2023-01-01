@@ -1,0 +1,237 @@
+Particle
+{
+	name				fire_embers
+
+	spawnFlags			orgOnCylinder
+
+	life				250 1000
+
+	delay				0 300
+
+	cullrange			800
+
+	origin				15 0 0 25 0 0
+
+	radius				48 55
+
+	velocity			400 -25 -25 800 25 25
+
+	acceleration		200 -25 -25 400 25 25
+
+	rgb
+	{
+		end				1 0.502 0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 2
+	}
+
+	shaders
+	[
+		misc/glow_red_a
+		misc/glow_red_b
+	]
+}
+
+Particle
+{
+	name				smoke_trail_lit_top
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				1000 1500
+
+	delay				0 300
+
+	cullrange			32000
+
+	origin				-150 -25 25 -75 25 50
+
+	radius				48
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			2000 0 0 2000 15 15
+
+	acceleration		-15 5 -5 15 10 5
+
+	gravity				0 25
+
+	rgb
+	{
+		end				0.1216 0.1098 0.08627
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25 75
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_a
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				smoke_trail_mist_top
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				3
+
+	life				1000 1500
+
+	delay				0 300
+
+	cullrange			4000
+
+	origin				-150 -25 25 -75 25 50
+
+	radius				48
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			2000 0 0 2000 15 15
+
+	acceleration		-15 5 -5 15 0 5
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.3059 0.2902 0.3333
+		end				0.1216 0.1098 0.08627
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_trail_mist_btm
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				1000 1500
+
+	delay				0 300
+
+	cullrange			32000
+
+	origin				-150 -25 -75 -75 25 -50
+
+	radius				48
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			2000 0 -15 2000 15 0
+
+	acceleration		-15 5 -5 15 10 5
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.3059 0.2902 0.3333
+		end				0.1216 0.1098 0.08627
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				400 600
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Light
+{
+	life				150 350
+
+	cullrange			800
+
+	origin				0 0 75 75 125 125
+
+	rgb
+	{
+		start			0.9882 0.7412 0.2863
+		end				0.251 0 0
+	}
+
+	size
+	{
+		start			350
+		end				50
+		parm			0.15 0.25
+		flags			linear
+	}
+}

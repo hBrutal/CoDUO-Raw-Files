@@ -1,0 +1,204 @@
+Particle
+{
+	name				smoke_mist
+
+	flags				useAlpha
+
+	count 0 0
+
+	life				500 3000
+
+	delay				0 10
+
+	cullrange			4000
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.8275 0.8627 0.8627
+		end				0.8157 0.8431 0.8392
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 200
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				smoke_fractal
+
+	flags				useAlpha
+
+	count 0 0
+
+	life				500 3000
+
+	delay				0 10
+
+	cullrange			8000
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			100 15 15 150 15 50
+
+	gravity				0 -32
+
+	rgb
+	{
+		start			0.8275 0.8627 0.8627
+		end				0.698 0.698 0.698
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100 125
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+Particle
+{
+	name				debree_p
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				500 1000
+
+	delay				0 300
+
+	cullrange			2000
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	velocity			200 15 100 250 15 200
+
+	gravity				-300
+
+	rgb
+	{
+		start			0.8824 0.8667 0.8353
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				100
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_psm_snowdirt_a
+		debree/debree_psm_snowdirt_a
+		debree/debree_psm_snowdirt_a
+	]
+}
+
+Tail
+{
+	name				base_spray
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				250 500
+
+	delay				0 300
+
+	cullrange			3000
+
+	velocity			350 0 75 350 0 150
+
+	gravity				-100
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25
+		end				50
+		flags			linear
+	}
+
+	length
+	{
+		start			50 100
+		end				150
+		flags			linear
+	}
+
+	shaders
+	[
+		debree/debree_t_snow_a
+		debree/debree_t_snow_a
+		debree/debree_t_snow_a
+	]
+}

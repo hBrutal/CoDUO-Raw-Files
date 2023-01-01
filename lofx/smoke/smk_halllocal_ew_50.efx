@@ -1,0 +1,107 @@
+Particle
+{
+	name				diag_puff
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				2000 2500
+
+	delay				0 300
+
+	cullrange			1500
+
+	origin				50 0 -50 50 0 50
+
+	rotation			170 190
+
+	rotationDelta		-3 3
+
+	velocity			-5 -2 1 5 2 1
+
+	gravity				0 -1
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			45 50
+		end				40 55
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				diag
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				2000 2500
+
+	delay				0 300
+
+	cullrange			1500
+
+	origin				50 0 -50 50 0 50
+
+	rotation			170 190
+
+	rotationDelta		-3 3
+
+	velocity			-5 -2 -1 5 2 1
+
+	gravity				0 -1
+
+	rgb
+	{
+		start			0.1961 0.1765 0.2157
+		end				0.2 0.2 0.2353
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			45 50
+		end				40 55
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

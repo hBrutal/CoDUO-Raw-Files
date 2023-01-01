@@ -1,0 +1,31 @@
+Emitter
+{
+	name				M_eng_ll_hold
+
+	flags				useModel
+
+	life				1e+004
+
+	angleDelta			-2 -2 -25 2 2 25
+
+	velocity			400 -50 -200 800 50 200
+
+	gravity				-600 -400
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_eng_ll(d)
+	]
+}
+
+FxRunner
+{
+	name				_FX_callexp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_400
+	]
+}

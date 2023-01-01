@@ -1,0 +1,57 @@
+Particle
+{
+	name				smoke_trail_mist
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 0 0
+
+	life				1000 2000
+
+	delay				0 100
+
+	cullrange			6000
+
+	radius				72
+
+	wind				75
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			25 -25 -25 50 25 25
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.7412 0.7765 0.749
+		end				0.8392 0.8549 0.8275
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				250 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

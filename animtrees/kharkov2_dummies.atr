@@ -1,0 +1,16 @@
+kharkov2_dummies_trainstation
+kharkov2_dummies_germans
+kharkov2_dummies_2nd_wave
+
+shoot
+{
+	stand_aim
+	{
+		panzerfaust_crouchshoot_down
+	}
+
+	trans
+	{
+		panzerfaust_standidle2crouchaim
+	}
+}

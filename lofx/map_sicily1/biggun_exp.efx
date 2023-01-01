@@ -1,0 +1,33 @@
+FxRunner
+{
+	name				p1
+
+	playfx
+	[
+		fx/map_sicily1/biggun_exp_p1
+	]
+}
+
+FxRunner
+{
+	name				p2
+
+	delay				3000
+
+	playfx
+	[
+		fx/map_sicily1/biggun_exp_p2
+	]
+}
+
+FxRunner
+{
+	name				fire
+
+	delay				4000
+
+	playfx
+	[
+		fx/map_sicily1/biggun_fire
+	]
+}

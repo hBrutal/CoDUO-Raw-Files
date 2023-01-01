@@ -1,0 +1,40 @@
+Emitter
+{
+	name				M_tail
+
+	flags				useModel usePhysics emitFx
+
+	life				5000
+
+	cullrange			10000
+
+	bounce				0.25 0.5
+
+	angleDelta			-15 -2 -2 15 2 2
+
+	velocity			400 -200 -200 800 200 200
+
+	gravity				-600 -400
+
+	density				200
+
+	models
+	[
+		xmodel/v_br_air_spitfire_tail
+	]
+
+	emitfx
+	[
+		fx/fire/fire_trail_100
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_400
+	]
+}

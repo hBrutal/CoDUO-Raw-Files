@@ -1,0 +1,260 @@
+Cylinder
+{
+	name				SmallRing
+
+	life				300
+
+	radius				34 0
+
+	rgb
+	{
+		start			0.6667 0.7686 0.7451
+		end				0.502 0.502 0.502
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.9
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				310
+		flags			linear
+	}
+
+	size2
+	{
+		end				164 166
+		flags			linear
+	}
+
+	length
+	{
+		end				150
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/watersheet1
+	]
+}
+
+Cylinder
+{
+	name				BigRing
+
+	life				1500
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.3
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				170
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				650
+		flags			linear
+	}
+
+	length
+	{
+		end				175
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/watersheet1
+	]
+}
+
+Particle
+{
+	name				HugeJet
+
+	spawnFlags			orgOnSphere rgbComponentInterpolation
+
+	count 20 20
+
+	life				2000
+
+	delay				0 500
+
+	origin				62 32 0 32 -64 0
+
+	radius				59 93
+
+	height				1 50
+
+	rotation			213 -234
+
+	rotationDelta		12 -12
+
+	velocity			1600 34 12 100 -54 -12
+
+	gravity				-600
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.4235 0.4824 0.4627 0.502 0.502 0.502
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			1 0.8
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}
+
+Particle
+{
+	name				FallingWater
+
+	spawnFlags			axisFromSphere
+
+	count 100 100
+
+	life				8000
+
+	delay				0 5000
+
+	origin				50 50 0 50 -50 0
+
+	height				0
+
+	rotation			213 -234
+
+	rotationDelta		2 -12
+
+	velocity			40 89 89 40 -89 -89
+
+	gravity				-200 -400
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.6667 0.7686 0.7451
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				300
+		flags			linear
+	}
+
+	length
+	{
+		start			0 1
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}
+
+FxRunner
+{
+	name				SmokeFire
+
+	playfx
+	[
+		fx/pi_fx/watertower_firesmoke
+	]
+}
+
+Particle
+{
+	name				Copy of FallingWater
+
+	spawnFlags			axisFromSphere
+
+	count 10 10
+
+	life				8000
+
+	delay				4500 7000
+
+	origin				50 50 0 50 -50 0
+
+	rotation			213 -234
+
+	rotationDelta		2 -12
+
+	velocity			40 89 89 40 -89 -89
+
+	gravity				-200 -400
+
+	rgb
+	{
+		start			0.502 0.502 0.502
+		end				0.6667 0.7686 0.7451
+		flags			random linear
+	}
+
+	alpha
+	{
+		start			0.7
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				300
+		flags			linear
+	}
+
+	length
+	{
+		start			0 1
+	}
+
+	shaders
+	[
+		gfx/effects/waterspay
+	]
+}

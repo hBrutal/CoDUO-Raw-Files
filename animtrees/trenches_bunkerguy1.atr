@@ -1,0 +1,16 @@
+line_officerA_stand_twitchB
+line_officer_stand_idle
+line_officerA_stand_twitchA
+line_officerA_waveB
+line_officerA_shoot
+leaderwalk_cocky_idle
+
+facial
+{
+	f_trenches_comm_ev07_01
+	f_trenches_comm_ev07_02
+	f_trenches_comm_ev07_03
+}
+
+// Radio man
+c_rs_trenches_radio_operator_idle

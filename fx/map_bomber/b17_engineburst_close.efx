@@ -1,0 +1,111 @@
+Cylinder
+{
+	name				fire_cilender
+
+	count				2
+
+	life				100 300
+
+	delay				0 300
+
+	origin				5 0 0 25 0 0
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			55 65
+		end				35 75
+		flags			linear
+	}
+
+	size2
+	{
+		start			41 43
+		end				44 45
+		flags			linear
+	}
+
+	length
+	{
+		start			0 75
+		end				400 800
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_hs_cil_a
+		fire/flame_hs_cil_b
+		fire/flame_hs_cil_c
+	]
+}
+
+Particle
+{
+	name				fire_embers
+
+	spawnFlags			orgOnCylinder
+
+	count				3
+
+	life				250 500
+
+	delay				0 300
+
+	cullrange			1000
+
+	origin				15 0 0 25 0 0
+
+	radius				48 55
+
+	velocity			400 -25 -25 800 25 25
+
+	acceleration		200 -25 -25 400 25 25
+
+	rgb
+	{
+		end				1 0.502 0
+		flags			linear
+	}
+
+	size
+	{
+		start			1 2
+	}
+
+	shaders
+	[
+		misc/glow_red_a
+		misc/glow_red_b
+	]
+}
+
+Light
+{
+	life				150 350
+
+	origin				0 0 75 75 125 125
+
+	cullrange			600
+
+	rgb
+	{
+		start			0.9882 0.7412 0.2863
+		end				0.251 0 0
+	}
+
+	size
+	{
+		start			350
+		end				50
+		parm			0.15 0.25
+		flags			linear
+	}
+}

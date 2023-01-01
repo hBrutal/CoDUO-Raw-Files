@@ -1,0 +1,51 @@
+OrientedParticle
+{
+	count				2 3
+
+	life				2000 2550
+
+	cullrange			1600
+
+	delay				0 500
+
+	origin				0 -45 -45 0 -35 45
+
+	rotation			85 95
+
+	rotationDelta		-1 1
+
+	velocity			0 15 0 0 45 0
+
+	rgb
+	{
+		start			0.6745 0.4471 0.2745
+		end				0.6039 0.2 0.003922
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				45 55
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_lick_a
+		fire/flame_lick_b
+		fire/flame_lick_c
+		fire/flame_lick_d
+		fire/flame_lick_e
+		fire/flame_lick_f
+	]
+}

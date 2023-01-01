@@ -1,0 +1,56 @@
+Particle
+{
+	name				smoke_trail_lit_top
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				0 1
+
+	life				1000 1500
+
+	delay				0 300
+
+	cullrange			32000
+
+	origin				-150 -25 25 -75 25 50
+
+	radius				48
+
+	rotation			-5 5
+
+	rotationDelta		-5 5
+
+	velocity			2000 0 0 2000 15 15
+
+	acceleration		-15 5 -5 15 10 5
+
+	gravity				0 25
+
+	rgb
+	{
+		end				0.1216 0.1098 0.08627
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25 75
+		end				300 400
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}

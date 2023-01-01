@@ -1,0 +1,55 @@
+OrientedParticle
+{
+	name				Copy of Unnamed OrientedParticl
+
+	flags				useAlpha
+
+	spawnFlags			absoluteVel
+
+	nonUniformScale		1
+
+	count				0 1
+
+	life				3000
+
+	delay				0 300
+
+	cullrange			2000
+
+	origin				0 -25 0 0 25 0
+
+	velocity			0 -2 -5 0 2 -15
+
+	rgb
+	{
+		end				0.6784 0.6392 0.5373
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				35 45
+		flags			linear
+	}
+
+	size2
+	{
+		start			0
+		end				15 25
+		flags			linear
+	}
+
+	shaders
+	[
+		water/water_sheet_lg_a
+		water/water_sheet_lg_a
+	]
+}

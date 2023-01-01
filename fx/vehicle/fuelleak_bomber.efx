@@ -1,0 +1,195 @@
+Tail
+{
+	name				fuel_core
+
+	flags				useAlpha
+
+	life				1000 2500
+
+	origin				250 0 0
+
+	velocity			2000 -1 -1 2000 1 1
+
+	rgb
+	{
+		start			0.3608 0.3294 0.2549
+		end				0.1176 0.1098 0.08235
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			12 25
+		end				50 125
+		flags			linear
+	}
+
+	length
+	{
+		start			500
+		end				1500 2000
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_t_wht_a
+		smoke/smk_t_wht_b
+		smoke/smk_t_wht_c
+	]
+}
+
+Particle
+{
+	name				fuel_spray
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				5
+
+	life				250 450
+
+	delay				0 200
+
+	origin				-200 0 0 -100 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			2000 -100 -50 2000 100 150
+
+	acceleration		-25 -25 -25 25 25 25
+
+	rgb
+	{
+		start			0.2275 0.2078 0.1608
+		end				0.1961 0.1686 0.251
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				50 75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Tail
+{
+	name				fuel_core_fractal
+
+	flags				useAlpha
+
+	life				1000 2500
+
+	delay				50 0
+
+	origin				250 0 0
+
+	velocity			2000 -1 -1 2000 1 1
+
+	rgb
+	{
+		start			0.3608 0.3294 0.2549
+		end				0.1176 0.1098 0.08235
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			12 25
+		end				50 125
+		flags			linear
+	}
+
+	length
+	{
+		start			500
+		end				1500 2000
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_a
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+	]
+}
+
+Line
+{
+	name				fuel_base
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				5
+
+	life				150 250
+
+	delay				0 200
+
+	origin				-100 0 0
+
+	origin2				100 -50 -50 400 50 50
+
+	rgb
+	{
+		start			0.3608 0.3294 0.2549
+		end				0.1176 0.1098 0.08235
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			0 10
+		end				25 150
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

@@ -1,0 +1,179 @@
+OrientedParticle
+{
+	name				ground
+
+	flags				useAlpha
+
+	life				6e+004
+
+	delay				0 2e+004
+
+	origin				-2.475e+004 1.5e+004 0
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				6e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bombercity_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_right
+
+	flags				useAlpha
+
+	life				6e+004
+
+	delay				0 2e+004
+
+	origin				-2.475e+004 1.5e+004 4e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				6e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bombercity_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_right2
+
+	flags				useAlpha
+
+	life				6e+004
+
+	delay				0 2e+004
+
+	origin				-2.475e+004 1.5e+004 8e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				6e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bombercity_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_left
+
+	flags				useAlpha
+
+	life				6e+004
+
+	delay				0 2e+004
+
+	origin				-2.475e+004 1.5e+004 -4e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				6e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bombercity_a
+	]
+}
+
+OrientedParticle
+{
+	name				ground_left2
+
+	flags				useAlpha
+
+	life				6e+004
+
+	delay				0 2e+004
+
+	origin				-2.475e+004 1.5e+004 -8e+004
+
+	rotation			0 360
+
+	velocity			0 -2000 0
+
+	alpha
+	{
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			4.5e+004
+		end				6e+004
+		parm			-1 0
+	}
+
+	shaders
+	[
+		misc/m_bombercity_a
+	]
+}

@@ -1,0 +1,1949 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           BOMBER_PILOT_A00_01
+LANG_ENGLISH        "Doyle! Quit mucking about and take your post in the dorsal turret. "
+
+REFERENCE           BOMBER_PILOT_A01_01
+LANG_ENGLISH        "That's it? I was expecting more. It appears we got lucky on this one."
+
+REFERENCE           BOMBER_BLOODY_HELL
+LANG_ENGLISH        "Bloody hell!"
+
+REFERENCE           BOMBER_DAMN
+LANG_ENGLISH        "Damn!"
+
+REFERENCE           BOMBER_PILOT_DESCENDING
+LANG_ENGLISH        "Squadron -- "A for Andy."  We have one aircraft down. Keep in formation...descending to angels two-niner.  Steady as she goes, lads. "
+
+REFERENCE           BOMBER_PILOT_B01_01
+LANG_ENGLISH        "That'll do, boys, steady on.  We're coming up on target, keep your channels clear..."
+
+REFERENCE           BOMBER_FIRE_AWAY
+LANG_ENGLISH        "Fire away!"
+
+REFERENCE           BOMBER_PILOT_GOODSHOW
+LANG_ENGLISH        "Well done - good show! "
+
+REFERENCE           BOMBER_BALL_SEND_BACK
+LANG_ENGLISH        "Yeah, well, let's send 'em back! "
+
+REFERENCE           BOMBER_RWAIST_LUFTWAFFE
+LANG_ENGLISH        "They've sent the whole bloody Luftwaffe!"
+
+REFERENCE           BOMBER_BALL_BLIMEY
+LANG_ENGLISH        "My bloody status?! Blimey -- they're everywhere Skipper!"
+
+REFERENCE           BOMBER_PILOT_CANT_HELP
+LANG_ENGLISH        "Keep moving, Doyle, you can't help him!"
+
+REFERENCE           BOMBER_PILOT_C01_01
+LANG_ENGLISH        "Bulldog leader, this is "A for Andy." Reading you loud and clear.  Over."
+
+REFERENCE           BOMBER_PILOT_CARRYON
+LANG_ENGLISH        "Copy, right waist. - That boy was nineteen years old..."
+
+REFERENCE           BOMBER_RWAIST_DANNY_GONE
+LANG_ENGLISH        "Danny got hit, sir.  I think he's gone."
+
+REFERENCE           BOMBER_COPILOT_LOST_GOOD_MAN
+LANG_ENGLISH        "We've lost a good man.  Carry on. "
+
+REFERENCE           BOMBER_PILOT_D01_03
+LANG_ENGLISH        "Fighters at three o'clock. "
+
+REFERENCE           BOMBER_LWAIST_SPARKS_DEAD
+LANG_ENGLISH        "Sparks is dead, sir.  Never knew what hit 'em, sir. "
+
+REFERENCE           BOMBER_TAIL_AYE
+LANG_ENGLISH        "Aye, how was she?"
+
+REFERENCE           BOMBER_PILOT_DORSAL01
+LANG_ENGLISH        "Doyle, hurry!  Get your arse up to the Dorsal turret."
+
+REFERENCE           BOMBER_PILOT_DORSAL02
+LANG_ENGLISH        "Doyle, man your post in the dorsal turret!"
+
+REFERENCE           BOMBER_PILOT_DORSAL03
+LANG_ENGLISH        "Are you deaf man? Get into the dorsal turret. NOW!"
+
+REFERENCE           BOMBER_PILOT_E01_01
+LANG_ENGLISH        "Get on that tail gun...Now!"
+
+REFERENCE           BOMBER_PILOT_E01_02
+LANG_ENGLISH        "Bandits on our 6 o'clock!"
+
+REFERENCE           BOMBER_PILOT_F01_01
+LANG_ENGLISH        "Fire in the aft compartment!  Doyle -- get the extinguisher."
+
+REFERENCE           BOMBER_PILOT_FRIENDLY01
+LANG_ENGLISH        "Doyle! Check your fire. That was one of ours!"
+
+REFERENCE           BOMBER_PILOT_FRIENDLY02
+LANG_ENGLISH        "Friendly fire, Friendly fire!"
+
+REFERENCE           BOMBER_PILOT_FRIENDLY03
+LANG_ENGLISH        "Doyle -- pay attention! That was our bloody plane you hit! "
+
+REFERENCE           BOMBER_PILOT_FRIENDLY04
+LANG_ENGLISH        "Doyle -- Watch it! That was one of ours!"
+
+REFERENCE           BOMBER_PILOT_G01_01
+LANG_ENGLISH        "Fire in the Number 1 engine!"
+
+REFERENCE           BOMBER_PILOT_G01_02
+LANG_ENGLISH        "Fire in the Number 2 engine!"
+
+REFERENCE           BOMBER_PILOT_G01_03
+LANG_ENGLISH        "Fire in the Number 3 engine!"
+
+REFERENCE           BOMBER_PILOT_G01_04
+LANG_ENGLISH        "Fire in the Number 4 engine!"
+
+REFERENCE           BOMBER_PILOT_G02_01
+LANG_ENGLISH        "The controls are shot! I can't shut the fuel off from here! Doyle -- get to the manual control and shut that engine down. "
+
+REFERENCE           BOMBER_PILOT_G02_02
+LANG_ENGLISH        "We've lost another engine! Doyle -- cut the fuel line."
+
+REFERENCE           BOMBER_BALL_DUTCHGIRL
+LANG_ENGLISH        "Never been there meself...though I did date a Dutch girl once..."
+
+REFERENCE           BOMBER_PILOT_G04_01
+LANG_ENGLISH        "Dammit to hell!  This is bloody madness!"
+
+REFERENCE           BOMBER_PILOT_H01_01
+LANG_ENGLISH        "Come on, darling - baby girl, hold together. "
+
+REFERENCE           BOMBER_PILOT_H01_02
+LANG_ENGLISH        "Pilot to bombardier...you have the controls."
+
+REFERENCE           BOMBER_COPILOT_HOLLAND
+LANG_ENGLISH        "There she is...Holland. "
+
+REFERENCE           BOMBER_PILOT_H02_01
+LANG_ENGLISH        "The bomb bay doors are jammed! Doyle, we need you to open them -- using the manual crank. "
+
+REFERENCE           BOMBER_PILOT_H03_01
+LANG_ENGLISH        "We're hit -- I can't hold it together! Bail out!  Bail out!"
+
+REFERENCE           BOMBER_BANDITS_9
+LANG_ENGLISH        "Bandits! 9 o'clock!"
+
+REFERENCE           BOMBER_BOGIES_AT_3
+LANG_ENGLISH        "Bogeys at 3 o'clock!"
+
+REFERENCE           BOMBER_BOMB_H01_01
+LANG_ENGLISH        "Roger."
+
+REFERENCE           BOMBER_BOMB_H02_01
+LANG_ENGLISH        "Left...left... steady...bombs gone."
+
+REFERENCE           BOMBER_COPILOT_A02_01
+LANG_ENGLISH        ""B for Bertie" just took a hit!  She's going down!"
+
+REFERENCE           BOMBER_COPILOT_A02_02
+LANG_ENGLISH        "Oh God..."
+
+REFERENCE           BOMBER_COPILOT_B01_01
+LANG_ENGLISH        "Messerschmitts...eleven o'clock high!  Gunners open fire! "
+
+REFERENCE           BOMBER_GOOD_SHOT07
+LANG_ENGLISH        "Doyle - well done, well done!"
+
+REFERENCE           BOMBER_FIGHTERS_ON_6
+LANG_ENGLISH        "Fighters on our six!"
+
+REFERENCE           BOMBER_BLOODY_KRAUTS
+LANG_ENGLISH        "Bloody krauts - where the hell are they coming from?!"
+
+REFERENCE           BOMBER_LWAIST_DORSAL
+LANG_ENGLISH        "Doyle, you'd better get up to your dorsal turret.  You know how the skipper gets. "
+
+REFERENCE           BOMBER_ME_3
+LANG_ENGLISH        "ME's coming in from 3 o'clock."
+
+REFERENCE           BOMBER_MESS_12
+LANG_ENGLISH        "Messerschmitts 12 0'clock high!"
+
+REFERENCE           BOMBER_MISC_FLAK01
+LANG_ENGLISH        "That was close!"
+
+REFERENCE           BOMBER_MISC_FLAK02
+LANG_ENGLISH        "Hang on!"
+
+REFERENCE           BOMBER_MISC_FLAK03
+LANG_ENGLISH        "Keep your heads down lads!"
+
+REFERENCE           BOMBER_MISC_FLAK04
+LANG_ENGLISH        "Brace yourselves!"
+
+REFERENCE           BOMBER_MISC_FLAK05
+LANG_ENGLISH        "More bloody ACK ACK!"
+
+REFERENCE           BOMBER_MORE_BANDITS_9
+LANG_ENGLISH        "More Bandits coming in from 9 o'clock!"
+
+REFERENCE           BOMBER_MORE_BANDITS_6
+LANG_ENGLISH        "We picked up some more bandits on our six."
+
+REFERENCE           BOMBER_NAV_A00_01
+LANG_ENGLISH        "Skipper, we'll soon be over the coast. Simmons ran into some heavy flak here."
+
+REFERENCE           BOMBER_NAV_B01_01
+LANG_ENGLISH        "We're approaching the coast now, skipper."
+
+REFERENCE           BOMBER_NAV_H01_01
+LANG_ENGLISH        "One minute to target, skipper."
+
+REFERENCE           BOMBER_GOT_HIM
+LANG_ENGLISH        "Got him!"
+
+REFERENCE           BOMBER_SPIT_C01_01
+LANG_ENGLISH        ""A for Andy", this is Bulldog Leader -- do you read me...over? "
+
+REFERENCE           BOMBER_SPIT_C01_02
+LANG_ENGLISH        "We are low on fuel and need to head home. Good luck, over!"
+
+REFERENCE           BOMBER_TAIL_B01_01
+LANG_ENGLISH        "There's another lot at six o'clock."
+
+REFERENCE           BOMBER_TAIL_B01_02
+LANG_ENGLISH        "They're on our six! They're on our six! Too many...argh!"
+
+REFERENCE           BOMBER_PILOT_HANG_ON
+LANG_ENGLISH        "Flak! Hang on!"
+
+REFERENCE           BOMBER_COPILOT_WANTED_MORE
+LANG_ENGLISH        "You wanted more, skipper? You've got it!"
+
+REFERENCE           FOY_FOLEY_EV00_01
+LANG_ENGLISH        "Gentlemen, our objectives are to secure the town of Foy and clear the way for the 11th armored division. If we're late, the tanks will be sitting ducks for enemy artillery, so move quickly. On my signal, advance across the field and assault the village. Be advised that once we leave the tree line, there isn't much cover, so keep on moving. Questions? "
+
+REFERENCE           FOY_FOLEY_EV00_01A
+LANG_ENGLISH        "All right.  We've lost a lot of men here.  Make 'em pay, boys!"
+
+REFERENCE           FOY_MOODY_EV01_00A
+LANG_ENGLISH        "Stick with me and use those haystacks for cover!"
+
+REFERENCE           FOY_MOODY_EV01_01
+LANG_ENGLISH        "Go! Go! Go! Move! Don't stop now!"
+
+REFERENCE           FOY_MOODY_EV01_01A
+LANG_ENGLISH        "Tired, ladies?  We're not there yet! Move it! Go go go!"
+
+REFERENCE           FOY_MOODY_EV01_01B
+LANG_ENGLISH        "Half way there! Hustle! Go!"
+
+REFERENCE           FOY_MOODY_EV01_01C
+LANG_ENGLISH        "Get suppressing fire on those 42's!"
+
+REFERENCE           FOY_MOODY_EV01_01D
+LANG_ENGLISH        "Get to that shed over there! MOVE!"
+
+REFERENCE           FOY_MOODY_EV01_01E
+LANG_ENGLISH        "You can rest later.  Stay here, you're dead!"
+
+REFERENCE           FOY_MOODY_EV01_02
+LANG_ENGLISH        "Hold up - take cover!"
+
+REFERENCE           FOY_DYKE_EV01_01
+LANG_ENGLISH        "Sergeant! Enemy artillery has our tanks zeroed! They've got a spotter in that village somewhere. Get your sniper to -"
+
+REFERENCE           FOY_TROOPER2_NOSIR
+LANG_ENGLISH        "No, sir!"
+
+REFERENCE           FOY_MOODY_EV01_03
+LANG_ENGLISH        "Damn...Riley - on me!  "
+
+REFERENCE           FOY_MOODY_EV02_01
+LANG_ENGLISH        "Good work, Riley. Guys - listen up. We gotta take out that 88! Move! "
+
+REFERENCE           FOY_MOODY_EV02_02
+LANG_ENGLISH        "Take cover! Riley -- get on that 88 and take that gunner down!"
+
+REFERENCE           FOY_MOODY_EV02_03
+LANG_ENGLISH        "Alright, we have to disable this gun in case the Krauts decide to come back.  Riley, plant your charges and let's get the hell out of here!"
+
+REFERENCE           FOY_MOODY_EV03_01
+LANG_ENGLISH        "Riley, Whitney, Anderson - on me! We've gotta go house to house to clear 'em out - Let's see if Jerry's home!"
+
+REFERENCE           FOY_TROOPER4_NOSIR
+LANG_ENGLISH        "No, sir!"
+
+REFERENCE           FOY_MOODY_EV03_02B
+LANG_ENGLISH        "Riley, Whitney, Anderson -- you're with me. The rest of you go back around and warn the armored guys. We'll rendezvous at the Church.  Say your prayers. "
+
+REFERENCE           FOY_MOODY_EV03_03
+LANG_ENGLISH        "Damn place was crawlin' with 'em - Riley...get a charge planted on that tank."
+
+REFERENCE           FOY_ANDERSON_EV04_01
+LANG_ENGLISH        "Woohoo! 11th armored...thank you very much!"
+
+REFERENCE           FOY_TROOPER5_NOSIR
+LANG_ENGLISH        "No, sir!"
+
+REFERENCE           FOY_MOODY_EV04_02
+LANG_ENGLISH        "I'm guessin' the rest of 'em are holed up in that church. You know the drill.  On my go..."
+
+REFERENCE           FOY_MOODY_EV05_02
+LANG_ENGLISH        "Ready? Go! Go! Go!"
+
+REFERENCE           FOY_FOLEY_EV05_01
+LANG_ENGLISH        "Alright men, good so far. 11th Armored's coming in now.  As soon as they get here...what the...German counterattack! \n"
+
+REFERENCE           FOY_MOODY_EV07_01
+LANG_ENGLISH        "Riley! Get up to that bell tower and  take out their anti-tank crews. Nothin' touches our Shermans - nothin'! "
+
+REFERENCE           FOY_FOLEY_EV08_01
+LANG_ENGLISH        "Dammit! Moody - take your squad and go nail that Tiger!  I don't care what it takes!  Just get it done -- understood?"
+
+REFERENCE           FOY_MOODY_NOSIR
+LANG_ENGLISH        "No, sir!"
+
+REFERENCE           FOY_MOODY_EV09_02
+LANG_ENGLISH        "Good work, boys. Count your arms and legs and follow me."
+
+REFERENCE           FOY_FOLEY_EV09_01
+LANG_ENGLISH        "Great job guys! I'm real proud of all of you.  That dinner I promised'll have to wait -- but I want you to know I'm good for it.  Get some rest, you're gonna need it.  We've been called up to Noville next."
+
+REFERENCE           FOY_MOODY_REGROUP01
+LANG_ENGLISH        "Riley! Regroup!"
+
+REFERENCE           FOY_MOODY_REGROUP02
+LANG_ENGLISH        "Riley! Get back here!"
+
+REFERENCE           FOY_MOODY_REGROUP03
+LANG_ENGLISH        "Riley! Get your ass back here, you're going to get yourself killed!   "
+
+REFERENCE           FOY_MOODY_REGROUP04
+LANG_ENGLISH        "Riley! Back with the squad! "
+
+REFERENCE           FOY_MOODY_ACTION_RIGHT
+LANG_ENGLISH        "Action Right!"
+
+REFERENCE           FOY_MOODY_ACTION_LEFT
+LANG_ENGLISH        "Action Left!"
+
+REFERENCE           FOY_MOODY_FIRE_MANUVER
+NOTES               " "
+LANG_ENGLISH        "Fire and Maneuver!"
+
+REFERENCE           FOY_MOODY_KEEP_UP_FIRE
+LANG_ENGLISH        "Keep up the fire!"
+
+REFERENCE           FOY_MOODY_EV01_04
+LANG_ENGLISH        "Take that sniper rifle and scan the upper windows.  We need to nail that spotter. "
+
+REFERENCE           FOY_TROOPER3_NOSIR
+LANG_ENGLISH        "No, sir!"
+
+REFERENCE           TRENCHES_ANON_LOOKOUT
+LANG_ENGLISH        "Look Out! "
+
+REFERENCE           TRENCHES_COMM_EV01_01
+LANG_ENGLISH        "Comrades! Check your weapons and harden your hearts! We must stand our ground and drive the fascists out of the Motherland!"
+
+REFERENCE           TRENCHES_GS_ANT_EV02_01
+LANG_ENGLISH        "Alright...we're full...let's go! "
+
+REFERENCE           TRENCHES_VASS_DEFEAT
+LANG_ENGLISH        "Steady comrades...defeat your fear, the enemy will be easy. "
+
+REFERENCE           TRENCHES_VASS_LASTMAN
+LANG_ENGLISH        "Once we clear this village we'll take up positions in the forward trenches.  Move fast and keep your heads down."
+
+REFERENCE           TRENCHES_VASS_EV03_01
+LANG_ENGLISH        "Stay low -- you idiot!"
+
+REFERENCE           TRENCHES_MIESHA_EV03_01
+LANG_ENGLISH        "This is madness!  And you tell me the front is worse?!"
+
+REFERENCE           TRENCHES_ANON_EV03_02
+LANG_ENGLISH        "My god... They hit the train!"
+
+REFERENCE           TRENCHES_MIESHA_EV05_01
+LANG_ENGLISH        "Artillery...Get down! "
+
+REFERENCE           TRENCHES_BORIS_EV05_01
+LANG_ENGLISH        "We can't make it through!"
+
+REFERENCE           TRENCHES_MISC_TROOP_EV05_01
+LANG_ENGLISH        "Get down! "
+
+REFERENCE           TRENCHES_MISC_TROOP_EV05_02
+LANG_ENGLISH        "Look out! "
+
+REFERENCE           TRENCHES_MISC_TROOP_EV05_03
+LANG_ENGLISH        "Hang on! "
+
+REFERENCE           TRENCHES_COMM_EV06_01
+LANG_ENGLISH        "Out of your trucks, and into the trenches!"
+
+REFERENCE           TRENCHES_COMM_EV06_02
+LANG_ENGLISH        "Get your ammunition from the bunker. "
+
+REFERENCE           TRENCHES_VASS_EV06_01
+LANG_ENGLISH        "Get your ammunition, and we'll meet up on the other side of the bunker. "
+
+REFERENCE           TRENCHES_COMM_EV07_01
+LANG_ENGLISH        "Grab your ammunition and move to the right flank. "
+
+REFERENCE           TRENCHES_COMM_EV07_02
+LANG_ENGLISH        "Quit stalling, keep moving. "
+
+REFERENCE           TRENCHES_COMM_EV07_03
+LANG_ENGLISH        "Keep moving forward. "
+
+REFERENCE           TRENCHES_GS_BUNKER_EV07_01
+LANG_ENGLISH        "Fight bravely, comrade. "
+
+REFERENCE           TRENCHES_GS_BUNKER_EV07_02
+LANG_ENGLISH        "Make mother Russia proud.. "
+
+REFERENCE           TRENCHES_GS_BUNKER_EV07_03
+LANG_ENGLISH        "Good luck, comrade."
+
+REFERENCE           TRENCHES_MIESHA_EV08_01
+LANG_ENGLISH        "We can and will! Pull yourself together!"
+
+REFERENCE           TRENCHES_VASS_EV08_01
+LANG_ENGLISH        "Hurry, we must get into position on the line. "
+
+REFERENCE           TRENCHES_GS_ANT_EV09_01
+LANG_ENGLISH        "Take up defensive positions!"
+
+REFERENCE           TRENCHES_GS_ANT_EV09_02
+LANG_ENGLISH        "They must not breach our lines!"
+
+REFERENCE           TRENCHES_BORIS_EV09_01
+LANG_ENGLISH        "Thank god...they've stopped!"
+
+REFERENCE           TRENCHES_VASS_EV09_01
+LANG_ENGLISH        "For now...next they attack."
+
+REFERENCE           TRENCHES_GS_ANT_EV09_03
+LANG_ENGLISH        "Wait for it, comrades...hold your fire...wait for it."
+
+REFERENCE           TRENCHES_MIESHA_EV10_01
+LANG_ENGLISH        "Incoming Stuka! "
+
+REFERENCE           TRENCHES_VASS_EV10_01
+LANG_ENGLISH        "Oh My God--Look out!"
+
+REFERENCE           TRENCHES_COMM_EV11_01
+LANG_ENGLISH        "The Germans have broken through! Reinforce the left flank. Follow me!"
+
+REFERENCE           TRENCHES_VASS_EV11_01
+LANG_ENGLISH        "Flamethrowers! Clear them out!"
+
+REFERENCE           TRENCHES_MIESHA_FEEBLE
+LANG_ENGLISH        "That would be a step up for Boris, who's the inbred son of feeble aristocrats. "
+
+REFERENCE           TRENCHES_GS_ANT_EV13_01
+LANG_ENGLISH        "Good job, comrades - follow me! "
+
+REFERENCE           TRENCHES_GS_ANT_EV14_01
+LANG_ENGLISH        "Yuri - Elefant Tanks!  Go out there and plant your charges on them."
+
+REFERENCE           TRENCHES_GS_ANT_EV14_02
+LANG_ENGLISH        "You men provide covering fire! Regroup on the far side of the trenches when you're done."
+
+REFERENCE           TRENCHES_COMM_EV17_01
+LANG_ENGLISH        "Good to see you Comrades. We must clear this village and defend the bridge until our reinforcements arrive. If the Germans take it, we will be surrounded. -- Ready?  Let's go."
+
+REFERENCE           TRENCHES_COMM_EV19_01
+LANG_ENGLISH        "Excellent work, my friends, you fought shoulder to shoulder with courage and strength. Proving on this field of battle that the so-called Invincible German Army can and will be defeated. Comrade Stalin would be proud of each and every one of you -- as I am proud of you, for you have won a great victory here."
+
+REFERENCE           TRAINBRIDGE_INGRAM_CAREFUL
+LANG_ENGLISH        "Easy lads, careful. "
+
+REFERENCE           BOMBER_GOOD_SHOT01
+LANG_ENGLISH        "Good work, Doyle. "
+
+REFERENCE           BOMBER_GOOD_SHOT02
+LANG_ENGLISH        "Nice shot, Doyle. "
+
+REFERENCE           BOMBER_GOOD_SHOT03
+LANG_ENGLISH        "Good shooting, Doyle. "
+
+REFERENCE           BOMBER_GOOD_SHOT04
+LANG_ENGLISH        "Nice shooting , lad!"
+
+REFERENCE           BOMBER_GOOD_SHOT05
+LANG_ENGLISH        "Good work, Doyle! "
+
+REFERENCE           BOMBER_GOOD_SHOT06
+LANG_ENGLISH        "Good shot Doyle! "
+
+REFERENCE           BOMBER_BALL_BOMBER_DOWN
+LANG_ENGLISH        "They've hit another one! "F for Freddie," skipper, going down hard! "
+
+REFERENCE           BOMBER_BALL_FIGHTERS_6
+LANG_ENGLISH        "6 o'clock! 6 o'clock! Coming in fast! "
+
+REFERENCE           BOMBER_BALL_OK
+LANG_ENGLISH        "Ball turret...bloody uncomfortable! "
+
+REFERENCE           BOMBER_COPILOT_RADOP_DEAD
+LANG_ENGLISH        "What the hell was that? Sparks? Sparks? Are you OK? "
+
+REFERENCE           BOMBER_LWAIST_OK
+LANG_ENGLISH        "Left waist, all set!"
+
+REFERENCE           BOMBER_PILOT_HOW_FAR
+LANG_ENGLISH        "Navigator, how much farther?"
+
+REFERENCE           BOMBER_PILOT_BALL_STATUS
+LANG_ENGLISH        "Ball turret what's your status? "
+
+REFERENCE           BOMBER_PILOT_END_WAVE1
+LANG_ENGLISH        "Good on ya, lads. That's the last of that wave for now. Stay alert. We've got a long ways to go."
+
+REFERENCE           BOMBER_PILOT_GOTO_DORSAL
+LANG_ENGLISH        "Bogey's at 12 o'clock! Doyle we need you back up on the dorsal turret!"
+
+REFERENCE           BOMBER_PILOT_GOTO_TAIL
+LANG_ENGLISH        "Doyle! Get back and take over the tail gun position! "
+
+REFERENCE           BOMBER_PILOT_LWAIST_DEATH
+LANG_ENGLISH        "Left waist, left waist? Are you alright? Answer me!"
+
+REFERENCE           BOMBER_PILOT_SOUNDOFF
+LANG_ENGLISH        "Splendid. Now that our dorsal gunner has so graciously decided to join us, we can do the weapons check. Sound off."
+
+REFERENCE           BOMBER_PILOT_SPITS_GONE
+LANG_ENGLISH        "Well, there goes our fighter escort. Looks like we're on our own now."
+
+REFERENCE           BOMBER_PILOT_TAIL_NOW
+LANG_ENGLISH        "Doyle, get back on that tail gun! Now! "
+
+REFERENCE           BOMBER_PILOT_STATUS
+LANG_ENGLISH        "Navigator, what's our position and status?"
+
+REFERENCE           BOMBER_PILOT_USEGUNS_1
+LANG_ENGLISH        "Doyle, use whichever guns you need! Just keep those Jerries off us! "
+
+REFERENCE           BOMBER_PILOT_USEGUNS_2
+LANG_ENGLISH        "Doyle - keep moving!  They're coming from everywhere!!! "
+
+REFERENCE           BOMBER_RWAIST_TAIL_DEAD
+LANG_ENGLISH        "Angus is down! We need a hand on the tail gun!"
+
+REFERENCE           BOMBER_LWAIST_DEATH
+LANG_ENGLISH        "Come on you  Jerry bastard...just a little closer...argh..."
+
+REFERENCE           BOMBER_RWAIST_OK
+LANG_ENGLISH        "Right waist, ready!"
+
+REFERENCE           BOMBER_COPILOT_BLOWNOFF
+LANG_ENGLISH        "I believe he's sitting cross-legged -- hoping not to get them blown off!"
+
+REFERENCE           FOY_WHITNEY_TOP_FLOOR
+LANG_ENGLISH        "MG42s!  Twelve o'clock!  Top floor! "
+
+REFERENCE           FOY_FOLEY_EV07_01
+LANG_ENGLISH        "Nice shootin', Riley! Unless you like bratwurst, get back down -- we're movin' out!"
+
+REFERENCE           KHARKOV1_ANTONOV_ADVANCE
+LANG_ENGLISH        "Advance! Advance! No stopping! Don't fall back! "
+
+REFERENCE           KHARKOV1_ANTONOV_CHECK
+LANG_ENGLISH        "Yuri, Vassili, Miesha check out the rest of the building. Meet us back here when you are done. "
+
+REFERENCE           KHARKOV1_ANTONOV_FOLLOW
+LANG_ENGLISH        "Bull's eye! Follow me. We'll head North through those buildings. "
+
+REFERENCE           KHARKOV1_ANTONOV_GOODJOB
+LANG_ENGLISH        "Good job, comrades. They've got more guns up ahead. Move to a forward position and continue spotting. "
+
+REFERENCE           KHARKOV1_ANTONOV_KEEPFIRING01
+LANG_ENGLISH        "Keep firing! "
+
+REFERENCE           KHARKOV1_ANTONOV_KEEPFIRING02
+LANG_ENGLISH        "Don't let up! "
+
+REFERENCE           KHARKOV1_ANTONOV_KEEPFIRING03
+LANG_ENGLISH        "Keep them pinned down!"
+
+REFERENCE           KHARKOV1_ANTONOV_KEEPFIRING04
+LANG_ENGLISH        "Keep pounding them! "
+
+REFERENCE           KHARKOV1_ANTONOV_LETSMOVE
+LANG_ENGLISH        "Let's get out of here! The devil can have this place..."
+
+REFERENCE           KHARKOV1_ANTONOV_REJOIN
+LANG_ENGLISH        "Well done, comrades. Rejoin the main force, to advance into the city. "
+
+REFERENCE           KHARKOV1_ANTONOV_SPOTTER
+LANG_ENGLISH        "Get into this building and find a spotting position, where you can direct our counter-fire. "
+
+REFERENCE           KHARKOV1_MIESHA_FIREMISSION01
+LANG_ENGLISH        "Fire mission battery, target: grid 535 465...over "
+
+REFERENCE           KHARKOV1_MIESHA_FIREMISSION02
+LANG_ENGLISH        "Fire mission battery, target: grid 537 467...over "
+
+REFERENCE           KHARKOV1_MIESHA_FIREMISSION03
+LANG_ENGLISH        "Fire mission battery, target: grid 539 468...over "
+
+REFERENCE           KHARKOV1_MIESHA_TIGER
+LANG_ENGLISH        "Tiger in the street!  Yuri - find a Panzerfaust to take it out! "
+
+REFERENCE           KHARKOV1_MIESHA_TIGER2
+LANG_ENGLISH        "They got a tank through!  Down!  Stay down!  Flank left! "
+
+REFERENCE           KHARKOV1_MIESHA_WAIT01
+LANG_ENGLISH        "Wait for me! "
+
+REFERENCE           KHARKOV1_MIESHA_WAIT02
+LANG_ENGLISH        "I'm coming, wait! "
+
+REFERENCE           KHARKOV1_MIESHA_WAIT03
+LANG_ENGLISH        "I'm on my way!"
+
+REFERENCE           NOVILLE_ANDERSON_THIRD_SQUAD
+LANG_ENGLISH        "Sir...a Kraut tank just took out half of Third Squad! Sgt Moody's rounded up the rest and they're trying to get up here!"
+
+REFERENCE           NOVILLE_ANDERSON_BLOWN
+LANG_ENGLISH        "Consider it blown, sir!"
+
+REFERENCE           NOVILLE_ANDERSON_TRAPPED
+LANG_ENGLISH        "We're blocked in, sir! What the hell do we do now?!"
+
+REFERENCE           NOVILLE_FOLEY_BRIEF1
+LANG_ENGLISH        "Listen up, guys - listen up! Noville's had bad weather for the past two weeks, so we have no aerial recon. That means we don't have a damn clue what the German's have got up there - so we gotta watch each other's backs."
+
+REFERENCE           NOVILLE_FOLEY_BRIEF2
+LANG_ENGLISH        "Once we've got boots on the ground, we split up and go house-to-house. I'll be with First Squad -- going straight up the middle of the road. "
+
+REFERENCE           NOVILLE_FOLEY_BRIEF3
+LANG_ENGLISH        "Second Squad will come in from the left.  And Sergeant Moody will take third squad -- flanking right. There's a Chateau just west of town.  Rendezvous there. Any questions? "
+
+REFERENCE           NOVILLE_FOLEY_CP
+LANG_ENGLISH        "Get in that chateau - now! We gotta get in!"
+
+REFERENCE           NOVILLE_FOLEY_HOLD_CHATEAU
+LANG_ENGLISH        "You're doin' great, guys - hang in there! "
+
+REFERENCE           NOVILLE_FOLEY_LETSGO
+LANG_ENGLISH        "If you're cookin', Anderson. Alright first squad -- follow me! "
+
+REFERENCE           NOVILLE_FOLEY_ZEROED
+LANG_ENGLISH        "Artillery! Take cover!"
+
+REFERENCE           NOVILLE_FOLEY_SATCHEL
+LANG_ENGLISH        "Get a satchel charge and blow that wall. "
+
+REFERENCE           NOVILLE_FOLEY_SONOFA
+LANG_ENGLISH        "Cover the windows and doors! Hold your fire until they're in range."
+
+REFERENCE           NOVILLE_GERMANS_IN_HOUSE
+LANG_ENGLISH        "We got German troops in the house!"
+
+REFERENCE           NOVILLE_GERMANS_NORTH
+LANG_ENGLISH        "Germans in the house! North entrance! "
+
+REFERENCE           NOVILLE_GERMANS_PORCH
+LANG_ENGLISH        "Krauts on the front porch! "
+
+REFERENCE           NOVILLE_HALFTRACK_WEST
+LANG_ENGLISH        "Halftrack on the West!"
+
+REFERENCE           NOVILLE_HALFTRACK_NORTH
+LANG_ENGLISH        "Halftrack from the North!"
+
+REFERENCE           NOVILLE_PANZER_NORTH
+LANG_ENGLISH        "German tank coming in from the North!"
+
+REFERENCE           NOVILLE_PANZER_WEST
+LANG_ENGLISH        "Panzer on the West side! I need a bazooka -- NOW! "
+
+REFERENCE           BOMBER_THERE_FRITZ
+LANG_ENGLISH        "There ya go, Fritz - have one on me!"
+
+REFERENCE           BOMBER_TAIL_OK
+LANG_ENGLISH        "Tail gunner...right and ready."
+
+REFERENCE           BOMBER_BOMB_DIRECT_HIT
+LANG_ENGLISH        "Direct hit, skipper! I repeat, direct hit!"
+
+REFERENCE           FOY_MOODY_EV03_02A
+LANG_ENGLISH        "Tiger in the square!  We gotta clear it out - so our Shermans can move!"
+
+REFERENCE           BASTOGNE1_ANDERSON_RILEY
+LANG_ENGLISH        "Riley -- you comin'? I'm growin' a beard waitin' for you."
+
+REFERENCE           BASTOGNE1_FOLEY_FOXHOLE
+LANG_ENGLISH        "Sounds like they're already here to me...get to your foxholes!"
+
+REFERENCE           BASTOGNE1_MOODY_30CAL
+LANG_ENGLISH        "Riley - Anderson!  Find a hole and get yer ass in it!"
+
+REFERENCE           BASTOGNE1_MOODY_50CAL
+LANG_ENGLISH        "He's dead Ender. There ain't nothing we can do for him now. We're gettin' outta Dodge! \n"
+
+REFERENCE           BASTOGNE1_MOODY_ALMOST
+LANG_ENGLISH        "Almost got it - hold 'em off! "
+
+REFERENCE           BASTOGNE1_MOODY_BAZOOKA
+LANG_ENGLISH        "Riley -- Grab that bazooka! Take out that Panzer or we're done for!"
+
+REFERENCE           BASTOGNE1_MOODY_CLEAR
+LANG_ENGLISH        "Home stretch, Ender, hang in there..."
+
+REFERENCE           BASTOGNE1_MOODY_GO
+LANG_ENGLISH        "Get your butts movin'! Go! Go! Go! "
+
+REFERENCE           BASTOGNE1_MOODY_HEREGOES
+LANG_ENGLISH        "Ender is down! Riley, Keep firing!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING01
+LANG_ENGLISH        "Riley! Keep up the fire!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING02
+LANG_ENGLISH        "Let 'em have it!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING03
+LANG_ENGLISH        "Keep their heads down!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING04
+LANG_ENGLISH        "Hold the line! Hold the line! Keep up the fire!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING09
+LANG_ENGLISH        "Dammit - keep firin'!  What are you savin' your ammo for? "
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING06
+LANG_ENGLISH        "Pour it on!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING07
+LANG_ENGLISH        "Don't let up!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING08
+LANG_ENGLISH        "Hold the line!"
+
+REFERENCE           BASTOGNE1_MOODY_REPORT
+LANG_ENGLISH        "Captain! We just got past a whole mess a' German troops an' armor -- headed this way."
+
+REFERENCE           BASTOGNE1_MOODY_RIGHTFLANK
+LANG_ENGLISH        "They're breakin' through the right flank! Follow me!"
+
+REFERENCE           BASTOGNE1_MOODY_SHORTCUT
+LANG_ENGLISH        "I think there's a shortcut around that house!"
+
+REFERENCE           BASTOGNE1_MOODY_STALLED
+LANG_ENGLISH        "Damn...she's stalled out!"
+
+REFERENCE           BASTOGNE1_MOODY_SHORTCUT2
+LANG_ENGLISH        "Shortcut my ass! Ohh..."
+
+REFERENCE           BASTOGNE1_MOODY_TANKS
+LANG_ENGLISH        "German tanks, just what we need..."
+
+REFERENCE           BASTOGNE1_MOODY_WATCHOUT
+LANG_ENGLISH        "Down! Get Down!"
+
+REFERENCE           BASTOGNE1_TROOPER_OURS
+LANG_ENGLISH        "Aww, nuts...Do you hear that?...Hot dog, it's one of ours!...Go get 'em, boys!  Kick their asses! "
+
+REFERENCE           TRENCHES_ANTONOV_NEWORDERS
+LANG_ENGLISH        "Well done comrades, but we are not through. The Germans are moving through the village, trying to flank us. We have been ordered to drive them out. "
+
+REFERENCE           TRENCHES_MACHINEGUNS
+LANG_ENGLISH        "Machineguns..! "
+
+REFERENCE           TRENCHES_FIRE
+LANG_ENGLISH        "There they are--Fire!"
+
+REFERENCE           TRENCHES_MACHINEGUNS_READY
+LANG_ENGLISH        "Machineguns ready!"
+
+REFERENCE           KHARKOV1_MIESHA_LETSGO
+LANG_ENGLISH        "Let's move. There are more targets up ahead! "
+
+REFERENCE           KHARKOV1_MIESHA_READY1
+LANG_ENGLISH        "Ok, I am ready, Yuri.  Give me the coordinates. "
+
+REFERENCE           KHARKOV1_MIESHA_READY2
+LANG_ENGLISH        "Yuri, hurry up!  I am waiting"
+
+REFERENCE           KHARKOV2_ANT_COVER_ENGINEERS
+LANG_ENGLISH        "Yuri, cover the engineers until they set their charges. We cannot advance unless they are successful."
+
+REFERENCE           KHARKOV2_ANT_ENGINEERS1
+LANG_ENGLISH        "Miesha! Call for more engineers!"
+
+REFERENCE           KHARKOV2_ANT_ENGINEERS2
+LANG_ENGLISH        "Damn. Korolov! We need more engineers! "
+
+REFERENCE           KHARKOV2_COMM_ATTACK
+LANG_ENGLISH        "Advance! Move forward! Take the square! Attack! Attack!"
+
+REFERENCE           KHARKOV2_ANT_RUN1
+LANG_ENGLISH        "We need engineers to blow through that rubble, so our tanks can proceed. Yuri, you come with me -- Miesha's got the radio."
+
+REFERENCE           KHARKOV2_ANT_RUN2
+LANG_ENGLISH        "Ready? To that first tank, stick with me -- Go!"
+
+REFERENCE           KHARKOV2_ANT_RUN3
+LANG_ENGLISH        "Yuri, I need you to cover me while I move to that tank over there. Now! "
+
+REFERENCE           KHARKOV2_ANT_RUN4
+LANG_ENGLISH        "Ok Yuri--your turn! Come join me, I'll cover you! "
+
+REFERENCE           KHARKOV2_ANT_RUN5
+LANG_ENGLISH        "We're almost there! We have to get into that building. Together--Go! "
+
+REFERENCE           KHARKOV2_ANT_RADIO_NOW
+LANG_ENGLISH        "Miesha, call for engineers at once! "
+
+REFERENCE           KHARKOV2_MIESHA_YES_SERGEANT
+LANG_ENGLISH        "Right away, comrade sergeant! "
+
+REFERENCE           SICILY1_INGRAM_KILL
+LANG_ENGLISH        "We've been spotted! Take them out!"
+
+REFERENCE           KHARKOV2_ANT_ENGINEERS3
+LANG_ENGLISH        "Radio in for another group of engineers! "
+
+REFERENCE           KHARKOV2_MIESHA_BOMBERS
+LANG_ENGLISH        "Incoming bombers!"
+
+REFERENCE           KHARKOV2_VASSILI_FLAK
+LANG_ENGLISH        "German flak gun -- over there! We can use it to shoot down their own planes!"
+
+REFERENCE           KHARKOV2_ANT_GET_MOVING
+LANG_ENGLISH        "Nice work. We have to get moving - before they counterattack. We'll flank them through the factory! We need to take and hold the train station! "
+
+REFERENCE           KHARKOV2_COMM_GREATDAY
+LANG_ENGLISH        "Comrades, today you have achieved great glory!  Because of your courage and strength, the German army has been driven back and the city of Kharkov is once again ours!  From this day forward we shall not take another step back until this war is won!  Fight on!"
+
+REFERENCE           KHARKOV2_COMM_STATION
+LANG_ENGLISH        "Keep fighting -- reinforcements are on their way! Secure this station, and victory is ours!"
+
+REFERENCE           KHARKOV2_COMM_AVENGE
+LANG_ENGLISH        "Our forces will be here shortly! We have to control the tracks. "
+
+REFERENCE           KHARKOV2_GEN_STUKA1
+LANG_ENGLISH        "Stukas! Take Cover!"
+
+REFERENCE           KHARKOV2_GEN_STUKA2
+LANG_ENGLISH        "Stukas! Get down!"
+
+REFERENCE           KHARKOV2_GEN_TANKS
+LANG_ENGLISH        "Enemy tanks approaching!"
+
+REFERENCE           KHARKOV2_GEN_TANK
+LANG_ENGLISH        "Enemy tank!"
+
+REFERENCE           KHARKOV2_GEN_HALFTRACK
+LANG_ENGLISH        "Enemy halftrack! "
+
+REFERENCE           KHARKOV2_GEN_TRAIN_HERE
+LANG_ENGLISH        "The train's here!  Here comes the train! "
+
+REFERENCE           SICILY1_INGRAM_SURPRISE
+LANG_ENGLISH        "Gentlemen, listen up."
+
+REFERENCE           SICILY1_INGRAM_STAYLOW
+LANG_ENGLISH        "Excellent, they're leaving. Keep down lads. If they spot us we've had it."
+
+REFERENCE           SICILY1_INGRAM_DOCKS1
+LANG_ENGLISH        "As soon as we hit the docks, we'll split up into two assault teams."
+
+REFERENCE           SICILY1_INGRAM_DOCKS2
+LANG_ENGLISH        "Doyle, you'll lead second team to eliminate the guards inside the dock house. First team, led by myself, will provide covering fire."
+
+REFERENCE           SICILY1_INGRAM_HOOVER
+LANG_ENGLISH        "Hoover, Luyties...relieve that sentry."
+
+REFERENCE           SICILY1_INGRAM_OFF_BOAT
+LANG_ENGLISH        "Off the boat - quickly. You know what to do. "
+
+REFERENCE           SICILY1_INGRAM_BUNKER
+LANG_ENGLISH        "Well done.  Doyle, you and your team get as close as you can to that bunker before you engage. We'll provide covering fire."
+
+REFERENCE           SICILY1_INGRAM_WALL
+LANG_ENGLISH        "Good job. Alright, let's get up onto that wall."
+
+REFERENCE           SICILY1_INGRAM_LORRY
+LANG_ENGLISH        "Everyone into that lorry, Luyties...take the wheel."
+
+REFERENCE           SICILY1_INGRAM_BRIEF1
+LANG_ENGLISH        "Right...Once we get in the bunker, we'll spike the guns and plant charges in the magazine. As usual, take any important documents you may find inside."
+
+REFERENCE           SICILY1_INGRAM_BRIEF2
+LANG_ENGLISH        "There's a lighthouse up on the ridge.  We'll blow it up to divert them - drawing Jerry out of his fort."
+
+REFERENCE           SICILY1_LUYTIES_SORRY
+LANG_ENGLISH        "Sorry, sir."
+
+REFERENCE           SICILY1_INGRAM_LIGHTHOUSE
+LANG_ENGLISH        "It's right up here. "
+
+REFERENCE           SICILY1_INGRAM_UPHILL
+LANG_ENGLISH        "Good. Take that trail up to the fortress walls. We'll get in -- plant our charges, and get the hell out. "
+
+REFERENCE           SICILY1_INGRAM_HORNETS
+LANG_ENGLISH        "Ok...if Doyle set the fuses correctly, that lighthouse should be going up - right - about - now!"
+
+REFERENCE           SICILY1_INGRAM_SENTRY
+LANG_ENGLISH        "Doyle, Denny, Sentry on the wall."
+
+REFERENCE           SICILY1_LUYTIES_LORRY_STALLED
+LANG_ENGLISH        "Sir. The ruddy lorry has stalled out. "
+
+REFERENCE           SICILY1_INGRAM_COMMS
+LANG_ENGLISH        "Doyle, get up top and take out their radio room. My team will prepare the courtyard for our escape. "
+
+REFERENCE           SICILY1_INGRAM_LOW_COVER
+LANG_ENGLISH        "Stay low! Take cover! "
+
+REFERENCE           SICILY1_INGRAM_SABOTAGE
+LANG_ENGLISH        "OK, we've sabotaged their vehicles. Now for the bunker."
+
+REFERENCE           SICILY1_INGRAM_FORT
+LANG_ENGLISH        "Doyle, take your team down and silence those guns. Remember, retrieve any important documents that you may find. The rest of us will hold the fort. "
+
+REFERENCE           SICILY1_INGRAM_KUBEL
+LANG_ENGLISH        "Doyle -- with me on that bike!  The rest of you into that kubelwagen! "
+
+REFERENCE           SICILY1_INGRAM_GOODMEN
+LANG_ENGLISH        "Dammit to hell. Those were damn fine men. I hope those bloody guns were worth it."
+
+REFERENCE           SICILY2_INGRAM_EYE_OUT
+LANG_ENGLISH        "Stay on the ball, there'll be more on the other side."
+
+REFERENCE           SICILY2_INGRAM_USE_GRENADES
+LANG_ENGLISH        "We're blocked! We have to take out those trucks! Use your grenades!"
+
+REFERENCE           SICILY2_INGRAM_GOOD_SHOW
+LANG_ENGLISH        "Good show, Doyle. Bloody good work.  Now it's out of the frying pan, into the fire."
+
+REFERENCE           SICILY2_INGRAM_BLIMEY
+LANG_ENGLISH        "Close call! Better them than us!"
+
+REFERENCE           SICILY2_INGRAM_DETOUR
+LANG_ENGLISH        "Hang on...we need to make a detour. "
+
+REFERENCE           SICILY2_INGRAM_BLAST
+LANG_ENGLISH        "Blast! I'll try to lose them in the village."
+
+REFERENCE           SICILY2_INGRAM_LEAPFROG
+LANG_ENGLISH        "Leapfrog forward - keep moving. "
+
+REFERENCE           SICILY2_INGRAM_GET_AROUND
+LANG_ENGLISH        "We've got to get around them - move to the right!"
+
+REFERENCE           BASTOGNE2_ANDERSON_HESGOTHIM
+LANG_ENGLISH        "He's got 'im!  Keep firing - don't hit 'em!"
+
+REFERENCE           SICILY2_INGRAM_LORRY_LEFT
+LANG_ENGLISH        "Lorry on the left!"
+
+REFERENCE           BASTOGNE2_GUNNER_30CAL_DUGIN
+LANG_ENGLISH        "Man, I'm glad you guys showed up. They're dug in pretty good down there, with a couple of 42's and 88's and a full platoon. "
+
+REFERENCE           SICILY2_INGRAM_BEACH
+LANG_ENGLISH        "Not much further. Higgs said there's a small dock down there."
+
+REFERENCE           SICILY2_INGRAM_DOWN_TO_BEACH
+LANG_ENGLISH        "Keep advancing...we need to get down to the beach. "
+
+REFERENCE           SICILY2_INGRAM_ON_LEFT
+LANG_ENGLISH        "We've got one on the left! "
+
+REFERENCE           SICILY2_INGRAM_DOWN_THERE
+LANG_ENGLISH        "There he is down there - we've got to get down and help. "
+
+REFERENCE           SICILY2_INGRAM_GOT_HIGGS
+LANG_ENGLISH        "They got Higgs! We'll have to take their boat or die here!"
+
+REFERENCE           SICILY2_INGRAM_ENJOY
+LANG_ENGLISH        "Nice shot -- that's the last of them. Have a look, Doyle. You bought your ticket, might as well enjoy the show.\n"
+
+REFERENCE           BASTOGNE2_GUNNER_30CAL_STRIKE
+LANG_ENGLISH        "Was here - and he can kiss my ass!"
+
+REFERENCE           TRENCHES_COMING_BACK
+LANG_ENGLISH        "Stukas! They're coming back!"
+
+REFERENCE           BASTOGNE2_FOLEY_BRIEF1
+LANG_ENGLISH        "Gentlemen, meet Sergeant Jones and Sergeant Ramirez. Their squads will be assisting you on this mission."
+
+REFERENCE           BASTOGNE2_FOLEY_BRIEF2
+LANG_ENGLISH        "Care to brief them?"
+
+REFERENCE           BASTOGNE2_FOLEY_BRIEF3
+LANG_ENGLISH        "Thank you Sergeant. The brass wants the 11th Armored in Foy by tomorrow sunset.  We've been asked to clear the way for them...and to do that, we gotta take out everything in between.  Questions?"
+
+REFERENCE           BASTOGNE2_WHITNEY_BOBBY_HIT
+LANG_ENGLISH        "Medic! Sarge -- Bobby's hit!"
+
+REFERENCE           BASTOGNE2_WHITNEY_KEEPFIRING
+LANG_ENGLISH        " The Sarge is out there! Keep firing!"
+
+REFERENCE           BASTOGNE2_FOLEY_DIGIN
+LANG_ENGLISH        "Sergeant Moody, have your men dig in near the forest south of town, and then meet me back at the CP at 0930."
+
+REFERENCE           BASTOGNE2_FOLEY_DISMISSED
+LANG_ENGLISH        "Good luck, gentlemen.  We'll see you in Foy.  Dinner will be on me.  Dismissed."
+
+REFERENCE           BASTOGNE2_JONES_YESSIR
+LANG_ENGLISH        "No sir."
+
+REFERENCE           BASTOGNE2_KOPPEL_NO_LUCK
+LANG_ENGLISH        "No luck, Sarge. He says he doesn't know."
+
+REFERENCE           BASTOGNE2_KOPPEL_SHOW_US
+LANG_ENGLISH        "He says they're out back, Sarge. "
+
+REFERENCE           BASTOGNE2_KOPPEL_TRANSLATE
+LANG_ENGLISH        "I can, Sarge...A little. "
+
+REFERENCE           BASTOGNE2_MOODY_ASK_AGAIN
+LANG_ENGLISH        "S'pose we try again..."
+
+REFERENCE           BASTOGNE2_MOODY_BRIEF1
+LANG_ENGLISH        "My pleasure, sir. It's pretty bad everywhere, take your pick.  Sgt. Ramirez, you and your boys will hit the crossroads just south of Foy."
+
+REFERENCE           BASTOGNE2_MOODY_BRIEF2
+LANG_ENGLISH        "Sgt. Jones, you and your men will be joining me in a flanking action to the west.  The woods here and here are heavily mined, with a couple 88's and an O.P. inside this large farmhouse, here. We lost a patrol in that sector and will want to keep a lookout for them. "
+
+REFERENCE           BASTOGNE2_MOODY_CLEAR_DOWN
+LANG_ENGLISH        "What the hell -- salute 'im...I'll be right up."
+
+REFERENCE           BASTOGNE2_MOODY_CROSSROAD
+LANG_ENGLISH        "Get a medic in here to take care of the wounded. The rest of us've gotta get up to that crossroads to support Ramirez. Go..."
+
+REFERENCE           BASTOGNE2_WHITNEY_COMEONSARGE
+LANG_ENGLISH        "C'mon Sarge!"
+
+REFERENCE           BASTOGNE2_MOODY_GOTO_AMBUSH
+LANG_ENGLISH        "Ramirez, stay here and hold the fort!  We'll cut 'em off before they get here!  We just got this damn place -- I'm sure as hell not givin' it back.  Move out!"
+
+REFERENCE           BASTOGNE2_MOODY_GRENADES
+LANG_ENGLISH        "We're getting' shredded! Riley,  Anderson! Get some grenades into that bunker!"
+
+REFERENCE           BASTOGNE2_MOODY_HELLUVA_FIGHT
+LANG_ENGLISH        "Helluva fight guys...way to go.  Let's get back to the crossroads..."
+
+REFERENCE           BASTOGNE2_MOODY_HIT_DIRT
+LANG_ENGLISH        "Hit the dirt -- wait for my signal."
+
+REFERENCE           BASTOGNE2_MOODY_HOLD
+LANG_ENGLISH        "Hold still. Somebody's out there..."
+
+REFERENCE           BASTOGNE2_MOODY_LETSGO
+LANG_ENGLISH        "0930, Captain. You heard the man, let's go! "
+
+REFERENCE           BASTOGNE2_MOODY_LUCKY
+LANG_ENGLISH        "Kilroy!"
+
+REFERENCE           BASTOGNE2_MOODY_MG34
+LANG_ENGLISH        "They got MG34's! Take those bastards down -- before they can deploy!"
+
+REFERENCE           BASTOGNE2_MOODY_MISSING_PATROL
+LANG_ENGLISH        "Beats the hell outta nothin'. Ask him where our missing patrol is. "
+
+REFERENCE           BASTOGNE2_MOODY_MORE_LIKE_IT
+LANG_ENGLISH        "Good, then he can take us to them. Let's go."
+
+REFERENCE           BASTOGNE2_MOODY_NOW
+LANG_ENGLISH        "Alright, boys -- let 'em have it -- now!!!"
+
+REFERENCE           BASTOGNE2_MOODY_RUNFORIT
+LANG_ENGLISH        "Down -- take cover! Down!"
+
+REFERENCE           BASTOGNE2_MOODY_SCRAP_PANZER
+LANG_ENGLISH        "Riley! Grab that bazooka - and scrap that Panzer -- Go!"
+
+REFERENCE           BASTOGNE2_MOODY_SHUTUP
+LANG_ENGLISH        "Shut him up!"
+
+REFERENCE           BASTOGNE2_MOODY_SILENCE_MG42
+LANG_ENGLISH        "That bunker's killin' 'em!  Let's slip in from the left and take it out!"
+
+REFERENCE           BASTOGNE2_MOODY_SPIKE88
+LANG_ENGLISH        "Whitney - Anderson! Get over there and spike those 88's! Riley - keep your eyes open!"
+
+REFERENCE           BASTOGNE2_MOODY_SURPRISE
+LANG_ENGLISH        "That Kraut on the bike's gonna warn his friends! We gotta move now - let's go!"
+
+REFERENCE           BASTOGNE2_MOODY_TERRIFIC
+LANG_ENGLISH        "Terrific. Ready, guys?  Let's maintain quiet, move into position...then hit 'em 'fore they know what hit 'em."
+
+REFERENCE           BASTOGNE2_MOODY_THREATS
+LANG_ENGLISH        "Keep on firin' - drive 'em back!"
+
+REFERENCE           BASTOGNE2_MOODY_TRANSLATE
+LANG_ENGLISH        "Can anyone in this damned army speak German? "
+
+REFERENCE           BASTOGNE2_MOODY_WOUNDED
+LANG_ENGLISH        "Gimme covering fire -- so I can go get him."
+
+REFERENCE           BASTOGNE2_MOODY_YESSIR
+LANG_ENGLISH        "No sir."
+
+REFERENCE           BASTOGNE2_RAMIREZ_YESSIR
+LANG_ENGLISH        "No sir."
+
+REFERENCE           BASTOGNE2_TANKER_NICEWORK
+LANG_ENGLISH        "Nice work, soldiers.  We'll take it from here."
+
+REFERENCE           BASTOGNE2_TROOPER_OFFICER
+LANG_ENGLISH        "Hey Sarge, we got us a prisoner up here!  Looks like an officer..."
+
+REFERENCE           TRAINBRIDGE_INGRAM_BARN
+LANG_ENGLISH        "Jerries in the barn! Clear it out! "
+
+REFERENCE           TRAINBRIDGE_INGRAM_FIND_COVER
+LANG_ENGLISH        "Doyle, find some cover. "
+
+REFERENCE           TRAINBRIDGE_INGRAM_GETTO_BARN
+LANG_ENGLISH        "Get up to that barn right quick."
+
+REFERENCE           TRAINBRIDGE_INGRAM_CLEAR_HOUSE
+LANG_ENGLISH        "There's a farmhouse up ahead. Let's clear it out, so it doesn't come back to haunt us."
+
+REFERENCE           TRAINBRIDGE_INGRAM_COMEDOWN
+LANG_ENGLISH        "You can come down now...he won't give you any more trouble."
+
+REFERENCE           TRAINBRIDGE_INGRAM_DAFT
+LANG_ENGLISH        "Are you Daft? I said wait for my command!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_DEPOT
+LANG_ENGLISH        "Quiet lads.  Doyle get over here.  We've got to get through this tunnel. Expect the worst - this has been a picnic up until now.\n"
+
+REFERENCE           TRAINBRIDGE_INGRAM_DETONATE1
+LANG_ENGLISH        "Well done. Since you did all the heavy lifting, I'll let you have the honors. Detonate on my command."
+
+REFERENCE           TRAINBRIDGE_INGRAM_DETONATE2
+LANG_ENGLISH        "Now!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_ENGLAND
+LANG_ENGLISH        "Not too bad, for an RAF bloke, Doyle. There could be a future in this for you...if you get back to England in one piece."
+
+REFERENCE           TRAINBRIDGE_INGRAM_BEHIND_YOU
+LANG_ENGLISH        "Doyle - behind you!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_GET_WEAPON
+LANG_ENGLISH        "Grab a weapon from one of the dead Jerries. You'll need more than that Webley where we're going."
+
+REFERENCE           TRAINBRIDGE_INGRAM_GOTO_FOREST
+LANG_ENGLISH        "There's way too much bloody activity on this road. We'll have to cut through the forest. Doyle - stay close."
+
+REFERENCE           TRAINBRIDGE_INGRAM_INTRO
+LANG_ENGLISH        "Major Ingram, SOE - Our friends from the Dutch resistance saw your plane go down, so we decided to have a look in case Jerry got too curious."
+
+REFERENCE           TRAINBRIDGE_INGRAM_OVER_HERE
+LANG_ENGLISH        "Over here! Alright, we're done here.  Follow me. "
+
+REFERENCE           TRAINBRIDGE_INGRAM_LETSGO
+LANG_ENGLISH        "Into the barn - there's a lorry there.  Go go go!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_REAL_WAR
+LANG_ENGLISH        "Doyle, stay close. You're not shooting from ten thousand feet - you're in the war now."
+
+REFERENCE           TRAINBRIDGE_INGRAM_MG34
+LANG_ENGLISH        "We need to take out those bloody machine guns!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_NEED_TRUCK
+LANG_ENGLISH        "Yes. I have a feeling that we will need it later."
+
+REFERENCE           TRAINBRIDGE_INGRAM_ACROSS
+LANG_ENGLISH        "Get moving, across this ridge! "
+
+REFERENCE           TRAINBRIDGE_INGRAM_PULLOVER
+LANG_ENGLISH        "German Lorry up ahead. Pull off the road, and kill your lights."
+
+REFERENCE           TRAINBRIDGE_INGRAM_QUIET
+LANG_ENGLISH        "Grab a weapon from one of those dead Jerries and follow us -- We have an important train to catch. Once that is sorted, we'll get you home right as rain. Let's go."
+
+REFERENCE           TRAINBRIDGE_INGRAM_SHH
+LANG_ENGLISH        "Shhh...down...German patrol. "
+
+REFERENCE           TRAINBRIDGE_INGRAM_STEPONIT
+LANG_ENGLISH        "Get us to that airstrip fast!  Turn right at the bridge..."
+
+REFERENCE           TRAINBRIDGE_INGRAM_SURPRISE
+LANG_ENGLISH        "They're on our tails. Set an ambush - down!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_THRU_FOREST
+LANG_ENGLISH        "They're in the tunnel! We've got to get around them! Through the forest -- Go! "
+
+REFERENCE           TRAINBRIDGE_VANDYKE_MACHINEGUN
+LANG_ENGLISH        "Machine gun! "
+
+REFERENCE           SICILY2_INGRAM_CONTINUE_ON_FOOT
+LANG_ENGLISH        "Damn, the bike is buggered. We'll have to continue on foot. "
+
+REFERENCE           SICILY2_INGRAM_CORRAL
+LANG_ENGLISH        "Brace yourself! They're trying to surround us!"
+
+REFERENCE           SICILY2_INGRAM_CUTOFF
+LANG_ENGLISH        "More to the left! Hang on - we're coming around!"
+
+REFERENCE           SICILY2_INGRAM_DAMN_JERRIES
+LANG_ENGLISH        "Damn Jerries -- don't they have something better to do? "
+
+REFERENCE           SICILY2_INGRAM_GUN
+LANG_ENGLISH        "Fire!"
+
+REFERENCE           SICILY2_INGRAM_JERRY_BOAT
+LANG_ENGLISH        "Man that gun.  I'll drive. "
+
+REFERENCE           SICILY2_INGRAM_NICESHOT1
+LANG_ENGLISH        "Excellent shooting, Doyle! The RAF's loss is our gain. "
+
+REFERENCE           SICILY2_INGRAM_NICESHOT2
+LANG_ENGLISH        "Good work! If we're not careful, we may get out of this alive!"
+
+REFERENCE           SICILY2_INGRAM_NICESHOT3
+LANG_ENGLISH        "Excellent! Let's pray our luck holds up! "
+
+REFERENCE           SICILY2_INGRAM_DEAD_END
+LANG_ENGLISH        "It's a dead end - jump."
+
+REFERENCE           SICILY2_INGRAM_STANDOFF
+LANG_ENGLISH        "More PTs ahead! Sort them out - or we're done for!"
+
+REFERENCE           SICILY2_INGRAM_THRU_BUNKER
+LANG_ENGLISH        "We'll have to get through that bunker! Go!"
+
+REFERENCE           KHARKOV2_GOOD_SHOOTING
+LANG_ENGLISH        "Good shooting, Yuri. Let's move! "
+
+REFERENCE           BASTOGNE2_WHITNEY_OHMAN
+LANG_ENGLISH        "Oh, man..."
+
+REFERENCE           BASTOGNE2_WHITNEY_FREEZIN
+LANG_ENGLISH        "I'm freezin' my ass off."
+
+REFERENCE           BASTOGNE1_ANDERSON_WHAT
+LANG_ENGLISH        "What?"
+
+REFERENCE           BASTOGNE2_MOODY_SHADDUP
+LANG_ENGLISH        "Both a' ya's - quiet...and count your blessings.  It's gonna get hot here soon enough. "
+
+REFERENCE           BASTOGNE1_ENDER_SHORTCUT
+LANG_ENGLISH        "Shortcut my ass! Ohh..."
+
+REFERENCE           BASTOGNE1_MOODY_WATCHIT
+LANG_ENGLISH        "Watch it!"
+
+REFERENCE           BASTOGNE1_MOODY_EYESOPEN
+LANG_ENGLISH        "Keep your eyes open, boys..."
+
+REFERENCE           BASTOGNE1_MOODY_TOTHERIGHT
+LANG_ENGLISH        "Germans -- to the right!"
+
+REFERENCE           BASTOGNE1_MOODY_DEADAHEAD
+LANG_ENGLISH        "Dead ahead - Hang on!"
+
+REFERENCE           BASTOGNE1_MOODY_STOPYACKIN
+LANG_ENGLISH        "Shut up!"
+
+REFERENCE           BASTOGNE1_ENDER_PASSRIGHT
+LANG_ENGLISH        "Hey Sarge - you're passin' on the right!"
+
+REFERENCE           BASTOGNE1_ENDER_DONTLIKETHIS
+LANG_ENGLISH        "Oh man...I don't like this..."
+
+REFERENCE           BASTOGNE1_MOODY_WHATSTOLIKE
+LANG_ENGLISH        "What's to like?"
+
+REFERENCE           BASTOGNE1_MOODY_TOTHELEFT
+LANG_ENGLISH        "To the left - Take 'em out!"
+
+REFERENCE           BASTOGNE1_ENDER_OFFTORIGHT
+LANG_ENGLISH        "Off to the right!"
+
+REFERENCE           BASTOGNE1_ENDER_HITIT
+LANG_ENGLISH        "Man, that was close Sarge - hit it!"
+
+REFERENCE           BASTOGNE1_MOODY_WHEREHIT
+LANG_ENGLISH        "Ender, where are you hit?"
+
+REFERENCE           BASTOGNE1_MOODY_WHEREHIT2
+LANG_ENGLISH        "Don't worry, we'll getcha outta here."
+
+REFERENCE           BASTOGNE1_MOODY_OH_BABY
+LANG_ENGLISH        "Hold on! We're getting outta here -- NOW!"
+
+REFERENCE           BASTOGNE2_RAMIREZ_GOTIT
+LANG_ENGLISH        "Got it."
+
+REFERENCE           BASTOGNE1_MOODY_MEDIC
+LANG_ENGLISH        "Medic - over here now!"
+
+REFERENCE           BASTOGNE1_MEDIC_YOURE_OK
+LANG_ENGLISH        "You're OK!  I got ya soldier!"
+
+REFERENCE           BASTOGNE1_MOODY_WITHME
+LANG_ENGLISH        "Riley! Come with me! I need you on the .30 cal!"
+
+REFERENCE           BASTOGNE1_MOODY_CHANGIN
+LANG_ENGLISH        "Riley - I need backup.  We're changin' positions..."
+
+REFERENCE           BASTOGNE1_MOODY_POP_SMOKE
+LANG_ENGLISH        "We got air support!  Grab that sniper rifle and cover me!  Watch the ridgeline for machine gunners! I gotta pop smoke for those 47s!"
+
+REFERENCE           BASTOGNE1_MOODY_SLOW_DOWN
+LANG_ENGLISH        "Good job - that should slow 'em down a bit."
+
+REFERENCE           BASTOGNE1_MOODY_LINE_COLLAPSED
+LANG_ENGLISH        "The line's collapsed - help 'em out."
+
+REFERENCE           BASTOGNE1_MOODY_ANOTHER_PANZER
+LANG_ENGLISH        "There's another one - move 'til you got a shot."
+
+REFERENCE           BASTOGNE1_MOODY_OH_GOD
+LANG_ENGLISH        "Oh God...here they come"
+
+REFERENCE           BASTOGNE1_TROOPER_ALRIGHT
+LANG_ENGLISH        "Alright!"
+
+REFERENCE           BASTOGNE1_MOODY_TINCANS
+LANG_ENGLISH        "Well, ain't that typical! Damn tankers - show up late and take all the credit!"
+
+REFERENCE           BASTOGNE2_MOODY_HANGIN
+LANG_ENGLISH        "Ughhh! Hang on - I'll be right back!"
+
+REFERENCE           BASTOGNE2_MOODY_LOOKIN_GOOD
+LANG_ENGLISH        "Lookin' good, Bobby.  Just hang tight."
+
+REFERENCE           BASTOGNE2_MOODY_KEEP_MOVING_FORWARD
+LANG_ENGLISH        "Good work!  Keep moving forward - maintain your intervals."
+
+REFERENCE           BASTOGNE2_ANDERSON_SARGE
+LANG_ENGLISH        "Hey, Sarge..."
+
+REFERENCE           BASTOGNE2_MOODY_NOT_NOW
+LANG_ENGLISH        "Shh...Not now.."
+
+REFERENCE           BASTOGNE2_MOODY_THERES_OUR_BOY
+LANG_ENGLISH        "There's our boy..."
+
+REFERENCE           BASTOGNE2_MOODY_FLARES
+LANG_ENGLISH        "Flares!  Move to the right - stay in the treeline - they know we're here."
+
+REFERENCE           BASTOGNE2_MOODY_BACK_OF_HOUSE
+LANG_ENGLISH        "We gotta get into that house! "
+
+REFERENCE           BASTOGNE2_MOODY_CROSSFIRE
+LANG_ENGLISH        "Second squad's got the rear - watch for crossfire!"
+
+REFERENCE           BASTOGNE2_MOODY_GOTO_BARN
+LANG_ENGLISH        "Our guys are in there!  We need to get to that barn before they do! "
+
+REFERENCE           BASTOGNE2_MOODY_ALONG_RIDGE
+LANG_ENGLISH        "Let's move up along this ridge."
+
+REFERENCE           BASTOGNE2_MOODY_HEAVY_FIRE
+LANG_ENGLISH        "That's heavy fire - stay on your toes. "
+
+REFERENCE           BASTOGNE2_MOODY_THATS_RAMIREZ
+LANG_ENGLISH        "That's Ramirez up there! Watch who you shoot! "
+
+REFERENCE           BASTOGNE2_WHITNEY_CONVOY
+LANG_ENGLISH        "Sarge, they got a convoy -- comin' in from the West!"
+
+REFERENCE           FOY_TROOPER1_NOSIR
+LANG_ENGLISH        "No, Sir!"
+
+REFERENCE           FOY_MOODY_CLEAR_ROOMS
+LANG_ENGLISH        "Keep movin' - clear those rooms!"
+
+REFERENCE           FOY_ANDERSON_JOINT_ON_FIRE
+LANG_ENGLISH        "The joint's on fire - move!"
+
+REFERENCE           FOY_FOLEY_STAY_WITH
+LANG_ENGLISH        "Stay with the tank!"
+
+REFERENCE           FOY_FOLEY_TAKE_COVER
+LANG_ENGLISH        "Take cover here! "
+
+REFERENCE           FOY_MOODY_GOTIT
+LANG_ENGLISH        "We got it, Captain. Move! "
+
+REFERENCE           NOVILLE_FOLEY_FALL_BACK
+LANG_ENGLISH        "Fall back!  Get down those stairs! "
+
+REFERENCE           NOVILLE_TROOPER1_DINNER
+LANG_ENGLISH        "Sir, do we get our dinner there?! "
+
+REFERENCE           FOY_FOLEY_KEEP_ADVANCING
+LANG_ENGLISH        "Keep advancing! Go!"
+
+REFERENCE           NOVILLE_FOLEY_UP_STREET
+LANG_ENGLISH        "Move up the street! Don't stop now! "
+
+REFERENCE           NOVILLE_FOLEY_DRIVE_EM_BACK
+LANG_ENGLISH        "Drive 'em back!"
+
+REFERENCE           NOVILLE_ANDERSON_CHAMPAGNE
+LANG_ENGLISH        "Damn...champagne, Cap! "
+
+REFERENCE           NOVILLE_FOLEY_CELEBRATE_LATER
+LANG_ENGLISH        "We'll celebrate later. Leave it!"
+
+REFERENCE           NOVILLE_WHITNEY_SONOFA
+LANG_ENGLISH        "Son of a gun! Captain! You might wanna take a look - they gotta whole division movin' in!"
+
+REFERENCE           NOVILLE_FOLEY_GET_BACK_HERE
+LANG_ENGLISH        "Riley - Anderson! Get yer asses back here! "
+
+REFERENCE           NOVILLE_PULL_TRIGGER
+LANG_ENGLISH        "Whaddya waitin' for, pull the trigger!"
+
+REFERENCE           NOVILLE_KEEP_EM_OUT
+LANG_ENGLISH        "They're movin' in!  Keep 'em out!"
+
+REFERENCE           NOVILLE_BAZOOKA_UP_HERE
+LANG_ENGLISH        "Bazooka - up here! Get 'im more rockets."
+
+REFERENCE           NOVILLE_DANG_NAILED
+LANG_ENGLISH        "Dang! Ya nailed 'em!"
+
+REFERENCE           NOVILLE_WHITNEY_INCOMING_AIR
+LANG_ENGLISH        "Incoming aircraft! "
+
+REFERENCE           NOVILLE_WHITNEY_P47S
+LANG_ENGLISH        "P-47s!"
+
+REFERENCE           NOVILLE_ANDERSON_THEIRS_OURS
+LANG_ENGLISH        "Theirs or ours?"
+
+REFERENCE           NOVILLE_FOLEY_FLYBOYS
+LANG_ENGLISH        "Fly boys...they love to make a dramatic entrance!"
+
+REFERENCE           NOVILLE_WHITNEY_ANYWAY
+LANG_ENGLISH        "Any way they want, Sir...any way they want."
+
+REFERENCE           NOVILLE_FOLEY_GOODJOB
+LANG_ENGLISH        "Guys, this may be the hardest day I've been through...and the proudest I've  been of the men in my command. Anderson -- go get that champagne we found.  Dinner's on the way -- the drinks are on me!"
+
+REFERENCE           BOMBER_PILOT_E01_03
+LANG_ENGLISH        "Gunners! Our spitfires are gone, so shoot any fighters you see!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_SPREADOUT
+LANG_ENGLISH        "Spread out! Spread out! "
+
+REFERENCE           TRAINBRIDGE_INGRAM_BUNKER
+LANG_ENGLISH        "Bunker on the right - get some grenades in there!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_GRAB_CHARGES
+LANG_ENGLISH        "Van Dyke is down! Doyle! Make yourself useful -- grab his charges -- and plant them on the lower arches of the bridge -- I'll cover you."
+
+REFERENCE           TRAINBRIDGE_INGRAM_GRAB_CHARGES2
+LANG_ENGLISH        "The rest of you provide covering fire. When we're finished, we'll meet up on that ridge. "
+
+REFERENCE           TRAINBRIDGE_INGRAM_HERECOMES_TRAIN
+LANG_ENGLISH        "Here comes the train, Doyle!  Hurry up!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_BLOW
+LANG_ENGLISH        "We've got to blow this thing and go!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_DOYLE_HURRY
+LANG_ENGLISH        "Doyle - hurry up!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_THEM_PLANTED
+LANG_ENGLISH        "Have you got them planted?  Good. Fall back! "
+
+REFERENCE           TRAINBRIDGE_INGRAM_WAIT_WAIT
+LANG_ENGLISH        "Wait...wait! "
+
+REFERENCE           TRAINBRIDGE_INGRAM_ALRIGHT_GO
+LANG_ENGLISH        "Alright - now! "
+
+REFERENCE           TRAINBRIDGE_INGRAM_WOKE_UP
+LANG_ENGLISH        "Well that was by the numbers -- Right, we just woke up every German from here to Berlin! Fall back to the farmhouse!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_LETS_MOVE
+LANG_ENGLISH        "Alright, let's move."
+
+REFERENCE           TRAINBRIDGE_INGRAM_KEEP_QUIET
+LANG_ENGLISH        "Keep quiet..."
+
+REFERENCE           TRAINBRIDGE_INGRAM_BACK_BEHIND
+LANG_ENGLISH        "Bloody hell! They're still behind us! Turn and fight!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_ALRIGHT_GO2
+LANG_ENGLISH        "Alright - hurry up! Go!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_THERE_SHE_IS
+LANG_ENGLISH        "There it is, lads - steady now..."
+
+REFERENCE           TRAINBRIDGE_INGRAM_EVERYBODY_IN
+LANG_ENGLISH        "Everybody in - let's move! "
+
+REFERENCE           UK_MID_INGRAM1
+LANG_ENGLISH        "May I have your attention gents; meet Sgt. James Doyle, S-O-E. He will be joining us on this mission. He was one of the highest scoring candidates ever at the SOE School in Guildford, so you can rest assured that he is highly skilled. Luckily, we rescued him from a dismal existence in the RAF, back in '41."
+
+REFERENCE           TRAINBRIDGE_INGRAM_JEEVES
+LANG_ENGLISH        "Step on it, Jeeves!"
+
+REFERENCE           TRAINBRIDGE_INGRAM_THEYRE_GONE
+LANG_ENGLISH        "They're gone - let's go. "
+
+REFERENCE           UK_MID_INGRAM2
+LANG_ENGLISH        "Now that introductions are over, let's get down to brass tacks. There are a number of large caliber coastal batteries that are threatening the success of the upcoming invasion of Sicily, codenamed, "Operation Husky". "
+
+REFERENCE           UK_MID_INGRAM3
+LANG_ENGLISH        "One of particular concern is found here, at Capo Murro di Porco, a small peninsula near Syracuse. "
+
+REFERENCE           UK_MID_INGRAM4
+LANG_ENGLISH        "These guns must be destroyed before any Allied ships can move into position for the invasion. To do that, we will need the particular talents of you gentlemen from the SAS."
+
+REFERENCE           UK_MID_INGRAM5
+LANG_ENGLISH        "We will be inserted near the guns by means of a local fishing boat. We should be able to get close enough without raising any suspicion. "
+
+REFERENCE           UK_MID_INGRAM6
+LANG_ENGLISH        "The guns are in a bunker that Jerry built underneath the ruins of this old fortress. Our Mission is to get in, plant charges on the guns, and in the magazine."
+
+REFERENCE           UK_MID_INGRAM7
+LANG_ENGLISH        "We will then rendezvous with the boat nearby, and ex-filtrate back to the Ulster Monarch. You've all received your dossiers, study them hard. The success of the invasion hinges on us doing our job. Godspeed. "
+
+REFERENCE           SICILY1_INGRAM_COMMENTARY
+LANG_ENGLISH        "I said "questions", Luyties, not "commentary"."
+
+REFERENCE           SICILY1_INGRAM_STICKY_WICKET
+LANG_ENGLISH        "Blast! We'll continue on foot."
+
+REFERENCE           SICILY1_INGRAM_SEEING_LIGHTHOUSE
+LANG_ENGLISH        "Stay low. Doyle, take your team and plant your charges inside. We'll cover the door."
+
+REFERENCE           SICILY1_MODITCH_BEHINDYOU
+LANG_ENGLISH        "Doyle - behind you!"
+
+REFERENCE           SICILY1_DENNY_LOOKOUT
+LANG_ENGLISH        "Look out!"
+
+REFERENCE           SICILY1_MODITCH_SEARCH
+LANG_ENGLISH        "Doyle - the Major said to search this floor for documents."
+
+REFERENCE           SICILY1_MODITCH_GOOD
+LANG_ENGLISH        "Have you got them?  Good, let's get to the magazine -- blow this place and go."
+
+REFERENCE           SICILY1_MODITCH_FIRE_HOLE
+LANG_ENGLISH        "Fire in the hole!"
+
+REFERENCE           SICILY1_DENNY_FIRE_HOLE
+LANG_ENGLISH        "Fire in the hole!"
+
+REFERENCE           SICILY1_DENNY_OUTTA_HERE
+LANG_ENGLISH        "Let's get outta here!"
+
+REFERENCE           SICILY1_MODITCH_OH_MAN
+LANG_ENGLISH        "Oh, bloody hell - let's go!"
+
+REFERENCE           SICILY1_INGRAM_COURTYARD
+LANG_ENGLISH        "Get to the courtyard!"
+
+REFERENCE           SICILY2_INGRAM_GOING_THROUGH
+LANG_ENGLISH        "Watch out - we're going right through them."
+
+REFERENCE           SICILY2_INGRAM_DAY_CRUISE
+LANG_ENGLISH        "Make every shot count!"
+
+REFERENCE           SICILY2_INGRAM_INCOMING
+LANG_ENGLISH        "Incoming twelve o'clock!"
+
+REFERENCE           SICILY2_INGRAM_OFF_COAST
+LANG_ENGLISH        "The "Ulster Monarch's" off the coast.  What say we get out of here before any more of these Jerries show."
+
+REFERENCE           RU_INTRO_COMM1
+LANG_ENGLISH        "Comrades, Supreme Command has learned that the Germans, in a state of desperation, are pinning all their hopes on one final assault against our Central Front.  By achieving a victory here, they hope to overcome their crushing loss to the heroic defenders of Stalingrad, to again, regain the offensive."
+
+REFERENCE           RU_INTRO_COMM2
+LANG_ENGLISH        "It should come as no surprise that our great leader, Comrade Stalin, has decreed that this must not happen."
+
+REFERENCE           RU_INTRO_COMM3
+LANG_ENGLISH        "Fortunately for us, our highly placed source within the ranks of German High Command has uncovered critical details of their plans. We know, for example, that the specific target for their offensive - codenamed Operation Citadel - is our deceptively exposed salient near the outskirts of Kursk."
+
+REFERENCE           RU_INTRO_COMM4
+LANG_ENGLISH        "I say deceptively because, for the past several weeks, we have secretly built up layer upon layer of fortified, defensive earthworks where we have deployed the greatest concentration of anti-tank weapons ever committed to a single position."
+
+REFERENCE           RU_INTRO_COMM5
+LANG_ENGLISH        "We will need these, for it has come to our attention that the Germans are committing all their available armor to the upcoming offensive, including some new and experimental models."
+
+REFERENCE           RU_INTRO_COMM6
+LANG_ENGLISH        "We have been steadily building up our forces and, even now, trainloads of fresh reserves are arriving at the scene."
+
+REFERENCE           RU_INTRO_COMM7
+LANG_ENGLISH        "Comrades, our goal here is to break the back of the German armored forces, leaving them incapable of, ever again, mounting an effective offensive. Once this has been accomplished, our final victory will be assured."
+
+REFERENCE           UK_INTRO_FO1
+LANG_ENGLISH        "Your attention please, gents. We have a few new faces here today, so bear with me while I bring them up to speed."
+
+REFERENCE           TRENCHES_ANON_INCOMING
+LANG_ENGLISH        "Incoming!"
+
+REFERENCE           UK_INTRO_FO2
+LANG_ENGLISH        "Number ninety squadron has been given the dubious honor of testing the Yanks' new heavy bomber, the B-17 -we're calling it Fortress I."
+
+REFERENCE           UK_INTRO_FO3
+LANG_ENGLISH        "Over the past few months, we have been conducting high altitude bombing missions over North West Europe. These missions are much more dangerous than what you're used to. There is no fighter escort past the channel, and you will be flying in broad daylight. So stay alert up there."
+
+REFERENCE           UK_INTRO_FO4
+LANG_ENGLISH        "Our target for today is a heavy industrial complex outside of Rotterdam."
+
+REFERENCE           UK_INTRO_FO5
+LANG_ENGLISH        "It's a short flight, but you will be traversing several heavy flak belts, as well as several highly active Luftwaffe airfields."
+
+REFERENCE           UK_INTRO_FO6
+LANG_ENGLISH        "Expect heavy fighter resistance. Probably 109's - Fast and deadly."
+
+REFERENCE           UK_INTRO_FO7
+LANG_ENGLISH        "Keep in formation, deliver your bombs and get home safe. I'll buy you all a round in the mess when you return."
+
+REFERENCE           BORIS_ENOUGH
+LANG_ENGLISH        "Hey, hey...that's enough."
+
+REFERENCE           TRENCHES_BORIS_HOWFAR
+LANG_ENGLISH        "How much farther do we have to go?!"
+
+REFERENCE           TRENCHES_VASS_TILLWE_GETTHERE
+LANG_ENGLISH        "Till we get there.  What do you think?"
+
+REFERENCE           TRENCHES_VASS_OFFTRUCK
+LANG_ENGLISH        "Move it, move! Off the truck!"
+
+REFERENCE           TRENCHES_ANTONOV_FIND_SPOT
+LANG_ENGLISH        "Keep moving until you find a spot."
+
+REFERENCE           TRENCHES_ANTONOV_MOVE_FORWARD
+LANG_ENGLISH        "Keep moving forward!  Go go go!"
+
+REFERENCE           TRENCHES_ANON_DOWN
+LANG_ENGLISH        "Down! "
+
+REFERENCE           TRENCHES_MIESHA_YOU_ALRIGHT
+LANG_ENGLISH        "Are you alright!?  Shake your head out!  Don't stop now!"
+
+REFERENCE           TRENCHES_VASS_OVER_HILL
+LANG_ENGLISH        "They are coming over the hill."
+
+REFERENCE           TRENCHES_ANTONOV_KEEPFIRING01
+LANG_ENGLISH        "Right flank, keep firing! "
+
+REFERENCE           TRENCHES_ANTONOV_KEEPFIRING02
+LANG_ENGLISH        "They're still coming, comrades - fire! "
+
+REFERENCE           TRENCHES_ANTONOV_KEEPFIRING03
+LANG_ENGLISH        "Don't let 'em in! "
+
+REFERENCE           TRENCHES_ANON_INC_PANZER
+LANG_ENGLISH        "Incoming Panzer!"
+
+REFERENCE           TRENCHES_VASS_OVERRUN
+LANG_ENGLISH        "Keep firing--Don't let them overrun us"
+
+REFERENCE           TRENCHES_MIESHA_COMIN_ROUND
+LANG_ENGLISH        "He's coming around!"
+
+REFERENCE           TRENCHES_VASS_FIRE
+LANG_ENGLISH        "Enemy! Fire!"
+
+REFERENCE           TRENCHES_ANON_RIDGE
+LANG_ENGLISH        "Left flank! Up on that ridge!"
+
+REFERENCE           TRENCHES_ANON_DRIVEBACK
+LANG_ENGLISH        "They're coming! Drive them back!"
+
+REFERENCE           TRENCHES_ANTONOV_THRU_HERE
+LANG_ENGLISH        "Through here!"
+
+REFERENCE           TRENCHES_VASS_GOODWORK
+LANG_ENGLISH        "Good work!  Let's go.  The sergeant is waiting for us."
+
+REFERENCE           TRENCHES_HELP_ME
+LANG_ENGLISH        "Help me!"
+
+REFERENCE           TRENCHES_VASS_PINNED
+LANG_ENGLISH        "He's pinned down!  Drive them back!"
+
+REFERENCE           TRENCHES_VASS_MILL
+LANG_ENGLISH        "Up ahead - that mill!  We have to get in there! Go!"
+
+REFERENCE           TRENCHES_ANON_TANKSHERE
+LANG_ENGLISH        "Our tanks - they're here!"
+
+REFERENCE           KHARKOV1_MIESHA_THIRD_FLOOR
+LANG_ENGLISH        "We need to get up to the 3rd floor. "
+
+REFERENCE           KHARKOV1_ANTONOV_ADVANCE2
+LANG_ENGLISH        "Follow those tanks! Forward! Advance"
+
+REFERENCE           KHARKOV1_ANTONOV_ATGUNS
+LANG_ENGLISH        "Anti-tank guns!  Yuri...Miesha, over here! "
+
+REFERENCE           TRENCHES_COMM_ASSEMBLE
+LANG_ENGLISH        "Alright-they are good.  Everyone assemble--now!"
+
+REFERENCE           KHARKOV1_MIESHA_TANK
+LANG_ENGLISH        "Enemy tank there...behind that blown out wall."
+
+REFERENCE           KHARKOV1_ANTONOV_SQUARE_SECURED
+LANG_ENGLISH        "Square is secured.  Continue South through those buildings. "
+
+REFERENCE           KHARKOV1_BORIS_HOT
+LANG_ENGLISH        "Man it's hot in here. "
+
+REFERENCE           KHARKOV1_MIESHA_HELL
+LANG_ENGLISH        "Welcome to hell comrade. And you didn't even have to die..."
+
+REFERENCE           KHARKOV1_ANTONOV_WINDOWS
+LANG_ENGLISH        "Eyes on the windows... Stay alert!  "
+
+REFERENCE           KHARKOV1_ANTONOV_ASS
+LANG_ENGLISH        "Keep firing!  Don't get your ass shot off."
+
+REFERENCE           KHARKOV1_ANTONOV_HOWMANY
+LANG_ENGLISH        "How many are there?  They must be breeding in there! "
+
+REFERENCE           KHARKOV1_MIESHA_ENEMY_GUN
+LANG_ENGLISH        "Enemy gun...down there. "
+
+REFERENCE           KHARKOV2_GEN_LOOKOUT
+LANG_ENGLISH        "Look out! "
+
+REFERENCE           KHARKOV2_GEN_ALRIGHT
+LANG_ENGLISH        "Alright! "
+
+REFERENCE           KHARKOV2_ANTONOV_FLANK_RIGHT
+LANG_ENGLISH        "Hold up! Flank right! The square is not secure!"
+
+REFERENCE           KHARKOV2_MIESHA_NEED_ENGINEERS
+LANG_ENGLISH        "We need engineers! In the square South East corner of the square! "
+
+REFERENCE           KHARKOV2_ANTONOV_DAMMIT
+LANG_ENGLISH        "Dammit Yuri, do you think they grow on trees? "
+
+REFERENCE           KHARKOV2_ANTONOV_ANOTHER
+LANG_ENGLISH        "Get another engineer up here fast! "
+
+REFERENCE           KHARKOV2_MIESHA_SENDANOTHER
+LANG_ENGLISH        "We need another engineer.  Yes-I know you jus t sent one!  Send another! "
+
+REFERENCE           KHARKOV2_ANTONOV_MIESHA
+LANG_ENGLISH        "Miesha! "
+
+REFERENCE           KHARKOV2_MIESHA_IKNOW
+LANG_ENGLISH        "I know. I know..."
+
+REFERENCE           KHARKOV2_MIESHA_DOINGBEST
+LANG_ENGLISH        "I hate to tell you this... Don't yell at me!  Yell at the Germans!  We're doing the best we can!"
+
+REFERENCE           KHARKOV2_MIESHA_FINALLY
+LANG_ENGLISH        "Finally! We were running out of engineers! "
+
+REFERENCE           KHARKOV2_ANTONOV_STOP_CHATTER
+LANG_ENGLISH        "Stop your chatter. Let's move! "
+
+REFERENCE           KHARKOV2_ANTONOV_YES
+LANG_ENGLISH        "Yes! Comrade! Yes! "
+
+REFERENCE           KHARKOV2_HEADS_UP
+LANG_ENGLISH        "Heads up! Take them down!"
+
+REFERENCE           KHARKOV2_ANTONOV_KEEP_MOVING2
+LANG_ENGLISH        "Keep moving."
+
+REFERENCE           KHARKOV2_GEN_88
+LANG_ENGLISH        "Use the '88! "
+
+REFERENCE           KHARKOV2_GEN_FLAK
+LANG_ENGLISH        "Use the Flak gun!"
+
+REFERENCE           BASTOGNE1_ENDER_WATCHOUT
+LANG_ENGLISH        "My arm, sir...I can't feel it."
+
+REFERENCE           BASTOGNE2_ANDERSON_WHAT
+LANG_ENGLISH        "What?"
+
+REFERENCE           FOY_MOODY_DONT_STOP
+LANG_ENGLISH        "Don't stop guys - come on! "
+
+REFERENCE           FOY_MOODY_DOOR_GO
+LANG_ENGLISH        "Go go go!"
+
+REFERENCE           NOVILLE_PANZER_SOUTH
+LANG_ENGLISH        "Panzer on the south side! We need bazooka support! "
+
+REFERENCE           NOVILLE_HALFTRACK_SOUTH
+LANG_ENGLISH        "Halftrack from the south! "
+
+REFERENCE           NOVILLE_GERMANS_NORTH_KITCHEN
+LANG_ENGLISH        "North side! Jerries in the kitchen!"
+
+REFERENCE           NOVILLE_FOLEY_NEXT_BUILDING
+LANG_ENGLISH        "Take the next building! Move!"
+
+REFERENCE           NOVILLE_FOLEY_COVER_THIRD
+LANG_ENGLISH        "Riley - Anderson get up to the front and see if you can cover Third Squad's approach."
+
+REFERENCE           NOVILLE_ANDERSON_ALRIGHT
+LANG_ENGLISH        "Alright!!!"
+
+REFERENCE           NOVILLE_FOLEY_KEEP_ADVANCING
+LANG_ENGLISH        "Keep advancing! Go! "
+
+REFERENCE           BOMBER_COPILOT_MESS_12
+LANG_ENGLISH        "Messerschmitts twelve o'clock high!"
+
+REFERENCE           BOMBER_PILOT_C01_02
+LANG_ENGLISH        "Roger Bulldog leader, bloody well done. Out."
+
+REFERENCE           BOMBER_PILOT_E02_01
+LANG_ENGLISH        "More Bandits 9 o'clock!"
+
+REFERENCE           BOMBER_PILOT_MOVE_IT
+LANG_ENGLISH        "Move it! Move! "
+
+REFERENCE           TRAINBRIDGE_INGRAM_CLOSE_AS_CAN
+LANG_ENGLISH        "They haven't seen us. Hold your fire. Get up as close as you can."
+
+REFERENCE           TRENCHES_ANON_EV03_03
+LANG_ENGLISH        "Get us out of here, go! We're sitting ducks! "
+
+REFERENCE           TRENCHES_ANON_BETTER
+LANG_ENGLISH        "It's better than hitting us."
+
+REFERENCE           TRENCHES_BORIS_ENOUGH
+LANG_ENGLISH        "Hey, hey...that's enough."
+
+REFERENCE           TRENCHES_ANON_EV03_01
+LANG_ENGLISH        "Keep your heads down!"
+
+REFERENCE           TRENCHES_COMM_EV06_03
+LANG_ENGLISH        "Take cover in the trenches!"
+
+REFERENCE           TRENCHES_COMM_EV06_04
+LANG_ENGLISH        "Move it! Fast! Into the trenches! Go!"
+
+REFERENCE           BOMBER_RWAIST_FIGHTERS_ON_6
+LANG_ENGLISH        "Fighters on our six! "
+
+REFERENCE           BOMBER_RWAIST_MORE_BANDITS_6
+LANG_ENGLISH        "We've got more bandits on our six. "
+
+REFERENCE           BOMBER_RWAIST_FIGHTERS_AT_6
+LANG_ENGLISH        "Fighters at six o'clock! "
+
+REFERENCE           BASTOGNE1_MOODY_INTRO
+LANG_ENGLISH        "Alright, this is the last point on our patrol. The sooner you men can scout that ridge over there, the sooner we can get back and get some hot chow."
+
+REFERENCE           BASTOGNE1_ENDER_SKIP_PATROL
+LANG_ENGLISH        "Hey Sarge, can't we just skip the patrol and go straight to the hot chow? "
+
+REFERENCE           BASTOGNE1_MOODY_DONE_SWEEP
+LANG_ENGLISH        "Ender, I'd find that funny if I wasn't freezing my can off. Now get outta here! Meet back at the jeep when you've done your sweep."
+
+REFERENCE           BASTOGNE1_ENDER_KRAUT_PATROL
+LANG_ENGLISH        "Kraut patrol! Take cover!"
+
+REFERENCE           BASTOGNE1_ENDER_HEAR_THAT
+LANG_ENGLISH        "Hear that? That don't sound good! "
+
+REFERENCE           BASTOGNE1_ENDER_CMON
+LANG_ENGLISH        "Back to the jeeps! C'mon!"
+
+REFERENCE           BASTOGNE1_ENDER_GO
+LANG_ENGLISH        "Run! Go! Go! Go!"
+
+REFERENCE           BASTOGNE1_ENDER_MANDOWN
+LANG_ENGLISH        "Man Down!"
+
+REFERENCE           BASTOGNE1_ENDER_JOEY
+LANG_ENGLISH        "Sarge, they got Joey!"
+
+REFERENCE           BASTOGNE1_MOODY_BACKTO_HQ
+LANG_ENGLISH        "We need to get back to HQ fast and warn the Captain! - Hang on, this is gonna be a rough ride!"
+
+REFERENCE           BASTOGNE1_ENDER_OHMAN
+LANG_ENGLISH        "Oh man..."
+
+REFERENCE           SICILY2_INGRAM_FOLLOW_ME
+LANG_ENGLISH        "Through here...follow me."
+
+REFERENCE           SICILY2_INGRAM_EYE_OUT2
+LANG_ENGLISH        "Incoming! Dead ahead!!"
+
+REFERENCE           KHARKOV1_MIESHA_RIGHTAWAY
+LANG_ENGLISH        "Right away, comrade sergeant."
+
+REFERENCE           TRENCHES_ANON_EV08_01
+LANG_ENGLISH        "Incoming!"
+
+REFERENCE           KHARKOV1_ANTONOV_PFAUST2
+LANG_ENGLISH        "Yuri, get that pazerfaust and take that damn thing out!"
+
+REFERENCE           NOVILLE_FOLEY_PANZERSCHRECK
+LANG_ENGLISH        "Panzerschreck!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING10
+LANG_ENGLISH        "Hit 'em hard, boys!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING11
+LANG_ENGLISH        "Push 'em back!"
+
+REFERENCE           BASTOGNE1_MOODY_KEEPFIRING12
+LANG_ENGLISH        "I want fire superiority!"
+
+REFERENCE           BASTOGNE1_MOODY_30CAL_MOVE
+LANG_ENGLISH        "Riley! Get on that .30 cal! Move!"
+
+REFERENCE           BASTOGNE1_MOODY_DOWN_HILL
+LANG_ENGLISH        "Get down the hill and hold the line"
+
+REFERENCE           BASTOGNE2_MOODY_COVER_ME
+LANG_ENGLISH        "Riley! What the hell are you doing?  Get back there and cover me!"
+
+REFERENCE           NOVILLE_MOODY_RPG_PANZER
+LANG_ENGLISH        "Riley, grab a Panzershreck and take out that tank!"
+
+REFERENCE           NOVILLE_MOODY_RPG_HALFTRACK
+LANG_ENGLISH        "Riley - halftrack! Use the Panzershreck!"
+
+REFERENCE           KHARKOV2_ANTONOV_ENGINEERS_DOWN
+LANG_ENGLISH        "Yuri - protect those engineers - get down there with them if you have to!"
+
+REFERENCE           TRENCHES_TRAIN_COMM_01
+LANG_ENGLISH        "Move it! - Fast! - Into the trucks! Go!"
+
+REFERENCE           TRENCHES_TRAIN_COMM_02
+LANG_ENGLISH        "Out of the train! - MOVE!"
+
+REFERENCE           TRENCHES_TRAIN_COMM_03
+LANG_ENGLISH        "Move!"
+
+REFERENCE           TRENCHES_TRAIN_COMM_04
+LANG_ENGLISH        "Go! Go! Go!"
+
+REFERENCE           TRENCHES_TRAIN_COMM_05
+LANG_ENGLISH        "Move it! Move!"
+
+REFERENCE           TRENCHES_TRAIN_COMM_06
+LANG_ENGLISH        "Keep Moving!"
+
+REFERENCE           BOMBER_PILOT_E01_02A
+LANG_ENGLISH        "Doyle - Bandits on our 6 o'clock!"
+
+
+ENDMARKER
+
+

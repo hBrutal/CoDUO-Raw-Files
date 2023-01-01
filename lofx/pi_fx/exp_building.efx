@@ -1,0 +1,268 @@
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			oppositeRotation orgOnSphere axisFromSphere
+
+	count 11 11
+
+	life				7000 1.2e+004
+
+	radius				150 200
+
+	height				10 20
+
+	rotation			50 120
+
+	rotationDelta		-6 6
+
+	velocity			20 0 0 40 0 0
+
+	rgb
+	{
+		start			0.9216 0.8902 0.8471
+		end				0.5412 0.4275 0.3569
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0 1
+		flags			linear
+	}
+
+	size
+	{
+		start			79 124
+		end				144 230
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				gib_wood
+
+	flags				usePhysics impactKills
+
+	spawnFlags			orgOnSphere axisFromSphere
+
+	count 8 11
+
+	life				6000 1e+004
+
+	bounce				0.25 0.5
+
+	origin				0 -30 -30 50 30 30
+
+	radius				20 15
+
+	height				40 50
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			500 -300 0 900 300 300
+
+	gravity				-800
+
+	size
+	{
+		start			12 18
+		end				0
+		parm			96
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_wood_a
+		debree/debree_gib_wood_a
+	]
+}
+
+OrientedParticle
+{
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 1 2
+
+	life				500 1000
+
+	delay				10 140
+
+	origin				0 -100 -100 0 100 100
+
+	gravity				-100
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			20 30
+		end				250 400
+		flags			linear
+	}
+
+	length
+	{
+		end				6
+		flags			linear
+	}
+
+	shaders
+	[
+		gfx/effects/misc/dustsheet1
+		gfx/effects/misc/dustsheet1a
+	]
+}
+
+Emitter
+{
+	flags				emitFx
+
+	spawnFlags			oppositeAccel evenDistribution
+
+	count 0 0
+
+	life				400 500
+
+	radius				11 40
+
+	velocity			1500 -290 -290 2000 290 290
+
+	acceleration		-2000 0 0
+
+	gravity				-200 -300
+
+	density				20
+
+	variance			4 11
+
+	size
+	{
+		start			25 150
+		end				200
+	}
+
+	emitfx
+	[
+		fx/pi_fx/smoke_plume_comp
+	]
+}
+
+Particle
+{
+	name				Copy of smoke_ring
+
+	flags				clampRotation useAlpha
+
+	spawnFlags			absoluteVel oppositeRotation orgOnSphere axisFromSphere
+
+	count 4 5
+
+	life				5000 9000
+
+	origin				0 0 30 0 0 50
+
+	radius				90 140
+
+	height				20 40
+
+	rotation			50 120
+
+	rotationDelta		-6 6
+
+	rotationClamp		-0.5 0.5
+
+	velocity			-60 -60 60 60 60 90
+
+	rgb
+	{
+		start			0.9216 0.8902 0.8471
+		end				0.5412 0.4275 0.3569
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			1
+		flags			linear
+	}
+
+	size
+	{
+		start			79 124
+		end				144 230
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_b
+		smoke/smk_p_fractal_wht_c
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Emitter
+{
+	name				Debri
+
+	flags				useModel usePhysics
+
+	spawnFlags			oppositeAccel orgOnCylinder evenDistribution
+
+	count 7 11
+
+	life				1e+004 1.5e+004
+
+	origin				0 0 40 0 0 20
+
+	radius				50 100
+
+	velocity			650 -290 -290 550 290 290
+
+	gravity				-300
+
+	density				20
+
+	variance			4 11
+
+	size
+	{
+		start			4 8
+		end				4 8
+	}
+
+	models
+	[
+		xmodel/m_gib_dirt_a
+		xmodel/m_gib_dirt_b
+		xmodel/m_gib_dirt_c
+	]
+}

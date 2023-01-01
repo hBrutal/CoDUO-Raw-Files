@@ -1,0 +1,12 @@
+{
+	surfaceparm metal
+	{
+		map $texturename
+		rgbGen identityLighting
+	}
+	{
+		map $texturename
+		blendFunc gl_src_alpha gl_one_minus_src_alpha
+		rgbGen lightingDiffuse
+	}
+}

@@ -1,0 +1,63 @@
+Particle
+{
+	count 4 8
+
+	life				200
+
+	origin				0 0 0 0 0 256
+
+	size
+	{
+		start			32
+		end				32
+	}
+
+	shaders
+	[
+		misc/lens_flare_c_a
+	]
+}
+
+Particle
+{
+	name				Copy of Unnamed Particle 0
+
+	count 4 8
+
+	life				200
+
+	origin				0 0 0 256 0 0
+
+	size
+	{
+		start			32
+		end				32
+	}
+
+	shaders
+	[
+		misc/lens_flare_l_a
+	]
+}
+
+Particle
+{
+	name				Copy of Copy of Unnamed Particl
+
+	count 4 8
+
+	life				200
+
+	origin				0 0 0 0 256 0
+
+	size
+	{
+		start			32
+		end				32
+	}
+
+	shaders
+	[
+		misc/lens_flare_m_a
+	]
+}

@@ -1,0 +1,110 @@
+Particle
+{
+	name				smoke_trail_mist_top
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count				2
+
+	life				1000 2000
+
+	delay				0 300
+
+	origin				0 -25 50 75 25 50
+
+	radius				48
+
+	rotation			-10 10
+
+	rotationDelta		-2 2
+
+	velocity			2000 0 0 2000 15 15
+
+	acceleration		-15 5 -5 15 0 5
+
+	gravity				0 25
+
+	rgb
+	{
+		start			0.9412 1 1
+		end				0.1216 0.1098 0.08627
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.05 0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			200
+		end				600 800
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_c
+	]
+}
+
+Particle
+{
+	name				fire
+
+	spawnFlags			evenDistribution
+
+	count				2 3
+
+	life				300 650
+
+	delay				0 300
+
+	origin				0 -25 -50 -100 25 50
+
+	radius				48
+
+	rotation			360 0
+
+	rotationDelta		-25 25
+
+	velocity			2000 15 15
+
+	acceleration		0 -50 -50 50 50 50
+
+	gravity				0 25
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				500 600
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}

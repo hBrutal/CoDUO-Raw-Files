@@ -1,0 +1,49 @@
+Tail
+{
+	name				contrail
+
+	flags				useAlpha
+
+	count 0 0
+
+	life				6750 7000
+
+	cullrange			32000
+
+	origin				1750 0 0 1850 0 0
+
+	velocity			2000 -1 -1 2000 1 1
+
+	rgb
+	{
+		start			1 0.9137 0.8235 1 0.9373 0.8745
+	}
+
+	alpha
+	{
+		start			0.15 0.25
+		end				0
+		parm			0.05
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				200
+		flags			linear
+	}
+
+	length
+	{
+		start			2000
+		end				1e+004
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/contrail_a
+		misc/contrail_a
+	]
+}

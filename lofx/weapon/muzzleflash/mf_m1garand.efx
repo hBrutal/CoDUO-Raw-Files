@@ -1,0 +1,152 @@
+FxRunner
+{
+	name				_call_globals
+
+	flags				relative
+
+	playfx
+	[
+		fx/weapon/muzzleflash/_global_r
+	]
+}
+
+Particle
+{
+	name				fire_base_core
+
+	count				3
+
+	life				50 75
+
+	cullrange			32000
+
+	origin				3 0 0 12 0 0
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			24 26
+		end				11 13
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+	]
+}
+
+Particle
+{
+	name				fire_mid_core
+
+	count				3
+
+	life				50 75
+
+	cullrange			2000
+
+	origin				12 0 0 22 0 0
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			14 16
+		end				6 8
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+	]
+}
+
+Particle
+{
+	name				fire_tip_core
+
+	count				3
+
+	life				50 75
+
+	cullrange			1000
+
+	origin				22 0 0 25 0 0
+
+	rotation			0 360
+
+	rotationDelta		-35 35
+
+	velocity			100 0 0 200 0 0
+
+	rgb
+	{
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			9 11
+		end				4 6
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+		fire/muzzleflash_s_a
+	]
+}

@@ -1,0 +1,127 @@
+Particle
+{
+	name				smoke_blast
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	count 1 1
+
+	life				250 550
+
+	delay				0 15
+
+	cullrange			6000
+
+	origin				0 0 0 25 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			50 -10 -10 250 10 10
+
+	gravity				0 20
+
+	rgb
+	{
+		start			0.7529 0.7529 0.7529
+		end				0.749 0.7529 0.6863
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			10 15
+		end				35 55
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Decal
+{
+	name				impact_mark
+
+	life				2e+004
+
+	cullrange			800
+
+	rotation			0 360
+
+	size
+	{
+		start			8 10
+	}
+
+	shaders
+	[
+		impact/bullet_glass_a
+		impact/bullet_glass_a
+	]
+}
+
+Particle
+{
+	name				dustfall
+
+	flags				useAlpha
+
+	spawnFlags			evenDistribution
+
+	life				500 1500
+
+	cullrange			800
+
+	rotation			-5 5
+
+	rotationDelta		-2 2
+
+	velocity			0 0 0 15 0 0
+
+	gravity				0 -65
+
+	rgb
+	{
+		start			0.749 0.7529 0.6863
+		end				0.7529 0.7529 0.7529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			0.25 0.5
+		flags			linear
+	}
+
+	size
+	{
+		start			0 5
+		end				10 30
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

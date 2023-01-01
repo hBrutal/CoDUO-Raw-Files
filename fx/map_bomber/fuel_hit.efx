@@ -1,0 +1,135 @@
+OrientedParticle
+{
+	name				ripple
+
+	count				0 1
+
+	life				250 450
+
+	delay				0 50
+
+	origin				0.5 -0.25 -0.25 1 0.25 0.25
+
+	radius				880 380
+
+	height				0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -2 -2 0 2 2
+
+	rgb
+	{
+		start			0.3176 0.2745 0.2
+		end				0.5098 0.4588 0.3412
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				3 12
+		flags			linear
+	}
+
+	shaders
+	[
+		water/water_ripple_a
+	]
+}
+
+Line
+{
+	name				spray_line
+
+	count				0 1
+
+	life				150 250
+
+	origin2				3 -1 -1 8 1 1
+
+	rgb
+	{
+		start			0.5098 0.4588 0.3412
+		end				0.3176 0.2745 0.2
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				3
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_splash_a
+		water/rain_splash_b
+		water/rain_splash_c
+	]
+}
+
+Particle
+{
+	name				spray_mist
+
+	flags				useAlpha
+
+	count				0 1
+
+	life				250 450
+
+	origin				0 0 0 3 0 0
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			20 -2 -2 30 2 2
+
+	gravity				0 -200
+
+	rgb
+	{
+		start			0.5098 0.4588 0.3412
+		end				0.3176 0.2745 0.2
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			2
+		end				6 8
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

@@ -1,0 +1,125 @@
+Particle
+{
+	name				smoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			orgOnCylinder evenDistribution rgbComponentInterpolation
+
+	count				0 1
+
+	life				8300 1.19e+004
+
+	delay				20 100
+
+	cullrange			10000
+
+	origin				-2 0 0 2 0 0
+
+	radius				200 300
+
+	wind				95 100
+
+	rotation			-32 29
+
+	rotationDelta		-6 7
+
+	velocity			60 -1 -1 70 1 1
+
+	acceleration		12 -2 -2 13 2 2
+
+	rgb
+	{
+		start			0.9294 0.9765 0.9961 1 1 1
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.7 0.9
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			150 250
+		end				400 500
+		flags			linear
+	}
+
+	size2
+	{
+		start			16
+		end				26 40
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}
+
+Particle
+{
+	name				basesmoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			orgOnCylinder evenDistribution rgbComponentInterpolation
+
+	count				0 1
+
+	life				5200 7000
+
+	delay				20 100
+
+	origin				-2 0 0 2 0 0
+
+	radius				90 120
+
+	rotation			-32 29
+
+	rotationDelta		-6 7
+
+	velocity			45 -1 -1 50 1 1
+
+	acceleration		14 -2 -2 18 2 2
+
+	rgb
+	{
+		start			0.2235 0.2941 0.349 0.5098 0.5098 0.5098
+		end				0 0 0
+	}
+
+	alpha
+	{
+		start			0.3 0.6
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			110 160
+		end				250
+		flags			linear
+	}
+
+	size2
+	{
+		start			16
+		end				26 40
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_a
+	]
+}

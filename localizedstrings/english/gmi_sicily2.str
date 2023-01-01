@@ -1,0 +1,52 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           GET_TO_THE_SHORE
+LANG_ENGLISH        "Get to the shore."
+
+REFERENCE           FOLLOW_INGRAM_TO_SAFETY
+LANG_ENGLISH        "Follow Ingram."
+
+REFERENCE           CLEAR_THE_BLOCKADE
+LANG_ENGLISH        "Clear the blockade."
+
+REFERENCE           DESTROY_ALL_ENEMY_BOATS
+LANG_ENGLISH        "Destroy all German PT Boats (%s remaining)."
+
+REFERENCE           GET_ON_THE_ESCAPE_BOAT
+LANG_ENGLISH        "Board the captured German PT boat."
+
+REFERENCE           GUN_OVERHEATED
+LANG_ENGLISH        "Gun overheated"
+
+REFERENCE           PRESS_S_TO_GRAB_BIKE
+LANG_ENGLISH        "press [%s] to grab bike mounted health kits (2 remaining)"
+
+REFERENCE           PRESS_S_TO_GRAB_BIKE1
+LANG_ENGLISH        "press [%s] to grab bike mounted health kits (1 remaining)"
+
+REFERENCE           WHILE_RIDING_THE_BMW
+LANG_ENGLISH        "While riding the BMW bike use your stance keys to sit up and sit down."
+
+REFERENCE           PRESS_USE_
+LANG_ENGLISH        "Press USE ["
+
+REFERENCE           _TO_PICKUP_HEALTH
+LANG_ENGLISH        "] to pickup health"
+
+
+ENDMARKER
+
+

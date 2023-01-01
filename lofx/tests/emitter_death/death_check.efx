@@ -1,0 +1,50 @@
+Emitter
+{
+	name				M_lwing_hold
+
+	flags				useModel deathFx
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life 125.000000 125.000000
+
+	origin				-31.86 278.2 9.536
+
+	angle				90 0 0
+
+	velocity			1000 0 0
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_lwing(d)
+	]
+
+	deathfx
+	[
+		fx/explosions/vehicles/b17_n/lwing_p
+	]
+}
+
+Emitter
+{
+	name				M_fuselage_hold
+
+	flags				useModel
+
+	spawnFlags			cheapOrgCalc absoluteAccel
+
+	life 1500.000000 1500.000000
+
+	angle				90 0 0
+
+	velocity			0 1000 0
+
+	density				100
+
+	models
+	[
+		xmodel/v_us_air_b-17_fuselage(d)
+	]
+}

@@ -1,0 +1,32 @@
+Emitter
+{
+	name				M_propeller
+
+	flags				useModel
+
+	spawnFlags			absoluteAccel
+
+	life				500 1500
+
+	angleDelta			-15 -5 45 15 5 65
+
+	velocity			800 -100 -100 1200 100 100
+
+	acceleration		-500 0 0
+
+	gravity				-600 -400
+
+	density				100
+
+	size
+	{
+		end				0
+		parm			85
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/v_ge_air_me-109_propeller(d)
+	]
+}

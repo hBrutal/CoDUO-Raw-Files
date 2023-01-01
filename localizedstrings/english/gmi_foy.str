@@ -1,0 +1,119 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           OBJECTIVE_5
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "Kill the Spotter"
+
+REFERENCE           OBJECTIVE_6
+LANG_ENGLISH        "Take out the 88  (%s remaining)"
+
+REFERENCE           OBJECTIVE_8
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "Disable the tiger Tank  (%s remaining)"
+
+REFERENCE           OBJECTIVE_ COUNTER_ATTACK
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "Get to the bell tower the Germans are starting to counter attack"
+
+REFERENCE           NOT_USED
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "Kill the sniper"
+
+REFERENCE           CHARGE_1
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "Assualt the town of Foy"
+
+REFERENCE           OBJECTIVE_15
+FLAGS               FLAG1 FLAG4 
+LANG_ENGLISH        "Destroy the German anti tank vehicle"
+
+REFERENCE           OBJECTIVE_10
+LANG_ENGLISH        "Eliminate Panzershreks Units (%s remaining)"
+
+REFERENCE           FOLLOW_ME
+FLAGS               FLAG1 FLAG2 FLAG4 
+LANG_ENGLISH        "Follow me !!!"
+
+REFERENCE           OBJECTIVE_7
+LANG_ENGLISH        "Clear the houses"
+
+REFERENCE           TANKS
+LANG_ENGLISH        "Get down here right away and group up with the tanks soldiers"
+
+REFERENCE           OBJECTIVE_11
+LANG_ENGLISH        "Regroup with Cpt. Foley at the edge of town"
+
+REFERENCE           HAY_WAIT
+LANG_ENGLISH        "Wait at this hay stack!!!"
+
+REFERENCE           HAY_MOVE
+LANG_ENGLISH        "Ok, keep moving go to the next hay stack!!!"
+
+REFERENCE           OBJECTIVE_7B
+LANG_ENGLISH        "not needed yet"
+
+REFERENCE           OBJECTIVE_6A
+LANG_ENGLISH        "Great work clearing the church guys... WATCH OUT!!!!"
+
+REFERENCE           INTROSCREEN_FOY_PLACE
+LANG_ENGLISH        "Battle Of Buldge - Foy - Belgium"
+
+REFERENCE           INTROSCREEN_FOY_DATE
+LANG_ENGLISH        "January 13, 1945"
+
+REFERENCE           INTROSCREEN_FOY_TIME
+LANG_ENGLISH        "1100 hrs"
+
+REFERENCE           OBJECTIVE_9
+LANG_ENGLISH        "Gain control of the Church"
+
+REFERENCE           ATTACK_SNIPER
+LANG_ENGLISH        "Find that spotter and take him out before were all dead!"
+
+REFERENCE           OBJECTIVE_4
+LANG_ENGLISH        "Assault into town"
+
+REFERENCE           USE_HAYSTACKS1
+LANG_ENGLISH        "Hey everyone, use the haystacksfor cover, stick with me "
+
+REFERENCE           POOR_GUY1
+LANG_ENGLISH        "My squad is held down by mortar fire"
+
+REFERENCE           SUPPRESS_MG42
+LANG_ENGLISH        "Get suppressing fire on those mg42's"
+
+REFERENCE           GET_OVER_HERE
+LANG_ENGLISH        "Riley, get over here!"
+
+REFERENCE           KILL_SPOTTER
+LANG_ENGLISH        "Kill that spotter Riley"
+
+REFERENCE           HOLE
+LANG_ENGLISH        "FIRE IN THE HOLE!!!!!!!!!"
+
+REFERENCE           FAIL_PROTECT_TANKS
+LANG_ENGLISH        "You failed to protect the Shermans!"
+
+REFERENCE           FAIL_KILL_SHREKS
+LANG_ENGLISH        "You failed to kill all Panzershreks!"
+
+REFERENCE           OBJECTIVE_16
+LANG_ENGLISH        "Meet up with Cpt. Foley"
+
+
+ENDMARKER
+
+

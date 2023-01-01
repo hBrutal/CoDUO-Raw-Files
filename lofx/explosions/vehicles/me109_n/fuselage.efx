@@ -1,0 +1,40 @@
+Emitter
+{
+	name				M_fuselage
+
+	flags				useModel usePhysics emitFx
+
+	life				5000
+
+	cullrange			10000
+
+	bounce				0.25 0.5
+
+	angleDelta			-2 15 -15 2 15 -15
+
+	velocity			800 -200 -200 1200 200 200
+
+	gravity				-600 -400
+
+	density				200
+
+	models
+	[
+		xmodel/v_ge_air_me-109_fuselage(d)
+	]
+
+	emitfx
+	[
+		fx/fire/fire_trail_100
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/explosions/artillery/flak_single_650
+	]
+}

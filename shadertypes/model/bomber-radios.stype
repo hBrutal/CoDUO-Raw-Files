@@ -1,0 +1,17 @@
+{
+	surfaceparm metal
+	{
+		map $texturename
+//		rgbGen lightingDiffuse
+		blendfunc blend
+		depthWrite
+	}
+	{
+		map textures/sfx/bomber-radios.dds
+//		tcgen environment
+		blendFunc add
+//		rgbgen lightingdiffuse
+		blendFunc blend
+	}
+}
+

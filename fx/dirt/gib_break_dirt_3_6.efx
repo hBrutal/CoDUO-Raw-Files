@@ -1,0 +1,39 @@
+Particle
+{
+	flags				usePhysics
+
+	count				2
+
+	life				1000 2000
+
+	cullrange			1000
+
+	bounce				0.25 0.5
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			100 -150 -150 200 150 150
+
+	gravity				-600 -400
+
+	rgb
+	{
+		start			0.5333 0.4863 0.3765
+	}
+
+	size
+	{
+		start			3 6
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	shaders
+	[
+		debree/debree_gib_dirt_a
+		debree/debree_gib_dirt_b
+	]
+}

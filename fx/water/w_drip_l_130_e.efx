@@ -1,0 +1,141 @@
+Tail
+{
+	name				rain_fine_spawnimpact
+
+	flags				usePhysics impactKills impactFx
+
+	spawnFlags			cheapOrgCalc absoluteVel absoluteAccel
+
+	count				4
+
+	life				500
+
+	delay				0 300
+
+	cullrange			600
+
+	origin				-130 0 0 130 0 0
+
+	radius				0 250
+
+	wind				50 60
+
+	velocity			0 0 -25
+
+	gravity				-1600
+
+	alpha
+	{
+		start			0.1 0.2
+	}
+
+	size
+	{
+		start			5 10
+		end				10 15
+	}
+
+	length
+	{
+		start			0
+		end				40 85
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_drop_a
+		water/rain_drop_b
+	]
+
+	impactfx
+	[
+		/fx/atmosphere/rain_hit_generic
+	]
+}
+
+Tail
+{
+	name				rain_fine
+
+	flags				usePhysics impactKills
+
+	spawnFlags			cheapOrgCalc absoluteVel absoluteAccel
+
+	count				0 5
+
+	life				500
+
+	delay				0 300
+
+	cullrange			400
+
+	origin				-130 0 0 130 0 0
+
+	radius				0 250
+
+	velocity			0 0 -25
+
+	gravity				-1600
+
+	alpha
+	{
+		start			0.1 0.2
+	}
+
+	size
+	{
+		start			5 10
+		end				10 15
+	}
+
+	length
+	{
+		start			0
+		end				40 85
+		flags			linear
+	}
+
+	shaders
+	[
+		water/rain_drop_a
+		water/rain_drop_b
+	]
+}
+
+OrientedParticle
+{
+	spawnFlags			cheapOrgCalc absoluteVel
+
+	life				500 1000
+
+	cullrange			600
+
+	origin				-130 0 0 130 0 0
+
+	rotation			90
+
+	velocity			0 0 -10
+
+	alpha
+	{
+		start			0.1 0.3
+		end				0
+		parm			0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				10
+		flags			linear
+	}
+
+	shaders
+	[
+		water/water_drip_a
+		water/water_drip_b
+		water/water_drip_c
+	]
+}

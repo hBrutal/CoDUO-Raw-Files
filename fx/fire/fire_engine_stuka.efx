@@ -1,0 +1,228 @@
+Particle
+{
+	name				smoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation affectedByWind
+
+	life				1250 1500
+
+	delay				100
+
+	cullrange			12000
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			0 -15 -15 0 15 15
+
+	acceleration		-55 -55 -55 55 55 55
+
+	gravity				0 100
+
+	rgb
+	{
+		parm			15 25
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			125 150
+		end				400 500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_blk_a
+		smoke/smk_p_out_blk_b
+		smoke/smk_p_out_blk_c
+	]
+}
+
+Particle
+{
+	name				smoke_mist
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation affectedByWind
+
+	life				1000 2500
+
+	delay				100
+
+	cullrange			5000
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			0 -15 -15 0 15 15
+
+	acceleration		-25 -25 -25 25 25 25
+
+	gravity				-150 150
+
+	rgb
+	{
+		start			0.05098 0.05098 0.05882
+		end				0.1961 0.1922 0.2
+		parm			15 25
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			25 35
+		end				300 500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_a
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				fire_trail
+
+	flags				setShaderTime
+
+	spawnFlags			rgbComponentInterpolation affectedByWind
+
+	count				3 5
+
+	life				200 500
+
+	delay				0 15
+
+	cullrange			32000
+
+	origin				-6 -6 -6 6 6 6
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	velocity			0 -15 -15 0 15 15
+
+	acceleration		-25 -25 -25 25 25 25
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				150 250
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ball_a
+		fire/fire_ball_b
+		fire/fire_ball_c
+	]
+}
+
+Particle
+{
+	name				fire_enigne_flame
+
+	flags				setShaderTime relative
+
+	spawnFlags			rgbComponentInterpolation affectedByWind
+
+	count				1 2
+
+	life				100 200
+
+	delay				0 15
+
+	cullrange			32000
+
+	origin				-6 -6 -6 6 6 6
+
+	radius				60 50
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	velocity			-50 -15 -15 50 15 15
+
+	acceleration		-5 -5 -5 5 5 5
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			50 75
+		end				150 200
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/flame_ball_a
+		fire/flame_ball_b
+		fire/flame_ball_c
+	]
+}

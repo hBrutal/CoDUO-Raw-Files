@@ -1,0 +1,68 @@
+Emitter
+{
+	flags				useModel usePhysics
+
+	spawnFlags			cheapOrgCalc
+
+	count				10 15
+
+	life				4000 6000
+
+	delay				10 100
+
+	origin				44 44 44 -44 -44 -44
+
+	angle				55 55 55 0 0 0
+
+	angleDelta			50 50 50 0 0 0
+
+	velocity			650 100 -100 550 -100 100
+
+	gravity				-400
+
+	size
+	{
+		start			20 30
+		end				20 30
+		flags			linear
+	}
+
+	models
+	[
+		xmodel/m_gib_wood_a
+		xmodel/m_gib_wood_b
+		xmodel/m_gib_wood_c
+	]
+}
+
+Emitter
+{
+	flags				useModel
+
+	spawnFlags			orgOnCylinder
+
+	count				5 12
+
+	life				5000 8000
+
+	delay				10 90
+
+	radius				0 40
+
+	velocity			300 -80 -80 400 80 80
+
+	gravity				-200
+
+	size
+	{
+		start			3 5
+		end				1 0
+	}
+
+	models
+	[
+		xmodel/m_gib_dirt_a
+		xmodel/m_gib_dirt_b
+		xmodel/m_gib_dirt_c
+	]
+}

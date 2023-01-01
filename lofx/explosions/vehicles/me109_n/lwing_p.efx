@@ -1,0 +1,45 @@
+Emitter
+{
+	name				M_lwing
+
+	flags				useModel deathFx emitFx
+
+	spawnFlags			absoluteAccel
+
+	life				500 2500
+
+	angleDelta			-25 -2 -2 25 2 2
+
+	velocity			400 -100 -100 1750 -100 -100
+
+	acceleration		-500 0 0
+
+	gravity				-600 -400
+
+	density				200
+
+	models
+	[
+		xmodel/v_ge_air_me-109_lwing(d)
+	]
+
+	deathfx
+	[
+		fx/map_bomber/exp_650d_pushed_ns
+	]
+
+	emitfx
+	[
+		fx/map_bomber/smoke_trail_100_pushed
+	]
+}
+
+FxRunner
+{
+	name				_fx_call_exp
+
+	playfx
+	[
+		fx/map_bomber/exp_400d_pushed_ns
+	]
+}

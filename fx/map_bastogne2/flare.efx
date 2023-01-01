@@ -1,0 +1,322 @@
+Particle
+{
+	name				ray_a
+
+	flags				clampRotation
+
+	spawnFlags			absoluteVel
+
+	life				2e+004
+
+	wind				100
+
+	rotation			0 360
+
+	rotationDelta		-20 -30
+
+	rotationClamp		7777
+
+	velocity			25 0 -20
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.25
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			64
+		end				48
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_r_a
+	]
+}
+
+Particle
+{
+	name				ray_b
+
+	flags				clampRotation
+
+	spawnFlags			absoluteVel
+
+	life				2e+004
+
+	wind				100
+
+	rotation			0 360
+
+	rotationDelta		20 30
+
+	rotationClamp		7777
+
+	velocity			25 0 -20
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.15
+		end				0
+		parm			90
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			64
+		end				48
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_r_b
+	]
+}
+
+Particle
+{
+	name				center
+
+	spawnFlags			absoluteVel
+
+	life				2e+004
+
+	wind				100
+
+	rotation			0 360
+
+	rotationDelta		-5
+
+	velocity			25 0 -20
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		end				0
+		parm			95
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			20 40
+		end				15 20
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_m_b
+	]
+}
+
+Particle
+{
+	name				line
+
+	spawnFlags			absoluteVel
+
+	life				2e+004
+
+	wind				100
+
+	velocity			25 0 -20
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.25 0.5
+		end				0
+		parm			90
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			100 120
+		end				15 20
+		flags			random
+	}
+
+	shaders
+	[
+		misc/lens_flare_l_a
+	]
+}
+
+Particle
+{
+	name				lens
+
+	spawnFlags			absoluteVel
+
+	life				2e+004
+
+	wind				100
+
+	rotation			0 -90
+
+	rotationDelta		-2 2
+
+	velocity			25 0 -20
+
+	rgb
+	{
+		start			1 0.9843 0.9412
+		end				0 0 0 1 1 1
+	}
+
+	alpha
+	{
+		start			0.05 0.15
+		end				0
+		parm			90
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			60 90
+		end				15 20
+	}
+
+	shaders
+	[
+		misc/lens_flare_c_a
+	]
+}
+
+Particle
+{
+	name				exp_start
+
+	spawnFlags			absoluteVel
+
+	life				150 250
+
+	wind				100
+
+	rotation			0 360
+
+	rotationDelta		-5
+
+	velocity			25 0 0
+
+	rgb
+	{
+		end				0.7529 0.4196 0.1961
+		flags			linear
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			15 20
+		end				200 270
+		flags			linear
+	}
+
+	shaders
+	[
+		misc/lens_flare_m_b
+	]
+}
+
+Emitter
+{
+	name				smoke
+
+	flags				emitFx
+
+	spawnFlags			absoluteVel
+
+	life				1.7e+004 1.8e+004
+
+	wind				100
+
+	velocity			25 0 -20
+
+	density				4
+
+	emitfx
+	[
+		fx/map_bastogne2/flare_n_smoke
+	]
+}
+
+Emitter
+{
+	name				mist
+
+	flags				emitFx
+
+	spawnFlags			absoluteVel
+
+	life				1.7e+004 1.8e+004
+
+	wind				100
+
+	velocity			25 0 -20
+
+	density				15
+
+	emitfx
+	[
+		fx/map_bastogne2/flare_n_mist
+	]
+}
+
+Light
+{
+	life				2e+004
+
+	origin				50 0 0
+
+	rgb
+	{
+		start			0.1882 0.1961 0.2275
+		end				0 0 0
+	}
+
+	size
+	{
+		start			5000
+		end				5100
+		parm			16
+		flags			wave
+	}
+}

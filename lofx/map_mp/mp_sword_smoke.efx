@@ -1,0 +1,56 @@
+Particle
+{
+	name				smoke
+
+	flags				setShaderTime useAlpha
+
+	spawnFlags			evenDistribution rgbComponentInterpolation
+
+	count				10
+
+	life				4500 5000
+
+	delay				0 5000
+
+	cullrange			32000
+
+	origin				-2 6 -6 6 6 6
+
+	radius				60 50
+
+	wind				100
+
+	rotation			-15 15
+
+	rotationDelta		-2 2
+
+	velocity			6 -1 -1 13 1 1
+
+	acceleration		5 0 -6 10 6 6
+
+	rgb
+	{
+		end				0 0 0
+	}
+
+	alpha
+	{
+		end				0
+		parm			0.25 0.75
+		flags			linear
+	}
+
+	size
+	{
+		start			25 50
+		end				75 100
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_topsm_blk_a
+		smoke/smk_p_topsm_blk_b
+		smoke/smk_p_topsm_blk_b
+	]
+}

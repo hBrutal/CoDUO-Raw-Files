@@ -1,0 +1,111 @@
+OrientedParticle
+{
+	name				fire_ring
+
+	count				1 2
+
+	life				250 350
+
+	delay				0 50
+
+	cullrange			8000
+
+	origin				15 0 0 50 0 0
+
+	rotation			0 360
+
+	rotationDelta		-15 15
+
+	rgb
+	{
+		end				0.6745 0.4471 0.2745
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15
+		flags			linear
+	}
+
+	size
+	{
+		end				600 2000
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/fire_ring_org_a
+		fire/fire_ring_org_b
+	]
+}
+
+Particle
+{
+	name				smoke_ring
+
+	flags				useAlpha
+
+	spawnFlags			orgOnCylinder axisFromSphere evenDistribution
+
+	count				15
+
+	life				750 1200
+
+	delay				25
+
+	cullrange			4000
+
+	origin				-50 -50 -50 0 50 50
+
+	radius				25 50
+
+	rotation			0 360
+
+	rotationDelta		-5 5
+
+	velocity			800 -50 -50 900 50 50
+
+	acceleration		-500 0 0
+
+	gravity				150 100
+
+	rgb
+	{
+		start			0.5529 0.5569 0.5098
+		end				0.4784 0.5098 0.5137
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.5 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100 150
+		end				250 350
+		parm			50
+		flags			linear
+	}
+
+	length
+	{
+		start			0
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_out_wht_a
+		smoke/smk_p_out_wht_b
+		smoke/smk_p_out_wht_c
+	]
+}

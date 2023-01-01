@@ -1,0 +1,70 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           OBJECTIVE_1
+LANG_ENGLISH        "Follow Sgt. Moody to the ridge"
+
+REFERENCE           OBJECTIVE_2
+LANG_ENGLISH        "Protect Sgt. Moody"
+
+REFERENCE           OBJECTIVE_3
+LANG_ENGLISH        "Clear the forest"
+
+REFERENCE           OBJECTIVE_4
+LANG_ENGLISH        "Follow Sgt. Moody and squad  "
+
+REFERENCE           OBJECTIVE_5
+LANG_ENGLISH        "Assault the mg42 nest"
+
+REFERENCE           OBJECTIVE_6
+LANG_ENGLISH        "Clear courtyard"
+
+REFERENCE           OBJECTIVE_7
+LANG_ENGLISH        "Clear farm house."
+
+REFERENCE           OBJECTIVE_8
+LANG_ENGLISH        "Interrogate German officer"
+
+REFERENCE           OBJECTIVE_9
+LANG_ENGLISH        "Rescue the allied prisoners"
+
+REFERENCE           OBJECTIVE_10
+LANG_ENGLISH        "Get to the crossroads"
+
+REFERENCE           OBJECTIVE_11
+LANG_ENGLISH        "Clear the crossroads"
+
+REFERENCE           OBJECTIVE_12
+LANG_ENGLISH        "Ambush convoy"
+
+REFERENCE           OBJECTIVE_13
+LANG_ENGLISH        "Destroy tank"
+
+REFERENCE           OBJECTIVE_14
+LANG_ENGLISH        "Return back to crossroads"
+
+REFERENCE           FAIL_MOODY
+LANG_ENGLISH        "Failed to protect Sgt. Moody"
+
+REFERENCE           FAIL_PRISONERS
+LANG_ENGLISH        "Failed to protect prisoners"
+
+REFERENCE           TEMP_FIRE_EARLY
+LANG_ENGLISH        "Moody: What are you doing Riley? You'll get us all killed!"
+
+
+ENDMARKER
+
+

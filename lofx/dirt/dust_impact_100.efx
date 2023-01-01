@@ -1,0 +1,111 @@
+Particle
+{
+	name				smoke_ring
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ clampRotation useAlpha
+
+	spawnFlags			oppositeAccel oppositeRotation orgOnCylinder axisFromSphere
+
+	count				3
+
+	life				1000
+
+	cullrange			2000
+
+	radius				1 5
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	rotationAccel		220
+
+	velocity			1800 0 0
+
+	velocityClamp		0 0 0 100 0 0
+
+	acceleration		4200 0 0
+
+	rgb
+	{
+		start			0.4667 0.4196 0.3686
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				200 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}
+
+Particle
+{
+	name				center
+
+	flags				clampVelocityX clampVelocityY clampVelocityZ clampRotation useAlpha
+
+	spawnFlags			oppositeAccel oppositeRotation orgOnCylinder
+
+	life				2000
+
+	cullrange			4000
+
+	radius				1 50
+
+	rotation			0 360
+
+	rotationDelta		-25 25
+
+	rotationAccel		220
+
+	velocity			0 -150 -150 300 150 150
+
+	acceleration		0 0 0 100 0 0
+
+	rgb
+	{
+		start			0.4667 0.4196 0.3686
+		end				0.4 0.4 0.4
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.75 1
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			100
+		end				200 300
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

@@ -1,0 +1,107 @@
+Particle
+{
+	name				smoke_linger_lit
+
+	flags				useAlpha
+
+	spawnFlags			rgbComponentInterpolation affectedByWind
+
+	life				2000 3000
+
+	cullrange			32000
+
+	origin				-225 -175 -175 325 175 175
+
+	wind				95 100
+
+	rotation			-15 15
+
+	rotationDelta		-1 1
+
+	velocity			-50 -50 -50 50 50 50
+
+	acceleration		-2 -2 -2 2 -2 -2
+
+	rgb
+	{
+		start			1 0.502 0
+		end				0.4078 0.3882 0.4471
+		parm			0.5 2
+		flags			clamp
+	}
+
+	alpha
+	{
+		end				0
+		flags			linear
+	}
+
+	size
+	{
+		start			0
+		end				200 500
+		parm			0.15 0.5
+		flags			clamp
+	}
+
+	size2
+	{
+		start			200
+		end				500
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_b
+		smoke/smk_p_top_blk_c
+	]
+}
+
+Particle
+{
+	name				fire_exp
+
+	spawnFlags			affectedByWind
+
+	life				100 150
+
+	cullrange			8000
+
+	wind				95 100
+
+	rotation			0 360
+
+	rotationDelta		-20 20
+
+	velocity			-50 -50 -50 50 50 50
+
+	acceleration		0 0 100
+
+	rgb
+	{
+		end				1 0.502 0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	alpha
+	{
+		end				0
+		parm			25 50
+		flags			nonlinear
+	}
+
+	size
+	{
+		end				600 1050
+		flags			linear
+	}
+
+	shaders
+	[
+		fire/exp_gen_c
+		fire/exp_gen_f
+	]
+}

@@ -1,0 +1,22 @@
+{
+	surfaceparm glass
+	surfaceparm nonsolid
+	sort outerBlend
+	nomipmaps
+	nopicmip
+	{
+		map $texturename
+//		rgbGen lightingDiffuse
+		blendFunc blend
+	}
+}
+//	{
+//		map textures/sfx/environmap_bomber.dds
+//		tcgen environment
+//		blendFunc add
+//		tcmod scroll 0 -.1
+//		rgbgen lightingdiffuse
+//		blendFunc blend
+//		alphaFunc GT0
+//	}
+//}

@@ -1,0 +1,109 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           TRENCHES_PLACE
+LANG_ENGLISH        "Approaching the Frontline of Kursk, Near Botovo"
+
+REFERENCE           TRENCHES_DATE
+LANG_ENGLISH        "July 4, 1943"
+
+REFERENCE           TRENCHES_TIME
+LANG_ENGLISH        "1445 hrs"
+
+REFERENCE           BOMBER_PLACE
+LANG_ENGLISH        "Somewhere over the English Channel"
+
+REFERENCE           BOMBER_DATE
+LANG_ENGLISH        "September 2, 1941"
+
+REFERENCE           BOMBER_TIME
+LANG_ENGLISH        "No 90 Squadron"
+
+REFERENCE           KHARKOV1_PLACE
+LANG_ENGLISH        "On the Outskirts of Kharkov"
+
+REFERENCE           KHARKOV1_DATE
+LANG_ENGLISH        "August 22, 1943"
+
+REFERENCE           KHARKOV1_TIME
+LANG_ENGLISH        "1235 hrs"
+
+REFERENCE           KHARKOV2_PLACE
+LANG_ENGLISH        "In the Heart of Kharkov"
+
+REFERENCE           KHARKOV2_DATE
+LANG_ENGLISH        "August 22, 1943"
+
+REFERENCE           KHARKOV2_TIME
+LANG_ENGLISH        "1615 hrs"
+
+REFERENCE           BASTOGNE1_TIME
+LANG_ENGLISH        "1530 hrs"
+
+REFERENCE           BASTOGNE1_DATE
+LANG_ENGLISH        "December 26, 1944"
+
+REFERENCE           BASTOGNE1_PLACE
+LANG_ENGLISH        "Battle of the Bulge - Bastogne - Belgium"
+
+REFERENCE           SICILY1_PLACE
+LANG_ENGLISH        "Capo Murro di Porco, Sicily"
+
+REFERENCE           SICILY1_TIME
+LANG_ENGLISH        "09:00 hours"
+
+REFERENCE           SICILY1_DATE
+LANG_ENGLISH        "12 July 1943"
+
+REFERENCE           BASTOGNE2_PLACE
+LANG_ENGLISH        "Battle of the Bulge - Bastogne - Belgium"
+
+REFERENCE           BASTOGNE2_TIME
+LANG_ENGLISH        "0219 hrs"
+
+REFERENCE           BASTOGNE2_DATE
+LANG_ENGLISH        "January 13, 1945"
+
+REFERENCE           FOY_PLACE
+LANG_ENGLISH        "Battle of the Bulge - Foy - Belgium"
+
+REFERENCE           FOY_DATE
+LANG_ENGLISH        "January 13, 1945"
+
+REFERENCE           FOY_TIME
+LANG_ENGLISH        "1100 hrs"
+
+REFERENCE           NOVILLE_DATE
+LANG_ENGLISH        "January 15, 1945"
+
+REFERENCE           NOVILLE_PLACE
+LANG_ENGLISH        "Battle of the Bulge - Noville - Belgium"
+
+REFERENCE           NOVILLE_TIME
+LANG_ENGLISH        "1130 hrs"
+
+REFERENCE           TRAINBRIDGE_DATE
+LANG_ENGLISH        "September 2, 1941"
+
+REFERENCE           TRAINBRIDGE_PLACE
+LANG_ENGLISH        "Somewhere in Holland"
+
+REFERENCE           TRAINBRIDGE_TIME
+LANG_ENGLISH        "2200 hrs"
+
+
+ENDMARKER
+
+

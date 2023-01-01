@@ -1,0 +1,39 @@
+Particle
+{
+	spawnFlags			cheapOrgCalc
+
+	count				0 1
+
+	life				500 1500
+
+	delay				0 1e+004
+
+	cullrange			1500
+
+	origin				-300 -300 -48 300 300 300
+
+	velocity			-30 -30 -30 30 30 30
+
+	acceleration		-40 -40 -40 40 40 40
+
+	alpha
+	{
+		end				0
+		parm			50 75
+		flags			nonlinear
+	}
+
+	size
+	{
+		start			0.75 1.5
+		end				0
+		parm			75 90
+		flags			linear nonlinear
+	}
+
+	shaders
+	[
+		misc/glow_green_a
+		misc/glow_green_b
+	]
+}

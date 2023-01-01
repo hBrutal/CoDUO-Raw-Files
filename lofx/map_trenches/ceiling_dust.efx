@@ -1,0 +1,51 @@
+Particle
+{
+	name				dust_mist
+
+	flags				useAlpha
+
+	spawnFlags			cheapOrgCalc
+
+	life				1000 2000
+
+	delay				0 350
+
+	cullrange			1000
+
+	origin				-32 -32 0 32 32 0
+
+	rotation			0 360
+
+	rotationDelta		-10 10
+
+	gravity				-10 -150
+
+	rgb
+	{
+		start			0.5569 0.5098 0.4
+		end				0.6824 0.6431 0.5569 0.6824 0.6431 0.5529
+		flags			linear
+	}
+
+	alpha
+	{
+		start			0.25 0.75
+		end				0
+		parm			0.15 0.25
+		flags			linear
+	}
+
+	size
+	{
+		start			24 36
+		end				60 75
+		flags			linear
+	}
+
+	shaders
+	[
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_b
+		smoke/smk_p_none_wht_c
+	]
+}

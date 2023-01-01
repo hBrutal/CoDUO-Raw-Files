@@ -1,0 +1,1450 @@
+#include "ui/menudef.h"
+
+#define TEXT_ON_BG_STYLE 	3	//
+{
+	assetGlobalDef 
+	{
+		consoleFont "fonts/consoleFont" 18		// font
+		smallFont "fonts/smallFont" 12			// font
+		font "fonts/normalFont" 16				// font
+		bigFont "fonts/bigFont" 24				// font
+		extraBigFont "fonts/extraBigFont" 32	// font
+		boldFont "fonts/boldFont" 30			// font
+
+		cursor "ui/assets/3_cursor3"			// cursor	
+		gradientBar "ui/assets/gradientbar2.tga"	// gradient bar
+		itemFocusSound "sound/misc/menu2.wav"	
+					// sound for item getting focus (via keyboard or mouse )
+
+		fadeClamp 1.0				// sets the fadeup alpha
+		fadeCycle 1					// how often fade happens in milliseconds
+		fadeAmount 0.1			// amount to adjust alpha per cycle
+		
+		shadowColor 0.1 0.1 0.1 0.25			// shadow color
+	} 
+
+	menuDef 
+	{
+		name "victoryscreen"
+
+		fullScreen MENU_TRUE				
+		rect 0 0 640 480				// Size and position of the menu
+		focusColor UI_FOCUS_COLOR			// Menu focus color for text and items
+		soundloop ""
+		
+		onOpen 
+		{ 
+			setcvar cl_paused "1"; // pause the game	
+						//	what bug was being fixed by setting paused to 2 ?
+
+			setitemcolor fadebox backcolor 0 0 0 1;
+			fadeout fadebox;
+//			play "music_mainmenu";
+		}
+/*		
+		onClose
+		{
+			setcvar cl_paused "0"; // unpause the game
+		}
+*/
+		// default full screen backdrop image
+		itemDef 
+		{
+			name defaultbackdrop
+			rect 0 0 640 480
+			style WINDOW_STYLE_SHADER
+			background "ui/assets/fadebox.tga"
+			forecolor 0 0 0 1
+			backcolor 0 0 0 1
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "off" }
+			decoration
+		}
+
+		// full screen backdrop image
+		itemDef 
+		{
+			name backdrop
+			rect 0 0 640 480
+			style WINDOW_STYLE_CVAR_SHADER
+			cvar "cg_victoryscreen_backdrop"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "off" }
+			decoration
+		}
+
+		// Level name display
+		itemDef 
+		{
+			name backdrop
+			rect 0 0 640 80 // 1024x128
+			style WINDOW_STYLE_CVAR_SHADER
+			cvar "cg_victoryscreen_levelname"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "off" }
+			decoration
+		}
+		
+		// Quote from a famous dead guy    	
+		itemDef 
+		{
+			name quote
+			cvar "ui_victoryquote"
+			autowrapped
+			textscale .4
+			group grpControlbutton
+			type ITEM_TYPE_TEXT
+			rect 80 250 480 20
+			textalign ITEM_ALIGN_CENTER
+			textalignx 240 // point to center around
+			forecolor 1 1 1 1
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "off" }
+			decoration 
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		MAIN BACKGROUND USA
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name main_back_top
+			style WINDOW_STYLE_SHADER
+			rect 0 0 640 320
+			background "ui/assets/eoc/us/aar_us_backdrop_upper.dds"
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+			visible 1
+			decoration
+		}
+		itemDef 
+		{
+			name main_back_bot
+			style WINDOW_STYLE_SHADER
+			rect 0 320 640 160
+			background "ui/assets/eoc/us/aar_us_backdrop_lower.dds"
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name	overview_shot_us
+			style WINDOW_STYLE_SHADER
+			rect 236 0 320 320
+			background "ui/assets/eoc/us/aar_us_shot_synopsis.dds"
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+			visible 1
+			decoration
+		}
+
+
+		itemDef
+		{
+			name	overview_text_us
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/us/aar_us_text_synopsis.dds"
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+//			border 1
+//			bordercolor 1 1 1 1
+
+			visible 1
+			decoration
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		NOVILLE
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	noville_shot
+			style WINDOW_STYLE_SHADER
+			rect 236 0 320 320
+			background "ui/assets/eoc/us/aar_us_shot_noville.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	noville_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/us/aar_us_text_noville.dds"
+			visible 0
+			decoration
+		}
+		itemDef
+		{
+			name	noville_highlight
+			style WINDOW_STYLE_SHADER
+			rect 70 150 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+	
+		itemDef 
+		{
+			name noville_box
+			type 1
+			textscale .4
+			style UI_BUTTON_STYLE
+			rect 181 266 32 32
+//			border 1
+//			bordercolor 1 1 1 1
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+			visible 1
+
+			action
+			{ 
+				play "mouse_click"; 
+			}
+
+			mouseEnter
+			{
+
+				hide overview_text_us;
+				hide overview_shot_us;
+				hide noville_highlight;
+				hide noville_text;
+				hide noville_shot;
+				hide foy_highlight;
+				hide foy_shot;
+				hide foy_text;
+				hide bastogne_highlight_1;
+				hide bastogne_text_1;
+				hide bastogne_shot_1;
+				hide bastogne_highlight_2;
+				hide bastogne_text_2;
+				hide bastogne_shot_2;
+
+				show noville_highlight;
+				show noville_text;
+				show noville_shot;
+				play "mouse_over";
+			} 
+			mouseExit
+			{
+				hide noville_text;
+				hide foy_text;
+				hide bastogne_text_1;
+				hide bastogne_text_2;
+				hide noville_shot;
+				hide foy_shot;
+				hide bastogne_shot_1;
+				hide bastogne_shot_2;
+
+				hide noville_highlight;
+				hide foy_highlight;
+				hide bastogne_highlight_1;
+				hide bastogne_highlight_2;
+				show overview_text_us;
+				show overview_shot_us;
+			} 		
+		}	
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		FOY 
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	foy_shot
+			style WINDOW_STYLE_SHADER
+			rect 236 0 320 320
+			background "ui/assets/eoc/us/aar_us_shot_foy.dds"
+			visible 0
+			decoration
+		}
+
+
+		itemDef
+		{
+			name	foy_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/us/aar_us_text_foy.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	foy_highlight
+			style WINDOW_STYLE_SHADER
+			rect 30 220 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name foy_box
+			style UI_BUTTON_STYLE
+			rect 136 330 32 32
+			visible 1
+//			border 1
+//			bordercolor 1 1 1 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+
+			mouseEnter
+			{
+				hide overview_text_us;
+				hide overview_shot_us;
+
+				hide noville_highlight;
+				hide noville_text;
+				hide noville_shot;
+				hide foy_highlight;
+				hide foy_shot;
+				hide foy_text;
+				hide bastogne_highlight_1;
+				hide bastogne_text_1;
+				hide bastogne_shot_1;
+				hide bastogne_highlight_2;
+				hide bastogne_text_2;
+				hide bastogne_shot_2;
+
+				show foy_highlight;
+				show foy_text;
+				show foy_shot;
+				play "mouse_over";
+			} 
+			mouseExit
+			{
+				hide noville_text;
+				hide foy_text;
+				hide bastogne_text_1;
+				hide bastogne_text_2;
+				hide noville_shot;
+				hide foy_shot;
+				hide bastogne_shot_1;
+				hide bastogne_shot_2;
+
+				hide noville_highlight;
+				hide foy_highlight;
+				hide bastogne_highlight_1;
+				hide bastogne_highlight_2;
+				show overview_text_us;
+				show overview_shot_us;
+			} 		
+		}	
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		BASTOGNE 2 crossroads
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	bastogne_shot_2
+			style WINDOW_STYLE_SHADER
+			rect 236 0 320 320
+			background "ui/assets/eoc/us/aar_us_shot_bastogne2.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	bastogne_text_2
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/us/aar_us_text_bastogne2.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	bastogne_highlight_2
+			style WINDOW_STYLE_SHADER
+			rect -30 275 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name bastogne_box_2
+			style UI_BUTTON_STYLE
+			rect 94 370 32 32
+			visible 1
+//			border 1
+//			bordercolor 0 1 0 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+
+			mouseEnter
+			{
+				hide overview_text_us;
+				hide overview_shot_us;
+
+				hide noville_highlight;
+				hide noville_text;
+				hide noville_shot;
+				hide foy_highlight;
+				hide foy_shot;
+				hide foy_text;
+				hide bastogne_highlight_1;
+				hide bastogne_text_1;
+				hide bastogne_shot_1;
+				hide bastogne_highlight_2;
+				hide bastogne_text_2;
+				hide bastogne_shot_2;
+
+				play "mouse_over";
+
+				show bastogne_shot_2;
+				show bastogne_highlight_2;
+				show bastogne_text_2;
+			} 
+			mouseExit
+			{
+				hide noville_text;
+				hide foy_text;
+				hide bastogne_text_1;
+				hide bastogne_text_2;
+				hide noville_shot;
+				hide foy_shot;
+				hide bastogne_shot_1;
+				hide bastogne_shot_2;
+
+				hide noville_highlight;
+				hide foy_highlight;
+				hide bastogne_highlight_1;
+				hide bastogne_highlight_2;
+				show overview_text_us;
+				show overview_shot_us;
+			} 		
+		}	
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		BASTOGNE 1 bois jacques
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	bastogne_shot_1
+			style WINDOW_STYLE_SHADER
+			rect 236 0 320 320
+			background "ui/assets/eoc/us/aar_us_shot_bastogne1.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	bastogne_text_1
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/us/aar_us_text_bastogne1.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	bastogne_highlight_1
+			style WINDOW_STYLE_SHADER
+			rect -40 304 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name bastogne_box_1
+			style UI_BUTTON_STYLE
+			rect 62 400 32 32
+			visible 1
+//			border 1
+//			bordercolor 0 1 0 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+
+			mouseEnter
+			{
+				hide overview_text_us;
+				hide overview_shot_us;
+				hide noville_highlight;
+				hide noville_text;
+				hide noville_shot;
+				hide foy_highlight;
+				hide foy_shot;
+				hide foy_text;
+				hide bastogne_highlight_1;
+				hide bastogne_text_1;
+				hide bastogne_shot_1;
+				hide bastogne_highlight_2;
+				hide bastogne_text_2;
+				hide bastogne_shot_2;
+
+				play "mouse_over";
+
+				show bastogne_shot_1;
+				show bastogne_highlight_1;
+				show bastogne_text_1;
+			} 
+			mouseExit
+			{
+				hide noville_text;
+				hide foy_text;
+				hide bastogne_text_1;
+				hide bastogne_text_2;
+				hide noville_shot;
+				hide foy_shot;
+				hide bastogne_shot_1;
+				hide bastogne_shot_2;
+
+				hide noville_highlight;
+				hide foy_highlight;
+				hide bastogne_highlight_1;
+				hide bastogne_highlight_2;
+				hide bastogne_text_1;
+				hide bastogne_text_2;
+
+				show overview_text_us;
+				show overview_shot_us;
+			} 		
+		}	
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		MAIN BACKGROUND RUSSIAN
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name main_back_top
+			style WINDOW_STYLE_SHADER
+			rect 0 0 640 320
+			background "ui/assets/eoc/ru/aar_ru_backdrop_upper.dds"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+		}
+		itemDef 
+		{
+			name main_back_bot
+			style WINDOW_STYLE_SHADER
+			rect 0 320 640 160
+			background "ui/assets/eoc/ru/aar_ru_backdrop_lower.dds"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+		}
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		Overview
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	overview_shot_ru
+			style WINDOW_STYLE_SHADER
+			rect 320 0 320 320
+			background "ui/assets/eoc/ru/aar_ru_shot_synopsis.dds"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+		}
+
+		itemDef
+		{
+			name	overview_text_ru
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/ru/aar_ru_text_synopsis.dds"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		PONYRI
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	ponyri_shot
+			style WINDOW_STYLE_SHADER
+			rect 320 0 320 320
+			background "ui/assets/eoc/ru/aar_ru_shot_ponyri.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	ponyri_highlight
+			style WINDOW_STYLE_SHADER
+			rect 68 -42 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	ponyri_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/ru/aar_ru_text_ponyri.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name ponyri_box
+			style UI_BUTTON_STYLE
+			rect 180 80 32 32
+			visible 1
+//			border 1
+//			bordercolor 1 0 0 1
+			forecolor .9 .9 .9 .9
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+
+			mouseEnter
+			{
+				hide overview_text_ru;
+				hide overview_shot_ru;
+				play "mouse_over";
+
+				show ponyri_shot;
+				show ponyri_highlight;
+				show ponyri_text;
+			} 
+			mouseExit
+			{
+				hide ponyri_shot;
+				hide ponyri_highlight;
+				hide ponyri_text;
+				show overview_text_ru;
+				show overview_shot_ru;
+			} 		
+		}
+
+		itemDef
+		{
+			name	prokhorovka_shot
+			style WINDOW_STYLE_SHADER
+			rect 320 0 320 320
+			background "ui/assets/eoc/ru/aar_ru_shot_prokhorovka.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	prokhorovka_highlight
+			style WINDOW_STYLE_SHADER
+			rect 68 68 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	prokhorovka_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/ru/aar_ru_text_prokhorovka.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name prokhorovka_box
+			style UI_BUTTON_STYLE
+			rect 180 190 32 32
+			visible 1	
+//			border 1
+//			bordercolor 1 0 0 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+
+			mouseEnter
+			{
+				hide overview_text_ru;
+				hide overview_shot_ru;
+				play "mouse_over";
+
+				show prokhorovka_shot;
+				show prokhorovka_highlight;
+				show prokhorovka_text;
+			} 
+			mouseExit
+			{
+				hide prokhorovka_shot;
+				hide prokhorovka_highlight;
+				hide prokhorovka_text;
+				show overview_text_ru;
+				show overview_shot_ru;
+			} 		
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		Trenches
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	trenches_shot
+			style WINDOW_STYLE_SHADER
+			rect 320 0 320 320
+			background "ui/assets/eoc/ru/aar_ru_shot_trenches.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	trenches_highlight
+			style WINDOW_STYLE_SHADER
+			rect 8 64 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	trenches_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/ru/aar_ru_text_trenches.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name trenches_box
+			style UI_BUTTON_STYLE
+			rect 120 176 32 32
+			visible 1	
+//			border 1
+//			bordercolor 1 0 0 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+
+			mouseEnter
+			{
+				hide overview_text_ru;
+				hide overview_shot_ru;
+				play "mouse_over";
+
+				show trenches_shot;
+				show trenches_highlight;
+				show trenches_text;
+			} 
+			mouseExit
+			{
+				hide trenches_shot;
+				hide trenches_highlight;
+				hide trenches_text;
+				show overview_text_ru;
+				show overview_shot_ru;
+			} 		
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		Kharkov
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	kharkov_shot
+			style WINDOW_STYLE_SHADER
+			rect 320 0 320 320
+			background "ui/assets/eoc/ru/aar_ru_shot_kharkov1.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	kharkov_highlight
+			style WINDOW_STYLE_SHADER
+			rect 18 168 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	kharkov_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/ru/aar_ru_text_kharkov1.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name kharkov_box
+			style UI_BUTTON_STYLE
+			rect 132 284 24 24
+			visible 1
+//			border 1
+//			bordercolor 1 0 0 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+
+			mouseEnter
+			{
+				hide kharkov2_shot;
+				hide kharkov2_highlight;
+				hide kharkov2_text;
+
+				hide overview_text_ru;
+				hide overview_shot_ru;
+				play "mouse_over";
+
+				show kharkov_shot;
+				show kharkov_highlight;
+				show kharkov_text;
+			} 
+			mouseExit
+			{
+				hide kharkov_shot;
+				hide kharkov_highlight;
+				hide kharkov_text;
+				show overview_text_ru;
+				show overview_shot_ru;
+			} 		
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		Kharkov2
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	kharkov2_shot
+			style WINDOW_STYLE_SHADER
+			rect 320 0 320 320
+			background "ui/assets/eoc/ru/aar_ru_shot_kharkov2.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	kharkov2_highlight
+			style WINDOW_STYLE_SHADER
+			rect 18 168 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	kharkov2_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/ru/aar_ru_text_kharkov2.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name kharkov2_box
+			style UI_BUTTON_STYLE
+			rect 106 308 24 24
+			visible 1	
+//			border 1
+//			bordercolor 1 0 0 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+
+			mouseEnter
+			{
+				hide kharkov_shot;
+				hide kharkov_highlight;
+				hide kharkov_text;
+				hide overview_text_ru;
+				hide overview_shot_ru;
+				play "mouse_over";
+
+				show kharkov2_shot;
+				show kharkov2_highlight;
+				show kharkov2_text;
+			} 
+			mouseExit
+			{
+				hide kharkov2_shot;
+				hide kharkov2_highlight;
+				hide kharkov2_text;
+				show overview_text_ru;
+				show overview_shot_ru;
+			} 		
+		}
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		MAIN BACKGROUND 	
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef 
+		{
+			name main_back_top
+			style WINDOW_STYLE_SHADER
+			rect 0 0 640 320
+			background "ui/assets/eoc/br/aar_br_backdrop_upper.dds"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+			decoration
+		}
+		itemDef 
+		{
+			name main_back_bot
+			style WINDOW_STYLE_SHADER
+			rect 0 320 640 160
+			background "ui/assets/eoc/br/aar_br_backdrop_lower.dds"
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+			decoration
+		}
+
+		itemDef
+		{
+			name	overview_shot_br
+			style WINDOW_STYLE_SHADER
+			rect 277 0 320 320
+			background "ui/assets/eoc/br/aar_br_shot_synopsis.dds"
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+ 			visible 1
+			decoration
+		}
+
+		itemDef
+		{
+			name	overview_text_br
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/br/aar_br_text_synopsis.dds"
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+			visible 1
+			decoration
+		}
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		Bomber
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	bomber_shot
+			style WINDOW_STYLE_SHADER
+			rect 277 0 320 320
+			background "ui/assets/eoc/br/aar_br_shot_bomber.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	bomber_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/br/aar_br_text_bomber.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	bomber_highlight
+			style WINDOW_STYLE_SHADER
+			rect 80 -20 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name bomber_box
+			style UI_BUTTON_STYLE
+			rect 130 60 128 64
+//			border 1
+//			bordercolor 0 0 1 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+			visible 1	
+			decoration
+
+			mouseEnter
+			{
+				hide overview_text_br;
+				hide overview_shot_br;
+				play "mouse_over";
+
+				show bomber_shot;
+				show bomber_highlight;
+				show bomber_text;
+			} 
+			mouseExit
+			{
+				hide bomber_shot;
+				hide bomber_highlight;
+				hide bomber_text;
+				show overview_text_br;
+				show overview_shot_br;
+			} 		
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		Holland ( trainbridge ) 
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	trainbridge_shot
+			style WINDOW_STYLE_SHADER
+			rect 277 0 320 320
+			background "ui/assets/eoc/br/aar_br_shot_trainbridge.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	trainbridge_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/br/aar_br_text_trainbridge.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	trainbridge_highlight
+			style WINDOW_STYLE_SHADER
+			rect 80 140 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name trainbridge_box
+			style UI_BUTTON_STYLE
+			rect 130 220 128 64
+//			border 1
+//			bordercolor 0 0 1 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+			visible 1	
+
+			decoration
+
+			mouseEnter
+			{
+				hide overview_text_br;
+				hide overview_shot_br;
+				play "mouse_over";
+
+				show trainbridge_shot;
+				show trainbridge_highlight;
+				show trainbridge_text;
+			} 
+			mouseExit
+			{
+				hide trainbridge_shot;
+				hide trainbridge_highlight;
+				hide trainbridge_text;
+				show overview_text_br;
+				show overview_shot_br;
+			} 		
+		}
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		sicily 1
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	sicily_shot
+			style WINDOW_STYLE_SHADER
+			rect 277 0 320 320
+			background "ui/assets/eoc/br/aar_br_shot_sicily1.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	sicily_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/br/aar_br_text_sicily1.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	sicily_highlight
+			style WINDOW_STYLE_SHADER
+			rect 50 280 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name sicily_box
+			style UI_BUTTON_STYLE
+			rect 130 364 64 64
+//			border 1
+//			bordercolor 1 1 1 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+
+			visible 1
+
+			decoration
+
+			mouseEnter
+			{
+				hide overview_text_br;
+				hide overview_shot_br;
+				play "mouse_over";
+				hide sicily2_shot;
+				hide sicily2_highlight;
+				hide sicily2_text;
+
+				show sicily_shot;
+				show sicily_highlight;
+				show sicily_text;
+			} 
+			mouseExit
+			{
+				hide sicily_shot;
+				hide sicily_highlight;
+				hide sicily_text;
+				show overview_text_br;
+				show overview_shot_br;
+			} 		
+		}
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		sicily 2
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		itemDef
+		{
+			name	sicily2_shot
+			style WINDOW_STYLE_SHADER
+			rect 277 0 320 320
+			background "ui/assets/eoc/br/aar_br_shot_sicily2.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	sicily2_text
+			style WINDOW_STYLE_SHADER
+			rect 300 162 320 320
+			background "ui/assets/eoc/br/aar_br_text_sicily2.dds"
+			visible 0
+			decoration
+		}
+
+		itemDef
+		{
+			name	sicily2_highlight
+			style WINDOW_STYLE_SHADER
+			rect 100 280 256 256
+			background "aar_map-highlight"
+			visible 0
+			decoration
+		}
+
+		itemDef 
+		{
+			name sicily2_box
+			style UI_BUTTON_STYLE
+			rect 198 364 64 64
+//			border 1
+//			bordercolor 0 0 1 1
+			forecolor .9 .9 .9 .9
+
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+			visible 1
+
+			decoration
+
+			mouseEnter
+			{
+				hide overview_text_br;
+				hide overview_shot_br;
+				play "mouse_over";
+
+				hide sicily_shot;
+				hide sicily_highlight;
+				hide sicily_text;
+
+				show sicily2_shot;
+				show sicily2_highlight;
+				show sicily2_text;
+			} 
+			mouseExit
+			{
+				hide sicily2_shot;
+				hide sicily2_highlight;
+				hide sicily2_text;
+				show overview_text_br;
+				show overview_shot_br;
+			} 		
+		}
+
+
+
+
+// -----------------------------------------------------------------------------------------------------------------------------
+//		MUST ALWAYS COME LAST
+// -----------------------------------------------------------------------------------------------------------------------------
+
+		// Next Map button (loads next level)
+		itemDef
+		{
+			name continue
+			rect 256 440 128 16
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			text "@MENU_CONTINUE"
+			textfont UI_FONT_BIG
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			textalign ITEM_ALIGN_CENTER
+			textalignx 64
+			textaligny 16
+			textscale .4
+			forecolor .9 .9 .9 .9
+			cvarTest "cl_movieplaying"
+			showCvar { "0" }
+			visible 1 
+//			cvarTest "mapname"		//	you can't do both 
+//			hideCvar { "credits" }		//	we'll have to set cl_movieplaying for the credits 
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				close victoryscreen;
+    			setcvar cl_paused "0"; // unpause the game
+			}
+		}
+		// Main menu button (returns player to the main menu)
+		itemDef
+		{
+			name restart
+			rect 480 440 128 16
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			text "@MENU_MAIN_MENU"
+			textfont UI_FONT_BIG
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			textalign ITEM_ALIGN_CENTER
+			textalignx 64
+			textaligny 16
+			textscale .4
+			forecolor .9 .9 .9 .9
+			visible 1 
+			cvarTest "cl_movieplaying"
+			showCvar { "0" }
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action
+			{
+				open main;
+			}
+		}
+
+		itemDef
+		{
+			name skip
+			rect 32 440 192 16
+			type ITEM_TYPE_BUTTON
+			style WINDOW_STYLE_EMPTY
+			text "@GMI_MENU_SKIP_TO_BRIEFING"
+			textfont UI_FONT_BIG
+			textstyle ITEM_TEXTSTYLE_SHADOWEDMORE
+			textalign ITEM_ALIGN_CENTER
+			textalignx 64
+			textaligny 16
+			textscale .4
+			forecolor .9 .9 .9 .9
+			cvarTest "cl_movieplaying"
+			showCvar { "1" }
+			visible 1 
+
+			mouseEnter 
+			{
+				play "mouse_over";
+			}
+			action
+			{
+//				close skip;
+				hide movie_russian;
+				hide movie_brit;
+				hide movie_usa;
+				exec "set cl_movieplaying 0\n";
+
+			}
+		}
+
+		itemDef 
+		{
+			name continue_hider
+			style WINDOW_STYLE_FILLED
+			rect 256 440 128 16
+			forecolor 0 0 0 1
+//			background "env\black_bk.tga"
+			cvarTest "mapname"
+			showCvar { "credits" }
+			visible 1
+			decoration
+			mouseEnter 
+			{
+				hide continue
+			}
+		}
+
+		itemDef 
+		{
+			name movie_brit
+			style WINDOW_STYLE_CINEMATIC
+			cinematiconce "coduo_british.bik"
+			rect 0 0 640 480
+			forecolor 1 1 1 1
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_british" }
+			decoration
+            action
+            {
+                hide skip;
+            }
+		}
+
+		itemDef 
+		{
+			name movie_usa
+			style WINDOW_STYLE_CINEMATIC
+
+			cinematiconce "coduo_american.bik"
+			rect 0 0 640 480
+			forecolor 1 1 1 1
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_usa" }
+			decoration
+            action
+            {
+                hide skip;
+            }
+
+		}
+
+		itemDef 
+		{
+			name movie_russian
+			style WINDOW_STYLE_CINEMATIC
+			cinematiconce "coduo_russian.bik"
+			rect 0 0 640 480
+			forecolor 1 1 1 1
+			visible 1
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "eoc_russian" }
+			decoration
+            action
+            {
+                hide skip;
+            }
+
+		}
+
+
+		// Box for fading in menus, this needs to come last
+		itemDef 	
+		{
+	      	name fadebox
+	      	style WINDOW_STYLE_FILLED
+	 		background "ui/assets/fadebox.tga"
+			forecolor 0 0 0 1
+			backcolor 0 0 0 1
+			rect 0 0 640 480
+	      	visible 1 
+			cvarTest "cg_victoryscreen_menu"
+			showCvar { "off" }
+			decoration
+    		}
+	}
+}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   

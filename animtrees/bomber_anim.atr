@@ -1,0 +1,27 @@
+pilot_anims
+{   
+	c_br_bomber_pilot_idleA
+	c_br_bomber_pilot_talk_in
+	c_br_bomber_pilot_talk_loop
+	c_br_bomber_pilot_talk_out
+	c_br_bomber_pilot_looklright
+	c_br_bomber_pilot_eventB1
+}
+copilot_anims
+{
+	c_br_bomber_copilot_idleA
+	c_br_bomber_copilot_lookleft
+	c_br_bomber_copilot_eventB1 
+}
+wirelessop_anims
+{       
+	c_br_bomber_radio_idle
+	c_br_bomber_radio_death
+	c_br_bomber_radio_listen
+	c_br_bomber_radio_dead
+	c_br_bomber_radio_wounded
+	c_br_bomber_radio_motioning0
+	c_br_bomber_radio_motioning1
+	c_br_bomber_radio_motioning2
+	c_br_bomber_radio_motioning_transition
+}

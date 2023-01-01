@@ -1,0 +1,297 @@
+Particle
+{
+	name				p1
+
+	life				6e+009
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.2
+		end				0
+	}
+
+	size
+	{
+		start			40
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p2
+
+	life				6e+009
+
+	origin				20 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.18
+		end				0
+	}
+
+	size
+	{
+		start			42
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p3
+
+	life				6e+009
+
+	origin				41 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.16
+		end				0
+	}
+
+	size
+	{
+		start			44
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p4
+
+	life				6e+009
+
+	origin				63 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.14
+		end				0
+	}
+
+	size
+	{
+		start			46
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p5
+
+	life				6e+009
+
+	origin				86 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.12
+		end				0
+	}
+
+	size
+	{
+		start			48
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p6
+
+	life				6e+009
+
+	origin				110 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.1
+		end				0
+	}
+
+	size
+	{
+		start			50
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p7
+
+	life				6e+009
+
+	origin				135 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.08
+		end				0
+	}
+
+	size
+	{
+		start			52
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p8
+
+	life				6e+009
+
+	origin				161 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.06
+		end				0
+	}
+
+	size
+	{
+		start			54
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p9
+
+	life				6e+009
+
+	origin				188 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.04
+		end				0
+	}
+
+	size
+	{
+		start			56
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}
+
+Particle
+{
+	name				p10
+
+	life				6e+009
+
+	origin				216 0 0
+
+	rgb
+	{
+		start			0.902 0.9843 1
+	}
+
+	alpha
+	{
+		start			0.02
+		end				0
+	}
+
+	size
+	{
+		start			58
+	}
+
+	shaders
+	[
+		atmosphere/v_light_square_a
+	]
+}

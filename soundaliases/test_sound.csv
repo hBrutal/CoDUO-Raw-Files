@@ -1,0 +1,229 @@
+"# If the text in the first column of a row starts with a # character, the row is ignored",,
+,,"If the first column for a row is blank, then the row is ignored"
+# The first non-comment line of a sound alias file specifies the key name for all values appearing in this column.,,
+"# This means it is safe to swap entire columns around, though you should never swap partial columns.",,
+"# You can invent new keys, but the game will ignore them if it doesn't know about them.",,
+"# You can leave out keys, but the ""name"" and ""file"" keys must always be present.",,
+
+,name,name of the alias that is used to play this sound (required)
+,sequence,"used to uniquely identify alias entries when more than one sound goes to an alias, used only to catch unwanted duplicates (default = 0)"
+,file,the name of the file that contains the sound data (required)
+,vol_min,"0 is silent, 1 is full volume (default = 1)"
+,vol_max,"0 is silent, 1 is full volume (default = same as vol_min)"
+,pitch_min,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (default = 1)"
+,pitch_max,"1 is normal playback, 2 is twice as fast, 0.5 is half as fast (default = same as pitch_min)"
+,dist_min,"within this distance in inches, the sound is always full volume (default = 120)"
+,dist_max,"outside this distance in inches, the sound is not started.  If left blank or set to 0, the sound will play from any distance.  This does not affect sound volume falloff."
+,channel,"auto, menu, weapon, voice, item, body, local, music, announcer (default = auto)",,,,,,,,,,,,,,,
+,type,streamed / loaded (default = loaded),,,,,,,,,,,,,,,
+,probability,weight to use for the weighted probability of playing this sound instead of another sound (default = 1),,,,,,,,,,,,,,,
+,loop,"whether this sound is ""looping"" or ""nonlooping"" (default = ""nonlooping"")",,,,,,,,,,,,,,,
+,masterslave,"if ""master"", this is a master sound.  If a number, then this sound won't exceed this volume whenever any master sound is playing.  If blank, then neither master nor slave.",,,,,,,,,,,,,,,
+,loadspec,"space-separated list of which maps should use this alias; eg, ""burnville dawnville"".  If blank, the alias is used on all maps.",,,,,,,,,,,,,,,
+
+name,sequence,file,vol_min,vol_max,pitch_min,pitch_max,dist_min,dist_max,lod_min,lod_max,channel,type,probability,loop,masterslave,loadspec,subtitle
+
+
+
+# Streaming Loop test,,,,,,,,,,,,,,,,,
+test_idle_stream,,vehicles/tank_02_idle.wav,1,1,0.75,,750,8000,,,,streamed,,looping,,test/sound_test test/sg_test,
+#rain_loop_test,,test/rain_loop_test.wav,0.75,0.75,,,500,2000,,,,streamed,,looping,,test/sound_test test/sg_test,
+rain_loop_test,,test/rain_loop_test.wav,1,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test,
+#rain_puddle,,test/rain_puddle.wav,1,,,,200,1000,,,,streamed,,looping,,test/sound_test test/sg_test,
+
+
+# Ambient track test,,,,,,,,,,,,,,,,
+ambient_sound_test,,ambient/silent_bridge_loop.mp3,1,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+barrage_test,,test/barrage_test_loop.wav,1.5,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+amb_rain_ext,,weather/rain01.wav,1,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+#amb_rain_int,,weather/rain_int01.wav,1,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+amb_null,,null.wav,1,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+amb_int_test,,ambient/amb_trenches01_rain_int.mp3,1.25,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+ambient_brecourt_ext,,ambient/amb_brecourt_ext.mp3,1,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+ambient_brecourt_int,,ambient/amb_brecourt_int.mp3,0.7,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+ambient_train_ride,,ambient/amb_train_ride.mp3,1.25,,,,,,,,local,streamed,,,,test/sound_test test/sg_test
+ambient_train_stop,,ambient/amb_train_stop.mp3,1.35,,,,,,,,local,streamed,,,,test/sound_test test/sg_test
+ambient_rain_combat_int,,ambient/amb_rain_combat_int.mp3,1.25,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+ambient_snowy,,ambient/amb_snowy_ext.mp3,1,,,,,,,,local,streamed,,looping,,jc_tank_test
+ambient_bastogne1_ext,,ambient/amb_snowy_ext.mp3,1,,,,,,,,local,streamed,,looping,,test/sound_test 
+
+# 1 shot scripted test,,,,,,,,,,,,,,,,
+crash_wood,,vehicles/crashes/wood_crash01.wav,1.25,1.25,0.9,1.05,2500,3600,,,auto,,,,,test/sound_test test/sg_test
+
+#1 distand whistles,,,,,,,,,,,,,,,,
+#distant_whistle_01,,misc/whistle_blow_rolloff1.wav,1,1,1.05,,5000,10000,,,,,,,,test/sound_test test/sg_test
+#distant_whistle_02,,misc/whistle_blow_rolloff2.wav,0.75,0.75,,,5000,10000,,,,,,,,test/sound_test test/sg_test
+#distant_whistle_03,,misc/whistle_blow_rolloff3.wav,1,1,1.05,,5000,10000,,,,,,,,test/sound_test test/sg_test
+
+#Bullet Whizbys for coverage,,,,,,,,,,,,,,,,
+whizby_cover,1,whizbys/whizby02.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,2,whizbys/whizby03.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,3,whizbys/whizby04.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,4,whizbys/whizby05.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,5,whizbys/whizby06.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,6,whizbys/whizby07.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,7,whizbys/whizby08.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,8,whizbys/whizby09.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,9,whizbys/whizby10.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,10,whizbys/whizby11.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,11,whizbys/whizby12.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,12,whizbys/whizby13.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,13,whizbys/whizby14.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,14,whizbys/whizby15.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+whizby_cover,15,whizbys/whizby01.wav,1.5,,0.8,1.1,100,700,,,auto,,,,,test/sound_test test/sg_test
+
+#misc crashes,,,,,,,,,,,,,,,,
+bunker_cavein,,misc/big_wood_dirt_cavein.wav,1,1,,,50,2000,,,,,,,,test/sound_test test/sg_test
+
+#player truck,,,,,,,,,,,,,,,,
+#player_truck_move,,vehicles/player_truck_move.wav,1,,,,,,,,local,streamed,,looping,,test/sound_test test/sg_test
+
+#Barrage,,,,,,,,,,,,,,,,
+distant_barrage_loop,,explosions/distant_flak_loop02.wav,1,,,,,,,,local,streamed,,looping,,test/sound_test
+
+#weapons,,,,,,,,,,,,,,,,
+kar98k_fire_close,,weapons/kar98k/kar98_01.wav,1.35,1.5,0.95,1,7,4000,,,weapon,,,,,test/sound_test
+#kar98k_fire_distant,,weapons/kar98k/kar98_distant_04.wav,0.85,0.95,1.05,1.1,7,8500,,,weapon,,,,,test/sound_test
+
+#bombay wind test,,,,,,,,,,,,,,,,
+#bombay_wind_low,,weather/bomber_wind01.wav,0.33,,,,,,,,local,streamed,,looping,,test/sound_test
+#bombay_wind_med,,weather/bomber_wind01.wav,0.66,,,,,,,,local,streamed,,looping,,test/sound_test
+#bombay_wind_high,,weather/bomber_wind01.wav,1.25,,,,100,500,,,auto,streamed,,looping,,test/sound_test
+#bombay_wind_null,,weather/bomber_wind01.wav,0,,,,100,500,,,auto,streamed,,looping,,test/sound_test
+#bombay_wind_up,,weather/bomber_wind01_up.wav,1,,,,,,,,local,streamed,,,,test/sound_test
+#bombay_wind_down,,weather/bomber_wind01_down.wav,1,,,,,,,,local,streamed,,,,test/sound_test
+#bombay_wind_long,,weather/bomber_wind_long.mp3,1,,,,500,1000,,,auto,streamed,,,,test/sound_test
+
+#Tank,,,,,,,,,,,,,,,,
+#sherman_engine_high,,vehicles/tank_04_move_alt.wav,1.25,,1,,1000,5000,,,,,,looping,,test/sound_test
+tiger_engine_high,,vehicles/tank_02_move.wav,1.25,,1,,1000,5000,,,,,,looping,,test/sound_test
+panzerIV_engine_high,,vehicles/tank_03_move.wav,1.25,,1,,1000,5000,,,,,,looping,,test/sound_test
+t34_engine_high,,vehicles/tank_01_move.wav,1.25,,1,,1000,5000,,,,,,looping,,test/sound_test
+
+#Flak,,,,,,,,,,,,,,,,
+#flak_burst,1,explosions/explo_distant01.wav,1.2,1.4,0.9,1.1,100,5000,,,auto,,,,,test/sound_test
+#flak_burst,2,explosions/explo_distant02.wav,1.2,1.4,0.9,1.1,100,5000,,,auto,,,,,test/sound_test
+#flak_burst,3,explosions/explo_distant03.wav,1.2,1.4,0.9,1.1,100,5000,,,auto,,,,,test/sound_test
+#flak_burst,4,explosions/explo_distant07.wav,1.2,1.4,0.9,1.1,100,5000,,,auto,,,,,test/sound_test
+#distant_flak_loop,,explosions/distant_flak_loop01.wav,1,,,,,,,,local,,,looping,,test/sound_test
+
+Stalingrad_Artillery_Rumble,,misc/rumble.wav,1.25,1.25,,,500000,500000,,,voice,,,looping,,test/sound_test
+Stalingrad_Artillery_Rumble_null,,misc/rumble.wav,0,0,,,500000,500000,,,voice,,,looping,,test/sound_test
+
+#train,,,,,,,,,,,,,,,,
+train_idle_high,,vehicles/train_idle_loop.wav,1.4,,,,500,3500,,,auto,streamed,,looping,,test/sound_test
+train_idle_low,,vehicles/train_idle_loop.wav,0,,,,500,3500,,,auto,streamed,,looping,,test/sound_test
+
+#LOD Tests,,,,,,,,,,,,,,,,
+#kar98k_lod,1,weapons/kar98k/kar98_01.wav,1.35,1.5,0.95,1,7,4000,0,2000,weapon,,,,,test/sound_test
+#kar98k_lod,2,weapons/kar98k/kar98_02.wav,1.35,1.5,0.95,1,7,4000,0,2000,weapon,,,,,test/sound_test
+#kar98k_lod,3,weapons/kar98k/kar98_distant_04.wav,0.85,0.95,1.05,1.1,7,8500,2000,8500,weapon,,,,,test/sound_test
+#kar98k_lod,4,weapons/kar98k/kar98_distant_02.wav,0.85,0.95,1.05,1.1,7,8500,2000,8500,weapon,,,,,test/sound_test
+
+#big_440,,test/big_440.wav,1,1.2,0.8,1.2,200,300,,,auto,,,,,test/sound_test
+#big_440,,test/big_440_5.wav,1,1.2,0.8,1.2,200,300,,,auto,,,,,test/sound_test
+#big_440,2,test/big_440.wav,0.5,0.7,1.1,1.4,200,400,,,auto,,,,,test/sound_test
+#big_440_02,,test/big_440.wav,0.75,0.9,0.65,0.95,300,500,,,auto,,,,,test/sound_test
+
+#Sherman Tank,,,,,,,,,,,,,,,,
+sherman_idle_low,,vehicles/tank_04_idle.wav,0,,1,,300,3500,,,,,,looping,,jc_tank_test
+sherman_idle_high,,vehicles/tank_04_idle.wav,0.7,,1,,300,3500,,,,,,looping,,jc_tank_test
+sherman_engine_low,,vehicles/tank_04_move.wav,0.35,,1,,500,7000,,,,,,looping,,jc_tank_test
+sherman_engine_high,,vehicles/tank_04_move.wav,1.4,,1,,500,7000,,,,,,looping,,jc_tank_test
+sherman_fire,1,weapons/flak/flak88_fire02.wav,1.25,1.25,0.9,1.1,500,5000,,,,,,,,jc_tank_test
+sherman_fire,2,weapons/flak/flak88_fire03.wav,1.25,1.25,0.9,1.1,500,5000,,,,,,,,jc_tank_test
+sherman_turret_spin,,vehicles/turret_spin_01.wav,1.25,,,,350,2500,,,,,,looping,,jc_tank_test
+sherman_turret_stop,,vehicles/turret_end_01.wav,,,,,175,1250,,,,,,,,jc_tank_test
+
+#Weapon Foley,,,,,,,,,,,,,,,,
+#American,,,,,,,,,,,,,,,,
+weap_bar_reload,,weapons/bar/bar_reload.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bar_reload_not_empty,,weapons/bar/bar_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bar_altswitch,,weapons/alt_fire_switch.wav,1,1,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bar_pickup,,misc/PU_Weapon03.wav,1.14,1.25,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bar_ammopickup,,misc/PU_Weapon02.wav,1.14,1.25,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bar_raise,,misc/Equip_Rifle02.wav,1.14,1.25,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bar_putaway,,null.wav,1.14,1.25,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bazooka_reload,,weapons/bazooka/bazooka_reload.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_bazooka_reload_not_empty,,weapons/bazooka/bazooka_reload.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_colt_reload,,weapons/colt/colt45_reload.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_colt_reload_not_empty,,weapons/colt/colt45_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_m1carbine_reload,,weapons/m1carbine/m1carbine_reload.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_m1carbine_reload_not_empty,,weapons/m1carbine/m1carbine_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_m1garand_reload,,weapons/m1garand/m1garand_reload.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_springfield_reload_start,,weapons/kar98k/kar98_reload_start.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_springfield_reload_loop,,weapons/kar98k/kar98_reload_loop.wav,1.25,1.5,0.9,1.1,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_springfield_reload,,weapons/springfield/springfield_reload_loop.wav,1.25,1.5,0.9,1.1,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_springfield_reload_end,,weapons/enfield/enfield_reload_end.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_springfield_rechamber,,weapons/kar98k/kar98_rechamber.wav,1.15,1.35,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_thompson_reload,,weapons/thompson/thompson_reload.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_thompson_reload_not_empty,,weapons/thompson/thompson_reload_not_empty.wav,1.25,1.5,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_thompson_altswitch,,weapons/alt_fire_switch.wav,1,1,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+weap_fraggrenade_pin,,weapons/grenade/US_Grenade_pin.wav,1.14,1.25,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+us_grenade_lever,,weapons/grenade/us_grenade_lever.wav,1.14,1.25,,,7,500,,,auto,,,,,sp_weapons test/sound_test
+
+#LOD Weapon Sounds,,,,,,,,,,,,,,,,
+#American,,,,,,,,,,,,,,,,
+weap_30cal_loop,1,weapons/30cal/30cal_loop.wav,1.25,1.4,0.99,1.01,7,3500,0,1800,weapon,,,looping,,sp_weapons test/sound_test
+weap_30cal_loop,2,weapons/30cal/30cal_loop_distant.wav,0.85,0.95,0.99,1.01,7,8500,1800,8500,weapon,,,looping,,sp_weapons test/sound_test
+weap_30cal_cooldown,1,weapons/30cal/30cal_cooldown.wav,1.25,1.4,0.99,1.01,7,3500,0,1800,auto,,,,,sp_weapons test/sound_test
+weap_30cal_cooldown,2,weapons/30cal/30cal_cooldown_distant.wav,0.85,0.95,0.99,1.01,7,8500,1800,8500,auto,,,,,sp_weapons test/sound_test
+weap_50cal_fire,1,weapons/50cal/50cal_01.wav,1.5,1.7,0.98,1.02,7,7800,,,weapon,,,,,sp_weapons test/sound_test
+weap_50cal_fire,2,weapons/50cal/50cal_02.wav,1.5,1.7,0.98,1.02,7,7800,,,weapon,,,,,sp_weapons test/sound_test
+weap_50cal_fire,3,weapons/50cal/50cal_03.wav,1.5,1.7,0.98,1.02,7,7800,,,weapon,,4,,,sp_weapons test/sound_test
+weap_50cal_box_fire,1,weapons/50cal_box/50cal_box_01.wav,1.5,1.7,0.98,1.02,7,7800,,,weapon,,,,,sp_weapons test/sound_test
+weap_50cal_box_fire,2,weapons/50cal_box/50cal_box_02.wav,1.5,1.7,0.98,1.02,7,7800,,,weapon,,,,,sp_weapons test/sound_test
+weap_50cal_cooldown_clean,1,weapons/50cal/50cal_cooldown_01.wav,1.4,1.5,0.98,1.02,7,3500,0,1800,auto,,,,,sp_weapons test/sound_test
+weap_50cal_cooldown_clean,2,weapons/50cal/50cal_cooldown_distant.wav,1.2,1.3,0.98,1.02,7,8500,1800,8500,auto,,,,,sp_weapons test/sound_test
+#50cal sherman,,,,,,,,,,,,,,,,
+weap_50cal_loop,1,weapons/50cal/50cal_loop_01.wav,1.8,2,0.98,1.02,7,3500,0,1800,weapon,,,looping,,sp_weapons test/sound_test
+weap_50cal_loop,2,weapons/50cal/50cal_loop_distant.wav,1.2,1.3,0.98,1.02,7,8500,1800,8500,weapon,,,looping,,sp_weapons test/sound_test
+weap_bar_fire,1,weapons/bar/bar_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_bar_fire,2,weapons/bar/bar_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_bazooka_fire,1,weapons/bazooka/bazooka_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_bazooka_fire,2,weapons/bazooka/bazooka_01_distant.wav,0.9,1,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_colt_fire,1,weapons/colt/colt45_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_colt_fire,2,weapons/colt/colt45_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_m1carbine_fire,1,weapons/m1carbine/m1carbine_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_m1carbine_fire,2,weapons/m1carbine/m1carbine_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_m1garand_fire,1,weapons/m1garand/m1garand_01.wav,1.35,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_m1garand_fire,2,weapons/m1garand/m1garand_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_m1garand_lastshot,1,weapons/m1garand/m1garand_ping01.wav,1.35,1.5,,,7,3500,0,1800,auto,,,,,sp_weapons test/sound_test
+weap_m1garand_lastshot,2,weapons/m1garand/m1garand_ping01_distant.wav,0.85,0.95,,,7,8500,1800,8500,auto,,,,,sp_weapons test/sound_test
+weap_springfield_fire,1,weapons/springfield/springfield_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_springfield_fire,2,weapons/springfield/springfield_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_thompson_fire,1,weapons/thompson/thompson_01.wav,1.25,1.35,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_thompson_fire,2,weapons/thompson/thompson_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+
+#British,,,,,,,,,,,,,,,,
+weap_bren_fire,1,weapons/bren/bren_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_bren_fire,2,weapons/bren/bren_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_enfield_fire,1,weapons/enfield/enfield_01.wav,1.35,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_enfield_fire,2,weapons/enfield/enfield_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_silenced_sten_fire,,weapons/sten/silenced_sten_01.wav,1,1.2,0.9,1,7,1500,,,weapon,,,,,sp_weapons test/sound_test
+weap_silenced_sten_loop,,weapons/sten/silenced_sten_loop01.wav,1,1.2,0.9,1,7,1500,,,weapon,,,looping,,sp_weapons test/sound_test
+weap_silenced_sten_cooldown,,weapons/sten/silenced_sten_cooldown01.wav,0.85,0.95,0.9,1,7,1500,,,auto,,,,,sp_weapons test/sound_test
+weap_sten_fire,1,weapons/sten/sten_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_sten_fire,2,weapons/sten/sten_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_webley_fire,,weapons/webley/webley_01.wav,1.25,1.5,0.9,1.05,7,3500,,,weapon,,,,,sp_weapons test/sound_test
+
+#Russian,,,,,,,,,,,,,,,,
+antitank_rifle_fire,1,weapons/AntiTank/rat_01.wav,1.14,1.25,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+antitank_rifle_fire,2,weapons/AntiTank/rat_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_dp28_fire,,weapons/dp28/dp28_01.wav,1.25,1.4,0.95,1.05,10,7800,,,weapon,,,,,sp_weapons test/sound_test
+weap_dp28_loop,,weapons/dp28/dp28_loop01.wav,1.25,1.4,0.95,1,10,7800,,,weapon,,,looping,0.75,sp_weapons test/sound_test
+weap_dp28_cooldown,,weapons/dp28/dp28_cooldown.wav,1,1.1,0.95,1,10,7800,,,auto,,,,,sp_weapons test/sound_test
+weap_nagant_fire,1,weapons/nagant/nagant_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_nagant_fire,2,weapons/nagant/nagant_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,,sp_weapons test/sound_test
+weap_nagant_sniper,1,weapons/nagant/nagant_sniper.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,master,sp_weapons test/sound_test
+weap_nagant_sniper,2,weapons/nagant/nagant_sniper_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,master,sp_weapons test/sound_test
+weap_ppsh_fire,1,weapons/ppsh/ppsh_01.wav,1.4,1.6,0.9,1.05,7,3500,0,1800,weapon,,,,0.75,sp_weapons test/sound_test
+weap_ppsh_fire,2,weapons/ppsh/ppsh_01_distant.wav,0.85,0.95,0.9,1.05,7,8500,1800,8500,weapon,,,,0.75,sp_weapons test/sound_test
+weap_sg43_loop,,weapons/sg43/sg43_loop01.wav,1.25,1.4,0.95,1,10,7800,,,weapon,,,looping,0.75,sp_weapons test/sound_test
+weap_sg43_cooldown,,weapons/sg43/sg43_cooldown.wav,1,1.1,0.95,1,10,7800,,,auto,,,,,sp_weapons test/sound_test
+weap_svt40_fire,,weapons/svt40/svt40_01.wav,1.35,1.5,0.95,1.05,50,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+weap_tt33_fire,,weapons/tt33/tt33_01.wav,1.25,1.5,0.9,1.05,7,3500,0,1800,weapon,,,,,sp_weapons test/sound_test
+
+# flamethrower tests,,,,,,,,,,,,,,,,
+weap_flamethrower_fire,,weapons/flamethrower/fl_loop_test02.wav,1.25,1.4,1,1.2,7,4000,,,weapon,,,,,test/sound_test
+#flamethrower_cooldown,,weapons/flamethrower/fl_cooldown.wav,0.95,1.2,1,1.2,7,4000,,,auto,,,,,test/sound_test

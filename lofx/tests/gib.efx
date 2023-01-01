@@ -1,0 +1,60 @@
+Emitter
+{
+	flags				useModel usePhysics
+
+	count 15 15
+
+	life 2500.000000 5000.000000
+
+	bounce				0.25 0.5
+
+	angle				0 0 0 180 180 180
+
+	angleDelta			-25 -25 -25 25 25 25
+
+	velocity			25 -100 -100 200 100 100
+
+	gravity				-300 -600
+
+	size
+	{
+		start			1 6
+		end				0
+		parm			80 90
+		flags			nonlinear
+	}
+
+	models
+	[
+		xmodel/m_gib_brick_a
+		xmodel/m_gib_brick_b
+		xmodel/m_gib_brick_c
+		xmodel/m_gib_concrete_a
+		xmodel/m_gib_concrete_b
+		xmodel/m_gib_concrete_c
+		xmodel/m_gib_dirt_a
+		xmodel/m_gib_dirt_b
+		xmodel/m_gib_dirt_c
+		xmodel/m_gib_glass_a
+		xmodel/m_gib_glass_b
+		xmodel/m_gib_glass_c
+		xmodel/m_gib_ice_a
+		xmodel/m_gib_ice_b
+		xmodel/m_gib_ice_c
+		xmodel/m_gib_metal_a
+		xmodel/m_gib_metal_b
+		xmodel/m_gib_metal_c
+		xmodel/m_gib_plaster_a
+		xmodel/m_gib_plaster_b
+		xmodel/m_gib_plaster_c
+		xmodel/m_gib_rock_a
+		xmodel/m_gib_rock_b
+		xmodel/m_gib_rock_c
+		xmodel/m_gib_snow_a
+		xmodel/m_gib_snow_b
+		xmodel/m_gib_snow_c
+		xmodel/m_gib_wood_a
+		xmodel/m_gib_wood_b
+		xmodel/m_gib_wood_c
+	]
+}

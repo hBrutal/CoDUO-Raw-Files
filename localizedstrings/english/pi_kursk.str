@@ -1,0 +1,232 @@
+// Note to translators:
+// If a sentence is the same in your language then please change it to "#same"
+//
+// eg:
+// LANG_ENGLISH  "HALT"
+// LANG_GERMAN   "#same"
+//
+// (This is so we can tell which strings have been signed-off as ok to be the same words for QA
+//  and because we do not store duplicate strings, which will then get exported again next time
+//  as being untranslated.)
+//
+VERSION             "1"
+CONFIG              "C:\COD\bin\StringEd\StringEd.cfg"
+FILENOTES           ""
+
+REFERENCE           PLACE
+LANG_ENGLISH        "Moving North, Approaching Prokhorovka"
+
+REFERENCE           DATE
+LANG_ENGLISH        "July 12, 1943"
+
+REFERENCE           TIME
+LANG_ENGLISH        "1710 hrs"
+
+REFERENCE           COMMANDER_INTRO
+LANG_ENGLISH        "Attention!  Listen up!  The Germans are retreating, but we have to stop them before they reach the River Psel.  There is no time to lose."
+
+REFERENCE           CREW_CHATTER1
+LANG_ENGLISH        "Fascist bastards..."
+
+REFERENCE           CREW_CHATTER2
+LANG_ENGLISH        "To hell with ‘em..."
+
+REFERENCE           CREW_CHATTER3
+LANG_ENGLISH        "Don't get too happy, we're not done yet."
+
+REFERENCE           CREW_CONVOY
+LANG_ENGLISH        "There's their convoy!"
+
+REFERENCE           COMMANDER_ACROSSRIVER
+LANG_ENGLISH        "Retreating column - across the river!  Don't let them regroup!"
+
+REFERENCE           COMMANDER_BRIDGEOUT
+LANG_ENGLISH        "The bridge is out! Push through the river! Take out those guns!"
+
+REFERENCE           COMMANDER_AMBUSH1
+LANG_ENGLISH        "Panzers! Ambush! - Spread out! Move!"
+
+REFERENCE           CREW_RETREATING
+LANG_ENGLISH        "Damn fascists, I thought they were retreating..."
+
+REFERENCE           COMMANDER_GOAROUND
+LANG_ENGLISH        "They've blocked off the road! Get around it to the left!"
+
+REFERENCE           COMMANDER_GOAROUND2
+LANG_ENGLISH        "Go around to the left!"
+
+REFERENCE           COMMANDER_TEARINTOTHEM
+LANG_ENGLISH        "We've got ‘em! Finish them off!"
+
+REFERENCE           COMMANDER_TURNTOFIGHT
+LANG_ENGLISH        "It looks like Fritz wants to fight. Let's not disappoint him comrades..."
+
+REFERENCE           COMMANDER_EYES_OPEN
+LANG_ENGLISH        "Keep your eyes open men..."
+
+REFERENCE           COMMANDER_PRESSON
+LANG_ENGLISH        "We have to get to the bridge - to cut off their retreat!  Vladimir - Yuri - get into that town and clear it.  Watch your backs..."
+
+REFERENCE           SASHA_TREAD
+LANG_ENGLISH        "Everybody out! We've thrown a track!  We'll have to get to that bridge on foot."
+
+REFERENCE           SASHA_TREAD2
+LANG_ENGLISH        "We must continue the assault!  Even without our armor the Germans must be stopped.  Let's move!"
+
+REFERENCE           SASHA_WEAPONRY
+LANG_ENGLISH        "This place is crawling with them!  How the hell are we supposed to get through?!"
+
+REFERENCE           SASHA_FALLBACK2
+LANG_ENGLISH        "This is their last defense... find cover!"
+
+REFERENCE           SASHA_GIVETHEMHELL
+LANG_ENGLISH        "Our tanks have got their hands full! Don't let the Germans cross that bridge! Courage, comrades -- give ‘em hell!"
+
+REFERENCE           SASHA_GIVETHEMHELL2
+LANG_ENGLISH        "Our armor has arrived! Now we finish them!"
+
+REFERENCE           COMMANDER_OUTRO
+LANG_ENGLISH        "Attention, please... may I have your attention. In twenty years in this great army, I have never seen a group of men fight with the kind of bravery you have shown today.  I am honored to call you my comrades."
+
+REFERENCE           CREW_SHOUT1
+LANG_ENGLISH        "Nice shot!"
+
+REFERENCE           CREW_SHOUT2
+LANG_ENGLISH        "Good job, comrades!"
+
+REFERENCE           CREW_MUTTER1
+LANG_ENGLISH        "There are more of them than I expected."
+
+REFERENCE           CREW_MUTTER2
+LANG_ENGLISH        "I've got a bad feeling about this."
+
+REFERENCE           CREW_COWARDS
+LANG_ENGLISH        "Look at the cowards run!"
+
+REFERENCE           CREW_GUNS
+LANG_ENGLISH        "Take out those guns!"
+
+REFERENCE           COMMANDER_CONT1
+LANG_ENGLISH        "Press on!"
+
+REFERENCE           COMMANDER_CONT2
+LANG_ENGLISH        "Keep moving, comrades!"
+
+REFERENCE           COMMANDER_CONT3
+LANG_ENGLISH        "Go! Go! Go!"
+
+REFERENCE           COMMANDER_CONT4
+LANG_ENGLISH        "To the bridge!"
+
+REFERENCE           COMMANDER_CONT5
+LANG_ENGLISH        "On to the bridge!"
+
+REFERENCE           COMMANDER_CONT6
+LANG_ENGLISH        "We have them on the run!  Keep the pressure on them!"
+
+REFERENCE           COMMANDER_CONT7
+LANG_ENGLISH        "Keep them on the run!  Victory will be ours!"
+
+REFERENCE           COMMANDER_CONT8
+LANG_ENGLISH        "Their delaying actions are no match for us!"
+
+REFERENCE           COMMANDER_CONT9
+LANG_ENGLISH        "The convoy is crushed.  We must push on towards the river crossing!"
+
+REFERENCE           COMMANDER_CONT10
+LANG_ENGLISH        "Crush them comrades, they are trying to stall us!"
+
+REFERENCE           COMMANDER_CONT11
+LANG_ENGLISH        "They are trying to slow us down! Push through!"
+
+REFERENCE           COMMANDER_RALLY1
+LANG_ENGLISH        "For the motherland!!"
+
+REFERENCE           COMMANDER_RALLY2
+LANG_ENGLISH        "Destroy them!!"
+
+REFERENCE           COMMANDER_RALLY3
+LANG_ENGLISH        "Death to the fascists!"
+
+REFERENCE           COMMANDER_RALLY4
+LANG_ENGLISH        "Watch out!!"
+
+REFERENCE           COMMANDER_RALLY5
+LANG_ENGLISH        "Fire at will!"
+
+REFERENCE           SASHA_RALLY1
+LANG_ENGLISH        "Kill them as they retreat, comrades!"
+
+REFERENCE           SASHA_RALLY2
+LANG_ENGLISH        "We must push them back!"
+
+REFERENCE           SASHA_RALLY3
+LANG_ENGLISH        "They are in full retreat... Let none of them escape!"
+
+REFERENCE           SASHA_RALLY4
+LANG_ENGLISH        "Push through that covering fire... they must not cross the bridge!"
+
+REFERENCE           SASHA_RALLY5
+LANG_ENGLISH        "They continue to retreat... we must keep them on the run!"
+
+REFERENCE           COMMANDER_HINT_BUILDING
+LANG_ENGLISH        "Anti-tank infantry in the buildings!"
+
+REFERENCE           COMMANDER_HINT_RUBBLE
+LANG_ENGLISH        "Anti-tank infantry in the rubble!"
+
+REFERENCE           COMMANDER_HINT_PFBUILDING
+LANG_ENGLISH        "Panzerfausts in the buildings!"
+
+REFERENCE           COMMANDER_HINT_PFRUBBLE
+LANG_ENGLISH        "Panzerfausts in the rubble!"
+
+REFERENCE           COMMANDER_HINT_ANTITANK
+LANG_ENGLISH        "Anti-tank guns!"
+
+REFERENCE           COMMANDER_HINT_FLANK
+LANG_ENGLISH        "Flank the enemy!"
+
+REFERENCE           COMMANDER_HINT_WRONGWAY1
+LANG_ENGLISH        "Not this way!"
+
+REFERENCE           COMMANDER_HINT_WRONGWAY2
+LANG_ENGLISH        "You're going the wrong way!"
+
+REFERENCE           COMMANDER_HINT_WRONGWAY3
+LANG_ENGLISH        "The Germans are the other direction, Comrade!"
+
+REFERENCE           OBJECTIVE1
+LANG_ENGLISH        "Proceed to the town of Prokhorovka."
+
+REFERENCE           OBJECTIVE2
+LANG_ENGLISH        "Destroy the PAK guns (%s remaining)."
+
+REFERENCE           OBJECTIVE3
+LANG_ENGLISH        "Eliminate the German resistance across the stream."
+
+REFERENCE           OBJECTIVE4
+LANG_ENGLISH        "Destroy the German tanks in the farm area."
+
+REFERENCE           OBJECTIVE5
+LANG_ENGLISH        "Eliminate all German infantry in the farm area."
+
+REFERENCE           OBJECTIVE6
+LANG_ENGLISH        "Eliminate all German resistance in your path."
+
+REFERENCE           OBJECTIVE7
+LANG_ENGLISH        "Destroy all German tanks at the crossroad."
+
+REFERENCE           OBJECTIVE8
+LANG_ENGLISH        "Destroy all German tanks in the clearing."
+
+REFERENCE           OBJECTIVE9
+LANG_ENGLISH        "Eliminate the German roadblock."
+
+REFERENCE           OBJECTIVE10
+LANG_ENGLISH        "Destroy all remaining German armor."
+
+
+ENDMARKER
+
+
